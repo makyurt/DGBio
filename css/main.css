@@ -1600,9 +1600,9 @@ input::-moz-focus-inner {
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 22px solid #0066cc;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-right: 24px solid #0066cc;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
   cursor: pointer;
 }
 .next-arrow{
@@ -1610,9 +1610,9 @@ input::-moz-focus-inner {
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 22px solid #0066cc;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-left: 24px solid #0066cc;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
   cursor: pointer;
 }
 
@@ -1627,9 +1627,9 @@ input::-moz-focus-inner {
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
-  border-right: 22px solid #ffffff;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-right: 24px solid #ffffff;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
   cursor: pointer;
 }
 .next-arrowab{
@@ -1637,9 +1637,9 @@ input::-moz-focus-inner {
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
-  border-left: 22px solid #ffffff;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-left: 24px solid #ffffff;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
   cursor: pointer;
 }
 
