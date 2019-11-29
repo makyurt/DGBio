@@ -2689,7 +2689,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 23.2rem;
+  padding-top: 19rem;
   padding-bottom: calc((62.4rem/2) + 6.4rem);
   background-color: #0066cc;
   color: rgba(255, 255, 255, 0.8);
@@ -3217,8 +3217,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-features {
-  padding-top: 19.2rem;
-  padding-bottom: 20rem;
+  padding-top: 19rem;
+  padding-bottom: 16rem;
   background-color: #eaeaea;
   overflow: hidden;
   position: relative;
@@ -3470,7 +3470,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-pricing {
-  padding-top: 19.2rem;
+  padding-top: 19rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
   position: relative;
@@ -3647,7 +3647,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-download {
-  padding-top: 18.4rem;
+  padding-top: 19rem;
+  padding-bottom: 16rem;
   background-color: #0066cc;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
@@ -3772,8 +3773,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  padding-top: 12rem;
-  padding-bottom: 6rem;
+  padding-top: 16rem;
+  padding-bottom: 8rem;
   color: rgba(255, 255, 255, 0.4);
   position: relative;
 }
@@ -4272,6 +4273,10 @@ color: #002352;
 
 .max1000 {
   max-width: 1000px;
+}
+
+.max800 {
+  max-width: 800px;
 }
 
 
