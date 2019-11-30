@@ -16,14 +16,24 @@
     ================================================== -->
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
-        var OneSignal = window.OneSignal || [];
+      var OneSignal = window.OneSignal || [];
         OneSignal.push(function() {
-          OneSignal.init({
-            appId: "301169de-2faa-4440-851f-e462b954bd5d",
-			var notificationPromptDelay = 50000;
-          });
+        OneSignal.init({
+          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
         });
-    </script>
+      var notificationPromptDelay = 30000;
+      var navigationStart = window.performance.timing.navigationStart;
+      var timeNow = Date.now();
+        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
+        });
+      function promptAndSubscribeUser() {
+        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+          if (!isEnabled) {
+            window.OneSignal.showSlidedownPrompt();
+           }
+         });
+        }
+     </script>
 
     <!--- Basic page needs
     ================================================== -->
