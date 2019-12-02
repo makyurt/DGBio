@@ -4175,6 +4175,11 @@ html.no-csstransitions .home-content__main {
   margin-top: 30px;
 }
 
+.disc {
+  margin-top: 55px;
+  margin-bottom: -10px;
+}
+
 .rightpad25 {
     padding-right: 25px;
   }
