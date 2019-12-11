@@ -2,6 +2,25 @@
 <html class="no-js" lang="en">
 <head>
 	
+	<!--- Language router
+    ================================================== -->
+	<script> 
+    var type=navigator.appName 
+    if (type=="Netscape") 
+      var lang = navigator.language 
+    else 
+      var lang = navigator.userLanguage 
+ 
+    var lang = lang.substr(0,2)  
+    var GET = window.location.search.substring(1);
+
+    if (GET == "en") 
+    null
+		
+	else 
+    null
+    </script>
+	
 	<!--- Google analytics
     ================================================== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
