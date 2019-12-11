@@ -986,9 +986,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #c2c2c2;
-  border-color: #c2c2c2;
-  color: #000000;
+
   outline: 0;
 }
 
@@ -1957,7 +1955,7 @@ input::-moz-focus-inner {
 
 }
 
-@media only screen and (max-width:1075px) {
+@media only screen and (max-width:1150px) {
   .header-nav-wrap {
     padding-left: 170px;
   }
@@ -1969,13 +1967,13 @@ input::-moz-focus-inner {
   .header-nav-wrap .header-cta__btn {
     height: 4.8rem;
     line-height: 4.4rem;
-    padding: 0 1.6rem;
-	font-size: 1.2rem;
+    padding: 0 1.1rem;
+	font-size: 1.1rem;
   }
 
 }
 
-@media only screen and (max-width:950px) {
+@media only screen and (max-width:1000px) {
   .s-header {
     background-color: #002352;
     position: fixed;
@@ -2030,7 +2028,7 @@ input::-moz-focus-inner {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .header-nav-wrap .header-cta__btn {
@@ -2067,7 +2065,7 @@ input::-moz-focus-inner {
 /* -------------------------------------------------------------------
  * make sure the menu is visible on larger screens
  * ------------------------------------------------------------------- */
-@media only screen and (min-width:951px) {
+@media only screen and (min-width:1001px) {
   .header-nav-wrap {
     display: block !important;
   }
@@ -4273,5 +4271,45 @@ color: #002352;
   max-width: 800px;
 }
 
+/* Dropdown */
+
+.dropbtn {
+  background-color: transparent;
+  color: rgba(255,255,255,0.7);
+  padding: 0px 10px 0px 10px;
+  font-size: 3.3rem;
+  border: none;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #545454;
+  padding: 7.5px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {background-color: #d5d5d5;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent; color: #ffffff;}
 
 /*# sourceMappingURL=main.css.map */
