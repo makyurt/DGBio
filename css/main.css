@@ -4018,8 +4018,7 @@ html.no-csstransitions .home-content__main {
   right: 40px;
 }
 
-.go-top a,
-.go-top a:visited {
+.go-top a {
   text-decoration: none;
   border: 0 none;
   display: block;
@@ -4033,17 +4032,10 @@ html.no-csstransitions .home-content__main {
   background-position: center center;
   background-size: 10px 15px;
   color: rgba(255, 255, 255, 0.5);
-  text-align: center;
   text-transform: uppercase;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.go-top a:hover,
-.go-top a:focus,
-.go-top a:active {
-  background-color: #002352;
 }
 
 .go-top.link-is-visible {
