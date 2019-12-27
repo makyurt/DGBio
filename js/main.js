@@ -217,7 +217,7 @@
                 //     $('.header-menu-toggle').trigger('click');
                 // }
 
-                window.location.hash = target;
+                updateUrl: false;
             });
         });
 
