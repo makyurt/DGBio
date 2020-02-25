@@ -101,6 +101,7 @@ a {
 
 a:hover {
   color: #002352;
+  text-decoration: underline;
 }
 
 a:hover,
