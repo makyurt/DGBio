@@ -3522,7 +3522,7 @@ html.no-csstransitions .home-content__main {
 .item-plan__per {
   display: inline-block;
   margin-bottom: 0;
-  text-align: center;
+  width: 50%;
 }
 
 .item-plan__price {
