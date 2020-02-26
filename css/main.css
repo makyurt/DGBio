@@ -2890,9 +2890,6 @@ html.no-csstransitions .home-content__main {
   border-radius: 50%;
   background-color: #ffffff;
   background-image: url(../images/icons/icon-play-black.svg);
-  background-repeat: no-repeat;
-  background-position: 55% center;
-  background-size: 24px 27px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
