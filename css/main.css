@@ -2884,12 +2884,15 @@ html.no-csstransitions .home-content__main {
 }
 
 .video-icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  display: inline-block;
+  height: 112px;
+  width: 112px;
   border-radius: 50%;
   background-color: #ffffff;
   background-image: url(../images/icons/icon-play-black.svg);
+  background-repeat: no-repeat;
+  background-position: 55% center;
+  background-size: 24px 27px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
