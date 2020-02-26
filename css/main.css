@@ -2884,9 +2884,9 @@ html.no-csstransitions .home-content__main {
 }
 
 .video-icon {
-  display: inline-block;
-  height: 112px;
-  width: 112px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   border-radius: 50%;
   background-color: #ffffff;
   background-image: url(../images/icons/icon-play-black.svg);
