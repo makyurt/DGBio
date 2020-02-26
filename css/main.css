@@ -3522,6 +3522,7 @@ html.no-csstransitions .home-content__main {
 .item-plan__per {
   display: inline-block;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .item-plan__price {
@@ -3537,7 +3538,6 @@ html.no-csstransitions .home-content__main {
   line-height: 1;
   color: rgba(0, 0, 0, 0.4);
   margin: 0 4px;
-  text-align: center;
 }
 
 .item-plan__bottom-part {
