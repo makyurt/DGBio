@@ -3537,6 +3537,7 @@ html.no-csstransitions .home-content__main {
   line-height: 1;
   color: rgba(0, 0, 0, 0.4);
   margin: 0 4px;
+  text-align: center;
 }
 
 .item-plan__bottom-part {
