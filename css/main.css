@@ -2299,7 +2299,7 @@ input::-moz-focus-inner {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
 }
 
