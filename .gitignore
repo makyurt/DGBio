@@ -7,3 +7,6 @@ dw_php_codehinting.config
 *.mno
 deploy.php
 # DW Dreamweaver added files end
+# Add php files used elsewhere
+rates.php
+ajax.php
