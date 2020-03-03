@@ -2270,6 +2270,13 @@ input::-moz-focus-inner {
   bottom: 1.8rem;
 }
 
+.home-scroll2 {
+  z-index: 4;
+  height: 5.6rem;
+  position: absolute;
+  display: none;
+}
+
 .home-scroll__text {
   display: inline-block;
   font-family: "Nunito Sans", sans-serif;
@@ -2306,6 +2313,10 @@ input::-moz-focus-inner {
 .home-scroll:hover .home-scroll__text {
   border-bottom: 1px solid #ffffff;
 }
+
+.home-scroll2 {
+   display: none;
+  }
 
 /* animate .home-content__main
  * ------------------------------------------------------------------- */
@@ -2610,9 +2621,17 @@ html.no-csstransitions .home-content__main {
   }
 	
   .home-scroll {
-   right: 0.66rem;
-   bottom: 0.66rem;
-   transform: scale(0.66);
+   display: none;
+  }
+	
+  .home-scroll2 {
+   display: block;
+   right: 3rem;
+   top: 3rem;
+  }
+	
+   .home-scroll__icon {
+   background-color: #002352!important;   
   }
 	
 }
