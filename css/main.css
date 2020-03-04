@@ -4239,7 +4239,7 @@ html.no-csstransitions .home-content__main {
 
 .appsicon a:hover {
   color: #002352;
-  transform: scale(1.2);
+  transform: scale(2.0);
 }
 
 .supportline a {
