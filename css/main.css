@@ -4241,16 +4241,6 @@ html.no-csstransitions .home-content__main {
   color: #002352;
 }
 
-.scale { 
-    width: 50px;
-    transition: all .2s ease-in-out; 
-}
-
-.scale:hover {
-    transform: scale(1.6); 
-
-}
-
 .supportline a {
   color: #0066cc;
 }
