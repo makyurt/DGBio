@@ -3281,8 +3281,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .hovericon:hover {
-  -webkit-transform: rotateY(45deg);
-          transform: rotateY(45deg);
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
 }
 
 
