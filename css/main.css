@@ -4231,8 +4231,6 @@ html.no-csstransitions .home-content__main {
 
 .appsicon {
   font-size: 5rem;
-  width: 50px;
-  transition: all .2s ease-in-out;
 }
 
 .appsicon a {
@@ -4241,7 +4239,16 @@ html.no-csstransitions .home-content__main {
 
 .appsicon a:hover {
   color: #002352;
-  transform: scale(1.2);
+}
+
+.scale { 
+    width: 50px;
+    transition: all .2s ease-in-out; 
+}
+
+.scale:hover {
+    transform: scale(1.2); 
+
 }
 
 .supportline a {
