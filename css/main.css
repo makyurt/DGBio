@@ -4021,6 +4021,7 @@ html.no-csstransitions .home-content__main {
 
 .footer__site-links li a:hover {
   color: #0066cc;
+  text-decoration: underline;
 }
 
 
