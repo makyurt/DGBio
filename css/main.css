@@ -3949,11 +3949,6 @@ html.no-csstransitions .home-content__main {
   right: 0;
 }
 
-.footer__subscribe #de-form input[type=submit]:hover {
-  background: #002352;
-  border-color: #0066cc;
-}
-
 .footer__subscribe #de-form label {
   color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
