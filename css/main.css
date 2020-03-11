@@ -2215,6 +2215,10 @@ input::-moz-focus-inner {
   margin-right: 0;
 }
 
+.search:hover {
+  background-color: #002352!important;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## home social
