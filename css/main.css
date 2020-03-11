@@ -771,7 +771,6 @@ select {
   line-height: 3.2rem;
   max-width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid transparent;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
