@@ -3820,6 +3820,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
+  background: #121619;
   padding-top: 16rem;
   padding-bottom: 8rem;
   color: rgba(255, 255, 255, 0.4);
