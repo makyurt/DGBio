@@ -11,17 +11,41 @@
                rel="alternate"
                hreflang="nl"
                href="https://digibyte.io/nl.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="tr"
+               href="https://digibyte.io/tr.html"/>
   </url>
 	
   <url>
     <loc>https://digibyte.io/nl.html</loc>
 	<xhtml:link 
                rel="alternate"
+               hreflang="en"
+               href="https://digibyte.io"/>
+    <xhtml:link 
+               rel="alternate"
                hreflang="nl"
                href="https://digibyte.io/nl.html"/>
 	<xhtml:link 
                rel="alternate"
+               hreflang="tr"
+               href="https://digibyte.io/tr.html"/>
+  </url>
+	
+  <url>
+    <loc>https://digibyte.io/tr.html</loc>
+	<xhtml:link 
+               rel="alternate"
                hreflang="en"
                href="https://digibyte.io"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="nl"
+               href="https://digibyte.io/nl.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="tr"
+               href="https://digibyte.io/tr.html"/>
   </url>
 </urlset>
