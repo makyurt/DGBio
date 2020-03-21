@@ -2,6 +2,8 @@
 
 DigiByte.io new website project.
 
+Live preview: dgbio.digibyteservers.io
+
 Created with pure html5, css3 and javascript.
 
 It can be edited by using any html editor. Adobe Dreamweaver is recommended.
