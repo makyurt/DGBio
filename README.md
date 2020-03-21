@@ -2,7 +2,7 @@
 
 DigiByte.io new website project.
 
-Live preview: dgbio.digibyteservers.io
+Live preview: http://dgbio.digibyteservers.io/
 
 Created with pure html5, css3 and javascript.
 
