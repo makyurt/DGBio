@@ -119,7 +119,8 @@
                     <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DigiAssets</a></li>
                     <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
                     <li><a class="smoothscroll" href="#community" title="Community">Gemeenschap</a></li>
-					<div class="dropdown">
+					
+					<div class="dropdown" id="langmenu">
                        <button class="dropbtn"><i class="far fa-language"></i></button>
                        <div class="dropdown-content">
                           <a href="index.html?en">English</a>
@@ -127,6 +128,13 @@
 						  <a href="tr.html">Türkçe</a>
                        </div>
                     </div>
+					
+					<select id="langmenumobile" onchange="if (this.value) window.location.href=this.value">
+						<option value="index.html?en">English</option>
+						<option value="nl.html" selected>Nederlands</option>
+						<option value="tr.html">Türkçe</option>
+					</select>
+					
                 </ul>
     
                 <div class="header-cta">

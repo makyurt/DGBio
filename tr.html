@@ -119,14 +119,22 @@
                     <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DıgıAssets</a></li>
                     <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Dıgı-ID</a></li>
                     <li><a class="smoothscroll" href="#community" title="Community">Topluluk</a></li>
-					<div class="dropdown">
+					
+					<div class="dropdown" id="langmenu">
                        <button class="dropbtn"><i class="far fa-language"></i></button>
                        <div class="dropdown-content">
                           <a href="index.html?en">Englısh</a>
-						  <a href="nl.html">Nederlands</a>
+			              <a href="nl.html">Nederlands</a>
 						  <a href="tr.html">Türkçe</a>
                        </div>
                     </div>
+					
+					<select id="langmenumobile" onchange="if (this.value) window.location.href=this.value">
+						<option value="index.html?en">English</option>
+						<option value="nl.html">Nederlands</option>
+						<option value="tr.html" selected>Türkçe</option>
+					</select>
+					
                 </ul>
     
                 <div class="header-cta">
@@ -174,7 +182,7 @@
             </div>
 
             <ul class="home-content__social">
-                		<li><a href="https://digibytefoundation.io" target="_blank">Vakfı</a></li>
+                		<li><a href="https://digibytefoundation.io" target="_blank">Vakıf</a></li>
 				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
 				<li><a href="https://www.dgbwiki.com" target="_blank">Wıkı</a></li>
                                 <li><a href="https://t.me/DGBSupport" target="_blank">Destek</a></li>

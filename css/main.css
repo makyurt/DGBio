@@ -1820,6 +1820,10 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
+#langmenumobile {
+   display: none;
+  }
+
 @media only screen and (min-width:1001px) {
 .header-nav-wrap .header-main-nav li.current a:before {
   content: '';
@@ -2060,6 +2064,15 @@ input::-moz-focus-inner {
 
   .header-menu-toggle {
     display: block;
+  }
+	
+  #langmenu {
+   display: none;
+  }
+
+  #langmenumobile {
+   display: block;
+   margin-top: 2rem;
   }
 
 }
@@ -4346,7 +4359,7 @@ color: #002352;
 
 .dropdown-content a {
   color: #545454;
-  padding: 7.5px 10px;
+  padding: 5px 10px 2.5px 10px;
   text-decoration: none;
   display: block;
   border-radius: 5px;
