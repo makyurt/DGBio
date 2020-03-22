@@ -761,16 +761,16 @@ input[type="password"],
 textarea,
 select {
   display: block;
-  height: 6.4rem;
+  height: 2.4rem;
   padding: 1.5rem 24px 1.5rem;
   border: 0;
   outline: none;
-  color: #545454;
+  color: #ffffff;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 3.2rem;
   max-width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 102, 203);
   border-radius: 4px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
