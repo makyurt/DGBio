@@ -243,7 +243,7 @@
             offset: 200,
             duration: 400,
             easing: 'ease-in-sine',
-            delay: 300,
+            delay: 200,
             once: true,
             disable: 'mobile'
         });
