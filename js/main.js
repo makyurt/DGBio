@@ -241,9 +241,9 @@
         
         AOS.init( {
             offset: 200,
-            duration: 400,
+            duration: 450,
             easing: 'ease-in-sine',
-            delay: 200,
+            delay: 250,
             once: true,
             disable: 'mobile'
         });
