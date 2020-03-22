@@ -761,7 +761,7 @@ input[type="password"],
 textarea,
 select {
   display: block;
-  height: 2.4rem;
+  height: 3.4rem;
   padding: 1.5rem 24px 1.5rem;
   border: 0;
   outline: none;
