@@ -241,7 +241,7 @@
         
         AOS.init( {
             offset: 200,
-            duration: 600,
+            duration: 400,
             easing: 'ease-in-sine',
             delay: 300,
             once: true,
