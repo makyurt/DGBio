@@ -2,7 +2,9 @@
 
 DigiByte.io new website project.
 
-Live preview: http://dgbio.digibyteservers.io/
+Live preview: http://dgbio.digibyteservers.io
+
+Help translate this website in your local language: https://poeditor.com/join/project/lpb4bUrLS1
 
 Created with pure html5, css3 and javascript.
 
