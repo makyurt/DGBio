@@ -4371,4 +4371,9 @@ color: #002352;
 
 .dropdown:hover .dropbtn {background-color: transparent; color: #ffffff;}
 
+.selected {
+  color: #0066cc!important;
+  font-weight: bold!important;
+}
+
 /*# sourceMappingURL=main.css.map */
