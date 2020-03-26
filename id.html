@@ -1,34 +1,6 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="id">
 <head>
-	
-	<!--- Language router
-    ================================================== -->
-	<script> 
-    var type=navigator.appName 
-    if (type=="Netscape") 
-      var lang = navigator.language
-    else 
-      var lang = navigator.userLanguage
- 
-    var lang = lang.substr(0,2)  
-    var GET = window.location.search.substring(1);
-
-    if (GET == "en") 
-    null
-		
-	else if (lang == "nl") 
-    window.location.replace('nl.html')
-		
-	else if (lang == "tr") 
-    window.location.replace('tr.html')
-		
-	else if (lang == "cs") 
-    window.location.replace('cs.html')
-		
-	else
-    null
-    </script>
 	
 	<!--- Google analytics
     ================================================== -->
@@ -151,16 +123,18 @@
 					<div class="dropdown" id="langmenu">
                        <button class="dropbtn"><i class="far fa-language"></i></button>
                        <div class="dropdown-content">
-                          <a class="selected" href="index.html?en">English</a>
+                          <a href="index.html?en">English</a>
 			                          <a href="cs.html">Čeština</a>
+			                          <a class="selected" href="id.html">Indonesia</a>
 						  <a href="nl.html">Nederlands</a>
 						  <a href="tr.html">Türkçe</a>
                        </div>
                     </div>
 					
 					<select id="langmenumobile" onchange="if (this.value) window.location.href=this.value">
-						<option value="index.html?en" selected>English</option>
+						<option value="index.html?en">English</option>
 						<option value="cs.html">Čeština</option>
+						<option value="id.html" selected>Indonesia</option>
 						<option value="nl.html">Nederlands</option>
 						<option value="tr.html">Türkçe</option>
 					</select>
