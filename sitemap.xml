@@ -7,7 +7,7 @@
                rel="alternate"
                hreflang="en"
                href="https://digibyte.io"/>
-      <xhtml:link 
+    <xhtml:link 
                rel="alternate"
                hreflang="cs"
                href="https://digibyte.io/cs.html"/>
@@ -27,7 +27,7 @@
                rel="alternate"
                hreflang="en"
                href="https://digibyte.io"/>
-       <xhtml:link 
+    <xhtml:link 
                rel="alternate"
                hreflang="cs"
                href="https://digibyte.io/cs.html"/>
@@ -47,7 +47,7 @@
                rel="alternate"
                hreflang="en"
                href="https://digibyte.io"/>
-       <xhtml:link 
+    <xhtml:link 
                rel="alternate"
                hreflang="cs"
                href="https://digibyte.io/cs.html"/>
@@ -61,13 +61,13 @@
                href="https://digibyte.io/tr.html"/>
   </url>
 	
- <url>
+  <url>
     <loc>https://digibyte.io/cs.html</loc>
 	<xhtml:link 
                rel="alternate"
                hreflang="en"
                href="https://digibyte.io"/>
-       <xhtml:link 
+    <xhtml:link 
                rel="alternate"
                hreflang="cs"
                href="https://digibyte.io/cs.html"/>
