@@ -1,1 +1,2 @@
+RewriteEngine On
 ErrorDocument 404 https://digibyte.io
