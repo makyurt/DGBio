@@ -1,2 +1,2 @@
 RewriteEngine On
-ErrorDocument 404 https://digibyte.io
+ErrorDocument 404 https://digibyte.io/index.html
