@@ -16,6 +16,10 @@
                rel="alternate"
                hreflang="de"
                href="https://digibyte.io/de.html"/>
+	  <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
 	<xhtml:link 
                rel="alternate"
                hreflang="id"
@@ -41,6 +45,74 @@
                hreflang="en"
                href="https://digibyte.io"/>
 	<xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://digibyte.io/de.html"/>
+	  <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="id"
+               href="https://digibyte.io/id.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="nl"
+               href="https://digibyte.io/nl.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="tr"
+               href="https://digibyte.io/tr.html"/>
+  </url>
+	
+ <url>
+    <loc>https://digibyte.io/de.html</loc>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://digibyte.io/de.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://digibyte.io"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="cs"
+               href="https://digibyte.io/cs.html"/>
+	  <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="id"
+               href="https://digibyte.io/id.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="nl"
+               href="https://digibyte.io/nl.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="tr"
+               href="https://digibyte.io/tr.html"/>
+  </url>
+	
+ <url>
+    <loc>https://digibyte.io/fr.html</loc>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://digibyte.io"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="cs"
+               href="https://digibyte.io/cs.html"/>
+	  <xhtml:link 
                rel="alternate"
                hreflang="de"
                href="https://digibyte.io/de.html"/>
@@ -76,6 +148,10 @@
                rel="alternate"
                hreflang="de"
                href="https://digibyte.io/de.html"/>
+	  <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
     <xhtml:link 
                rel="alternate"
                hreflang="nl"
@@ -104,6 +180,10 @@
                rel="alternate"
                hreflang="de"
                href="https://digibyte.io/de.html"/>
+	  <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
 	<xhtml:link 
                rel="alternate"
                hreflang="id"
@@ -132,6 +212,10 @@
                rel="alternate"
                hreflang="de"
                href="https://digibyte.io/de.html"/>
+	  <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
 	<xhtml:link 
                rel="alternate"
                hreflang="id"
@@ -140,34 +224,6 @@
                rel="alternate"
                hreflang="nl"
                href="https://digibyte.io/nl.html"/>
-  </url>
-	
-  <url>
-    <loc>https://digibyte.io/de.html</loc>
-	<xhtml:link 
-               rel="alternate"
-               hreflang="de"
-               href="https://digibyte.io/de.html"/>
-	<xhtml:link 
-               rel="alternate"
-               hreflang="en"
-               href="https://digibyte.io"/>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="cs"
-               href="https://digibyte.io/cs.html"/>
-	<xhtml:link 
-               rel="alternate"
-               hreflang="id"
-               href="https://digibyte.io/id.html"/>
-    <xhtml:link 
-               rel="alternate"
-               hreflang="nl"
-               href="https://digibyte.io/nl.html"/>
-	<xhtml:link 
-               rel="alternate"
-               hreflang="tr"
-               href="https://digibyte.io/tr.html"/>
   </url>
 	
 </urlset>
