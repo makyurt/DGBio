@@ -2300,13 +2300,13 @@ input::-moz-focus-inner {
   font-size: 11px;
   line-height: 5.6rem;
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: .23rem;
   color: #0066cc;
   border-bottom: 1px solid transparent;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: absolute;
-  right: 7.6rem;
+  right: 6.4rem;
 }
 
 .home-scroll__icon {
