@@ -761,16 +761,13 @@ input[type="password"],
 textarea,
 select {
   display: block;
-  height: 2.4rem;
   padding: 1.5rem 24px 1.5rem;
   border: 0;
   outline: none;
-
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 3.2rem;
   max-width: 100%;
-
   border-radius: 4px;
 }
 
