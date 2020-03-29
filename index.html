@@ -11,7 +11,8 @@
     else 
       var lang = navigator.userLanguage
  
-    var lang = lang.substr(0,2)  
+	var langf = lang.substr(0,3)
+    var lang = lang.substr(0,2)
     var GET = window.location.search.substring(1);
 
     if (GET == "en") 
@@ -31,6 +32,9 @@
 		
 	else if (lang == "nl") 
     window.location.replace('nl.html')
+		
+	else if (langf == "fil") 
+    window.location.replace('fil.html')
 		
 	else if (lang == "tr") 
     window.location.replace('tr.html')
@@ -166,6 +170,7 @@
 			              <a href="fr.html">Français</a>
 						  <a href="id.html">Indonesia</a>
 						  <a href="nl.html">Nederlands</a>
+						  <a href="fil.html">Pilipino</a>
 						  <a href="tr.html">Türkçe</a>
                        </div>
                     </div>
@@ -177,6 +182,7 @@
 						<option value="fr.html">Français</option>
 						<option value="id.html">Indonesia</option>
 						<option value="nl.html">Nederlands</option>
+						<option value="fil.html">Pilipino</option>
 						<option value="tr.html">Türkçe</option>
 					</select>
 					

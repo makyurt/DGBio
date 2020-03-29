@@ -30,6 +30,10 @@
                href="https://digibyte.io/nl.html"/>
 	<xhtml:link 
                rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
+	<xhtml:link 
+               rel="alternate"
                hreflang="tr"
                href="https://digibyte.io/tr.html"/>
   </url>
@@ -60,6 +64,10 @@
                rel="alternate"
                hreflang="nl"
                href="https://digibyte.io/nl.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
 	<xhtml:link 
                rel="alternate"
                hreflang="tr"
@@ -94,6 +102,10 @@
                href="https://digibyte.io/nl.html"/>
 	<xhtml:link 
                rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
+	<xhtml:link 
+               rel="alternate"
                hreflang="tr"
                href="https://digibyte.io/tr.html"/>
   </url>
@@ -124,6 +136,10 @@
                rel="alternate"
                hreflang="nl"
                href="https://digibyte.io/nl.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
 	<xhtml:link 
                rel="alternate"
                hreflang="tr"
@@ -158,6 +174,10 @@
                href="https://digibyte.io/nl.html"/>
 	<xhtml:link 
                rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
+	<xhtml:link 
+               rel="alternate"
                hreflang="tr"
                href="https://digibyte.io/tr.html"/>
   </url>
@@ -190,6 +210,46 @@
                href="https://digibyte.io/id.html"/>
 	<xhtml:link 
                rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="tr"
+               href="https://digibyte.io/tr.html"/>
+  </url>
+	
+  <url>
+    <loc>https://digibyte.io/fil.html</loc>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/tr.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://digibyte.io"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="cs"
+               href="https://digibyte.io/cs.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://digibyte.io/de.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://digibyte.io/fr.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="id"
+               href="https://digibyte.io/id.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="nl"
+               href="https://digibyte.io/nl.html"/>
+    <xhtml:link 
+               rel="alternate"
                hreflang="tr"
                href="https://digibyte.io/tr.html"/>
   </url>
@@ -220,6 +280,10 @@
                rel="alternate"
                hreflang="id"
                href="https://digibyte.io/id.html"/>
+	<xhtml:link 
+               rel="alternate"
+               hreflang="fil"
+               href="https://digibyte.io/fil.html"/>
     <xhtml:link 
                rel="alternate"
                hreflang="nl"
