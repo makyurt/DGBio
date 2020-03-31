@@ -11,7 +11,8 @@
     else 
       var lang = navigator.userLanguage
  
-    var lang = lang.substr(0,2)  
+	var langf = lang.substr(0,3)
+    var lang = lang.substr(0,2)
     var GET = window.location.search.substring(1);
 
     if (GET == "en") 
@@ -23,14 +24,26 @@
 	else if (lang == "de") 
     window.location.replace('de.html')
 		
+	else if (lang == "es") 
+    window.location.replace('es.html')
+		
+    else if (lang == "fr") 
+    window.location.replace('fr.html')
+		
 	else if (lang == "id") 
     window.location.replace('id.html')
 		
 	else if (lang == "nl") 
     window.location.replace('nl.html')
 		
+	else if (langf == "fil") 
+    window.location.replace('fil.html')
+		
 	else if (lang == "tr") 
     window.location.replace('tr.html')
+		
+	else if (lang == "ja") 
+    window.location.replace('ja.html')
 		
 	else
     null
@@ -43,7 +56,7 @@
        window.dataLayer = window.dataLayer || [];
        function gtag(){dataLayer.push(arguments);}
        gtag('js', new Date());
-       gtag('config', 'UA-129492671-3');
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
     </script>
 	
 	<!-- OneSignal platform support
@@ -74,7 +87,7 @@
     <title>DigiByte Blockchain | DGB Coin | DigiAssets | Digi-ID</title>
     <meta charset="utf-8">
     <meta name="description" content="DigiByte is an open-source and highly decentralized global blockchain hosts DGB Coin, DigiAssets, Digi-ID and more.">
-	<meta name="keywords" content="DigiByte, DGB, Blockchain, Decentralized, Coin, Asset, Digital, Crypto, Currency, DigiAssets, Digi-ID, Cybersecurity, Authentication, Smart Contract, dApp, Payments, Wallet, Community">
+	<meta name="keywords" content="DigiByte, DGB, Blockchain, Decentralized, Coin, Asset, Digital, Crypto, Currency, DigiAssets, Digi-ID, Cybersecurity, Authentication, Smart Contract, dApp, Payments, Wallet, Community, Official">
     <link rel="canonical" href="https://digibyte.io" />
 
     <!-- Mobile specific metas
@@ -160,9 +173,13 @@
                           <a class="selected" href="index.html?en">English</a>
 			              <a href="cs.html">Čeština</a>
 						  <a href="de.html">Deutsch</a>
+						  <a href="es.html">Español</a>
+			              <a href="fr.html">Français</a>
 						  <a href="id.html">Indonesia</a>
 						  <a href="nl.html">Nederlands</a>
+						  <a href="fil.html">Pilipino</a>
 						  <a href="tr.html">Türkçe</a>
+						  <a href="ja.html">日本語</a>
                        </div>
                     </div>
 					
@@ -170,9 +187,13 @@
 						<option value="index.html?en" selected>English</option>
 						<option value="cs.html">Čeština</option>
 						<option value="de.html">Deutsch</option>
+						<option value="es.html">Español</option>
+						<option value="fr.html">Français</option>
 						<option value="id.html">Indonesia</option>
 						<option value="nl.html">Nederlands</option>
+						<option value="fil.html">Pilipino</option>
 						<option value="tr.html">Türkçe</option>
+						<option value="ja.html">日本語</option>
 					</select>
 					
                 </ul>
@@ -364,9 +385,9 @@
                     <div class="col-block step">
                         <h3 class="item-title">Core protocol / Global network.</h3>
                         <p>The bottom layer provides communication and operating procedures. A very low-level way nodes on the DigiByte global network communicate. Thousands of people are running DigiByte software all across the planet. Any server, computer, tablet or mobile phone connected to the DigiByte network becomes a node that helps relay transactions.
-			<a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Start contributing to the DigiByte blockchain in the optimal way</a>.
-			</p>
-		</div>
+			            <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Start contributing to the DigiByte blockchain in the optimal way</a>.
+			            </p>
+		            </div>
 					
 					<div class="col-block step">
                         <h3 class="item-title">Open source / Permissionless.</h3>
@@ -920,7 +941,7 @@
 					
 					<div class="col-block step">
                         <h3 class="item-title">Need more help?</h3>
-                        <p>Do you need more assistance about DigiAssets? Please feel free to join the DigiByte Developers group on Telegram to ask your questions or share your ideas.<br/><a class="smoothscroll" href="#telegramgroups">DigiByte Developers on Telegram</a>.
+                        <p>Do you need more assistance about DigiAssets? Please feel free to join the DigiByte Developers group on Telegram to ask your questions or share your ideas. <a class="smoothscroll" href="#telegramgroups">DigiByte Developers on Telegram</a>.
                     </p>
                 </div>
             </div>
@@ -1080,7 +1101,7 @@
 			<div class="col-block item-feature">
                 <div class="item-feature__text">
                     <h3 class="item-title">Where can I find more documentation?</h3>
-                    <p>The best place to start is <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. If you want to know more about the details and advantages of Digi-ID, you can refer to the <a href="https://www.digi-id.io/faq" target="_blank">user guide</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">vendor guide</a> or <a href="https://www.digi-id.io/integration.html" target="_blank">integration guide</a>. If you are looking for the media kit, please get the <a href="docs/Digi-ID_Intro.pdf" target="_blank">intro sheet</a> and <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logos</a>.
+                    <p>The best place to start is <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. If you want to know more about the details and advantages of Digi-ID, you can refer to the <a href="https://www.digi-id.io/faq" target="_blank">user guide</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">vendor guide</a> or <a href="https://www.digi-id.io/integration.html" target="_blank">integration guide</a>. If you are looking for the media kit, please get the <a href="docs/digiidintro.pdf" target="_blank">intro sheet</a> and <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logos</a>.
                     </p>
                 </div>
             </div>
@@ -1212,7 +1233,7 @@
                     The most passionate<br/>community ever!
                 </h1>
                 <p class="lead">
-                    Tens of thousands of volunteers from all over the world have contributed to DigiByte in countless ways for years to make it what it is today. It is a truly grassroots movement. <br>We warmly welcome you to join us!
+                    Tens of thousands of volunteers from all over the world have contributed to DigiByte in countless ways for years to make it what it is today. It is a truly grassroots movement. We warmly welcome you to join us!
                 </p>
             </div>
 		
@@ -1497,7 +1518,7 @@
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Integration guide</span>
-                            <a href="docs/DigiByteIntegration-v1.4.pdf" target="_blank" class="testimonials__link">Download</a>
+                            <a href="docs/integrationguide.pdf" target="_blank" class="testimonials__link">Download</a>
                         </div>
                     </div>
 					
@@ -1508,7 +1529,7 @@
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Media sheet</span>
-                            <a href="docs/DGB_MediaKit_2020_v1.0.pdf" target="_blank" class="testimonials__link">Download</a>
+                            <a href="docs/mediakit.pdf" target="_blank" class="testimonials__link">Download</a>
                         </div>
                     </div>
 					
@@ -2082,8 +2103,8 @@
                         <h4>Resources.</h4>
 
                         <ul class="footer__site-links">
-                            <li><a href="docs/DigiByteIntegration-v1.4.pdf" target="_blank">DGB Integration Guide</a></li>
-                            <li><a href="docs/DGB_MediaKit_2020_v1.0.pdf" target="_blank">DGB Media Sheet</a></li>
+                            <li><a href="docs/integrationguide.pdf" target="_blank">DGB Integration Guide</a></li>
+                            <li><a href="docs/mediakit.pdf" target="_blank">DGB Media Sheet</a></li>
                             <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Logos & Icons</a></li>
 			    <li><a href="https://github.com/digibyte/digibyte" target="_blank">DGB Protocol GitHub</a></li>
                             <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>

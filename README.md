@@ -1,6 +1,6 @@
 ## DGBio
 
-DigiByte.io new website project.
+DigiByte.io website.
 
 Help translate this website in your local language: https://poeditor.com/join/project/lpb4bUrLS1
 

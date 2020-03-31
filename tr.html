@@ -9,7 +9,7 @@
        window.dataLayer = window.dataLayer || [];
        function gtag(){dataLayer.push(arguments);}
        gtag('js', new Date());
-       gtag('config', 'UA-129492671-3');
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
     </script>
 	
 	<!-- OneSignal platform support
@@ -123,11 +123,15 @@
                        <button class="dropbtn"><i class="far fa-language"></i></button>
                        <div class="dropdown-content">
                           <a href="index.html?en">Englısh</a>
-			              <a href="cs.html">Čeština</a>
+			              <a href="cs.html">Češtına</a>
 						  <a href="de.html">Deutsch</a>
-						  <a href="id.html">Indonesia</a>
+						  <a href="es.html">Español</a>
+			              <a href="fr.html">Françaıs</a>
+						  <a href="id.html">Indonesıa</a>
 			              <a href="nl.html">Nederlands</a>
+						  <a href="fil.html">Pılıpıno</a>
 						  <a class="selected" href="tr.html">Türkçe</a>
+						  <a href="ja.html">日本語</a>
                        </div>
                     </div>
 					
@@ -135,9 +139,13 @@
 						<option value="index.html?en">English</option>
 						<option value="cs.html">Čeština</option>
 						<option value="de.html">Deutsch</option>
+						<option value="es.html">Español</option>
+						<option value="fr.html">Français</option>
 						<option value="id.html">Indonesia</option>
 						<option value="nl.html">Nederlands</option>
+						<option value="fil.html">Pilipino</option>
 						<option value="tr.html" selected>Türkçe</option>
+						<option value="ja.html">日本語</option>
 					</select>
 					
                 </ul>
@@ -198,7 +206,7 @@
         </div>
 
         <a href="#footer" class="home-scroll smoothscroll">
-            <span class="home-scroll__text">Scroll</span>
+            <span class="home-scroll__text">Kaydır</span>
             <span class="home-scroll__icon"></span>
         </a> 
 
@@ -210,7 +218,7 @@
     <section id="about" class="s-about target-section">
 
 		<a href="#footer" class="home-scroll2 smoothscroll">
-            <span class="home-scroll__text">Scroll</span>
+            <span class="home-scroll__text">Kaydır</span>
             <span class="home-scroll__icon"></span>
         </a>
 
@@ -1045,7 +1053,7 @@
 			<div class="col-block item-feature">
                 <div class="item-feature__text">
                     <h3 class="item-title">Nereden daha fazla döküman bulabilirim?</h3>
-                    <p>Başlamak için en iyi yer <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>'dur. Digi-ID'nin ayrıntıları ve avantajları hakkında daha fazla bilgi edinmek isterseniz <a href="https://www.digi-id.io/faq" target="_blank">kullanıcı klavuzu</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">satıcı klavuzu</a> ve <a href="https://www.digi-id.io/integration.html" target="_blank">entegrasyon klavuzu</a>'na bakabilirsiniz. Eğer medya kitini arıyorsanız lütfen <a href="docs/Digi-ID_Intro.pdf" target="_blank">bilgi dökümanı</a> ve <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logolara</a> bakın.
+                    <p>Başlamak için en iyi yer <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>'dur. Digi-ID'nin ayrıntıları ve avantajları hakkında daha fazla bilgi edinmek isterseniz <a href="https://www.digi-id.io/faq" target="_blank">kullanıcı klavuzu</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">satıcı klavuzu</a> ve <a href="https://www.digi-id.io/integration.html" target="_blank">entegrasyon klavuzu</a>'na bakabilirsiniz. Eğer medya kitini arıyorsanız lütfen <a href="docs/digiidintro.pdf" target="_blank">bilgi dökümanı</a> ve <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logolara</a> bakın.
                     </p>
                 </div>
             </div>
@@ -1462,7 +1470,7 @@
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Entegrasyon rehberi</span>
-                            <a href="docs/DigiByteIntegration-v1.4.pdf" target="_blank" class="testimonials__link">İndir</a>
+                            <a href="docs/integrationguide.pdf" target="_blank" class="testimonials__link">İndir</a>
                         </div>
                     </div>
 					
@@ -1473,7 +1481,7 @@
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Medya broşürü</span>
-                            <a href="docs/DGB_MediaKit_2020_v1.0.pdf" target="_blank" class="testimonials__link">İndir</a>
+                            <a href="docs/mediakit.pdf" target="_blank" class="testimonials__link">İndir</a>
                         </div>
                     </div>
 					
@@ -2047,8 +2055,8 @@
                         <h4>Kaynaklar.</h4>
 
                         <ul class="footer__site-links">
-                            <li><a href="docs/DigiByteIntegration-v1.4.pdf" target="_blank">DGB Entegresyon Klavuzu</a></li>
-                            <li><a href="docs/DGB_MediaKit_2020_v1.0.pdf" target="_blank">DGB Medya Broşürü</a></li>
+                            <li><a href="docs/integrationguide.pdf" target="_blank">DGB Entegresyon Klavuzu</a></li>
+                            <li><a href="docs/mediakit.pdf" target="_blank">DGB Medya Broşürü</a></li>
                             <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Logolar & Ikonlar</a></li>
 			    <li><a href="https://github.com/digibyte/digibyte" target="_blank">DGB Protokol GitHub</a></li>
                             <li><a href="https://github.com/digibyte-core" target="_blank">DGB Çekirdek GitHub</a></li>
