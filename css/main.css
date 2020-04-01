@@ -66,7 +66,7 @@ html {
 }
 
 .rtl {
-  text-align: right!important;
+  direction: rtl;
 }
 
 @media only screen and (max-width:400px) {
