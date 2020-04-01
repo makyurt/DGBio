@@ -69,6 +69,10 @@ html {
   direction: rtl;
 }
 
+.iblock {
+  display: inline-block!important;
+}
+
 @media only screen and (max-width:400px) {
   html {
     font-size: 9.444444444444444px;
@@ -4350,7 +4354,7 @@ color: #002352;
   z-index: 1;
   border-radius: 5px;
   column-count: 2;
-  right: 0;
+  left: -170%;
   padding: 5px 5px 5px 5px;
 }
 
