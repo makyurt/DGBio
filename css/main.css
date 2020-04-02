@@ -3586,6 +3586,7 @@ html.no-csstransitions .home-content__main {
   line-height: 1;
   color: rgba(0, 0, 0, 0.4);
   margin: 0 4px;
+  padding-top: 1rem;
 }
 
 .item-plan__bottom-part {
@@ -4387,3 +4388,7 @@ color: #002352;
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.pt2 {
+  padding-top: 2rem;
+}
