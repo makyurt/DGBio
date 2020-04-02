@@ -334,3 +334,21 @@ if (navigator.userAgent.toLowerCase().indexOf("iphone") ==-1) {
             $('input, select').removeAttr('disabled');
         });
     }
+
+/* Clickable language menu */
+function lmenu() {
+  document.getElementById("lddown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
