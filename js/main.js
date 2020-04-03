@@ -323,18 +323,6 @@
 })(jQuery);
 
 
-   /* Remove previous & next arrows from dropdown menus on iphone
-    * ------------------------------------------------------ */
-
-if (navigator.userAgent.toLowerCase().indexOf("iphone") ==-1) {
-    }else{
-        $(document).on('touchstart', 'input, select', function() {
-            $('select, input').not(this).attr('disabled', 'disabled');
-        }).on('blur', 'input, select', function() {
-            $('input, select').removeAttr('disabled');
-        });
-    }
-
 /* Clickable language menu */
 function lmenu() {
   document.getElementById("lddown").classList.toggle("show");
