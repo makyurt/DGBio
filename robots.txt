@@ -1,6 +1,5 @@
 User-Agent: *
 Disallow: /docs/
-Disallow: /pl.html
 Disallow: /fi.html
 
 Sitemap: https://digibyte.io/sitemap.xml
