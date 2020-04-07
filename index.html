@@ -2,6 +2,21 @@
 <html class="no-js" lang="en">
 <head>
 	
+	<!--- Hash detector
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+    history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target;  
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
 	<!--- Language router
     ================================================== -->
 	<script> 
@@ -16,64 +31,64 @@
     var GET = window.location.search.substring(1);
 
     if (GET == "en") 
-    null
+    history.replaceState({}, document.title, ".");
 	
 	else if (lang == "af") 
-    window.location.replace('af.html')
+    window.location.replace('af.html'+target)
 	
     else if (lang == "cs") 
-    window.location.replace('cs.html')
+    window.location.replace('cs.html'+target)
 		
 	else if (lang == "de") 
-    window.location.replace('de.html')
+    window.location.replace('de.html'+target)
 		
 	else if (lang == "es") 
-    window.location.replace('es.html')
+    window.location.replace('es.html'+target)
 		
     else if (lang == "fr") 
-    window.location.replace('fr.html')
+    window.location.replace('fr.html'+target)
 		
     else if (lang == "hr") 
-    window.location.replace('hr.html')
+    window.location.replace('hr.html'+target)
 		
 	else if (lang == "id") 
-    window.location.replace('id.html')
+    window.location.replace('id.html'+target)
 		
 	else if (lang == "it") 
-    window.location.replace('it.html')
+    window.location.replace('it.html'+target)
 		
 	else if (lang == "sw") 
-    window.location.replace('sw.html')
+    window.location.replace('sw.html'+target)
 		
 	else if (lang == "nl") 
-    window.location.replace('nl.html')
+    window.location.replace('nl.html'+target)
 		
 	else if (langf == "fil") 
-    window.location.replace('fil.html')
+    window.location.replace('fil.html'+target)
 		
 	else if (lang == "pl") 
-    window.location.replace('pl.html')
+    window.location.replace('pl.html'+target)
 		
 	else if (lang == "ro") 
-    window.location.replace('ro.html')
+    window.location.replace('ro.html'+target)
 		
 	else if (lang == "fi") 
-    window.location.replace('fi.html')
+    window.location.replace('fi.html'+target)
 		
 	else if (lang == "vi") 
-    window.location.replace('vi.html')
+    window.location.replace('vi.html'+target)
 		
 	else if (lang == "tr") 
-    window.location.replace('tr.html')
+    window.location.replace('tr.html'+target)
 		
 	else if (lang == "ja") 
-    window.location.replace('ja.html')
+    window.location.replace('ja.html'+target)
 		
 	else if (lang == "zh") 
-    window.location.replace('zh.html')
+    window.location.replace('zh.html'+target)
 		
 	else if (lang == "fa") 
-    window.location.replace('fa.html')
+    window.location.replace('fa.html'+target)
 		
 	else
     null

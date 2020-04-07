@@ -2,6 +2,21 @@
 <html class="no-js" lang="tr">
 <head>
 	
+	<!--- Hash detector
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+	history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target; 
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
 	<!--- Google analytics
     ================================================== -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
