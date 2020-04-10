@@ -20,17 +20,13 @@
 	<!--- Language router
     ================================================== -->
 	<script> 
-    var type=navigator.appName 
-    if (type=="Netscape") 
-      var lang = navigator.language
-    else 
-      var lang = navigator.userLanguage
+    var userlang = navigator.language || navigator.userLanguage;
  
-	var langf = lang.substr(0,3)
-    var lang = lang.substr(0,2)
-    var GET = window.location.search.substring(1);
+	var lang3 = userlang.substr(0,3)
+    var lang = userlang.substr(0,2)
+    var get = window.location.search.substring(1);
 
-    if (GET == "en") 
+    if (get == "en") 
     null
 	
 	else if (lang == "af") 
@@ -66,7 +62,7 @@
 	else if (lang == "nl") 
     window.location.replace('nl.html'+target)
 		
-	else if (langf == "fil") 
+	else if (lang3 == "fil") 
     window.location.replace('fil.html'+target)
 		
 	else if (lang == "pl") 
