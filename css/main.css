@@ -4363,10 +4363,18 @@ color: #002352;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
-  column-count: 3;
   left: 0;
   margin-left: -180px;
   padding: 5px 5px 5px 5px;
+}
+
+.col3 {
+  column-count: 3;
+}
+
+.ttc {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .dropdown-content a {
