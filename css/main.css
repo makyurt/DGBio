@@ -4361,6 +4361,7 @@ color: #002352;
   background-color: #ffffff;
   width: 400px;
   font-size: 1.5rem;
+  font-weight: normal;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 5px;
