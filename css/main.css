@@ -3293,17 +3293,6 @@ html.no-csstransitions .home-content__main {
   font-size: 4.8rem;
 }
 
-.hovericon {
--webkit-transition: -webkit-transform .4s ease-in-out;
-        transition:         transform .4s ease-in-out;
-
-}
-
-.hovericon:hover {
-  -webkit-transform: rotateY(30deg);
-          transform: rotateY(30deg);
-}
-
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4411,13 +4400,13 @@ color: #002352;
 }
 
 @keyframes lmanime {
-  0%   {left:0px; top:0px;}
+  0%   {left:0px; top:30px;}
   100% {left:0px; top:60px;}
 }
 
 @keyframes lmanimer {
   0%   {left:0px; top:60px;}
-  100% {left:0px; top:0px;}
+  100% {left:0px; top:15px;}
 }
 
 .selected {
