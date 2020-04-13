@@ -4398,7 +4398,7 @@ color: #002352;
 .show {
 	display: block;
 	opacity: 1;
-    transition: opacity 750ms ease;
+    transition: opacity 500ms ease;
 	pointer-events: all;
 }
 
