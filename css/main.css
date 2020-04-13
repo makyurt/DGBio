@@ -4406,7 +4406,7 @@ color: #002352;
 
 @keyframes lmanimer {
   0%   {left:0px; top:60px;}
-  100% {left:0px; top:15px;}
+  100% {left:0px; top:30px;}
 }
 
 .selected {
