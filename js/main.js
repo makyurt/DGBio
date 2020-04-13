@@ -137,7 +137,7 @@
             nextArrow: '<a class="slide-arrowab next-arrowab"></a>',
             arrows: false,
             dots: true,
-            infinite: true,
+            infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
             pauseOnFocus: true,
@@ -157,7 +157,8 @@
                     settings: {
 						autoplay: true,
                         slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+						infinite: true,
                     }
                 },
                 {
@@ -165,7 +166,8 @@
                     settings: {
 						autoplay: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+						infinite: true,
                     }
                 }
             ]
@@ -176,7 +178,7 @@
             nextArrow: '<a class="slide-arrow next-arrow"></a>',
             arrows: true,
             dots: true,
-            infinite: true,
+            infinite: false,
             slidesToShow: 2,
             slidesToScroll: 1,
             pauseOnFocus: true,
@@ -189,7 +191,8 @@
 						autoplay: true,
 						arrows: false,
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+						infinite: true,
                     }
                 }
             ]
