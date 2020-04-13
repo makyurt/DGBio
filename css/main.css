@@ -4356,6 +4356,7 @@ color: #002352;
 }
 
 .dropdown-content {
+  font-family: 'Open Sans', sans-serif!important;
   display: none;
   position: absolute;
   background-color: #ffffff;
