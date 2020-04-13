@@ -4357,7 +4357,7 @@ color: #002352;
 
 .dropdown-content {
   font-family: 'Open Sans', sans-serif!important;
-  display: none;
+  display: block;
   position: absolute;
   background-color: #ffffff;
   width: 400px;
@@ -4369,6 +4369,8 @@ color: #002352;
   left: 0;
   margin-left: -155px;
   padding: 5px 5px 5px 5px;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .col3 {
@@ -4393,7 +4395,12 @@ color: #002352;
 
 .dropdown a:hover {background-color: #d5d5d5;}
 
-.show {display: block;}
+.show {
+	display: block;
+	opacity: 1;
+    transition: opacity 750ms ease;
+	pointer-events: all;
+}
 
 .selected {
   color: #0066cc!important;
