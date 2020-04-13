@@ -3293,17 +3293,6 @@ html.no-csstransitions .home-content__main {
   font-size: 4.8rem;
 }
 
-.hovericon {
--webkit-transition: -webkit-transform .4s ease-in-out;
-        transition:         transform .4s ease-in-out;
-
-}
-
-.hovericon:hover {
-  -webkit-transform: rotateY(30deg);
-          transform: rotateY(30deg);
-}
-
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4369,8 +4358,6 @@ color: #002352;
   left: 0;
   margin-left: -155px;
   padding: 5px 5px 5px 5px;
-  pointer-events: none;
-  opacity: 0;
 }
 
 .col3 {
@@ -4396,10 +4383,30 @@ color: #002352;
 .dropdown a:hover {background-color: #d5d5d5;}
 
 .show {
-	display: block;
-	opacity: 1;
+	opacity: 1!important;
     transition: opacity 500ms ease;
-	pointer-events: all;
+	pointer-events: all!important;
+	animation-name: lmanime!important;
+    animation-duration: 500ms;
+}
+
+.hide {
+	opacity: 0;
+    transition: opacity 500ms ease;
+	pointer-events: none;
+	animation-name: lmanimer;
+    animation-duration: 500ms;
+
+}
+
+@keyframes lmanime {
+  0%   {left:0px; top:30px;}
+  100% {left:0px; top:60px;}
+}
+
+@keyframes lmanimer {
+  0%   {left:0px; top:60px;}
+  100% {left:0px; top:15px;}
 }
 
 .selected {
