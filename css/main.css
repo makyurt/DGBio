@@ -4363,13 +4363,11 @@ color: #002352;
 .col3 {
   column-count: 3;
   text-transform: capitalize;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 
 .ttc {
-  text-align: center;
   text-transform: none;
-  font-size: 1.3rem;
 }
 
 .ttc a {
