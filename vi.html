@@ -134,74 +134,10 @@
                     <li><a class="smoothscroll" href="#community" title="Community">Cộng đồng</a></li>
 					
 					<div class="dropdown" id="langmenu">
-                       <button onclick="lmenu()" class="dropbtn far fa-language"></button>
-                       <div id="lddown" class="dropdown-content hide">
-						 <div class="col3">
-                          <a href="index.html?lang=en">English</a>
-						  <a href="af.html">Afrikaans</a>
-			              <a href="cs.html">Čeština</a>
-						  <a href="de.html">Deutsch</a>
-						  <a href="es.html">Español</a>
-			              <a href="fr.html">Français</a>
-						  <a href="hr.html">Hrvatski</a>
-						  <a href="id.html">Indonesia</a>
-						  <a href="it.html">Italiano</a>
-						  <a href="sw.html">Kiswahili</a>
-						  <a href="hu.html">Magyar</a>
-						  <a href="nl.html">Nederlands</a>
-						  <a href="fil.html">Pilipino</a>
-						  <a href="pl.html">Polski</a>
-						  <a href="ro.html">Română</a>
-						  <a href="sq.html">Shqip</a>
-						  <a href="fi.html">Suomi</a>
-						  <a class="selected" href="vi.html">Tiếng Việt</a>
-						  <a href="tr.html">Türkçe</a>
-						  <a href="ru.html">Русский</a>
-						  <a href="ja.html">日本語</a>
-						  <a href="ko.html">한국어</a>
-						  <a href="zh.html">简体中文</a>
-						  <a href="ar.html">العربية</a>
-						  <a href="fa.html">فارسی</a>
-						 </div>
-						 <div class="ttc">
-						  <a href="https://github.com/DigiByte-Core/DGBio" target="_blank">Contribute to the existing translations.</a>
-						 </div>
-						 <div class="ttc">
-						  <a href="https://poeditor.com/join/project/lpb4bUrLS1" target="_blank">Translate the website into your language.</a>
-						 </div>
-                       </div>
+                       <div includeHTML="langmenudesktop.html"></div>
                     </div>
 					
-					<select id="langmenumobile" onchange="if (this.value) window.location.href=this.value">
-						<option value="index.html?lang=en">English</option>
-						<option value="af.html">Afrikaans</option>
-						<option value="cs.html">Čeština</option>
-						<option value="de.html">Deutsch</option>
-						<option value="es.html">Español</option>
-						<option value="fr.html">Français</option>
-						<option value="hr.html">Hrvatski</option>
-						<option value="id.html">Indonesia</option>
-						<option value="it.html">Italiano</option>
-						<option value="sw.html">Kiswahili</option>
-						<option value="hu.html">Magyar</option>
-						<option value="nl.html">Nederlands</option>
-						<option value="fil.html">Pilipino</option>
-						<option value="pl.html">Polski</option>
-						<option value="ro.html">Română</option>
-						<option value="sq.html">Shqip</option>
-						<option value="fi.html">Suomi</option>
-						<option value="vi.html" selected>Tiếng Việt</option>
-						<option value="tr.html">Türkçe</option>
-						<option value="ru.html">Русский</option>
-						<option value="ja.html">日本語</option>
-						<option value="ko.html">한국어</option>
-						<option value="zh.html">简体中文</option>
-						<option value="ar.html">العربية</option>
-						<option value="fa.html">فارسی</option>
-						<option value="https://github.com/DigiByte-Core/DGBio">Edit translations</option>
-						<option value="https://poeditor.com/join/project/lpb4bUrLS1">Add your language</option>
-					</select>
-					
+					<div includeHTML="langmenumobile.html"></div>
                 </ul>
     
                 <div class="header-cta">
@@ -2019,6 +1955,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>includeHTML();</script>
 	
 	<!-- Cookie info message
     ================================================== -->
