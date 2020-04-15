@@ -2664,6 +2664,12 @@ display:none
 .ss-copyright span {
 font-size:16px
 }
+	
+.home-scroll__icon {
+height:5.2rem;
+width:5.2rem;
+background-size:8px 12px
+}
 
 .go-top a {
 height:5.2rem;
