@@ -2707,6 +2707,11 @@ padding-bottom:10px;
 display:inline-block
 }
 
+.telegramiconlast {
+font-size:1.9rem;
+display:inline-block
+}
+
 .jared {
 margin-top:-15px
 }
@@ -2777,6 +2782,10 @@ max-width:240px
 
 .telfooter15 {
 padding-right:15px;
+display:inline-block
+}
+
+.iblock {
 display:inline-block
 }
 
