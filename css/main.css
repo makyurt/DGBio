@@ -423,7 +423,9 @@ font-size:5.5rem;
 line-height:1.236;
 letter-spacing:-.03rem;
 margin-top:0;
-margin-bottom:2.8rem
+margin-bottom:2.8rem;
+max-width:770px;
+margin-left:auto;margin-right:auto;text-align:center
 }
 
 .display-2 {
@@ -444,7 +446,7 @@ margin-bottom:2rem
 }
 
 .section-header {
-max-width:800px
+max-width:880px;
 }
 
 .section-header.has-bottom-sep {
