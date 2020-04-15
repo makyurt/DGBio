@@ -2757,7 +2757,10 @@ color:#002352
 }
 
 .footerlogo {
-max-width:360px
+max-width:360px;
+position: relative;
+padding-bottom: 2.5em;
+margin-top: -0.75em;
 }
 
 @media only screen and (max-width:800px) {
@@ -2902,4 +2905,10 @@ transform: scale(1.25);
 .disabled {
 color: #666666!important;
 cursor: not-allowed!important;
+}
+
+.ticker {
+max-width: 770px;
+margin: 0 auto;
+padding: 0px 35px;
 }
