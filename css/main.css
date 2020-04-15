@@ -2093,6 +2093,9 @@ text-align:center
 width:100%;
 clear:both
 }
+.item-plan__features {
+text-align:left
+}
 }
 
 @media only screen and (max-width:600px) {
