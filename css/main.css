@@ -2887,3 +2887,16 @@ font-weight:700!important
 .pt2 {
 padding-top:2rem
 }
+
+.zoom {
+transition: transform .2s;
+}
+
+.zoom:hover {
+transform: scale(1.25);
+}
+
+.disabled {
+color: #666666!important;
+cursor: not-allowed!important;
+}
