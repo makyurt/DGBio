@@ -1,6 +1,5 @@
 /* ===================================================================
  * Main JS
- *
  * ------------------------------------------------------------------- */
 
 (function($) {
@@ -9,13 +8,12 @@
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+
     },
 
     $WIN = $(window);
 
     // Add the User Agent to the <html>
-    // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
@@ -33,7 +31,7 @@
 
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
-                // will fade out the whole DIV that covers the website.
+            // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
             }); 
             
@@ -118,17 +116,13 @@
 
                 navigation_links.parent().removeClass("current");
                 active_link.parent().addClass("current");
-
             },
-
             offset: '25%'
-
         });
-        
     };
 
 
-   /* slick slider
+   /* Slick slider
     * ------------------------------------------------------ */
     var ssSlickSlider = function() {
         
@@ -215,25 +209,9 @@
                 'scrollTop': $target.offset().top
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 
-                // check if menu is open
-                // if ($('body').hasClass('menu-is-open')) {
-                //     $('.header-menu-toggle').trigger('click');
-                // }
-
                 updateUrl: false;
             });
         });
-
-    };
-
-
-   /* Alert Boxes
-    * ------------------------------------------------------ */
-    var ssAlertBoxes = function() {
-
-        $('.alert-box').on('click', '.alert-box__close', function() {
-            $(this).parent().fadeOut(500);
-        }); 
 
     };
 
@@ -261,7 +239,6 @@
     var pxShow      = 500,
         goTopButton = $(".go-top");
 
-        // Show or hide the button
         if ($(window).scrollTop() >= pxShow) goTopButton.addClass('link-is-visible');
 
         $(window).on('scroll', function() {
@@ -271,38 +248,6 @@
                 goTopButton.removeClass('link-is-visible')
             }
         });
-    };
-
-
-   /* AjaxChimp
-    * ------------------------------------------------------ */
-    var ssAjaxChimp = function() {
-        
-        $('#mc-form').ajaxChimp({
-            language: 'es',
-            url: cfg.mailChimpURL
-        });
-
-        // Mailchimp translation
-        //
-        //  Defaults:
-        //	 'submit': 'Submitting...',
-        //  0: 'We have sent you a confirmation email',
-        //  1: 'Please enter a value',
-        //  2: 'An email address must contain a single @',
-        //  3: 'The domain portion of the email address is invalid (the portion after the @: )',
-        //  4: 'The username portion of the email address is invalid (the portion before the @: )',
-        //  5: 'This email address looks fake or invalid. Please enter a real email address'
-
-        $.ajaxChimp.translations.es = {
-            'submit': 'Submitting...',
-            0: '<i class="fas fa-check"></i> We have sent you a confirmation email',
-            1: '<i class="fas fa-exclamation-triangle"></i> You must enter a valid e-mail address.',
-            2: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
-            3: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
-            4: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
-            5: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.'
-        }
     };
 
 
@@ -316,10 +261,8 @@
         ssWaypoints();
         ssSlickSlider();
         ssSmoothScroll();
-        ssAlertBoxes();
         ssAOS();
         ssBackToTop();
-        ssAjaxChimp();
 
     })();
 
@@ -348,27 +291,22 @@ window.onclick = function(event) {
 /* include html */
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
     file = elmnt.getAttribute("includeHTML");
     if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
           if (this.status == 200) {elmnt.innerHTML = this.responseText;}
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
           elmnt.removeAttribute("includeHTML");
           includeHTML();
         }
       }      
       xhttp.open("GET", file, true);
       xhttp.send();
-      /*exit the function:*/
       return;
     }
   }
