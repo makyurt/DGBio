@@ -22,13 +22,18 @@
 	<script>
 	var langvalue = window.location.search.substring(1);
     var browserlang = navigator.language || navigator.userLanguage;
-	var langcode = browserlang.substr(0,2);
+	var langcode3 = browserlang.substr(0,3);
+	var langcode2 = browserlang.substr(0,2);
 		
 		if (langvalue == "lang=en") null
 		
-		else if (['af', 'cs', 'da', 'de', 'es', 'fr', 'hr', 'id', 'it', 'sw', 'hu', 'nl', 'tl', 'pl', 'pt', 'ro', 'sq', 'fi', 'vi', 'tr', 'ru', 'th', 'ja', 'ko', 'zh', 'ar', 'fa'].indexOf(langcode) >= 0)
+		else if (langcode3 == "fil")
 			
-			window.location.replace(langcode+'.html'+target)
+			window.location.replace('fil.html'+target)
+		
+		else if (['af', 'cs', 'da', 'de', 'es', 'fr', 'hr', 'id', 'it', 'sw', 'hu', 'nl', 'pl', 'pt', 'ro', 'sq', 'fi', 'vi', 'tr', 'ru', 'th', 'ja', 'ko', 'zh', 'ar', 'fa'].indexOf(langcode2) >= 0)
+			
+			window.location.replace(langcode2+'.html'+target)
 		
 		else null
 	</script>
