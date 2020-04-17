@@ -209,7 +209,7 @@
                 'scrollTop': $target.offset().top
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 
-                updateUrl: false;
+
             });
         });
 
