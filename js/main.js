@@ -212,6 +212,21 @@
 
             });
         });
+		
+		$('.smoothscrollup').on('click', function (e) {
+            var target = this.hash,
+                $target = $(target);
+            
+                e.preventDefault();
+                e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top -100
+            }, cfg.scrollDuration, 'swing').promise().done(function () {
+
+
+            });
+        });
 
     };
 
@@ -222,10 +237,10 @@
         
         AOS.init( {
             offset: 200,
-            duration: 450,
+            duration: 600,
             easing: 'ease-in-sine',
-            delay: 250,
-            once: true,
+            delay: 300,
+            once: false,
             disable: 'mobile'
         });
 
