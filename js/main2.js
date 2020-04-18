@@ -227,6 +227,36 @@
 
             });
         });
+		
+		$('.ssbc').on('click', function (e) {
+            var target = this.hash,
+                $target = $(target);
+            
+                e.preventDefault();
+                e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top +255
+            }, cfg.scrollDuration, 'swing').promise().done(function () {
+
+
+            });
+        });
+		
+		$('.ssbcm').on('click', function (e) {
+            var target = this.hash,
+                $target = $(target);
+            
+                e.preventDefault();
+                e.stopPropagation();
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top +435
+            }, cfg.scrollDuration, 'swing').promise().done(function () {
+
+
+            });
+        });
 
     };
 
@@ -239,9 +269,8 @@
             offset: 200,
             duration: 500,
             easing: 'ease-in-sine',
-            delay: 250,
-            once: true,
-            disable: 'mobile'
+            delay: 100,
+            once: false,
         });
 
     };
