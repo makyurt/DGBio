@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html class="no-js" lang="nl">
+<head>
+	
+	<!--- Hash value catcher
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+	history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target; 
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
+	<!--- Google analytics
+    ================================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
+    </script>
+	
+	<!-- OneSignal platform support
+    ================================================== -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
+        });
+      var notificationPromptDelay = 30000;
+      var navigationStart = window.performance.timing.navigationStart;
+      var timeNow = Date.now();
+        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
+        });
+      function promptAndSubscribeUser() {
+        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+          if (!isEnabled) {
+            window.OneSignal.showSlidedownPrompt();
+           }
+         });
+        }
+     </script>
+
+    <!--- Basic page needs
+    ================================================== -->
+    <title>DigiByte Blockchain | DGB Munt | DigiAssets | Digi-ID</title>
+    <meta charset="utf-8">
+    <meta name="description" content="DigiByte is een open-source en zeer gedecentraliseerde wereldwijde blockchain die DGB Coin, DigiAssets, Digi-ID en meer beheert.">
+	<meta name="keywords" content="DigiByte, DGB, Blockchain, Gedecentraliseerd, Munt, Asset, Digitaal, Crypto, Valuta, DigiAssets, Digi-ID, Cybersecurity, Authenticatie, Slim contract, dApp, Betalingen, Portemonnee, Gemeenschap">
+
+    <!-- Mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-itunes-app" content="app-id=1378061425">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main5.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
+    <link rel="shortcut icon" href="../favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="DigiByte">
+    <meta name="application-name" content="DigiByte">
+    <meta name="msapplication-TileColor" content="#002352">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+    <meta name="theme-color" content="#002352">
+	
+	<!-- Twitter preview
+    ================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DigiByte Blockchain | DGB Munt | DigiAssets | Digi-ID" />
+    <meta name="twitter:description" content="DigiByte is een open-source en zeer gedecentraliseerde wereldwijde blockchain die DGB Coin, DigiAssets, Digi-ID en meer beheert." />
+    <meta name="twitter:image" content="https://digibyte.io/favicons/twitter.png" />
+	
+	<!-- Facebook preview
+    ================================================== -->
+	<meta property="og:image" content="https://digibyte.io/favicons/og-image.jpg">
+    <meta property="og:image:width" content="955">
+    <meta property="og:image:height" content="500">
+    <meta property="og:description" content="DigiByte is een open-source en zeer gedecentraliseerde wereldwijde blockchain die DGB Coin, DigiAssets, Digi-ID en meer beheert.">
+    <meta property="og:title" content="DigiByte Blockchain | DGB Munt | DigiAssets | Digi-ID">
+    <meta property="og:url" content="https://digibyte.io/">
+
+</head>
+
+<body id="top">
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+        </div>
+    </div> 
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo smoothscroll" href="#top"><img src="../images/logo.svg" loading="eager" alt="Home">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li id="dbc"><a class="ssbc" href="#blockchain" title="Blockchain">Blockchain</a></li>
+					<li id="mbc"><a class="ssbcm" href="#blockchain" title="Blockchain">Blockchain</a></li>
+					<li><a class="smoothscroll" href="#currency" title="Currency">Valuta</a></li>
+                    <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DigiAssets</a></li>
+                    <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
+                    <li><a class="smoothscroll" href="#community" title="Community">Gemeenschap</a></li>
+					
+					<div class="dropdown" id="langmenu">
+                       <div includeHTML="../langmenu/desktop.html"></div>
+                    </div>
+					
+					<div includeHTML="../langmenu/mobile.html"></div>
+                </ul>
+    
+                <div class="header-cta">
+                    <a href="#downloads" class="btn btn--primary header-cta__btn smoothscroll">Downloads</a>
+                </div>
+            </nav>
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header>
+
+
+    <!-- Home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    Veiliger, Sneller,<br/>
+                    Vooruitstrevend.
+                    </h1>
+    
+                    <h3>
+                    DigiByte is meer dan een snellere digitale valuta. Het is een innovatieve blockchain die gebruikt kan worden voor digitale assets, slimme contracten, decentrale applicaties en veilige authenticatie.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#about" class="btn btn--primary home-content__btn smoothscroll">
+                            Kom meer te weten
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-content__right">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
+                </div>
+
+            </div>
+
+            <ul class="home-content__social">
+                <li><a href="https://digibytefoundation.io" target="_blank">Stichting</a></li>
+				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
+				<li><a href="https://www.dgbwiki.com" target="_blank">Wiki</a></li>
+                <li><a href="https://t.me/DGBSupport" target="_blank">Ondersteuning</a></li>
+		    	<li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Contact</a></li>
+                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Doneer</a></li>  
+            </ul>
+
+        </div>
+
+        <a href="#footer" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Prijs</span>
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section>
+
+
+    <!-- About
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+		<a href="#footer" class="home-scroll2 smoothscroll">
+            <span class="home-scroll__text">Prijs</span>
+            <span class="home-scroll__icon"></span>
+        </a>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Wat maakt DigiByte sterker dan anderen?
+                </h1>
+                <p class="lead">
+                    DigiByte is een snelgroeiende open-source blockchain die eind 2013 is gemaakt en begin 2014 is uitgebracht. Na 6 jaar vooruitstrevende ontwikkeling is DigiByte één van de veiligste, snelste, langste en meest gedecentraliseerde <a href="https://wikipedia.org/wiki/Unspent_transaction_output" target="_blank">UTXO</a> blockchain geworden.
+                </p>
+            </div>
+        </div>
+
+        <div class="row wide about-desc" data-aos="fade">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Echt gedecentraliseerd.</h3>
+
+                    <p>
+                    DigiByte is nooit gefinancierd via een <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> of een aanzienlijk aantal <a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">vooringestelde munten</a>. Er is geen CEO of een bedrijf dat de DigiByte blockchain beheert. Het is op vrijwilligers gebaseerd en wordt wereldwijd door de gemeenschap aangestuurd.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Veiliger.</h3>
+
+                    <p>
+					DigiByte gebruikt 5 cryptografische algoritmen en <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">realtime moeilijkheidsaanpassing</a>  om kwaadaardige centralisatie van mining en schommelingen in het hashvermogen te voorkomen. Één daarvan is Odocrypt dat zichzelf elke 10 dagen verandert voor ASIC resistentie.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Veel sneller.</h3>
+
+                    <p>
+                    DigiByte blokken komen elke 15 seconden voor, wat 40x sneller is dan Bitcoin en 10x sneller is dan Litecoin. Vroege <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> implementatie en blockchain sterkte maakt het mogelijk om 1066 on-chain transacties per seconde te verwerken met verwaarloosbare kosten.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Vooruitstrevend.</h3>
+
+                    <p>
+                    In de afgelopen 6 jaar heeft DigiByte zich herhaaldelijk onderscheiden met meerdere blockchain primeurs, zoals <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a> bewaking, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> mining, <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank">SegWit</a> implementatie, <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a> algoritme, <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> privacy protocol, <a href="#digiassets" class="smoothscroll">DigiAssets</a> en <a href="#digi-id" class="smoothscroll">Digi-ID</a>.
+                    </p>
+                </div> 
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- What is DigiByte Video
+    ================================================== -->
+    <section class="s-about-how target-section" id="blockchain">
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="zoom-in">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://www.youtube.com/embed/7Dm-FO8u7x8?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                        <span class="item-stats__num">
+                            Wat is DigiByte?
+                        </span>
+                        <span class="item-stats__title">
+                            Bekijk de introductie video
+                        </span>
+                    </div>
+                </div>
+		   
+           </div>
+        </div>
+	    
+    <!-- Blockchain
+    ================================================== -->
+	    
+        <div class="row process-wrap">
+			
+		<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Dit is hoe de DigiByte blockchain werkt.
+                </h1>
+                <p class="lead">
+                    De drie lagen zijn de meest innovatieve onderdelen van de DigiByte blockchain die de netwerkinfrastructuur, beveiliging en communicatie bieden om met de allerhoogste snelheid te functioneren.
+                </p>
+            </div>
+        </div>
+
+        <div class="process" data-aos="fade">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Toepassingen / DigiAssets.</h3>
+                        <p>De bovenste laag is als een app store met duidelijk gebruik in de echte wereld. Alle soorten digitale assets kunnen worden gemaakt met het <a href="#digiassets" class="smoothscroll">DigiAssets</a> protocol bovenop de DigiByte blockchain. Decentrale applicaties (dApps) kunnen bovenop de DigiByte blockchain worden gebouwd. Ook slimme contracten die gebruikmaken van de sterkte en veiligheid van de DigiByte blockchain kunnen eenvoudig worden gecodeerd.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Digitale asset / Openbaar grootboek.</h3>
+                        <p>De middelste laag zorgt voor beveiliging en administratie. Een <strong>Digi</strong>tale <strong>Byte</strong> van gegevens, een weergave van grotere gegevens of een waarde-eenheid die niet nagemaakt, gedupliceerd of gehackt kan worden. Een onveranderlijk grootboek waarin alle transacties van DigiBytes worden vastgelegd. DigiByte gebruikt <a href="https://www.dgbwiki.com/index.php?title=DigiByte_Mining_Breakdown" target="_blank">vijf proof-of-work-algoritmen</a> voor beveiliging. Nieuwe DigiBytes komen alleen voort vanuit mining.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Kernprotocol / Wereldwijd netwerk.</h3>
+                        <p>De onderste laag biedt communicatie- en bedieningsprocedures. Een zeer laag niveau waarop knooppunten op het wereldwijde DigiByte netwerk communiceren. Duizenden mensen gebruiken DigiByte software over de hele wereld. Elke server, computer, tablet of mobiele telefoon die op het DigiByte netwerk is aangesloten, wordt een knooppunt dat transacties doorgeeft. <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Begin op de optimale manier bij te dragen aan de DigiByte blockchain</a>.
+			</p>
+		</div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Open source / Zonder toestemming.</h3>
+                        <p>Net als <a href="https://github.com/DigiByte-Core/DGBio" target="_blank">deze website</a> is de DigiByte blockchain volledig open source en gratis te gebruiken, vrijgegeven onder de <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT licentie</a>, die je de mogelijkheid geeft om de software uit te voeren en aan te passen. Transparantie maakt onafhankelijke verificatie van binaire bestanden en hun bijbehorende broncode mogelijk.<br />
+						<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte Protocol op GitHub</a>.
+						<br />
+						<a href="https://github.com/DigiByte-Core" target="_blank">DigiByte Core Ontwikkeling op GitHub</a>.
+                        </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">De geschiedenis van DigiByte.</h2>
+					<p class="lead">
+                    Ontdek de belangrijkste mijlpalen in de ontwikkeling van de DigiByte blockchain.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
+                        
+                        <p>Fulltime ontwikkeling is gestart om de toekomst van de DigiByte blockchain op te bouwen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Oktober, 2013</span>
+				<a href="https://twitter.com/jaredctate/status/1190673943876841475" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
+                        
+                        <p>Genesis blok is met succes gewonnen en de DigiByte blockchain is officieel gelanceerd.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10 Januari 2014</span>
+							<a href="https://github.com/digibyte/digibyte/blob/master/src/chainparams.cpp#L40" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
+                        
+                        <p>DigiShield geactiveerd om realtime moeilijkheidsaanpassing tegen hashfluctuaties te gebruiken.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28 Februari 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
+                        
+                        <p>MultiAlgo geactiveerd om 5 verschillende algoritmen te gebruiken om mining centralisatie te voorkomen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">1 September 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
+                        
+                        <p>MultiShield geactiveerd om DigiShield bescherming uit te breiden over alle 5 de mining algoritmen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10 December 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiShield" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
+                        
+                        <p>DigiSpeed geactiveerd om de bloktijd te verminderen tot 15 seconden voor snellere transacties.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">4 December 2015</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
+                        
+                        <p>SegWit geactiveerd vóór Bitcoin en Litecoin voor het effectieve gebruik van de blokgrootte.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28 April 2017</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID gelanceerd om gebruikers in staat te stellen om moeiteloos in te loggen op websites en meer.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Mei, 2018</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Digi-ID" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets gelanceerd om de gedecentraliseerde uitgifte van assets en meer mogelijk te maken.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">April, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiAssets" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
+                        
+                        <p>Dandelion ++ protocol geïmplementeerd dat IP en fysieke locatie tracking voorkomt. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">3 Mei 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
+                        
+                        <p>Odocrypt geactiveerd dat zichzelf elke 10 dagen verandert voor superieure ASIC resistentie. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">21 Juli 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank" class="testimonials__link">Meer informatie</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+
+    <!-- Currency
+    ================================================== -->
+    <section id="currency" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Een digitale valuta<br/>waar je absoluut van zult houden.
+                </h1>
+                <p class="lead">
+                    DigiByte (DGB) is een zeer schaalbare peer-naar-peer digitale valuta die toonaangevende transactiesnelheden mogelijk maakt tegen verwaarloosbare kosten. DigiByte is de beste manier om te betalen.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/UUhVEDlXvkQ?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Leer door te kijken</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-phone-laptop"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Makkelijk te gebruiken.</h3>
+                    <p>Aan de slag gaan met DigiByte is nog eenvoudiger dan het verzenden van een SMS. Je kan DigiBytes verzenden en ontvangen met de apparaten die je al vertrouwd en lief hebt. Het enige dat je nodig hebt, is een <a class="smoothscroll" href="#downloads">door DigiByte ondersteunde portemonnee</a> te installeren en vervolgens op scannen te klikken, de QR-code scannen en DigiByte verzenden. Zo eenvoudig als 1..2..3.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Geen ICO.</h3>
+                    <p>DigiByte is nooit gefinancierd via een <a href="https://en.wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> of een aanzienlijk aantal vooringestelde munten (<a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">0% resterend</a>). Er is geen CEO of een bedrijf dat de DigiByte blockchain beheert. <a class="smoothscrollup" href="#jared">De oprichter</a>, <a class="smoothscrollup" href="#developers">ontwikkelaars</a> en de <a class="smoothscroll" href="#community">gemeenschap</a> zijn onbetaalde vrijwilligers die het failliete risico elimineren.
+                    </p>
+                </div>
+            </div> <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-tachometer-alt-fastest"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Veel sneller.</h3>
+                    <p>DigiByte transacties worden bevestigd in ca. 15 seconden, wat 40 keer sneller is dan Bitcoin en 10 keer sneller is dan Litecoin. <a href="https://en.wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> maakt tot 1066 on-chain transacties per seconde mogelijk en dankzij verwaarloosbare kosten is DigiByte de ideale valuta voor dagelijkse betalingen.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>    
+                <div class="item-feature__text">
+                    <h3 class="item-title">Altijd veilig.</h3>
+                    <p>DigiByte is gebouwd op de onkraakbare technologie van de Bitcoin blockchain en heeft er verschillende geavanceerde verbeteringen op geïmplementeerd, zoals <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a> bewaking, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> mining en de <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a> algoritme. Ook <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> privacy protocol helpt je te beschermen door je IP en locatie te verbergen. <a href="https://www.dgbwiki.com/index.php?title=What_makes_DigiByte_More_Secure%3F" target="_blank">Meer informatie</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-digging"></i>
+                </div> 
+                <div class="item-feature__text">
+                    <h3 class="item-title">Mineable.</h3>
+                    <p>DigiByte is een 100% <a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank">Proof of Work</a> (PoW) blockchain die kan worden gemined met vijf algoritmen genaamd Sha256, Scrypt, Skein, Qubit en Odocrypt. <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> mining draagt bij aan decentralisatie, beveiliging van het netwerk en geeft je de vrijheid om verschillende soorten hardware te gebruiken zoals een ASIC een FPGA of een GPU. <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">Meer informatie</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Beheersbare eenheden.</h3>
+                    <p>Vergeleken met 21 miljoen Bitcoin, zijn 21 miljard DigiByte (1000:1 verhouding tot BTC) ontworpen om klaar te zijn voor massale acceptatie. DigiByte blokbeloningen worden elke maand met 1% verlaagd in plaats van elke 4 jaar. Alle 21 miljard DigiBytes worden tegen het jaar 2035 gemined. Na 2035 zullen de miners dan alleen van transactiekosten afhankelijk zijn. <a href="https://www.dgbwiki.com/index.php?title=Why_so_many_coins%3F_21Billion" target="_blank">Meer informatie</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Snelle keuze uit het DigiByte Ecosysteem.</h2>
+					<p class="lead">
+                    Alle wisselkantoren en diensten die DigiByte ondersteunen, zijn te vinden op de <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiByte Wiki</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
+                        
+                        <p>Bittrex biedt een bewezen en veilig platform voor haar klanten om toegang te krijgen tot de mogelijkheden van DigiByte handel.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bittrex</span>
+                            <a href="https://bittrex.com" target="_blank" class="testimonials__link">bittrex.com</a>
+                        </div>
+                    </div> 
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/vertbase.png" loading="lazy" alt="Vertbase" class="testimonials__avatar">
+                        
+                        <p>Met het eenvoudige en veilige proces van Vertbase kan je DigiByte kopen en verkopen met USD, GBP of Euro.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Vertbase</span>
+                            <a href="https://www.vertbase.com" target="_blank" class="testimonials__link">vertbase.com</a>
+                        </div>
+                    </div>
+				
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/litebit.png" loading="lazy" alt="LiteBit" class="testimonials__avatar">
+                        
+                        <p>LiteBit is een platform waar je DigiByte kunt kopen, verkopen en beheren in de EU.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">LiteBit</span>
+                            <a href="https://www.litebit.eu" target="_blank" class="testimonials__link">litebit.eu</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
+                        
+                        <p>Abra maakt het investeren in DigiByte eenvoudiger, veiliger en voor iedereen toegankelijk. Verkrijgbaar in 150 landen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">abra.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
+                        
+                        <p>ShapeShift is de leidende en directe wisselkantoor van digitale assets en ondersteunt tientallen valuta's, waaronder DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ShapeShift</span>
+                            <a href="https://shapeshift.io" target="_blank" class="testimonials__link">shapeshift.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel is een crypto naar crypto, portemonnee naar portemonnee, ruilbeursdienst die gemeenschapsprojecten ondersteunt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/spend.png" loading="lazy" alt="Spend App" class="testimonials__avatar">
+                        
+                        <p>Spend geeft je toegang tot een reeks bankproducten, zoals een digitale portemonnee met meerdere valuta's en een Spend Visa kaart.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">spend.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/coinpayments.png" loading="lazy" alt="CoinPayments" class="testimonials__avatar">
+                        
+                        <p>CoinPayments biedt koop nu knoppen, winkelwagentjes en meer om DigiByte op je website te accepteren.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">coinpayments.net</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibytepay.png" loading="lazy" alt="DigiBytePay" class="testimonials__avatar">
+                        
+                        <p>Accepteer persoonlijke en online DigiByte betalingen eenvoudig met de DigiCafe app en WooCommerce.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiBytePay</span>
+                            <a href="https://www.digibytepay.us" target="_blank" class="testimonials__link">digibytepay.us</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID biedt een unieke ervaring om authenticatie op websites te beveiligen met behulp van DigiByte technologie.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">OpenAntumID</span>
+                            <a href="https://www.openantumid.com" target="_blank" class="testimonials__link">openantumid.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/nownodes.png" loading="lazy" alt="NowNodes" class="testimonials__avatar">
+                        
+                        <p>NowNodes biedt een snelle en betrouwbare verbinding met populaire blockchains, waaronder DigiByte, met krachtige servers.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">NowNodes</span>
+                            <a href="https://nownodes.io" target="_blank" class="testimonials__link">nownodes.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Bezoek CryptoBantam en koop trendy kleding om bewustzijn en adoptie van DigiByte bij te dragen!</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com/vendor/dgbat/" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
+                        
+                        <p>Ontvang je eigen @dgb.community e-mailadres om de DigiByte Stichting en de DGBAT te ondersteunen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DGB.community</span>
+                            <a href="https://dgb.community" target="_blank" class="testimonials__link">dgb.community</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptoid.png" loading="lazy" alt="CryptoID Block Explorer" class="testimonials__avatar">
+                        
+                        <p>CryptoID blok verkenner biedt gedetailleerde statistieken van de DigiByte blockchain en specifieke transacties.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoID</span>
+                            <a href="https://chainz.cryptoid.info/dgb/" target="_blank" class="testimonials__link">chainz.cryptoid.info</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DigiAssets
+    ================================================== -->
+    <section id="digiassets" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Een vereenvoudigde manier<br/>om digitale assets te creëren.
+                </h1>
+                <p class="lead">
+                    DigiAssets is een veilige, schaalbare laag bovenop de DigiByte blockchain die de gedecentraliseerde uitgifte van assets, tokens, slimme contracten, digitale identiteit en meer mogelijk maakt.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/xDJllY5ehNw?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Leer door te kijken</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Onbeperkte mogelijkheden.</h3>
+                    <p>DigiAssets kan worden gebruikt om alles wat we in de fysieke wereld vinden veilig weer te geven. Van materiële assets zoals onroerend goed of auto's tot schaarse digitale kunstwerken. Ondertekende documenten zoals akten en medische rekeningen kunnen worden beschermd.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Zelfverzekerd groeien.</h3>
+                    <p>DigiAssets als ecosysteem en platform heeft al geïnteresseerde partijen die plannen maken of momenteel platforms bouwen in onroerend goed, financiën, geldovermakingen, identiteit, verkooppunten, racen, handel, gezondheidszorg, leveringsketen, overheid en meer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-badge-check"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Solide technologie.</h3>
+                    <p>DigiAssets maakt gebruik van unieke aspecten van een echt gedecentraliseerde blockchain die alleen te vinden is binnen een blockchain zonder rechten zoals DigiByte. Hierdoor is DigiAssets veiliger, schaalbaarder en gedecentraliseerd dan elk ander platform op de markt.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Ga aan de slag met DigiAssets.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Leer het protocol.</h3>
+                        <p>Ontdek de open-source DigiAssets protocol specificaties voor het uitgeven en afhandelen van digitale assets bovenop de DigiByte Blockchain. <a href="https://github.com/DigiByte-Core/DigiAssets-Protocol-Specifications/wiki" target="_blank">DigiAssets Protocol op GitHub</a>.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Geef een asset uit.</h3>
+                        <p>Geen ontwikkelaar? Absoluut geen probleem! Iedereen kan eenvoudig een DigiAsset uitgeven door een van de beschikbare gereedschappen te gebruiken zonder technische kennis over het protocol. <a class="smoothscrollup" href="#digiassetservices">Door DigiAssets ondersteunde diensten</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Sla op / Handel.</h3>
+                        <p>Vraagt je je af hoe je DigiAssets gebruikt? Gebruik de portemonnees <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> en <a class="smoothscrollup" href="#dgbgo">DigiByte Go</a> om je assets te verzenden, accepteren en op te slaan of verken de <a class="smoothscrollup" href="#digiassetservices">DigiAssets ondersteunde diensten</a> om DigiAssets te kopen, verkopen en ruilen.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Meer hulp nodig?</h3>
+                        <p>Hebt je meer hulp nodig over DigiAssets? Voel je vrij om lid te worden van de DigiByte Ontwikkelaars groep op Telegram om je vragen te stellen of je ideeën te delen. <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers op Telegram</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+	    </div>
+		
+		<div class="testimonials-wrap" data-aos="zoom-in" id="digiassetservices">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Bekijk DigiAssets in actie.</h2>
+					<p class="lead">
+                    Ontdek DigiAssets ondersteunde diensten om DigiAssets te ervaren.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
+                        
+                        <p>Met DigiAssets Tools kan je snel en gemakkelijk DigiAssets maken, zelfs voor niet-technische gebruikers.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiAssets Tools</span>
+                            <a href="https://createdigiassets.com" target="_blank" class="testimonials__link">createdigiassets.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
+                        
+                        <p>Digi-Broker is een site waar gebruikers van over de hele wereld hun digitale assets kunnen delen, kopen en verkopen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-Broker</span>
+                            <a href="https://digi-broker.com/index.php/tools/" target="_blank" class="testimonials__link">digi-broker.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
+                        
+                        <p>digiassetX is een nieuwe DigiByte DigiAsset wisselkantoor en DigiAsset maker.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Komt binnenkort</span>
+                            <a href="https://digiassetx.com/" target="_blank" class="testimonials__link">digiassetx.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+    </section>
+	
+	
+	<!-- Digi-ID
+    ================================================== -->
+    <section id="digi-id" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Authenticatie op zijn best.
+                </h1>
+                <p class="lead">
+                    Digi-ID is een beveiligingsprotocol dat is gebaseerd op DigiByte blockchain technologie waarmee gebruikers moeiteloos kunnen inloggen op websites, applicaties en zelfs op het internet of things.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/pLrQycud5GI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Leer door te kijken</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Gemakkelijke authenticatie.</h3>
+                    <p>Digi-ID elimineert de gebruikersnaam, het wachtwoord en de 2fa-vereisten voor authenticatie. Omdat Digi-ID gebruik maakt van cryptografie met openbare / persoonlijke sleutels, zijn er geen wachtwoorden of gebruikersnamen in gevaar. Deze methode beschermt niet alleen de consument, maar ook de diensten die de consument gebruikt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Vlekkeloze beveiliging.</h3>
+                    <p>Digi-ID slaat geen gegevens op over gebruikers op de blockchain. Dit versterkt de beveiliging verder en versterkt tegelijkertijd het vertrouwen van eindgebruikers dat hun gegevens niet worden gevolgd of in gevaar worden gebracht door nalatigheid van anderen. Er is geen extern storingspunt voor een hacker om je platform te exploiteren.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-smile-plus"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Simpel en gratis.</h3>
+                    <p>Digi-ID is helemaal gratis! Er zijn geen kosten, abonnementsdiensten of onderhoudskosten. Maar de kosten zijn de op één na beste eigenschap. Het belangrijkste kenmerk is dat Digi-ID, in overeenstemming met de beveiligingsprioritering van DigiByte, een veiligere, maar eenvoudigere methode is om in te loggen op websites, apps en meer.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Het werkt als volgt.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Generatie.</h3>
+                        <p>De website, applicatie of het product genereert een unieke Digi-ID QR-code en presenteert deze.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Scannen.</h3>
+                        <p>De gebruiker scant de QR-code via de <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> portemonnee of een <a class="smoothscroll" href="#digidapps">door Digi-ID ondersteunde app</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Authenticatie.</h3>
+                        <p>De gebruiker verifieert het verzoek door zijn pincode in te voeren of zijn vingerafdruk / gezicht te scannen.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Bevestiging.</h3>
+                        <p>Digi-ID stuurt het cryptografisch ondertekende verzoek terug en de gebruiker is succesvol ingelogd.
+                        </p> 
+                    </div>
+
+                </div>
+              </div>
+			
+          </div>
+		
+		  <div data-aos="fade">
+		
+		  <h1 class="align-center">Veelgestelde Vragen.</h1>
+		
+		  <div class="row features block-1-2 block-m-1-2">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Waar vind ik meer documentatie?</h3>
+                    <p>De beste plaats om te beginnen is <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>.  Als je meer wilt weten over de details en voordelen van Digi-ID, kan je de <a href="https://www.digi-id.io/faq" target="_blank">gebruikershandleiding</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">leveranciersgids</a> en <a href="https://www.digi-id.io/integration.html" target="_blank">integratiehandleiding</a> raadplegen. Als je op zoek bent naar de mediakit, gebruik dan de <a href="../docs/digiidintro.pdf" target="_blank">intro blad</a> en <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logo's</a>.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Waar zijn de integratiebibliotheken?</h3>
+                    <p>Aangezien Digi-ID open-source is, zijn er op GitHub meerdere codebronnen te vinden, zoals <a href="https://github.com/DigiByte-Core?q=digiid" target="_blank">DigiByte Core Ontwikkeling </a>, <a href="https://github.com/mctrivia?tab=repositories&q=digiid" target="_blank">Matthew Cornelisse</a> en <a href="https://github.com/evilmouse69/Digi-ID-for-WHMCS/" target="_blank">WHMCSSnow</a>. Als je meer hulp nodig hebt, word dan lid van <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Ontwikkelaars groep</a> op Telegram.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Kan ik Digi-ID integreren zonder codering?</h3>
+                    <p>Als je geen ontwikkelaar bent, wil je misschien integrale oplossingen gebruiken voor je website of product. <a href="https://www.openantumid.com/" target="_blank">OpenAntumID</a> biedt moeiteloze Digi-ID integratiediensten. Je kan ook de <a href="https://wordpress.org/plugins/digi-id-authentication/" target="_blank">WordPress plugin</a> gebruiken voor de WordPress platformen.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Zijn er andere Digi-ID auth apps?</h3>
+                    <p>Natuurlijk! Digi-ID is een snel groeiend platform. Meerdere stand-alone authenticator-apps en door Digi-ID ondersteunde portefeuilles zijn te vinden in het gedeelte <a class="smoothscroll" href="#digidapps">Downloads</a>. Je kan ook de gratis Digi-ID <a href="https://digibytewallets.com/digid/" target="_blank">toepassings widget</a> op de inlogpagina van je website plaatsen.
+                    </p>
+                </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Bekijk Digi-ID in actie.</h2>
+					<p class="lead">
+                    Ontdek enkele door Digi-ID ondersteunde diensten voor naadloze authenticatie.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel is een crypto naar crypto, portemonnee naar portemonnee, ruilbeursdienst die gemeenschapsprojecten ondersteunt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID biedt veilige en moeiteloze authenticatie diensten met behulp van DigiByte technologie.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AntumID</span>
+                            <a href="https://www.antumid.be/gateway/soaplogin" target="_blank" class="testimonials__link">antumid.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
+                        
+                        <p>AbsoluteJobs is een van de leidende bedrijven die arbeidsdiensten in België aanbieden.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AbsoluteJobs</span>
+                            <a href="https://www.absolutejobs.be" target="_blank" class="testimonials__link">absolutejobs.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Bezoek CryptoBantam en koop trendy kleding om bewustzijn en adoptie van DigiByte bij te dragen!</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
+                        
+                        <p>Hash Altcoin is een mining bedrijf dat FPGA apparaten produceert voor hoge stabiliteit van mining ervaring.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Hash Altcoin</span>
+                            <a href="https://www.hashaltcoin.com/en/" target="_blank" class="testimonials__link">hashaltcoin.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+	
+	
+	<!-- Community
+    ================================================== -->
+    <section id="community" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    De meest gepassioneerde<br/>gemeenschap ooit!
+                </h1>
+                <p class="lead">
+                    Tienduizenden vrijwilligers van over de hele wereld hebben jarenlang op talloze manieren bijgedragen aan DigiByte om het te maken tot wat het nu is. Het is een echte volksbeweging. Wij wensen je van harte welkom!
+                </p>
+            </div>
+		    <a class="btn btn--primary" href="https://www.youtube.com/embed/uGearn3BHvU?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Leer door te kijken</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature" id="foundation">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Stichting.</h3>
+                    <p>De DigiByte Stichting is een door vrijwilligers beheerde organisatie die op een non-profit manier opereert. Ze beschermen en promoten de ware principes van decentralisatie en stellen DigiByte en haar gemeenschap in staat om een duurzame gedecentraliseerde wereld te vestigen en te behouden.<br> <a href="https://digibytefoundation.io" target="_blank">Meer informatie</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="dgbat">
+                <div class="item-feature__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Bewustzijn Team.</h3>
+                    <p>DGBAT is een gemeenschap-gedreven hulp-initiatief. Ze worden geleid door een team, waarvan de leden op hun beurt teams beheren via sociale media, hulpverlening, onderwijs, schrijvers en ontwikkelaars. Ze willen DigiByte promoten door middel van voorlichting, hulpverlening en marketingcampagnes.<br> <a href="https://dgbat.org" target="_blank">Meer informatie</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="developers">
+                <div class="item-feature__icon">
+                    <i class="fas fa-code"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Ontwikkelaars.</h3>
+                    <p>Iedereen die aan DigiByte werkt, is een onbetaalde vrijwilliger. Begin vandaag nog met het bijdragen aan de ontwikkeling van DGB of bouw je eigen app bovenop de DigiByte blockchain.
+					<br/>	
+					<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte Protocol op GitHub</a>.
+					<br/>
+					<a href="https://github.com/DigiByte-Core" target="_blank">DigiByte Core Ontwikkeling op GitHub</a>.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="socialmedia">
+                <div class="item-feature__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+		    <div class="item-feature__text">
+                    <h3 class="item-title">Sociale media.</h3>
+                    <p>Volg DigiByte op alle primaire sociale mediaplatforms om op de hoogte te blijven van het laatste DigiByte nieuws en deel de berichten met je vrienden om ons te helpen om onze stemmen over de hele wereld te laten horen.
+                    </p>
+					<p class="item-feature__icon">
+					   <a class="rightpad25" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+					   <a class="rightpad25" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook zoom"></i></a>
+					   <a class="rightpad25" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
+					   <a class="rightpad25" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+					   <a class="rightpad25" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube zoom"></i></a>
+					   <a href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+                    </p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="telegram">
+                <div class="item-feature__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Telegram groepen.</h3>
+                    <p><a href="https://telegram.org" target="_blank">Telegram</a> is de meest populaire en eenvoudige manier om contact te leggen met de wereldwijde DigiByte gemeenschap. Word lid van de groepen waarin je geïnteresseerd bent of bekijk de lijst met <a href="https://t.me/OfficialDigiByteGroups" target="_blank">alle DigiByte groepen</a>.
+					</p>
+					<p>
+					<a class="telegramicon" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Meldingen</a>
+					<a class="telegramicon" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Discussie</a>
+					<a class="telegramicon" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Ondersteuning</a>
+					<a class="telegramicon" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Ontwikkelaars</a>
+					<a class="telegramicon" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Mining</a>
+					<a class="telegramicon" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Marketing</a>
+					<a class="telegramicon" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Speculatie</a>
+					<a class="telegramiconlast" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Vertalingen</a>
+					</p>
+                </div>
+            </div>
+		
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="wiki">
+                <div class="item-feature__icon">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">De DigiByte Wiki.</h3>
+                    <p>De <a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a> is een online encyclopedie die door de gemeenschap is gebouwd voor de gemeenschap. Het bevat nuttige en up-to-date gegevens zoals het <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank"> DigiByte Ecosystem</a> en "instructie" <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank">gidsen</a>. Iedereen kan een positieve bijdrage leveren aan de Wiki door een gratis gebruikersaccount aan te maken en informatie over de DigiByte Wiki toe te voegen of bij te werken.<br><strong>Waarschuwing</strong> <i class="fas fa-exclamation-circle"></i> Vermijd schaamteloze links naar zelfpromotie en verwijzingen.</p>
+					<p class="jared">
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Technical_Specifications" target="_blank"><i class="fab fa-wikipedia-w"></i> Technisch</a> 
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> Framework</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Accomplishments" target="_blank"><i class="fab fa-wikipedia-w"></i> Prestaties</a>
+					</p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="jared">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Maak kennis met de maker van DigiByte.</h3>
+                    <p><a href="https://www.youtube.com/embed/S8eMsq8qp7Y?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>Jared Tate</a> is de oprichter en maker van de DigiByte blockchain. Jared wijdde zich sinds oktober 2013 volledig aan de ontwikkeling van DigiByte. Hij is uitgenodigd door <a href="https://www.youtube.com/embed/Wl0RUau9roE?autoplay=1&iv_load_policy=3&rel=0" data-lity>MIT</a>, <a href="https://twitter.com/digibytecoin/status/982696268928618496" target="_blank">Harvard</a> en de <a href="https://twitter.com/jaredctate/status/1217178454229225473" target="_blank">US Capitol</a> om te spreken over blockchain technologie. Hij is ook de auteur van het boek <a href="https://blockchain2035.com" target="_blank">Blockchain 2035 The Digital DNA of Internet 3.0</a>, het eerste boek geschreven door een blockchain oprichter.
+                    </p>
+					<p class="jared">
+					<a class="telegramicon" href="https://twitter.com/jaredctate" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> 
+					<a class="telegramicon" href="https://www.linkedin.com/in/jaredctate" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=Original_author(s)" target="_blank"><i class="fab fa-wikipedia-w"></i> Biografie</a>
+					</p>
+                </div>
+            </div>
+			
+		</div>
+	    
+		    <div class="lrmargin25" data-aos="zoom-in">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Sociale Media Disclaimer</strong><br>De persoonlijke mening, overtuigingen en standpunten van Jared Tate, DigiByte Core Team, DigiByte Stichting & DigiByte Bewustzijn Team weerspiegelen niet noodzakelijk de persoonlijke mening, overtuigingen en standpunten van de gemeenschap.
+                </p>
+		</div>
+	
+	    </div>
+	    
+	</section>
+
+   <!-- Downloads
+    ================================================== -->
+    <section id="downloads" class="s-download target-section">
+	    
+	<!--- Downloads DigiByte Wallets
+    ================================================== -->
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Kies je app.
+                </h1>
+                <p class="lead">
+                    Selecteer een app om je DigiBytes & DigiAssets te verzenden, te accepteren en op te slaan of om veilig te verifiëren met behulp van Digi-ID.<br /><a href="https://github.com/digibyte/digibyte/releases/" target="_blank">Huidig DigiByte Core v7.17.2</a>
+                </p>
+            </div>
+        </div>
+		
+		<div data-aos="fade">
+			
+		<h1 class="downtitle align-center">Apps ontwikkeld door de DigiByte gemeenschap.</h1>
+		
+		<div class="row features block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" id="dgbcore">
+                <div class="item-plan__block"> 
+					
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Core</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Volledige validatie</li>
+			               <li><i class="fas fa-check blue"></i> Steun het netwerk</li>
+                           <li><i class="fas fa-check blue"></i> Hoge stabiliteit</li>
+                           <li><i class="fas fa-check blue"></i> SegWit ondersteuning</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-win64-setup.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-osx.dmg" target="_blank"><i class="fab fa-apple zoom"></i></a>
+					       <a href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz" target="_blank"><i class="fab fa-linux zoom"></i></a>
+			            </div>
+
+			            <div class="supportline align-center">
+					       <p class="item-plan__per">Beschikbaar voor Windows, macOS en Linux (alleen 64 Bit)</p>
+			            </div>
+						
+			    	    <div class="supportline align-center pt2">
+						<a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Ondersteuning</a> - <a href="https://www.dgbwiki.com/index.php?title=Running_a_full_node" target="_blank"><br><i class="fas fa-info-circle"></i> Draai een volledige node</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+           <div class="col-block item-plan" id="dgbmobile">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Mobile</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> SPV portemonnee</li>
+                           <li><i class="fas fa-check blue"></i> Digi-ID ondersteuning</li>
+                           <li><i class="fas fa-check blue"></i> DigiAssets ondersteuning (Android)</li>
+			               <li><i class="fas fa-check blue"></i> Meertalige ondersteuning</li>
+                        </ul>
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://apps.apple.com/app/digibyte/id1378061425" target="_blank"><i class="fab fa-app-store-ios zoom"></i></a>
+					       <a href="https://play.google.com/store/apps/details?id=io.digibyte" target="_blank"><i class="fab fa-google-play zoom"></i></a>
+			            </div>		
+
+			    		 <div class="supportline align-center">
+					       <p class="item-plan__per">Beschikbaar voor iOS en Android<br>
+					       <a href="https://testflight.apple.com/join/PfRnkwy9" target="_blank"><i class="fab fa-apple"></i> TestFlight</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://support.google.com/googleplay/answer/7003180" target="_blank"><i class="fab fa-android"></i> Android Beta</a></p>
+			             </div>
+						
+			    		 <div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Ondersteuning</a> - <a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><br><i class="fas fa-life-ring"></i> Herstelprogramma</a>		
+			             </div>
+                    </div>  
+                
+                </div>
+            </div>
+			
+			<div class="col-block item-plan" id="dgbgo">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Go</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Cloud portemonnee</li>
+			               <li><i class="fas fa-check blue"></i> Makkelijk te gebruiken</li>
+                           <li><i class="fas fa-check blue"></i> MultiSig ondersteuning</li>
+                           <li><i class="fas fa-check blue"></i> DigiAssets ondersteuning</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a href="javascript:void(0)" title="Temporary unavailable!"><i class="fab fa-chrome disabled"></i></a>
+			            </div>
+						
+						<div class="supportline align-center">
+					       <p class="item-plan__per">Beschikbaar voor Chrome<br>Native apps komen eraan!</p>
+			            </div>
+						
+						<div class="supportline align-center pt2">
+							<a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Ondersteuning</a> - <a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><br><i class="fas fa-life-ring"></i> Herstelprogramma</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+        </div>
+		</div>
+	    
+	    	<!--- Downloads Docs & Guides
+    ================================================== -->
+	    		    <div class="lrmargin25" data-aos="fade"  id="docs">
+		
+			<h1 class="downtitle align-center"><i class="fas fa-books"></i> DigiByte Documenten & Gidsen.</h1>
+				
+			  <div class="item-feature__text max800 align-center">
+                  <p>Op zoek naar meer documentatie? Of je nu basisinformatie nodig hebt voor een artikel of technische informatie voor een integratieproces. Hieronder vindt u alle benodigde handleidingen.
+                  </p>
+              </div>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        
+                        <p>Integreer de DigiByte blockchain eenvoudig in je wisselkantoor, wallet of dienst.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Integratiegids</span>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        
+                        <p>Leer snel de belangrijke feiten over de DigiByte blockchain door het mediablad.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Mediablad</span>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide"> <img src="../images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
+                        
+                        <p>Gebruik de informatieve online presentatie om DigiByte aan je vrienden voor te stellen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Presentatie</span>
+                            <a href="https://docs.google.com/presentation/d/16Hn2GfuS1yLjZpjeTYloW0S_JVkhevYzffkDZFqjbiU" target="_blank" class="testimonials__link">Begin</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        
+                        <p>Vind de juiste en actuele DigiByte logo's en pictogrammen voor je project.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Logo's en pictogrammen</span>
+                            <a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank" class="testimonials__link">Ga naar GitHub</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
+                        
+                        <p>Gebruik je eigen DigiByte volledige node of Inzicht verkenner door de Wiki gidsen te raadplegen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Instructie gidsen</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank" class="testimonials__link">Ga naar DigiByte Wiki</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+	</div>
+	    
+	<!--- Downloads Third-Party
+    ================================================== -->
+		<div class="lrmargin25" data-aos="fade" id="software">
+	<h1 class="downtitle align-center">Apps ontwikkeld door een service van derden.</h1>
+			
+	<!--- Downloads Third-Party Software Wallets
+    ================================================== -->
+        <h2 class="downtitle align-center"><i class="fas fa-laptop-code"></i> Software portemonnees.</h2>
+
+		<div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op Windows, macOS, Linux, iOS en Android. Ondersteuning voor Digi-ID en SegWit. <strong class="dark">Aanbevolen!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://www.coinomi.com" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op iOS en Android. Meerdere investeringsmogelijkheden. <strong class="dark">Aanbevolen!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op iOS en Android. Ondersteuning voor Digi-ID en MultiSig. <strong>Betaald lidmaatschap</strong>.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://ownbit.io" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op iOS en Android. SegWit ondersteuning.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Edge</span>
+                            <a href="https://edge.app" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op Windows, macOS, Linux, iOS en Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Exodus</span>
+                            <a href="https://www.exodus.io" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op Windows, macOS, Linux, iOS en Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Atomic</span>
+                            <a href="https://atomicwallet.io" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op iOS en Android. SegWit ondersteuning.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trust</span>
+                            <a href="https://trustwallet.com" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op Windows, macOS, Linux, Chrome, iOS en Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guarda</span>
+                            <a href="https://guarda.co" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
+                        
+                        <p>Beschikbaar op Windows, macOS, Linux, Chrome, iOS en Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Jaxx Liberty</span>
+                            <a href="https://jaxx.io" target="_blank" class="testimonials__link">Download</a>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+			</div>
+	    
+	  <!--- Downloads Third-Party Hardware Wallets
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade"  id="hardware">
+
+		    <h2 class="downtitle align-center"><i class="fas fa-microchip"></i> Hardware portemonnees.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt via Wi-Fi in elke webbrowser. SegWit ondersteuning. <strong class="dark">Aanbevolen!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitfi</span>
+                            <a href="https://go.bitfi.com" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt op Windows, macOS, Linux, iOS en Android via USB en Bluetooth. SegWit ondersteuning. <strong class="dark">Aanbevolen!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ledger</span>
+                            <a href="https://www.ledger.com" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt op Chrome en Firefox via USB. SegWit ondersteuning.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trezor</span>
+                            <a href="https://trezor.io" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt op Chrome en ShapeShift.com via USB.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KeepKey</span>
+                            <a href="https://shapeshift.io/keepkey" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+					
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt op iOS en Android via QR-code. SegWit ondersteuning.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SafePal</span>
+                            <a href="https://www.safepal.io" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt op Chrome en iOS via USB en Bluetooth. SegWit ondersteuning.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SecuX</span>
+                            <a href="https://www.secuxtech.com" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
+                        
+                        <p>Werkt op iOS en Android via USB en Bluetooth. Biometrische authenticatie en SegWit ondersteuning.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">D'CENT</span>
+                            <a href="https://dcentwallet.com" target="_blank" class="testimonials__link">Bezoek website</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Debit Cards
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="cards">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-credit-card"></i> Betaalpassen.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
+                        
+                        <p>Custodial iOS- en Android-apps. Visa betaalpas beschikbaar in de Verenigde Staten en Canada.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">Download de app</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
+                        
+                        <p>Geen-custodial apps voor Windows, macOS, iOS en Android. MasterCard en UnionPay betaalpassen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PolisPay</span>
+                            <a href="https://www.polispay.com/card" target="_blank" class="testimonials__link">Download de app</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Point of Sale Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="posapps">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-shopping-cart"></i> Verkooppunten apps.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
+                        
+                        <p>Geen-custodial iOS en Android apps voor persoonlijke betalingen. Ondersteuning voor automatische verkoop. <strong class="dark">Aanbevolen!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiCafe</span>
+                            <a href="https://www.digibytecafe.com" target="_blank" class="testimonials__link">Download de app</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
+                        
+                        <p>Custodial iOS en Android apps voor persoonlijke betalingen en plug-ins voor online betalingen. Ondersteuning voor automatische verkoop.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">Download de app</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
+                        
+                        <p>Geen-custodial Android-app voor persoonlijke DigiByte betalingen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PlusBit</span>
+                            <a href="https://plusbit.tech/pos/" target="_blank" class="testimonials__link">Download de app</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
+                        
+                        <p>Geen-custodial Android-app voor persoonlijke betalingen en verkopers API voor online betalingen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PayByte</span>
+                            <a href="https://paybyte.io" target="_blank" class="testimonials__link">Download de app</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Digi-ID Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="digidapps">
+		
+			<h2 class="downtitle align-center"><i class="fas fa-fingerprint"></i> Digi-ID apps.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID authenticator app. Ondersteuning voor AntumID extensies voor DigiPassword functie.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID/AntumID</span>
+                            <a href="https://apps.apple.com/app/digi-id-antumid/id1457498829" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=rocks.digibyte.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
+                        
+                        <p>Digi-ID authenticator app. Ondersteuning voor AntumID extensies voor DigiPassword functie.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiID Simple</span>
+                            <a href="https://play.google.com/store/apps/details?id=com.noahseidman.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
+                        
+                        <p>Portemonnee voor meerdere valuta's met Digi-ID authenticatorfunctie.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://apps.apple.com/app/coinomi-wallet/id1333588809" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Portemonnee voor meerdere valuta's met Digi-ID authenticatorfunctie.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://apps.apple.com/app/ownbit/id1321798216" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.bitbill.www" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+		    <div class="lrmargin25" data-aos="zoom-in">
+				
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Portemonnee Disclaimer</strong><br>Alle portefeuilles van derden die hier worden geïntroduceerd, worden gehost door hun eigen servers of applicatie winkels. We zijn niet verantwoordelijk voor mogelijke problemen die je hebt met een portemonnee van derden. Neem in dat geval contact op met de ondersteunende dienst van de gerelateerde portemonnee.
+                </p>
+              </div>
+				
+		      <div class="align-center">
+                 <a class="btn btn--stroke" href="https://digibytewallets.com" target="_blank">Vind meer DigiByte Wallets</a>
+              </div>
+				
+	       </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer" class="s-footer footer">
+		
+		<div class="align-center">
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
+		</div>
+		
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container ticker">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "DGB/USD",
+      "proName": "BITTREX:DGBUSD"
+    },
+    {
+      "description": "DGB/BTC",
+      "proName": "BITTREX:DGBBTC"
+    },
+    {
+      "description": "DGB/ETH",
+      "proName": "BITTREX:DGBETH"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+		
+		<div class="row footer__top max1000">
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+					<form id="de-form" class="group" method="get" target="_blank" action="https://chainz.cryptoid.info/dgb/search.dws?key=25ac5ef2ff1e">
+                       <input type="text" name="q" placeholder="Zoek naar blok, tx id of adres" autocomplete="off" required>
+                       <a><input type="submit" value="Zoeken" class="btn btn--primary home-content__btn search"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col-full">
+                <p>
+					<a class="telfooter15" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Meldingen</a>
+					
+                    <a class="telfooter15" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Discussie</a>
+					
+					<a class="telfooter15" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Ondersteuning</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Ontwikkelaars</a>
+					
+					<a class="telfooter15" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Mining</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Marketing</a>
+			
+					<a class="telfooter15" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Speculatie</a>
+			
+					<a class="iblock" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Vertalingen</a>
+                </p>
+            </div>
+        </div> 
+
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>Over DigiByte.</h4>
+
+                <p>
+                DigiByte is een snelgroeiende open-source blockchain die eind 2013 is gemaakt en begin 2014 is uitgebracht. Na 6 jaar vooruitstrevende ontwikkeling is DigiByte één van de veiligste, snelste, langste en meest gedecentraliseerde UTXO blockchain geworden.<br>
+		        DigiByte is wereldwijd in meer dan 100 landen.
+                </p>
+
+                <ul class="footer__social">
+		            <li><a class="zoom" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-six mob-full">
+                        <h4>DigiByte koppelingen.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="https://digibytefoundation.io" target="_blank">DigiByte Stichting</a></li>
+                            <li><a href="https://dgbat.org" target="_blank">DGB Bewustzijn Team</a></li>
+                            <li><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a></li>
+			                <li><a href="https://digiexplorer.info" target="_blank">DigiExplorer</a></li>
+                            <li><a href="http://digihash.co" target="_blank">DigiHash Mining</a></li>
+							<li><a href="https://digistats.digibyteservers.io/" target="_blank">DigiStats</a></li>
+			                <li><a href="https://blockchain2035.com" target="_blank">Blockchain 2035</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-six mob-full">
+                        <h4>Middelen.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">DGB Integratiehandleiding</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">DGB Mediablad</a></li>
+                            <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Logo's en pictogrammen</a></li>
+			    <li><a href="https://github.com/digibyte/digibyte" target="_blank">DGB Protocol GitHub</a></li>
+                            <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
+			    <li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Neem contact op</a></li>
+			    <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Doneer</a></li>
+                        </ul>
+                    </div>		
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright"> 
+                <span>&copy; Copyright DigiByte 2013 - 2020</span> 
+				<span>Alle rechten voorbehouden</span> 
+                <span>Vrijgegeven onder de <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT licentie</a></span> 
+				<span><a href="../docs/LegalDisclaimer.pdf">Juridische Disclaimer</a> | <a href="../docs/PrivacyPolicy.pdf">Privacybeleid</a></span>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main5.js"></script>
+    <script>includeHTML();</script>
+	
+	<!-- Cookie info message
+    ================================================== -->
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
+	data-font-size="14px"
+	data-font-family="Nunito Sans,sans-serif"
+	data-text-align="left"
+    data-fg="#545454"
+	data-bg="rgba(255, 255, 255, 0.9)"
+	data-link="#0066cc"
+	data-divlink="#ffffff"
+	data-divlinkbg="#0066cc"
+	data-position="bottom"
+	data-message="We gebruiken cookies om jouw ervaring te verbeteren. Door deze site te blijven bezoeken, gaat u akkoord met ons gebruik van cookies."
+	data-linkmsg="Meer info"
+	data-moreinfo="../docs/PrivacyPolicy.pdf"
+	data-close-text="OKE"
+	>
+    </script>
+
+</body>
+	
+</html>

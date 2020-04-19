@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fi">
+<head>
+	
+	<!--- Hash value catcher
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+	history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target; 
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
+	<!--- Google analytics
+    ================================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
+    </script>
+	
+	<!-- OneSignal platform support
+    ================================================== -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
+        });
+      var notificationPromptDelay = 30000;
+      var navigationStart = window.performance.timing.navigationStart;
+      var timeNow = Date.now();
+        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
+        });
+      function promptAndSubscribeUser() {
+        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+          if (!isEnabled) {
+            window.OneSignal.showSlidedownPrompt();
+           }
+         });
+        }
+     </script>
+
+    <!--- Basic page needs
+    ================================================== -->
+    <title>DigiByte Lohkoketju | DGB Kolikko | DigiAssets | Digi-ID</title>
+    <meta charset="utf-8">
+    <meta name="description" content="DigiByte on avointa lähdekoodia ja se on erittäin hajautettu maailmanlaajuinen lohkoketju, joka hostaa DGB Kolikon, DigiAssets, Digi-ID:n ja muuta.">
+	<meta name="keywords" content="DigiByte, DGB, Lohkoketju, Hajautettu, Kolikko, Asset, Digitaalinen, Krypto, Valuutta, DigiAsset, Digi-ID, Tietoverkkoturvallisuus, Autentikointi, Älysopimus, dApp, Maksut, Lompakko, Yhteisö">
+
+    <!-- Mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-itunes-app" content="app-id=1378061425">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main5.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
+    <link rel="shortcut icon" href="../favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="DigiByte">
+    <meta name="application-name" content="DigiByte">
+    <meta name="msapplication-TileColor" content="#002352">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+    <meta name="theme-color" content="#002352">
+	
+	<!-- Twitter preview
+    ================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DigiByte Lohkoketju | DGB Kolikko | DigiAssets | Digi-ID" />
+    <meta name="twitter:description" content="DigiByte on avointa lähdekoodia ja se on erittäin hajautettu maailmanlaajuinen lohkoketju, joka hostaa DGB Kolikon, DigiAssets, Digi-ID:n ja muuta." />
+    <meta name="twitter:image" content="https://digibyte.io/favicons/twitter.png" />
+	
+	<!-- Facebook preview
+    ================================================== -->
+	<meta property="og:image" content="https://digibyte.io/favicons/og-image.jpg">
+    <meta property="og:image:width" content="955">
+    <meta property="og:image:height" content="500">
+    <meta property="og:description" content="DigiByte on avointa lähdekoodia ja se on erittäin hajautettu maailmanlaajuinen lohkoketju, joka hostaa DGB Kolikon, DigiAssets, Digi-ID:n ja muuta.">
+    <meta property="og:title" content="DigiByte Lohkoketju | DGB Kolikko | DigiAssets | Digi-ID">
+    <meta property="og:url" content="https://digibyte.io/">
+
+</head>
+
+<body id="top">
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+        </div>
+    </div> 
+	
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo smoothscroll" href="#top"><img src="../images/logo.svg" loading="eager" alt="Home">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li id="dbc"><a class="ssbc" href="#blockchain" title="Blockchain">Lohkoketju</a></li>
+					<li id="mbc"><a class="ssbcm" href="#blockchain" title="Blockchain">Lohkoketju</a></li>
+					<li><a class="smoothscroll" href="#currency" title="Currency">Valuutta</a></li>
+                    <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DigiAssets</a></li>
+                    <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
+                    <li><a class="smoothscroll" href="#community" title="Community">Yhteisö</a></li>
+					
+					<div class="dropdown" id="langmenu">
+                       <div includeHTML="../langmenu/desktop.html"></div>
+                    </div>
+					
+					<div includeHTML="../langmenu/mobile.html"></div>
+                </ul>
+    
+                <div class="header-cta">
+                    <a href="#downloads" class="btn btn--primary header-cta__btn smoothscroll">Lataukset</a>
+                </div>
+            </nav>
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header>
+
+
+    <!-- Home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    Turvallisempi, Nopeampi ja
+                    Tulevaisuuteen katsova.
+                    </h1>
+    
+                    <h3>
+                    DigiByte on nopeampi kuin digitaalinen valuutta. Se on innovatiivinen lohkoketju, jota voidaan käyttää digitaalisiin etuuksiin, älysopimuksiin, hajautettuihin sovelluksiin ja turvalliseen autentikointiin.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#about" class="btn btn--primary home-content__btn smoothscroll">
+                           Lue lisää
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-content__right">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
+                </div>
+
+            </div>
+
+            <ul class="home-content__social">
+                <li><a href="https://digibytefoundation.io" target="_blank">Foundation</a></li>
+				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
+				<li><a href="https://www.dgbwiki.com" target="_blank">Wiki</a></li>
+                <li><a href="https://t.me/DGBSupport" target="_blank">Tuki</a></li>
+		    	<li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Ota yhteyttä</a></li>
+                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Lahjoita</a></li>  
+            </ul>
+
+        </div>
+
+        <a href="#footer" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Hinta</span>
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section>
+
+
+    <!-- About
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+		<a href="#footer" class="home-scroll2 smoothscroll">
+            <span class="home-scroll__text">Hinta</span>
+            <span class="home-scroll__icon"></span>
+        </a>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Mikä tekee DigiByte:stä vahvemman kuin muut?
+                </h1>
+                <p class="lead">
+                   DigiByte on nopeasti kasvava avoimen lähdekoodin lohkoketju, joka on luotu 2013 vuoden lopulla ja julkaistu 2014 vuoden alussa. Kuuden vuoden edestä tulevaisuuteen katsovaa kehitystä, DigiByte:stä on tullut yksi turvallisimmista, nopeimmista, pisimmistä ja hajautetuimmista <a href="https://wikipedia.org/wiki/Unspent_transaction_output" target="_blank">UTXO</a> lohkoketjuisa koko maailmassa.
+                </p>
+            </div>
+        </div>
+
+        <div class="row wide about-desc" data-aos="fade">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Aidosti hajautettu.</h3>
+
+                    <p>
+                    DigiByteä ei ole koskaan rahoitettu <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> :n avulla tai merkityksettävällä määrällä <a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">premined kolikoita</a>. Ei ole toimitusjohtajaa tai yritystä, joka hallitsisi DigiByte lohkoketjua. Se on vapaaehtoisten ja maailmanlaajuisen yhteisön ylläpitämä projekti.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Turvallisempi.</h3>
+
+                    <p>
+					DigiByte käyttää viittä kryptograafista algoritmia ja <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">realiaikaista vaikeuden säätöä</a> estääkseen pahamaisen louhinnan keskittymisen ja hash powerin heilahtelun. Yksi niistä on Odocrypt joka muuntaa itseään 10 päivän välein vastustaakseen ASIC louhintaa.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Paljon nopeampi.</h3>
+
+                    <p>
+                    DigiByte lohko esiintyy joka 15 sekunti, joka on 40x nopeampi kuin Bitcoin ja 10x nopeampi kuin Litecoin. Aikainen <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a>:n käyttöönotto ja lohkoketjun vakaus mahdollistaa jopa 1066 transaktiota sekunnissa suoraan lohkoketjussa merkityksettömillä kuluilla.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Tulevaisuuteen katsova.</h3>
+
+                    <p>
+                    Viimeisen kuuden vuoden aikana DigiByte on toistuvasti erottanut itsensä muista ennennäkemättömillä lohkoketjun uutuuksilla kuten <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a> suoja, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> louhinta, <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank">SegWit</a> käyttöönotto, <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a> algoritmi, <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> yksityisyys protokolla, <a href="#digiassets" class="smoothscroll">DigiAssets</a> ja <a href="#digi-id" class="smoothscroll">Digi-ID</a>.
+                    </p>
+                </div> 
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- What is DigiByte Video
+    ================================================== -->
+    <section class="s-about-how target-section" id="blockchain">
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="zoom-in">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://www.youtube.com/embed/7Dm-FO8u7x8?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                        <span class="item-stats__num">
+                            Mikä on DigiByte?
+                        </span>
+                        <span class="item-stats__title">
+                            Katso esittelyvideo
+                        </span>
+                    </div>
+                </div>
+		   
+           </div>
+        </div>
+	    
+    <!-- Blockchain
+    ================================================== -->
+	    
+        <div class="row process-wrap">
+			
+		<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Näin DigiByte lohkoketju toimii.
+                </h1>
+                <p class="lead">
+                    Kolme tasoa ovat innovatiivisin osa DigiByte lohkoketjua jotka luovat verkon infrastruktuurin, suojan ja sen kommunikaation toimimaan huippu nopeudella.
+                </p>
+            </div>
+        </div>
+
+        <div class="process" data-aos="fade">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Sovellukset / DigiAssets.</h3>
+                        <p>Ylin taso on kuin sovelluskauppa selkeillä oikean maailman käyttötarkoituksilla. Kaiken tyyppiset digitaaliset varat voidaan luoda <a href="#digiassets" class="smoothscroll">DigiAssets</a> protokollan avulla DigiByte lohkoketjun päälle. Hajautetut sovellukset (dApps):t voidaan luoda DigiByte lohkoketjun päälle. Myös älysopimukset jotka hyödyntävät DigiByte lohkoketjun vakautta ja turvallisuutta voidaan helposti koodata.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Digitaalinen vara / Julkinen tilikirja.</h3>
+                        <p>Keskitaso tarjoaa suojan ja ylläpidon. <strong>Digi</strong>taalinen <strong>Byte</strong> dataa, esittää suurempaa dataa tai yksikköä joka pitää arvon, jota ei voida väärentää, kopioida tai hakkeroida. Se on muuttumaton julkinen tilikirja mihin kaikki DigiByten transaktiot kirjataan. DigiByte käytää <a href="https://www.dgbwiki.com/index.php?title=DigiByte_Mining_Breakdown" target="_blank">suojakseen viittä Proof of Work algoritmia</a>. Uudet DigiBytet syntyvät vain louhimalla.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Ydin protokolla / Maailmanlaajuinen verkko.</h3>
+                        <p>Alin taso tarjoaa kommunikaatio ja operaatio toimenpiteet. DigiByte solmut käyttävät erittäin matalan tason kommunikointia. Tuhannet ihmiset käyttävät DigiByte sovellusta ympäri maailmaa. Mikä tahansa palvelin, tietokone, tabletti tai älypuhelin, joka on yhteydessä DigiByte verkkoon toimii solmuna, joka auttaa välittämään transaktioita.
+			            <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Aloita edistämään DigiByte lohkoketjua optimaalisella tavalla</a>.
+			            </p>
+		            </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Avoin lähdekoodi / Lupaa vaatimaton.</h3>
+                        <p>Kuin <a href="https://github.com/DigiByte-Core/DGBio" target="_blank">tämä sivusto</a>, DigiByte lohkoketju on kokonaan avointa lähdekoodia ja ilmainen käyttää <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a>:n rajoissa, joka tarjoaa sinulle oikeuden käyttää ja muokata sovellusta. Läpinäkyvyys mahdollistaa binäärien ja niitä vastaavien lähdekoodien itsenäisen varmistuksen.<br />
+						<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte protokolla GitHubissa</a>.
+						<br />
+						<a href="https://github.com/DigiByte-Core" target="_blank">DigiByte Coren kehitys Githubissa</a>.
+                        </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">DigiByten historia.</h2>
+					<p class="lead">
+                    Tutustu DigiByte lohkoketjun kehityksen suuriin merkkipaaluihin.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
+                        
+                        <p>Kokopäiväinen kehitystyö on aloitettu DigiByte lohkoketjun tulevaisuuden rakentamiselle.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Tammikuu, 2014</span>
+				<a href="https://twitter.com/jaredctate/status/1190673943876841475" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
+                        
+                        <p>Genesis lohko louhittiin onnistuneesti ja DigiByte lohkoketju julkaistiin virallisesti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Tammikuu 10, 2014</span>
+							<a href="https://github.com/digibyte/digibyte/blob/master/src/chainparams.cpp#L40" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
+                        
+                        <p>DigiShield aktivoitiin käyttämään realiaikaista vaikeuden säätöä vastustamaan hashin heilahtelua.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Helmikuu 28, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
+                        
+                        <p>MultiAlgo aktivoitiin käyttämään viittä eri algoritmia torjumaan louhinnan keskittymistä.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Syyskuu 1, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
+                        
+                        <p>MultiShield aktivoitiin lisäämään DigiShieldin suojaa kaikille viidelle algoritmille.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Joulukuu 10, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiShield" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
+                        
+                        <p>DigiSpeed aktivoitiin nopeuttaakseen transaktioita vähentämällä lohkoajan 15 sekuntiin.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Joulukuu 4, 2015</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
+                        
+                        <p>SegWit aktivoitiin ennen Bitcoinia ja Litecoinia tehostamaan lohkon koon käyttöä.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Huhtikuu 28, 2017</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID julkaistiin voimaannuttamaan käyttäjiä vaivattomaan verkkosivuille kirjautumiseen ja muuhun.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Toukokuu, 2018</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Digi-ID" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets julkaistiin sallimaan hajautetun etuuksien liikkeellelaskun ja muuta.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Huhtikuu, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiAssets" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
+                        
+                        <p>Dandelion++ protokolla toteutettiin joka torjuu IP:n ja fyysisen sijainnin seurannan. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Toukokuu 3, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
+                        
+                        <p>Odocrypt aktivoitiin joka muuntaa itseään 10 päivän välein erinomaiseen ASIC louhinnan vastustamiseen. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Heinäkuuta 21, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank" class="testimonials__link">Lue lisää</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+
+    <!-- Currency
+    ================================================== -->
+    <section id="currency" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Digitaalinen valuutta,<br/>jota varmasti rakastaisit.
+                </h1>
+                <p class="lead">
+                    DigiByte (DGB) on vertaisverkollinen erittäin skaalautuva digitaalinen valuutta joka mahdollistaa alan korkeimmat transaktio nopeudet mitättömillä kuluilla. DigiByte on paras tapa maksuille.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/UUhVEDlXvkQ?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Opi katsomalla</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-phone-laptop"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Helppo käyttää.</h3>
+                    <p>DigiByten käytön aloittaminen on helpompaa kuin SMS:n lähettäminen. Voit lähettää ja vastaanottaa DigiBytejä laitteilla joista pidät ja tunnet jo entuudestaan. Ainoa mitä sinun tarvitsee tehdä on asentaa <a class="smoothscroll" href="#downloads">DigiByteä tukeva lompakko</a> ja sitten klikata skannaa, skannata QR koodi ja lähettää DigiBytejä. Helppoa kuin 1..2..3.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Ei ICO.</h3>
+                    <p>DigiByteä ei ole koskaan rahoitettu <a href="https://en.wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a>:n avulla tai merkittävällä määrällä premined kolikoita (<a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">0% jäljellä</a>). Ei toimitusjohtajaa tai yritystä hallitsemassa DigiByte lohkoketjua. <a class="smoothscrollup" href="#jared">Perustaja</a>, <a class="smoothscrollup" href="#developers">kehittäjät</a> ja <a class="smoothscroll" href="#community">yhteisö</a> ovat palkattomia vapaaehtoisia joka mitätöi konkurssin mahdollisuuden.
+                    </p>
+                </div>
+            </div> <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-tachometer-alt-fastest"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Paljon nopeampi.</h3>
+                    <p>DigiByte transaktiot vahvistetaan noin 15 sekunnissa, joka on 40 kertaa nopeammin kuin Bitcoin ja 10 kertaa nopeammin kuin Litecoin. <a href="https://en.wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> mahdollistaa jopa 1066 transaktiota sekunnissa suoraan lohkoketjussa mitättömillä kuluilla, joka tekee DigiBytestä ideaalisen valuutan päivittäismaksuihin.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>    
+                <div class="item-feature__text">
+                    <h3 class="item-title">Aina turvallinen.</h3>
+                    <p>DigiByte on rakennettu Bitcoin lohkoketjun murtamattoman teknologian päälle, johon on toteutettu useita edistyksellisiä parannuksia kuten <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a> suoja, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> louhinta ja <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a> algoritmi, myös <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> yksityisyys protokolla auttaa pitämään sinut turvassa piilottamalla IP:si ja fyysisen sijaintisi. <a href="https://www.dgbwiki.com/index.php?title=What_makes_DigiByte_More_Secure%3F" target="_blank">Lue lisää</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-digging"></i>
+                </div> 
+                <div class="item-feature__text">
+                    <h3 class="item-title">Louhittava.</h3>
+                    <p>DigiByte on 100% <a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank">Proof of Work</a> (PoW) lohkoketju jota voidaan louhia viidellä algoritmilla Sha256, Scrypt, Skein, Qubit ja Odocrypt. <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> louhinta edistää hajautuneisuutta, verkon turvallisuutta ja antaa sinulle vapauden käyttää erinlaisia laitteita kuten ASIC, FPGA tai GPU. <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">Lue lisää</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Helposti käsiteltävät yksiköt.</h3>
+                    <p>21 miljoonaa Bitcoinia verrattuna 21 miljardiin DigiByteä (1000:1 suhde Bitcoiniin) on suunniteltu massa-käyttöönottoa varten. DigiByte lohkojen palkkiot vähenevät 1%:lla kuukaudessa joka neljännes vuosi puolittumisen sijaan. Kaikki 21 miljardia DigiByteä tullaan louhimaan vuoteen 2035 mennessä. Vuoden 2035 jälkeen louhijat turhautuvat yksinomaan pelkkiin transaktio maksuihin. <a href="https://www.dgbwiki.com/index.php?title=Why_so_many_coins%3F_21Billion" target="_blank">Lue lisää</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Nopeita otoksia DigiByte ekosysteemistä.</h2>
+					<p class="lead">
+                    Kaikki kauppapaikat ja palvelut jotka tukevat DigiByteä löytyvät <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiByte Wiki</a> sivustolta.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
+                        
+                        <p>Bittrex tarjoaa todistetun ja turvallisen alustan asiakkailleen DigiByten kaupankäyntiin.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bittrex</span>
+                            <a href="https://bittrex.com" target="_blank" class="testimonials__link">bittrex.com</a>
+                        </div>
+                    </div> 
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/vertbase.png" loading="lazy" alt="Vertbase" class="testimonials__avatar">
+                        
+                        <p>Vertbasen helpon ja turvallisen prosessin avulla voit ostaa ja myydä DigiBytejä USD, GBP ja Euroilla.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Vertbase</span>
+                            <a href="https://www.vertbase.com" target="_blank" class="testimonials__link">vertbase.com</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/litebit.png" loading="lazy" alt="LiteBit" class="testimonials__avatar">
+                        
+                        <p>LiteBit on salausvaluuttavälittäjä, jonka avulla käyttäjät voivat helposti ostaa, myydä ja varastoida DigiByte-ohjelmaa EU: ssa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">LiteBit</span>
+                            <a href="https://www.litebit.eu" target="_blank" class="testimonials__link">litebit.eu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
+                        
+                        <p>Abra tekee DigiByteihin sijoittamisesta helpompaa, turvallisempaa ja käsiksi päästävän kaikille. Käytettävissä 150 maassa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">abra.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
+                        
+                        <p>ShapeShift on välittömien digitaalisen etuuksien vaihdon edelläkävijä, palvelu tukee tusinan verran eri valuuttoja kuten DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ShapeShift</span>
+                            <a href="https://shapeshift.io" target="_blank" class="testimonials__link">shapeshift.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel on cryptosta cryptoon, lompakosta lompakkoon, vaihto palvelu joka tukee yhteisö projekteja.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/spend.png" loading="lazy" alt="Spend App" class="testimonials__avatar">
+                        
+                        <p>Spend antaa sinulle pääsyn sarjaan pankki tuotteita kuten Multi Currency Digital Wallet ja Spend Visa kortti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">spend.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/coinpayments.png" loading="lazy" alt="CoinPayments" class="testimonials__avatar">
+                        
+                        <p>CoinPayments tarjoaa osta nyt napit, ostos korit ja muuta, että voit vastaanottaa DigiBytejä sivustollasi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">coinpayments.net</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibytepay.png" loading="lazy" alt="DigiBytePay" class="testimonials__avatar">
+                        
+                        <p>DigiCafe App:in ja WooCommercen avulla vastaanotat DigiByte maksut helposti henkilökohtaisesti ja suoraan verkossa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiBytePay</span>
+                            <a href="https://www.digibytepay.us" target="_blank" class="testimonials__link">digibytepay.us</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID tarjoaa uniikin kokemuksen turvalliseen verkkosivuille kirjautumiseen käyttäen DigiByte teknologiaa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">OpenAntumID</span>
+                            <a href="https://www.openantumid.com" target="_blank" class="testimonials__link">openantumid.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/nownodes.png" loading="lazy" alt="NowNodes" class="testimonials__avatar">
+                        
+                        <p>NowNodes tarjoaa tehokkaiden palvelimien avulla nopean ja luotettavan yhteyden suosittuihin lohkoketjuihin kuten DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">NowNodes</span>
+                            <a href="https://nownodes.io" target="_blank" class="testimonials__link">nownodes.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Vieraile CryptoBantamissa ja osta trendikkäät vaatteet tukemaan DigiByten näkyvyyttä ja käyttöönottoa!</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com/vendor/dgbat/" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
+                        
+                        <p>Hanki oma @dgb.community email osoite tukeaksesi DigiByte Foundation:a ja DGBAT:a.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DGB.community</span>
+                            <a href="https://dgb.community" target="_blank" class="testimonials__link">dgb.community</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptoid.png" loading="lazy" alt="CryptoID Block Explorer" class="testimonials__avatar">
+                        
+                        <p>CryptoID lohko selain tarjoaa tarkat tiedot DigiByte lohkoketjusta ja tietyistä transaktioista.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoID</span>
+                            <a href="https://chainz.cryptoid.info/dgb/" target="_blank" class="testimonials__link">chainz.cryptoid.info</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DigiAssets
+    ================================================== -->
+    <section id="digiassets" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Helppo tapa luoda<br/>digitaalisia etuuksia.
+                </h1>
+                <p class="lead">
+                    DigiAssets on turvattu, skaalautuva taso DigiByte lohkoketjun päällä joka mahdollistaa hajautettujen etuuksien, rahakkeiden, älysopimusten, digitaalisen identiteetin ja muun julkaisemiseen.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/xDJllY5ehNw?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Opi katsomalla</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Rajoittamattomat mahdollisuudet.</h3>
+                    <p>DigiAssets voidaan määrittää turvallisesti esittämään mitä tahansa mitä löydämme fyysisestä maailmasta. Aineelliset etuudet kuten kiinteistöt, autot aina rajattuihin digitaalisiin taideteoksiin asti. Allekirjoitetut asiakirjat kuten kauppakirjat ja lääkärilaskut voidaan suojata.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Kasvava itsevarmuus.</h3>
+                    <p>DigiAssets ekosysteeminä ja alustana on saanut jo kiinnostuneita osapuolia, joko suunnittelemaan tai parhaillaan rakentamaan alustoja kiinteistö, finassi, rahalähetys, identiteetti, myyntipiste, kilpa-ajo, vaihtokauppa, terveydenhuolto, tavaran toimitus, hallitus ja muille puolille.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-badge-check"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Jykevä teknologia.</h3>
+                    <p>DigiAssets hyödyntää yksilöllisiä puolia aidosti hajautetusta lohkoketjusta, jotka löytyvät vain lupaa vaatimattomissa, kuten DigiByte lohkoketjussa. Tämä mahdollistaa DigiAssettien olevan turvallisempia, skaalautuvampia ja hajautetumpia kuin mitkään muut markkinoilla olevat alustat.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Aloita käyttämään DigiAssetteja.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Opi protokolla.</h3>
+                        <p>Löydä vapaan lähdekoodin DigiAssets protokollan yksityiskohdat digitaalisten etuuksien julkaisemiseen DigiByte lohkoketjun päälle. <a href="https://github.com/DigiByte-Core/DigiAssets-Protocol-Specifications/wiki" target="_blank">DigiAssets protokolla GitHubissa</a>.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Julkaise etuus.</h3>
+                        <p>Etkö ole kehittäjä? Tämä ei todellakaan ole ongelma! Kuka tahansa voi helposti julkaista DigiAssetteja käyttäen yhtä käytössä olevista työkaluista ilman minkäänlaista teknistä osaamista itse protokollasta. <a class="smoothscrollup" href="#digiassetservices">DigiAssetteja tukevat palvelut</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Säilytä / Kauppaa.</h3>
+                        <p>Mietitkö kuinka käyttää DigiAssetteja? Käytä <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a>  ja <a class="smoothscrollup" href="#dgbgo">DigiByte Go</a> sovelluksia lähettääksesi, vastaanottaaksesi ja säilyttääksesi sinun etuuksia tai selaa <a class="smoothscrollup" href="#digiassetservices">DigiAssets tuettuja paveluja</a> ostaaksesi, myydäksesi ja vaihtaaksesi DigiAssetteja.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Tarvitsetko lisää apua?</h3>
+                        <p>Jos tarvitset lisää apua DigiAssetteissa, ole hyvä ja liity DigiByte Developers ryhmään Telegrammissa. Lähetä kysymyksesi tai jaa ideasi. <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers Telegrammissa</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+	    </div>
+		
+		<div class="testimonials-wrap" data-aos="zoom-in" id="digiassetservices">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Näe DigiAssets käytännössä.</h2>
+					<p class="lead">
+                    Löydä DigiAssetteja tukevat palvelut kokeaksesi DigiAssets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAsset Tools auttaa sinua julkaisemaan DigiAssetteja helposti ja nopeasti ilman teknistä osaamista.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiAssets Tools</span>
+                            <a href="https://createdigiassets.com" target="_blank" class="testimonials__link">createdigiassets.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
+                        
+                        <p>Digi-Broker on sivusto jossa käyttäjät ympäri maailmaa voivat jakaa, ostaa ja myydä heidän digitaalisia etuuksia.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-Broker</span>
+                            <a href="https://digi-broker.com/index.php/tools/" target="_blank" class="testimonials__link">digi-broker.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
+                        
+                        <p>digiassetX on uudenlainen DigiByte DigiAsset kauppapaikka ja DigiAssettien julkaisu palvelu.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Tulossa pian</span>
+                            <a href="https://digiassetx.com/" target="_blank" class="testimonials__link">digiassetx.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+    </section>
+	
+	
+	<!-- Digi-ID
+    ================================================== -->
+    <section id="digi-id" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Autentikointi parhaimmillaan.
+                </h1>
+                <p class="lead">
+                    Digi-ID on turva protokolla joka on rakennettu DigiByte lohkoketju teknologian päälle. Se voimaannuttaa käyttäjän vaivattomaan kirjautumiseen verkkosivuille, ohjelmistoihin ja melkein mihin vain.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/pLrQycud5GI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Opi katsomalla</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Helppo autentikointi.</h3>
+                    <p>Digi-ID eliminoi kirjautumisesta käyttäjänimen, salasanan ja 2fa:n. Koska Digi-ID käyttää julkista / yksityistä kryptograafista avainta, ei ole tarvetta riskialtteille salasanoille tai käyttäjänimille. Tämä tapa ei yksinään suojaa käyttäjää, mutta se suojaa myös asiakkaan käyttämää palveluntarjoajaa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Virheetön turva.</h3>
+                    <p>Digi-ID ei tallenna mitään tietoa käyttäjästään lohkoketjuun. Tämä entisestään vahvistaa turvallisuutta ja samalla tukee myös loppukäyttäjän luottamusta tietäen ettei heidän tietojaan seurata, tai että ne olisivat riskissä toisten huolimattomuudesta. Tämän avulla alustallasi ei ole yksittäistä ulkoista kohtaa, jota hakkeri voisi kohdistaa tai hyväksikäyttää.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-smile-plus"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Helppo ja ilmainen.</h3>
+                    <p>Digi-ID on täysin ilmainen! Ei kuluja, jäsenmaksuja tai ylläpitokuluja. Mutta hinta on vain sen toiseksi paras toiminto. Sen pää toiminto on DigiByten turvauksen priorisoinnin takia tarjota helpompi tapa kirjautua turvallisemmin verkkosivuille, sovelluksiin ja muihin asioihin.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Näin se toimii.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Luonti.</h3>
+                        <p>Verkkosivu, sovellus tai tuote luo uniikin Digi-ID QR koodin ja esittää sen.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Skannaaminen.</h3>
+                        <p>Käyttäjä skannaa QR koodin <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> lompakolla tai millä tahansa <a class="smoothscroll" href="#digidapps">Digi-ID tuetulla sovelluksella</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Autentikointi.</h3>
+                        <p>Käyttäjä autentikoi pyynnön antamalla heidän PIN koodin, skannaamalla sormenjälkensä tai kasvonsa.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Vahvistus.</h3>
+                        <p>Digi-ID lähettää tämän kryptograafisesti allekirjoituksen pyynnön takaisin ja käyttäjä kirjataan sisään onnistuneesti.
+                        </p> 
+                    </div>
+
+                </div>
+              </div>
+			
+          </div>
+		
+		  <div data-aos="fade">
+		
+		  <h1 class="align-center">Usein Kysytyt Kysymykset.</h1>
+		
+		  <div class="row features block-1-2 block-m-1-2">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Mistä löydän lisää dokumentaatiota?</h3>
+                    <p>Paras paikka aloittaa on <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. Jos haluat lisää tietoja Digi-ID:n yksityiskohdista ja eduista, katso <a href="https://www.digi-id.io/faq" target="_blank">käyttöohje</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">kauppias ohje</a> ja <a href="https://www.digi-id.io/integration.html" target="_blank">integraatio ohje</a>. Jos etsit media kittiä, ole hyvä ja hanki <a href="../docs/digiidintro.pdf" target="_blank">esittelykirjanen</a> ja <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logot</a>.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Missä ovat integrointi kirjastot?</h3>
+                    <p>Koska Digi-ID on avointa lähdekoodia siitä on useampi koodivarasto, jotka löytyy GitHubista kuten <a href="https://github.com/DigiByte-Core?q=digiid" target="_blank">DigiByte Core Development </a>, <a href="https://github.com/mctrivia?tab=repositories&q=digiid" target="_blank">Matthew Cornelisse</a> ja <a href="https://github.com/evilmouse69/Digi-ID-for-WHMCS/" target="_blank">WHMCSSnow</a>. Jos tarvitset lisää apua, ole hyvä ja liity <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers group</a>:n Telegrammissa.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Voinko integroida Digi-ID:n ilman koodausta?</h3>
+                    <p>Jos et ole kehittäjä, voit joutua käyttämään integraatio valmiita ratkaisuja verkkosivuusi tai tuotteeseesi. <a href="https://www.openantumid.com/" target="_blank">OpenAntumID</a> tarjoaa vaivattoman Digi-ID integraatio palvelun. Voit myös käyttää <a href="https://wordpress.org/plugins/digi-id-authentication/" target="_blank">WordPress plugin</a>:a WordPress alustoille.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Onko muita Digi-ID autentikointi sovelluksia?</h3>
+                    <p>Tottakai! Digi-ID on nopeasti kasvava alusta. Löydät useamman erillisen autentikaatio sovelluksen ja Digi-ID tuetun lompakon <a class="smoothscroll" href="#digidapps">Lataukset</a> osiosta. Voit myös asettaa ilmaisen Digi-ID <a href="https://digibytewallets.com/digid/" target="_blank">pienoisohjelma</a> verkkosivusi kirjautumis sivulle.
+                    </p>
+                </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Näe Digi-ID käytännössä.</h2>
+					<p class="lead">
+                    Koe joitain Digi-ID tuettuja palveluita kokeaksesi saumattoman autentikaation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel on cryptosta cryptoon, lompakosta lompakkoon, vaihto palvelu joka tukee yhteisö projekteja.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID tarjoaa turvallisen ja vaivattoman autentikointipalvelun käyttäen DigiByte teknologiaa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AntumID</span>
+                            <a href="https://www.antumid.be/gateway/soaplogin" target="_blank" class="testimonials__link">antumid.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
+                        
+                        <p>AbsoluteJobs on yksi edelläkävijä yritys joka tarjoaa työllistämispalvelua Belgiassa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AbsoluteJobs</span>
+                            <a href="https://www.absolutejobs.be" target="_blank" class="testimonials__link">absolutejobs.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Vieraile CryptoBantamissa ja osta trendikkäät vaatteet tukemaan DigiByten näkyvyyttä ja käyttöönottoa!</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
+                        
+                        <p>Hash Altcoin on louhintayritys joka tuottaa FPGA laitteita korkean vakauden louhinta kokemukseen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Hash Altcoin</span>
+                            <a href="https://www.hashaltcoin.com/en/" target="_blank" class="testimonials__link">hashaltcoin.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+	
+	
+	<!-- Community
+    ================================================== -->
+    <section id="community" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Intohimoisin<br/>yhteisö ikinä!
+                </h1>
+                <p class="lead">
+                    Tuhannet vapaaehtoiset ovat auttaneet DigiByteä kaikkialta ympäri maailmaa lukemattomilla tavoilla vuosien ajan luodakseen siitä sen mitä se on tänä päivänä. Se on todellinen grassroots liike. Toivotamme kaikki jotka liittyvät meihin lämpimästi tervetulleiksi!
+                </p>
+            </div>
+		    <a class="btn btn--primary" href="https://www.youtube.com/embed/uGearn3BHvU?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Opi katsomalla</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature" id="foundation">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Foundation.</h3>
+                    <p>DigiByte Foundation on vapaaehtoisten ylläpitämä organisaatio, joka toimii voittoa tavoittelemattomalla tavalla. He suojaavat ja mainostavat aidon hajautuksen periaatetta, voimistavat DigiByteä ja sen yhteisöä luodakseen ja ylläpitääkseen kestävää hajautettua maailmaa.<br> <a href="https://digibytefoundation.io" target="_blank">Lue lisää</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="dgbat">
+                <div class="item-feature__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Awareness Team.</h3>
+                    <p>DGBAT on "community-driven outreach initiative". Heitä johtaa tiimi jonka jäsenet vuoronsa mukaan ylläpitää sosiaalisen median, yhteydenottojen, opetuksen, kirjoittajien ja kehittäjien tiimejä. Heidän tarkoitus on levittää tietoa DigiBytestä opetuksen, yhteydenottojen ja mainoskampanjoiden avulla.<br> <a href="https://dgbat.org" target="_blank">Lue lisää</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="developers">
+                <div class="item-feature__icon">
+                    <i class="fas fa-code"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Kehittäjät.</h3>
+                    <p>Kaikki jotka rakentavat DigiByteä ovat vapaaehtoisia. Osallistu sinäkin DGB:n kehitykseen jo tänään tai rakenna oma sovellus DigiByte lohkoketjun päälle.
+					<br />	
+					<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte protokolla GitHubissa</a>.
+					<br />
+					<a href="https://github.com/DigiByte-Core" target="_blank">DigiByte Core kehitys GitHubissa</a>.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="socialmedia">
+                <div class="item-feature__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+		    <div class="item-feature__text">
+                    <h3 class="item-title">Sosiaalinen media.</h3>
+                    <p>Seuraa DigiByteä läpi kaikkien sosiaalisten alustojen pysyäksesi tietoisena uusimmista DigiByte uutisista ja jaa julkaisut kavereidesi kesken, että äänemme kuuluisi ympäri maailmaa.
+                    </p>
+					<p class="item-feature__icon">
+					   <a class="rightpad25" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+					   <a class="rightpad25" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook zoom"></i></a>
+					   <a class="rightpad25" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
+					   <a class="rightpad25" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+					   <a class="rightpad25" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube zoom"></i></a>
+					   <a href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+                    </p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="telegram">
+                <div class="item-feature__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Telegram ryhmät.</h3>
+                    <p><a href="https://telegram.org" target="_blank">Telegram</a> on kaikkein suosituin ja helpoin tapa osallistua maailmanlaajuiseen DigiByte yhteisöön. Ole hyvä ja liity allaoleviin ryhmiin joista olet kiinnostunut tai katso lista <a href="https://t.me/OfficialDigiByteGroups" target="_blank">kaikki DigiByte ryhmät</a>.
+					</p>
+					<p>
+					<a class="telegramicon" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Hälytykset</a>
+					<a class="telegramicon" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Keskustelut</a>
+					<a class="telegramicon" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Tuki</a>
+					<a class="telegramicon" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Kehittäjät</a>
+					<a class="telegramicon" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Louhinta</a>
+					<a class="telegramicon" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Markkinointi</a>
+					<a class="telegramicon" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Spekulointi</a>
+					<a class="telegramiconlast" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Käännökset</a>
+					</p>
+                </div>
+            </div>
+		
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="wiki">
+                <div class="item-feature__icon">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Wiki.</h3>
+                    <p><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a> on yhteisön rakentama verkko tietosanakirja yhteisölle. Se sisältää hyödyllisiä ja ajankohtaisia tietoja kuten <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank"> DigiByte ekosysteemi</a> ja <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank">how to ohjeet</a>. Kuka tahansa voi positiivisesti edistää Wikiä luomalla ilmaisen käyttäjätilin ja aloittamalla lisäämään tai päivittämään tietoja DigiByte Wikissä.<br><strong>Varoitus</strong> <i class="fas fa-exclamation-circle"></i> Vältä törkeää itsensä mainostamista lähete linkeillä.</p>
+					<p class="jared">
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Technical_Specifications" target="_blank"><i class="fab fa-wikipedia-w"></i> Tekniikka</a> 
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> Runkorakenne</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Accomplishments" target="_blank"><i class="fab fa-wikipedia-w"></i> Saavutukset</a>
+					</p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="jared">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Tapaa DigiByten kehittäjä.</h3>
+                    <p><a href="https://www.youtube.com/embed/S8eMsq8qp7Y?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>Jared Tate</a> on DigiByte lohkoketjun perustaja ja luoja. Jared pyhitti täysipäiväistä kehitystyötä DigiByten eteen lokakuusta 2013 lähtien. Hänet on kutsuttu <a href="https://www.youtube.com/embed/Wl0RUau9roE?autoplay=1&iv_load_policy=3&rel=0" data-lity>MIT</a>:n, <a href="https://twitter.com/digibytecoin/status/982696268928618496" target="_blank">Harvard</a>:n ja <a href="https://twitter.com/jaredctate/status/1217178454229225473" target="_blank">US Capitol</a> n keskustelemaan lohkoketjuteknologiasta. Hän on myös kirjoittanut <a href="https://blockchain2035.com" target="_blank">Blockchain 2035 The Digital DNA of Internet 3.0</a> kirjan, joka on ensimmäinen, jonka lohkoketjun perustaja on kirjoittanut.
+                    </p>
+					<p class="jared">
+					<a class="telegramicon" href="https://twitter.com/jaredctate" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> 
+					<a class="telegramicon" href="https://www.linkedin.com/in/jaredctate" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=Original_author(s)" target="_blank"><i class="fab fa-wikipedia-w"></i> Biografia</a>
+					</p>
+                </div>
+            </div>
+			
+		</div>
+	    
+			 <div class="lrmargin25" data-aos="zoom-in">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Sosiaalisen Meidan Vastuuvapauslauseke</strong><br>Jared Taten, DigiByte Core Teamin, DigiByte Foundationin & DigiByte Awareness Teamin henkilökohtaiset mielipiteet, uskomukset ja näkökulmat eivät välttämättä vastaa yhteisön henkilökohtaisia mielipiteitä, uskomuksia ja näkökulmia.
+                </p>
+		</div>
+		
+	    </div>
+	    
+	</section>
+
+
+   <!-- Downloads
+    ================================================== -->
+    <section id="downloads" class="s-download target-section">
+	    
+	<!--- Downloads DigiByte Wallets
+    ================================================== -->
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Valitse sovelluksesi.
+                </h1>
+                <p class="lead">
+                    Valitse sovellus lähettääksesi, vastaanottaaksesi ja säilyttääksesi DigiBytesi & DigiAssettisi tai autentikoitumaan turvallisesti käyttäen Digi-ID:tä.<br /><a href="https://github.com/digibyte/digibyte/releases/" target="_blank">Nykyinen DigiByte Core v7.17.2</a>
+                </p>
+            </div>
+        </div>
+		
+		<div data-aos="fade">
+			
+		<h1 class="downtitle align-center">Sovelluksen kehityksen on tehnyt DigiByte yhteisö.</h1>
+		
+		<div class="row features block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" id="dgbcore">
+                <div class="item-plan__block"> 
+					
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Core</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Täysi validointi</li>
+			               <li><i class="fas fa-check blue"></i> Tue verkkoa</li>
+                           <li><i class="fas fa-check blue"></i> Korkea vakaus</li>
+                           <li><i class="fas fa-check blue"></i> SegWit tuki</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-win64-setup.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-osx.dmg" target="_blank"><i class="fab fa-apple zoom"></i></a>
+					       <a href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz" target="_blank"><i class="fab fa-linux zoom"></i></a>
+			            </div>
+
+			            <div class="supportline align-center">
+					       <p class="item-plan__per">Saatavilla Windows, macOS & Linux (vain 64 Bit) alustoille.</p>
+			            </div>
+						
+			    	    <div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Tuki</a> - <a href="https://www.dgbwiki.com/index.php?title=Running_a_full_node" target="_blank"><i class="fas fa-info-circle"></i>  Suorita koko solmu</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+           <div class="col-block item-plan" id="dgbmobile">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Mobile</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> SPV lompakko</li>
+                           <li><i class="fas fa-check blue"></i> Digi-ID tuki</li>
+                           <li><i class="fas fa-check blue"></i> DigiAssets tuki (Android)</li>
+			               <li><i class="fas fa-check blue"></i> Usean kielen tuki</li>
+                        </ul>
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://apps.apple.com/app/digibyte/id1378061425" target="_blank"><i class="fab fa-app-store-ios zoom"></i></a>
+					       <a href="https://play.google.com/store/apps/details?id=io.digibyte" target="_blank"><i class="fab fa-google-play zoom"></i></a>
+			            </div>		
+
+			    		 <div class="supportline align-center">
+					       <p class="item-plan__per">Saatavilla iOS & Android.<br>
+					       <a href="https://testflight.apple.com/join/PfRnkwy9" target="_blank"><i class="fab fa-apple"></i> TestFlight</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://support.google.com/googleplay/answer/7003180" target="_blank"><i class="fab fa-android"></i> Android Beta</a></p>
+			             </div>
+						
+			    		 <div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Tuki</a> - <a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> Palautustyökalu</a>		
+			             </div>
+                    </div>  
+                
+                </div>
+            </div>
+			
+			<div class="col-block item-plan" id="dgbgo">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Go</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><i class="fas fa-check blue"></i> Pilvi lompakko</li>
+			                <li><i class="fas fa-check blue"></i> Helppo käyttää</li>
+                            <li><i class="fas fa-check blue"></i> MultiSig tuki</li>
+                            <li><i class="fas fa-check blue"></i> DigiAssets tuki</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a href="javascript:void(0)" title="Temporary unavailable!"><i class="fab fa-chrome disabled"></i></a>
+			            </div>
+						
+						<div class="supportline align-center">
+					       <p class="item-plan__per">Saatavilla Chrome.<br>Natiivi sovellus tulossa pian!</p>
+			            </div>
+						
+						<div class="supportline align-center pt2">
+							<a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Tuki</a> - <a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> Palautustyökalu</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+        </div>
+		</div>
+	    
+	    	<!--- Downloads Docs & Guides
+    ================================================== -->
+	    		    <div class="lrmargin25" data-aos="fade"  id="docs">
+		
+			<h1 class="downtitle align-center"><i class="fas fa-books"></i> DigiByte Dokumentit & Ohjeet.</h1>
+				
+			  <div class="item-feature__text max800 align-center">
+                  <p>Etsitkö lisää dokumentaatiota? Tarvitsetko perustietoja artikkelista tai teknisiä tietoja integraatioprosessia varten. Löydät kaikki tarvittavat oppaat alla.
+                  </p>
+              </div>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        
+                        <p>Integroi DigiByte lohkoketju kauppapaikkaasi, lompakkoosi tai palveluusi helposti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Integrointi ohje</span>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        
+                        <p>Opi tärkeät tiedot DigiByte lohkoketjusta nopeasti media kirjasesta.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Media kirjanen</span>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide"> <img src="../images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
+                        
+                        <p>Käytä informatiivista verkkoesittelyä ja tutustuta kaverisi DigiByteen.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Esittely</span>
+                            <a href="https://docs.google.com/presentation/d/16Hn2GfuS1yLjZpjeTYloW0S_JVkhevYzffkDZFqjbiU" target="_blank" class="testimonials__link">Aloita</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        
+                        <p>Löydä oikeat ja ajantasalla olevat DigiByte logot & ikonit sinun projektiisi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Logot & Ikonit</span>
+                            <a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank" class="testimonials__link">Mene GitHubiin</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
+                        
+                        <p>Pyöritä omaa kokonaista DigiByte solmua tai Insight exploreria katsomalla Wiki guides ohjeet.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">How to ohjeet</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank" class="testimonials__link">Mene DigiByte Wikiin</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+	</div>
+	    
+	<!--- Downloads Third-Party
+    ================================================== -->
+		<div class="lrmargin25" data-aos="fade" id="software">
+	<h1 class="downtitle align-center">Kolmannen osapuolen kehittämät sovellukset.</h1>
+			
+	<!--- Downloads Third-Party Software Wallets
+    ================================================== -->
+        <h2 class="downtitle align-center"><i class="fas fa-laptop-code"></i> Ohjelmisto lompakko.</h2>
+
+		<div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla Windows, macOS, Linux, iOS ja Android alustoille. Digi-ID ja SegWit tuki. <strong class="dark">Suositeltu!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://www.coinomi.com" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
+                        
+                        <p>Saatavilla iOS ja Android alustoille. Useampi sijoitus vaihtoehto.  <strong class="dark">Suositeltu!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla iOS ja Android alustoille. Digi-ID ja MultiSig tuki. <strong>Maksullinen jäsenyys</strong>.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://ownbit.io" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla iOS ja Android alustoille. SegWit tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Edge</span>
+                            <a href="https://edge.app" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla Windows, macOS, Linux, iOS ja Android alustoille.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Exodus</span>
+                            <a href="https://www.exodus.io" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla Windows, macOS, Linux, iOS ja Android alustoille.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Atomic</span>
+                            <a href="https://atomicwallet.io" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla iOS ja Android alustoille. SegWit tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trust</span>
+                            <a href="https://trustwallet.com" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
+                        
+                        <p>Saatavilla Windows, macOS, Linux, Chrome, iOS ja Android alustoille.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guarda</span>
+                            <a href="https://guarda.co" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
+                        
+                        <p>Saatavilla Windows, macOS, Linux, Chrome, iOS ja Android alustoille.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Jaxx Liberty</span>
+                            <a href="https://jaxx.io" target="_blank" class="testimonials__link">Lataukset</a>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+			</div>
+	    
+	  <!--- Downloads Third-Party Hardware Wallets
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade"  id="hardware">
+
+		    <h2 class="downtitle align-center"><i class="fas fa-microchip"></i> Rautalompakot.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii minkä tahansa verkkoselaimen kanssa Wi-Fi:llä. SegWit tuki. <strong class="dark">Suositeltu!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitfi</span>
+                            <a href="https://go.bitfi.com" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii Windows, macOS, Linux, iOS ja Android laitteilla USB:n ja Bluetoothin avulla. SegWit tuki. <strong class="dark">Suositeltu!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ledger</span>
+                            <a href="https://www.ledger.com" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii Chromella ja Firefoxilla USB:n avulla. SegWit tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trezor</span>
+                            <a href="https://trezor.io" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii Chromella ja ShapeShift.com:ssa USB:n avulla.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KeepKey</span>
+                            <a href="https://shapeshift.io/keepkey" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+					
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii iOS:llä ja Androidilla QR koodilla. SegWit tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SafePal</span>
+                            <a href="https://www.safepal.io" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii Chromella ja iOS:llä USB:n ja Bluetoothin avulla. SegWit tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SecuX</span>
+                            <a href="https://www.secuxtech.com" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
+                        
+                        <p>Toimii iOS:llä ja Androidilla USB:n ja Bluetoothin avulla. Biometrinen autentikointi ja SegWit tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">D'CENT</span>
+                            <a href="https://dcentwallet.com" target="_blank" class="testimonials__link">Vieraile sivustolla</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Debit Cards
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="cards">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-credit-card"></i> Debit kortit.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
+                        
+                        <p>Holhottu iOS ja Android sovellus. Visa debit kortti saatavilla USA:ssa ja Kanadassa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">Hanki sovellus</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
+                        
+                        <p>Holhoamaton Windows, macOS, iOS ja Android sovellus. MasterCard ja UnionPay debit kortit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PolisPay</span>
+                            <a href="https://www.polispay.com/card" target="_blank" class="testimonials__link">Hanki sovellus</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Point of Sale Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="posapps">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-shopping-cart"></i> Myyntipiste sovellukset.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
+                        
+                        <p>Holhoamaton iOS ja Android sovellus henkilökohtaisiin maksuihin. Automaattisen myynnin tuki. <strong class="dark">Suositeltu!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiCafe</span>
+                            <a href="https://www.digibytecafe.com" target="_blank" class="testimonials__link">Hanki sovellus</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
+                        
+                        <p>Holhottu iOS ja Android sovellus henkilökohtaisiin maksuihin ja plugini verkkomaksuihin. Automaattisen myynnin tuki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">Hanki sovellus</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
+                        
+                        <p>Holhoamaton Android sovellus henkilökohtaisiin DigiByte maksuihin.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PlusBit</span>
+                            <a href="https://plusbit.tech/pos/" target="_blank" class="testimonials__link">Hanki sovellus</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
+                        
+                        <p>Holhoamaton Android sovellus henkilökohtaisiin maksuihin ja kauppias api verkkomaksuihin.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PayByte</span>
+                            <a href="https://paybyte.io" target="_blank" class="testimonials__link">Hanki sovellus</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Digi-ID Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="digidapps">
+		
+			<h2 class="downtitle align-center"><i class="fas fa-fingerprint"></i> Digi-ID sovellukset.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID autentikointi sovellus. AntumID lisäosan tuki DigiPassword toiminnolle.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID/AntumID</span>
+                            <a href="https://apps.apple.com/app/digi-id-antumid/id1457498829" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=rocks.digibyte.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
+                        
+                        <p>Digi-ID autentikointi sovellus. AntumID lisäosan tuki DigiPassword toiminnolle.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiID Simple</span>
+                            <a href="https://play.google.com/store/apps/details?id=com.noahseidman.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
+                        
+                        <p>Usean valuutan lompakko Digi-ID autentikointi toiminnolla.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://apps.apple.com/app/coinomi-wallet/id1333588809" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Usean valuutan lompakko Digi-ID autentikointi toiminnolla.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://apps.apple.com/app/ownbit/id1321798216" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.bitbill.www" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+		    <div class="lrmargin25" data-aos="zoom-in">
+				
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Lompakon Vastuuvapauslauseke</strong><br>Kaikki kolmannen osapuolen lompakot ovat hostattu heidän omilla palvelimillaan tai sovellus kaupoissa. Meillä ei ole mitään vastuuta mahdollisista ongelmista minkään tahansa kolmannen osapuolen lompakon kanssa. Sellaisessa tapauksessa sinun tulee olla yhteydessä lompakkoon liittyvän asiakaspalvelun kanssa.
+                </p>
+              </div>
+				
+		      <div class="align-center">
+                 <a class="btn btn--stroke" href="https://digibytewallets.com" target="_blank">Löydä enemmän DigiByte lompakoita</a>
+              </div>
+				
+	       </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer" class="s-footer footer">
+		
+		<div class="align-center">
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
+		</div>
+		
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container ticker">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "DGB/USD",
+      "proName": "BITTREX:DGBUSD"
+    },
+    {
+      "description": "DGB/BTC",
+      "proName": "BITTREX:DGBBTC"
+    },
+    {
+      "description": "DGB/ETH",
+      "proName": "BITTREX:DGBETH"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+		
+		<div class="row footer__top max1000">
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+					<form id="de-form" class="group" method="get" target="_blank" action="https://chainz.cryptoid.info/dgb/search.dws?key=25ac5ef2ff1e">
+                       <input type="text" name="q" placeholder="Etsi lohkoa, tx id:tä tai osoitetta" autocomplete="off" required>
+                       <a><input type="submit" value="Etsi" class="btn btn--primary home-content__btn search"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col-full">
+                <p>
+					<a class="telfooter15" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Hälytykset</a>
+					
+                    <a class="telfooter15" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Keskustelut</a>
+					
+					<a class="telfooter15" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Tuki</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Kehittäjät</a>
+					
+					<a class="telfooter15" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Louhinta</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Markkinointi</a>
+			
+					<a class="telfooter15" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Spekulointi</a>
+			
+					<a class="iblock" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Käännökset</a>
+                </p>
+            </div>
+        </div> 
+
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>Tietoa DigiBytestä.</h4>
+
+                <p>
+                DigiByte on nopeasti kasvava avoimen lähdekoodin lohkoketju, joka on luotu 2013 vuoden lopulla ja julkaistu 2014 vuoden alussa. Kuuden vuoden edestä tulevaisuuteen katsovaa kehitystä, DigiByte:stä on tullut yksi turvallisimmista, nopeimmista, pisimmistä ja hajautetuimmista UTXO lohkoketjuisa koko maailmassa.<br>
+		        DigiByte on maailmanlaajuinen. Yli 100+ maata.
+                </p>
+
+                <ul class="footer__social">
+		            <li><a class="zoom" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-six mob-full">
+                        <h4>DigiByte linkit.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="https://digibytefoundation.io" target="_blank">DigiByte Foundation</a></li>
+                            <li><a href="https://dgbat.org" target="_blank">DGB Awareness Team</a></li>
+                            <li><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a></li>
+			                <li><a href="https://digiexplorer.info" target="_blank">DigiExplorer</a></li>
+                            <li><a href="http://digihash.co" target="_blank">DigiHash Louhinta</a></li>
+							<li><a href="https://digistats.digibyteservers.io/" target="_blank">DigiStats</a></li>
+			                <li><a href="https://blockchain2035.com" target="_blank">Blockchain 2035</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-six mob-full">
+                        <h4>Resurssit.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">DGB Integration ohje</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">DGB Media kirjanen</a></li>
+                            <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Logot & Ikonit</a></li>
+			                <li><a href="https://github.com/digibyte/digibyte" target="_blank">DGB Protokolla GitHub</a></li>
+                            <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Ota yhteyttä</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Lahjoita</a></li>
+                        </ul>
+                    </div>		
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright"> 
+                <span>&copy; Copyright DigiByte 2013 - 2020</span> 
+				<span>Kaikki oikeudet pidätetään</span> 
+                <span>Julkaistu <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT-lisenssillä</a></span> 
+				<span><a href="../docs/LegalDisclaimer.pdf">Lakisääteinen vastuuvapauslauseke</a> | <a href="../docs/PrivacyPolicy.pdf">Tietosuojakäytäntö</a></span>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main5.js"></script>
+    <script>includeHTML();</script>
+	
+	<!-- Cookie info message
+    ================================================== -->
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
+	data-font-size="14px"
+	data-font-family="Nunito Sans,sans-serif"
+	data-text-align="left"
+    data-fg="#545454"
+	data-bg="rgba(255, 255, 255, 0.9)"
+	data-link="#0066cc"
+	data-divlink="#ffffff"
+	data-divlinkbg="#0066cc"
+	data-position="bottom"
+	data-message="Käytämme evästeitä parantakseen sinun käyttökokemusta. Jatkamalla sivustolla hyväksyt käyttämään evästeitämme."
+	data-linkmsg="Lisätietoja"
+	data-moreinfo="../docs/PrivacyPolicy.pdf"
+	data-close-text="OK"
+	>
+    </script>
+
+</body>
+	
+</html>
