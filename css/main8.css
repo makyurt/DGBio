@@ -2826,7 +2826,8 @@ padding-bottom:.75rem
 }
 
 .ttc {
-text-transform:none
+text-transform:none;
+text-align: center;
 }
 
 .ttc a {
