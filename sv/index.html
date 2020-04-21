@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html class="no-js" lang="sv">
+<head>
+	
+	<!--- Hash value catcher
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+    history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target;  
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
+	<!--- Google analytics
+    ================================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
+    </script>
+	
+	<!-- OneSignal platform support
+    ================================================== -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
+        });
+      var notificationPromptDelay = 30000;
+      var navigationStart = window.performance.timing.navigationStart;
+      var timeNow = Date.now();
+        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
+        });
+      function promptAndSubscribeUser() {
+        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+          if (!isEnabled) {
+            window.OneSignal.showSlidedownPrompt();
+           }
+         });
+        }
+     </script>
+
+    <!--- Basic page needs
+    ================================================== -->
+    <title>DigiByte Blockkedja | DGB Mynt | DigiAssets | Digi-ID</title>
+    <meta charset="utf-8">
+    <meta name="description" content="DigiByte är en decentraliserad global blockkedja med öppen källkod som innehåller DGB Coin, DigiAssets, Digi-ID och mer.">
+	<meta name="keywords" content="DigiByte, DGB, Blockkedja, Decentraliserad, Mynt, Tillgång, Digital, Krypto, Valuta, DigiAssets, Digi-ID, Cybersäkerhet, Autentisering, Smartkontrakt, dApp, Betalningar, Plånbok, Gemenskap">
+    <link rel="canonical" href="https://digibyte.io/sv/" />
+
+    <!-- Mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-itunes-app" content="app-id=1378061425">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main8.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+	
+	<!-- RSS Feed
+    ================================================== -->
+    <link rel="alternate" type="application/rss+xml" title="DigiByte core protocol updates" href="https://github.com/digibyte/digibyte/releases.atom" />
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
+    <meta name="apple-mobile-web-app-title" content="DigiByte">
+    <meta name="application-name" content="DigiByte">
+    <meta name="msapplication-TileColor" content="#002352">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#002352">
+	
+	<!-- Twitter preview
+    ================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DigiByte Blockkedja | DGB Mynt | DigiAssets | Digi-ID" />
+    <meta name="twitter:description" content="DigiByte är en decentraliserad global blockkedja med öppen källkod som innehåller DGB Coin, DigiAssets, Digi-ID och mer." />
+    <meta name="twitter:image" content="https://digibyte.io/favicons/twitter.png" />
+	
+	<!-- Facebook preview
+    ================================================== -->
+	<meta property="og:image" content="https://digibyte.io/favicons/og-image.jpg">
+    <meta property="og:image:width" content="955">
+    <meta property="og:image:height" content="500">
+    <meta property="og:description" content="DigiByte är en decentraliserad global blockkedja med öppen källkod som innehåller DGB Coin, DigiAssets, Digi-ID och mer.">
+    <meta property="og:title" content="DigiByte Blockkedja | DGB Mynt | DigiAssets | Digi-ID">
+    <meta property="og:url" content="https://digibyte.io/">
+
+</head>
+
+<body id="top">
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+        </div>
+    </div> 
+	
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo smoothscroll" href="#top"><img src="../images/logo.svg" loading="eager" alt="Home">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li id="dbc"><a class="ssbc" href="#blockchain" title="Blockchain">Blockkedja</a></li>
+					<li id="mbc"><a class="ssbcm" href="#blockchain" title="Blockchain">Blockkedja</a></li>
+					<li><a class="smoothscroll" href="#currency" title="Currency">Valuta</a></li>
+                    <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DigiAssets</a></li>
+                    <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
+                    <li><a class="smoothscroll" href="#community" title="Community">Gemenskap</a></li>
+					
+					<div class="dropdown" id="langmenu">
+                       <div includeHTML="../langmenu/desktop.html"></div>
+                    </div>
+					
+					<div includeHTML="../langmenu/mobile.html"></div>
+                </ul>
+    
+                <div class="header-cta">
+                    <a href="#downloads" class="btn btn--primary header-cta__btn smoothscroll">Nedladdningar</a>
+                </div>
+            </nav>
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header>
+
+
+    <!-- Home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    Säkrare, Snabbare,<br/>
+                    Framåttänkande.
+                    </h1>
+    
+                    <h3>
+                    DigiByte är mer än en snabbare digital valuta. Det är en innovativ blockkedja för digitala tillgångar, smartkontrakt, decentraliserade applikationer och säker autentisering.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#about" class="btn btn--primary home-content__btn smoothscroll">
+                            Läs mer
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-content__right">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
+                </div>
+
+            </div>
+
+            <ul class="home-content__social">
+                <li><a href="https://digibytefoundation.io" target="_blank">Foundation</a></li>
+				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
+				<li><a href="https://www.dgbwiki.com" target="_blank">Wiki</a></li>
+                <li><a href="https://t.me/DGBSupport" target="_blank">Support</a></li>
+		    	<li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Kontakt</a></li>
+                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Donera</a></li>  
+            </ul>
+
+        </div>
+
+        <a href="#footer" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Pris</span>
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section>
+
+
+    <!-- About
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+		<a href="#footer" class="home-scroll2 smoothscroll">
+            <span class="home-scroll__text">Pris</span>
+            <span class="home-scroll__icon"></span>
+        </a>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Vad gör DigiByte starkare än andra?
+                </h1>
+                <p class="lead">
+                    DigiByte är en snabbt växande blockkedja med öppen källkod som skapades sent 2013 och släpptes 2014. Efter 6 år av frammåttänkande utveckling, har DigiByte blivit en av de säkraste, snabbaste, längsta och mest decentraliserade <a href="https://wikipedia.org/wiki/Unspent_transaction_output" target="_blank">UTXO</a> blockkedjor som existerar.
+                </p>
+            </div>
+        </div>
+
+        <div class="row wide about-desc" data-aos="fade">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Decentraliserad på riktigt.</h3>
+
+                    <p>
+                    DigiByte har aldrig finansierats genom en s.k <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> eller med avgörande mängd <a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">pre-minade mynt</a>. Det finns ingen VD eller företag som kontrollerar DigiByte blockkedjan utan det är de globala användarna som frivilligt skapat projektet.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Säkrare.</h3>
+
+                    <p>
+					DigiByte använder sig av 5 kryptografiska algoritmer och <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">realtidsjustering av svårighetsgrad</a> för att förhindra angrepp av centraliserade miners och avvikande hash kraft. En av dessa är Odocrypt som ändras automatiskt efter 10 dagar för ASIC motstånd.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Mycket snabbare.</h3>
+
+                    <p>
+                    DigiByte blocks inträffar var 15e sekund vilket är 40x snabbare än Bitcoin och 10x snabbare än Litecoin. Tidig <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> implementering och blockkedjerigiditet möjliggör för upp till 1066 transaktioner på kedjan per sekund med försumbara avgifter.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Framtidstänkande.</h3>
+
+                    <p>
+                    Under de senaste 6 åren har DigiByte särskilt sig med flertal blockkedje'förstas', så som <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a>-skydd, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>-mining, <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank">SegWit</a>-implementering, <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a>-algoritm, <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> integritetsprotokoll, <a href="#digiassets" class="smoothscroll">DigiAssets</a> och <a href="#digi-id" class="smoothscroll">Digi-ID</a>.
+                    </p>
+                </div> 
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- What is DigiByte Video
+    ================================================== -->
+    <section class="s-about-how target-section" id="blockchain">
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="zoom-in">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://www.youtube.com/embed/7Dm-FO8u7x8?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                        <span class="item-stats__num">
+                            Vad är DigiByte?
+                        </span>
+                        <span class="item-stats__title">
+                            Se introduktionsvideon
+                        </span>
+                    </div>
+                </div>
+		   
+           </div>
+        </div>
+	    
+    <!-- Blockchain
+    ================================================== -->
+	    
+        <div class="row process-wrap">
+			
+		<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Det är såhär DigiBytes blockkedja fungerar.
+                </h1>
+                <p class="lead">
+                    De tre lagrena är de mest innovativa delarna av DigiBytes blockkedja, som tillhandahåller infrastruktur, säkerhet och kommunikation åt nätverket för att funktionera med blixtsnabb hastighet.
+                </p>
+            </div>
+        </div>
+
+        <div class="process" data-aos="fade">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Applikationer / DigiAssets.</h3>
+                        <p>Det övre lagret är som en appbutik med tydliga verkliga användingsområden. Alla typer av digitala tillgångar kan skapas med <a href="#digiassets" class="smoothscroll">DigiAssets</a> protokoll på DigiBytes blockkedja. Decentraliserade applikationer (dApps) can byggas på DigiBytes blockkedja. Även smartkontrakt som utnyttjar rigiditeten och säkerheten av DigiBytes blockkedja kan enkelt kodas.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Digital tillgång / Offentlig huvudbok.</h3>
+                        <p>Det mittersta lagret tillhandahåller säkerhet och administrering. En <strong>Digi</strong>tal <strong>Byte</strong> av data, en representation av större data eller en enhet som håller värde, och som inte kan förfalskas, dupliceras eller hackas. En oföränderlig  offentlig huvudbok där alla DigiByte-transaktioner blir bokförda. DigiByte använder <a href="https://www.dgbwiki.com/index.php?title=DigiByte_Mining_Breakdown" target="_blank">fem proof of work algoritmer</a> för säkerhet. Nya DigiBytes kommer enbart ifrån mining.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Core protokoll / Globalt nätverk.</h3>
+                        <p>Bottenlagret tillhandahåller kommunikation och operativa procedurer. Alla noder på DigiBytes globala nätverk kommunicerar.  Tusentals personer kör DigiBytes programvara över hela planeten. Alla servrar, datorer, surfplattor eller mobiltelefoner anslutna till DigiBytes nätverk blir en nod som hjälper till att vidarebefordra transaktioner.
+			            <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Börja bidra till DigiBytes blockkedja på ett optimalt sätt</a>.
+			            </p>
+		            </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Öppen källkod / Tillståndslöst.</h3>
+                        <p>Precis som <a href="https://github.com/DigiByte-Core/DGBio" target="_blank">den här webbsidan</a>, så går DigiBytes blockkedja under öppen källkod och är fri att användas under <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT licens</a>, vilket ger dig möjligheten att köra eller modifiera programvaran. Transparens möjliggör för oberoende verifiering av binärer och deras korresponderande källkod.<br />
+						<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte Protocol på GitHub</a>.
+						<br />
+						<a href="https://github.com/DigiByte-Core" target="_blank">DigiByte Core Developement på GitHub</a>.
+                        </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">DigiBytes historia.</h2>
+					<p class="lead">
+                    Upptäck de stora milstolparna i utvecklandet av DigiBytes blockkedja.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
+                        
+                        <p>Utveckling på heltid har börjat för att bygga framtiden för DigiBytes blockkedja.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Oktober, 2013</span>
+				            <a href="https://twitter.com/jaredctate/status/1190673943876841475" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
+                        
+                        <p>Genesis block blev framgångsrikt utvunnet och DigiBytes blockkedja lanserades officiellt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10 Januari, 2014</span>
+							<a href="https://github.com/digibyte/digibyte/blob/master/src/chainparams.cpp#L40" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
+                        
+                        <p>DigiShield aktiverades för att använda realtidsjustering av svårighetsgraden emot hashfluktuering.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28 Februari, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
+                        
+                        <p>MultiAlgo aktiverades för att använda 5 olika algoritmer för att förhindra centralisering av mining.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">1 September, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
+                        
+                        <p>MultiShield aktiverades för att utvidga DigiShield-skyddet över alla 5 miningalgoritmer.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10 December, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiShield" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
+                        
+                        <p>DigiSpeed aktiverades för att reducera blocktid till 15 sekunder för snabbare transaktioner.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">4 December, 2015</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
+                        
+                        <p>SegWit aktiverades före Bitcoin och Litecoin gjorde det, för effektiv användning av blockstorlek.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28 April, 2017</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID lanserades för att ge kraften åt användare att utan ansträngning logga in på webbplatser och mera.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Maj, 2018</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Digi-ID" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets lanserades för att möjliggöra decentraliserad utgivning av tillgångar och mera.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">April, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiAssets" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
+                        
+                        <p>Protokollet Dendelion++ implementerades, vilket förhindrar spårning av IP och fysisk plats. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">3 Maj, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
+                        
+                        <p>Odocrypt aktiverades, vilket förändrar sig själv var 10e dag för överlägsen ASIC- resistans. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">21 Juli, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank" class="testimonials__link">Läs mer</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+
+    <!-- Currency
+    ================================================== -->
+    <section id="currency" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    En digital valuta<br/>du absolut hade älskat.
+                </h1>
+                <p class="lead">
+                    DigiByte (DGB) är en högst skalbar digital peer-to-peer valuta som möjliggör industriledande transaktionshastighet med försumbara avgifter. DigiByte är det bästa alternativet för betalningar.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/UUhVEDlXvkQ?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Lär dig genom att titta</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-phone-laptop"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Enkelt att använda.</h3>
+                    <p>Att börja använda DigiByte är enklare än att skicka ett SMS. Du kan skicka och ta emot DigiBytes med en enhet du redan kan och älskar. Allt du behöver göra är att installera en <a class="smoothscroll" href="#downloads">DigiByte-stödd plånbok</a> och sedan klicka på skanna, skanna QR koden och skicka DigiByte. Lika enkelt som 1..2..3.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Inte en ICO.</h3>
+                    <p>DigiByte har aldrig blivit finansierat genom en <a href="https://en.wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> eller en signifikant mängd av förutvunna mynt (<a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">0% återstående</a>). Det finns varken VD eller ett företag som kontrollerar DigiBytes blockkedja. <a class="smoothscrollup" href="#jared">Grundaren</a>, <a class="smoothscrollup" href="#developers">utvecklare</a> och vårt <a class="smoothscroll" href="#community">community</a> är obetalda volontärer som eliminerar risken att gå bankrutt.
+                    </p>
+                </div>
+            </div> <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-tachometer-alt-fastest"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Mycket snabbare.</h3>
+                    <p>DigiByte-transaktioner bekräftas på ungefär 15 sekunder, vilket är 40 gånger snabbare än Bitcoin och 10 gånger snabbare än Litecoin. <a href="https://en.wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> möjliggör för upp till 1066 transaktioner på kedjan per sekund och försumbara avgifter gör DigiByte till den idealiska valutan för dagliga betalningar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>    
+                <div class="item-feature__text">
+                    <h3 class="item-title">Alltid säker.</h3>
+                    <p>DigiByte har byggts på den oknäckbara teknologin från Bitcoins blockkedja och implementerar diverse avancerade förbättringar på den så som <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a>-skydd, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>-mining och <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a>-algoritmen. Även <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> integritetsprotokoll hjälper dig att hålla dig trygg genom att gömma din IP och fysiska plats. <a href="https://www.dgbwiki.com/index.php?title=What_makes_DigiByte_More_Secure%3F" target="_blank">Läs mer</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-digging"></i>
+                </div> 
+                <div class="item-feature__text">
+                    <h3 class="item-title">Utvinningsbar.</h3>
+                    <p>DigiByte är en 100% <a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank">Proof of Work</a> (PoW) blockkedja som kan bli utvunnet med fem algoritmer kallade Sha256, Scrypt, Skein, Qubit och Odocrypt. <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>-mining bidrar till decentralisering, nätverkssäkerhet och ger dig friheten att använda olika typer av hårdvara så som en ASIC, en FPGA eller en GPU. <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">Läs mer</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Hanterbara enheter.</h3>
+                    <p>Jämfört med 21 miljoner Bitcoin, har 21 miljarder DigiByte (1000:1 ratio till BTC) blivit designat för att vara redo för massadoption. DigiBytes blockbelöningar reduceras med 1% varje månad istället för att halveras var 4e år. Alla 21 miljarder DigiBytes kommer ha utvunnits till år 2035. Efter 2035 så kommer miners förlita sig enbart på transaktionsavgifter. <a href="https://www.dgbwiki.com/index.php?title=Why_so_many_coins%3F_21Billion" target="_blank">Läs mer</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Snabbval från DigiBytes Ekosystem.</h2>
+					<p class="lead">
+                    Alla växlingskontor och tjänster som stödjer DigiByte kan hittas på <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiByte Wiki</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
+                        
+                        <p>Bittrex förser en bevisad och säker plattform för sina kunder att få tillgång till möjligheter för DigiByte-handel.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bittrex</span>
+                            <a href="https://bittrex.com" target="_blank" class="testimonials__link">bittrex.com</a>
+                        </div>
+                    </div> 
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/vertbase.png" loading="lazy" alt="Vertbase" class="testimonials__avatar">
+                        
+                        <p>Med Vertbase enkla och säkra process kan du köpa och sälja DigiByte med USD, GBP eller Euro.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Vertbase</span>
+                            <a href="https://www.vertbase.com" target="_blank" class="testimonials__link">vertbase.com</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/litebit.png" loading="lazy" alt="LiteBit" class="testimonials__avatar">
+                        
+                        <p>LifeBit är en mäklare av kryptovaluta som tillåter användare att enkelt köpa, sälja och lagra DigiByte inom EU.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">LiteBit</span>
+                            <a href="https://www.litebit.eu" target="_blank" class="testimonials__link">litebit.eu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
+                        
+                        <p>Abra gör investering i DigiByte enklare, säkrare och tillgängligt för alla. Tillgängligt i 150 länder.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">abra.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
+                        
+                        <p>ShapeShift är den ledande omedelbara växlingskontoret för digitala tillgångar och stödjer dussintals av valutor, DigiByte inkluderat.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ShapeShift</span>
+                            <a href="https://shapeshift.io" target="_blank" class="testimonials__link">shapeshift.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangels tjänst är ett krypto till krypto, plånbok till plånbok, växlingskontor som stödjer gemenskapsprojekt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/spend.png" loading="lazy" alt="Spend App" class="testimonials__avatar">
+                        
+                        <p>Spend ger dig tillgång till en mängd bankprodukter så som Multi Currency Digital Wallet och Spend Visa kort.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">spend.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/coinpayments.png" loading="lazy" alt="CoinPayments" class="testimonials__avatar">
+                        
+                        <p>CoinPayments ger tillgång till köp nu-knappar, kundvagnar med mera för att du ska kunna ta emot DigiByte på din hemsida.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">coinpayments.net</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibytepay.png" loading="lazy" alt="DigiBytePay" class="testimonials__avatar">
+                        
+                        <p>Ta emot betalningar med DigiByte i person och online på enkelt vis med DigiCafe App och WooCommerce.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiBytePay</span>
+                            <a href="https://www.digibytepay.us" target="_blank" class="testimonials__link">digibytepay.us</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID erbjuder en unik upplevelse för säker autentisering  åt hemsidor genom att använda DigiByte-teknologi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">OpenAntumID</span>
+                            <a href="https://www.openantumid.com" target="_blank" class="testimonials__link">openantumid.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/nownodes.png" loading="lazy" alt="NowNodes" class="testimonials__avatar">
+                        
+                        <p>NowNodes ger tillgång till snabb och pålitlig uppkoppling till populära blockkedjor, DigiByte inkluderat, med sina kraftfulla servrar.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">NowNodes</span>
+                            <a href="https://nownodes.io" target="_blank" class="testimonials__link">nownodes.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Besök CryptoBantam och köp trendiga kläder för att bidra till medvetenhet och adoption av DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com/vendor/dgbat/" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
+                        
+                        <p>Skaffa din egna @dgb.community e-postadress för att stödja DigiByte Foundation och DGBAT.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DGB.community</span>
+                            <a href="https://dgb.community" target="_blank" class="testimonials__link">dgb.community</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptoid.png" loading="lazy" alt="CryptoID Block Explorer" class="testimonials__avatar">
+                        
+                        <p>CryptoID blockutforskare ger detaljerad statistik om DigiBytes blockkedja och specifika transaktioner.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoID</span>
+                            <a href="https://chainz.cryptoid.info/dgb/" target="_blank" class="testimonials__link">chainz.cryptoid.info</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DigiAssets
+    ================================================== -->
+    <section id="digiassets" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Ett förenklat sätt<br/>att skapa digitala tillgångar.
+                </h1>
+                <p class="lead">
+                   DigiAssets är ett säkert, skalbart lager på DigiBytes blockkedja som möjliggör decentraliserad utdelning av tillgångar, tokens, smartkontrakt, digital identitet med mera.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/xDJllY5ehNw?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Lär dig genom att titta</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Gränslösa möjligheter.</h3>
+                    <p>DigiAssets kan användas för att säkert representera vad som helst i den fysiska världen. Från påtagliga tillgångar så som fastighetsförmedling eller bilar, till knappa digitala konstverk. Signerade dokument så som överlåtelsehandlingar och medicinska räkningar kan skyddas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Växer självsäkert.</h3>
+                    <p>DigiAssets som ekosystem och plattform har redan intresserade parter som antingen planerar på eller för närvarande bygger plattformar inom fastighetsförmedling, finans, remittering, identitet, försäljningsställen, racing, handel, sjukvård, försörjningskedja, myndigheter med mera.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-badge-check"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Fast teknologi.</h3>
+                    <p>DigiAssets utnyttjar unika aspekter av en verkligen decentraliserad blockkedja som bara kan finnas inom en tillståndsfri blockkedja som DigiByte. Detta möjliggör för att DigiAssets ska vara mer säkert, skalbart och decentraliserat än någon annan plattform på marknaden.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Börja med DigiAssets.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Lär dig protokollet.</h3>
+                        <p>Granska specifikationerna för den öppna källkoden, DigiAssets protokoll, för att skapa och skicka digitala tillgångar på DigiBytes blockkedja. <a href="https://github.com/DigiByte-Core/DigiAssets-Protocol-Specifications/wiki" target="_blank">DigiAssets Protocol på GitHub</a>.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Skapa en tillgång.</h3>
+                        <p>Inte en utvecklare? Definitivt inte ett problem! Vem som helst can enkelt skapa en DigiAsset genom att använda en av de verktyg tillgängliga utan att ha tekniska kunskaper om protokollet. <a class="smoothscrollup" href="#digiassetservices">DigiAssets-stödda tjänster</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Lagra / Utbyt.</h3>
+                        <p>Undrar du hur du använder DigiAssets? Använd <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> och <a class="smoothscrollup" href="#dgbgo">DigiByte Go</a> apparna för att skicka, motta och lagra dina tillgångar eller utforska <a class="smoothscrollup" href="#digiassetservices">Digiassets-stödda tjänster</a> för att köpa, sälja och utbyta DigiAssets.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Behöver du mer hjälp?</h3>
+                        <p>Behöver du mer assistans gällande DigiAssets? Känn dig fri att gå med i vår grupp på Telegram, DigiByte Developers, för att ställa era frågor eller dela era idéer. <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers på Telegram</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+	    </div>
+		
+		<div class="testimonials-wrap" data-aos="zoom-in" id="digiassetservices">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Se DigiAssets i action.</h2>
+					<p class="lead">
+                    Upptäck DigiAssets-stödda tjänster och upplev DigiAssets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets Tools låter dig skapa DigiAssets snabbt och enkelt, även för den icke-tekniska användaren.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiAssets Tools</span>
+                            <a href="https://createdigiassets.com" target="_blank" class="testimonials__link">createdigiassets.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
+                        
+                        <p>Digi-Broker är en sida där användare ifrån hela världen can dela med sig, köpa och sälja sina digitala tillgångar.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-Broker</span>
+                            <a href="https://digi-broker.com/index.php/tools/" target="_blank" class="testimonials__link">digi-broker.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
+                        
+                        <p>digiassetX är en nytt växlingskontor för DigiBytes DigiAsset, och en tjänst för att skapa DigiAssets.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Kommer snart</span>
+                            <a href="https://digiassetx.com/" target="_blank" class="testimonials__link">digiassetx.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+    </section>
+	
+	
+	<!-- Digi-ID
+    ================================================== -->
+    <section id="digi-id" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Autentisering i sitt esse.
+                </h1>
+                <p class="lead">
+                    Digi-ID är ett säkerhetsprotokoll, byggt på DigiBytes blockkedjeteknologi, som ger kraften åt användare att ansträngningslöst logga in på webbplatser, applikationer och till och med internet av saker.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/pLrQycud5GI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Lär dig genom att titta</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Enkel autentisering.</h3>
+                    <p>Digi-ID eliminerar användarnamn, lösenord och 2fa- krav för autentisering. Eftersom Digi-ID använder publik / privat nyckelkryptografi så är inga lösenord eller användarnamn i riskzonen. Den här metoden skyddar inte bara kunden, utan även tjänsten som kunden använder.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Felfri säkerhet.</h3>
+                    <p>Digi-ID lagrar ingen data om användaren på blockkedjan. Detta stärker ytterliggare säkerheten medans det även stöttar slutanvändares självförtroende om att deras data varken spåras eller riskeras av andras misskötsel. Det finns inga externa bristningspunkter för en hackare att inriktas på och utnyttja er plattform.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-smile-plus"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Enkelt och gratis.</h3>
+                    <p>Digi-ID är helt gratis! Det finns inga avgifter, inga prenumereringstjänster eller underhållskostnader. Men kostnaden är det näst bästa kännetecknet. Den primära funktionen är att, i enlighet med DigiBytes säkerhetsprioritering, Digi-ID är säkrare, men ändå en enkel metod tillgänglig för att logga in på webbplatser, appar och mera.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Såhär funkar det.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Generation.</h3>
+                        <p>Webbplatsen, applikationen eller produkten genererar en unik Digi-ID QR-kod och presenterar den.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Skanning.</h3>
+                        <p>Användaren skannar QR-koden genom <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a>-plånboken eller någon annan <a class="smoothscroll" href="#digidapps">Digi-ID-stödd app</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Autentisering.</h3>
+                        <p>Användaren autentiserar sin begäran genom att knappa in sin PIN eller skanna fingeravtryck/ansikte.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Bekräftelse.</h3>
+                        <p>Digi-ID skickar den kryptografiskt signerade begäran tillbaka och användaren blir framgångsrikt inloggad.
+                        </p> 
+                    </div>
+
+                </div>
+              </div>
+			
+          </div>
+		
+		  <div data-aos="fade">
+		
+		  <h1 class="align-center">Frekventa Frågor.</h1>
+		
+		  <div class="row features block-1-2 block-m-1-2">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Var kan jag hitta mer dokumentation?</h3>
+                    <p>Det bästa stället att börja på är <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. Om du vill veta mer om detaljerna och fördelarna med Digi-ID så kan du referera till <a href="https://www.digi-id.io/faq" target="_blank">användarguiden</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">försäljarguiden</a> och <a href="https://www.digi-id.io/integration.html" target="_blank">integrationsguiden</a>. Om du letar efter media kit, hämta gärna <a href="../docs/digiidintro.pdf" target="_blank">introarket</a> och <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">loggor</a>.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Var är integrationsbiblioteken?</h3>
+                    <p>Eftersom Digi-ID är öppen källkod så kan flertal kodförråd hittas på GitHub, så som <a href="https://github.com/DigiByte-Core?q=digiid" target="_blank">DigiByte Core Development </a>, <a href="https://github.com/mctrivia?tab=repositories&q=digiid" target="_blank">Matthew Cornelisse</a> och <a href="https://github.com/evilmouse69/Digi-ID-for-WHMCS/" target="_blank">WHMCSSnow</a>. Om du behöver mer assistans, gå gärna med i gruppen <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers group</a> på Telegram.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Kan jag integrera Digi-ID utan kodning?</h3>
+                    <p>Om du inte är en utvecklare så kan du vilja använda lösningar redo för integration för er hemsida eller produkt. <a href="https://www.openantumid.com/" target="_blank">OpenAntumID</a> tillhandahåller ansträngningslös Digi-ID integrationsservice. Du kan även använda <a href="https://wordpress.org/plugins/digi-id-authentication/" target="_blank">WordPress insticksmodul</a> för WordPress plattformar.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Finns det andra Digi-ID autentiseringsappar?</h3>
+                    <p>Självklart! Digi-ID är en snabbt växande platform. Flertal fristående autentiseringsappar och Digi-ID-stödda plånböcker kan hittas på <a class="smoothscroll" href="#digidapps">Nedladdnings</a>-sektionen. Du kan även placera en gratis Digi-ID <a href="https://digibytewallets.com/digid/" target="_blank">applikationswidget</a> på inloggningssidan av er hemsida.
+                    </p>
+                </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="zoom-in">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Se Digi-ID i action.</h2>
+					<p class="lead">
+                    Upptäck några Digi-ID-stödda tjänster för att uppleva sömlös autentisering.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangels tjänst är ett krypto till krypto, plånbok till plånbok, växlingskontor som stödjer gemenskapsprojekt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID erbjuder en unik upplevelse för säker autentisering  åt hemsidor genom att använda DigiByte-teknologi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AntumID</span>
+                            <a href="https://www.antumid.be/gateway/soaplogin" target="_blank" class="testimonials__link">antumid.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
+                        
+                        <p>AbsoluteJobs är ett av de ledande företagen som erbjuder arbetsförmedlingstjänster i Belgien.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AbsoluteJobs</span>
+                            <a href="https://www.absolutejobs.be" target="_blank" class="testimonials__link">absolutejobs.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Besök CryptoBantam och köp trendiga kläder för att bidra till medvetenhet och adoption av DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
+                        
+                        <p>Hash Altcoin är ett mining-företag som producerar FPGA enheter för högstabil miningupplevelse.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Hash Altcoin</span>
+                            <a href="https://www.hashaltcoin.com/en/" target="_blank" class="testimonials__link">hashaltcoin.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+	
+	
+	<!-- Community
+    ================================================== -->
+    <section id="community" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Den mest passionerade<br/>gemenskapen någonsin!
+                </h1>
+                <p class="lead">
+                    Tusentals av volontärer från hela världen har bidragit till DigiByte på otaliga sätt under flera år för att göra det till vad det är idag. Det är verkligen en gräsrotsrörelse. Vi välkomnar dig varmt att gå med oss!
+                </p>
+            </div>
+		    <a class="btn btn--primary" href="https://www.youtube.com/embed/uGearn3BHvU?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Lär dig genom att titta</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature" id="foundation">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Foundation.</h3>
+                    <p>DigiByte Foundation är en ideell organisation driven av volontärer. De skyddar och främjar de sanna principerna av decentralisering och ger kraft åt DigiByte och dess community för att etablera och upprätthålla en hållbar decentraliserad värld. <a href="https://digibytefoundation.io" target="_blank">Läs mer</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="dgbat">
+                <div class="item-feature__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Awareness Team.</h3>
+                    <p>DGBAT är ett community-drivet initiativ. De leds av ett team vilkas medlemmar i sin tur även hanterar team i social media, utbildningar, skribenter och utvecklare. Målet är att främja DigiByte genom utbildning och marknadsföringskampanjer. <a href="https://dgbat.org" target="_blank">Läs mer</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="developers">
+                <div class="item-feature__icon">
+                    <i class="fas fa-code"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Utvecklare.</h3>
+                    <p>Alla som jobbar med DigiByte är obetalda volontärer. Börja bidra till DGBs utveckling idag eller bygg din egna app på DigiBytes blockkedja.
+					<br />	
+					<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte Protocol på GitHub</a>.
+					<br />
+					<a href="https://github.com/DigiByte-Core" target="_blank">DigiByte Core Developement på Github</a>.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="socialmedia">
+                <div class="item-feature__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+		    <div class="item-feature__text">
+                    <h3 class="item-title">Social media.</h3>
+                    <p>Följ DigiByte på alla primära sociala mediaplattformar för att hålla dig uppdaterad med de senaste nyheterna om DigiByte och dela inlägg med dina vänner för att hjälpa oss få våra röster hörda över hela världen.
+                    </p>
+					<p class="item-feature__icon">
+					   <a class="rightpad25" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+					   <a class="rightpad25" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook zoom"></i></a>
+					   <a class="rightpad25" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
+					   <a class="rightpad25" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+					   <a class="rightpad25" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube zoom"></i></a>
+					   <a href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+                    </p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="telegram">
+                <div class="item-feature__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Telegram grupper.</h3>
+                    <p><a href="https://telegram.org" target="_blank">Telegram</a> är det mest populära och enkla sättet att engagera dig i vår globala DigiByte-gemenskap. Gå gärna med i de grupper du är intresserad i här nedan eller kolla på listan med <a href="https://t.me/OfficialDigiByteGroups" target="_blank">alla DigiByte grupper</a>.
+					</p>
+					<p>
+					<a class="telegramicon" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Notiser</a>
+					<a class="telegramicon" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Diskussion</a>
+					<a class="telegramicon" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Support</a>
+					<a class="telegramicon" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Utvecklare</a>
+					<a class="telegramicon" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Mining</a>
+					<a class="telegramicon" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Marknadsföring</a>
+					<a class="telegramicon" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Spekulation</a>
+					<a class="telegramiconlast" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Översättningar</a>
+					</p>
+                </div>
+            </div>
+		
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="wiki">
+                <div class="item-feature__icon">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Wiki.</h3>
+                    <p><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a> är ett uppslagsverk online byggt av vårt community, för vårt community. Det innehåller användbar och uppdaterad data så som <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiBytes Ekosystem</a> och <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank">hur-guider</a>. Vem som helst kan positivt bidra till vår Wiki genom att skapa ett gratis användarkonto och börja lägga till eller uppdatera information på DigiBytes Wiki.<br><strong>Varning</strong> <i class="fas fa-exclamation-circle"></i> Undvik skamlös självbefodran och refereringslänkar.</p>
+					<p class="jared">
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Technical_Specifications" target="_blank"><i class="fab fa-wikipedia-w"></i> Tekniskt</a> 
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> Ramverk</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Accomplishments" target="_blank"><i class="fab fa-wikipedia-w"></i> Prestationer</a>
+					</p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="jared">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Möt skaparen av DigiByte.</h3>
+                    <p><a href="https://www.youtube.com/embed/S8eMsq8qp7Y?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>Jared Tate</a> är grundaren och skaparen av DigiBytes blockkedja. Jared har dedikerat sig till heltidsutveckling för DigiByte sedan Oktober 2013. Han har blivit inbjuden av <a href="https://www.youtube.com/embed/Wl0RUau9roE?autoplay=1&iv_load_policy=3&rel=0" data-lity>MIT</a>, <a href="https://twitter.com/digibytecoin/status/982696268928618496" target="_blank">Harvard</a> och <a href="https://twitter.com/jaredctate/status/1217178454229225473" target="_blank">US Capitol</a> för att tala om blockkedjeteknologi. Han är även författare till boken <a href="https://blockchain2035.com" target="_blank">Blockchain 2035 The Digital DNA of Internet 3.0</a>, vilket är den första boken skriven av en grundare till en blockkedja.
+                    </p>
+					<p class="jared">
+					<a class="telegramicon" href="https://twitter.com/jaredctate" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> 
+					<a class="telegramicon" href="https://www.linkedin.com/in/jaredctate" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=Original_author(s)" target="_blank"><i class="fab fa-wikipedia-w"></i> Biografi</a>
+					</p>
+                </div>
+            </div>
+			
+		</div>
+	    
+			 <div class="lrmargin25" data-aos="zoom-in">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Ansvarsfriskrivelse I Social Media</strong><br>De personliga åsikter, åskådningar och synpunkter utryckta av Jared Tate, DigiByte Core Team, DigiByte Foundation & DigiByte Awareness Team reflekterar inte nödvändigtvis de personliga åsikter, åskådningar och synpunkter för vårt community.
+                </p>
+		      </div>
+		
+	         </div>
+	    
+	</section>
+
+
+   <!-- Downloads
+    ================================================== -->
+    <section id="downloads" class="s-download target-section">
+	    
+	<!--- Downloads DigiByte Wallets
+    ================================================== -->
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Välj din app.
+                </h1>
+                <p class="lead">
+                    Välj en app för att skicka, motta och lagra dina DigiBytes och DigiAssets eller autentisera genom att använda Digi-ID.<br /><a href="https://github.com/digibyte/digibyte/releases/" target="_blank">Nuvarande DigiByte Core v7.17.2</a>
+                </p>
+            </div>
+        </div>
+		
+		<div data-aos="fade">
+			
+		<h1 class="downtitle align-center">Appar utvecklade av DigiBytes community.</h1>
+		
+		<div class="row features block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" id="dgbcore">
+                <div class="item-plan__block"> 
+					
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Core</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Full validering</li>
+			               <li><i class="fas fa-check blue"></i> Stödj nätverket</li>
+                           <li><i class="fas fa-check blue"></i> Hög stabilitet</li>
+                           <li><i class="fas fa-check blue"></i> SegWit support</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-win64-setup.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-osx.dmg" target="_blank"><i class="fab fa-apple zoom"></i></a>
+					       <a href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz" target="_blank"><i class="fab fa-linux zoom"></i></a>
+			            </div>
+
+			            <div class="supportline align-center">
+					       <p class="item-plan__per">Tillgängligt för Windows, macOS & Linux (64-bitars endast)</p>
+			            </div>
+						
+			    	    <div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Support</a> - <a href="https://www.dgbwiki.com/index.php?title=Running_a_full_node" target="_blank"><i class="fas fa-info-circle"></i> Kör en hel nod</a>
+						</div>
+                    </div>  
+					
+                </div>
+            </div>
+
+           <div class="col-block item-plan" id="dgbmobile">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Mobile</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> SPV-plånbok</li>
+                           <li><i class="fas fa-check blue"></i> Digi-ID support</li>
+                           <li><i class="fas fa-check blue"></i> DigiAssets support (Android)</li>
+			               <li><i class="fas fa-check blue"></i> Flerspråkig support</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://apps.apple.com/app/digibyte/id1378061425" target="_blank"><i class="fab fa-app-store-ios zoom"></i></a>
+					       <a href="https://play.google.com/store/apps/details?id=io.digibyte" target="_blank"><i class="fab fa-google-play zoom"></i></a>
+			            </div>		
+
+			    		<div class="supportline align-center">
+					       <p class="item-plan__per">Tillgänglig för iOS & Android.<br>
+					       <a href="https://testflight.apple.com/join/PfRnkwy9" target="_blank"><i class="fab fa-apple"></i> TestFlight</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://support.google.com/googleplay/answer/7003180" target="_blank"><i class="fab fa-android"></i> Android Beta</a></p>
+			            </div>
+						
+			    		<div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Support</a><br><a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> Återhämtningsverktyg</a>		
+			            </div>
+                    </div>  
+                
+                </div>
+            </div>
+			
+			<div class="col-block item-plan" id="dgbgo">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Go</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Molnplånbok</li>
+			               <li><i class="fas fa-check blue"></i> Lätt att använda</li>
+                           <li><i class="fas fa-check blue"></i> MultiSig support</li>
+                           <li><i class="fas fa-check blue"></i> DigiAssets support</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a href="javascript:void(0)" title="Temporary unavailable!"><i class="fab fa-chrome disabled"></i></a>
+			            </div>
+						
+						<div class="supportline align-center">
+					       <p class="item-plan__per">Tillgänglig för Chrome.<br>Appar kommer snart!</p>
+			            </div>
+						
+						<div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Support</a><br><a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> Återhämtningsverktyg</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+        </div>
+		</div>
+	    
+	    	<!--- Downloads Docs & Guides
+    ================================================== -->
+	    	<div class="lrmargin25" data-aos="fade"  id="docs">
+		
+			<h1 class="downtitle align-center"><i class="fas fa-books"></i> DigiByte Dokument & Guider.</h1>
+				
+			  <div class="item-feature__text max800 align-center">
+                  <p>Letar du efter mer dokumentation? Oavsett om du behöver grundläggande information för en artikel eller teknisk information för en integreringsprocess. Du kan nå alla nödvändiga guider nedan.
+                  </p>
+              </div>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        
+                        <p>Integrera DigiBytes blockkedja i ert växlingskontor, plånbok eller tjänst enkelt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Integrationsguide</span>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        
+                        <p>Lär dig viktig fakta om Digibytes blockkedja snabbt med mediearket.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Medieark</span>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide"> <img src="../images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
+                        
+                        <p>Använd den informativa onlinepresentationen för att introducera DigiByte till dina vänner.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Presentation</span>
+                            <a href="https://docs.google.com/presentation/d/16Hn2GfuS1yLjZpjeTYloW0S_JVkhevYzffkDZFqjbiU" target="_blank" class="testimonials__link">Börja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        
+                        <p>Hitta korrekta och uppdaterade DigiByte-loggor och ikoner för ditt projekt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Loggor & Ikoner</span>
+                            <a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank" class="testimonials__link">Gå till GitHub</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
+                        
+                        <p>Kör en hel, egen DigiByte-nod eller Insight utforskare genom att referera till våra Wiki-guider</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guider hur</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank" class="testimonials__link">Gå till DigiByte Wiki</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+	</div>
+	    
+	<!--- Downloads Third-Party
+    ================================================== -->
+		<div class="lrmargin25" data-aos="fade" id="software">
+	<h1 class="downtitle align-center">Appar utvecklade av tredje partstjänster.</h1>
+			
+	<!--- Downloads Third-Party Software Wallets
+    ================================================== -->
+        <h2 class="downtitle align-center"><i class="fas fa-laptop-code"></i> Mjukvaruplånböcker.</h2>
+
+		<div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för Windows, macOS, Linux, iOS och Android. Digi-ID och SegWit support. <strong class="dark">Rekomenderad!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://www.coinomi.com" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för iOS och Android. Flertal investeringsalternativ. <strong class="dark">Rekomenderad!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för iOS och Android. Digi-ID och MultiSig support. <strong>Betalt medlemskap</strong>.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://ownbit.io" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för iOS och Android. SegWit support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Edge</span>
+                            <a href="https://edge.app" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för Windows, macOS, Linux, iOS och Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Exodus</span>
+                            <a href="https://www.exodus.io" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för Windows, macOS, Linux, iOS och Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Atomic</span>
+                            <a href="https://atomicwallet.io" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för iOS och Android. SegWit support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trust</span>
+                            <a href="https://trustwallet.com" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för Windows, macOS, Linux, Chrome, iOS och Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guarda</span>
+                            <a href="https://guarda.co" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
+                        
+                        <p>Tillgänglig för Windows, macOS, Linux, Chrome, iOS och Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Jaxx Liberty</span>
+                            <a href="https://jaxx.io" target="_blank" class="testimonials__link">Ladda ned</a>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+			</div>
+	    
+	  <!--- Downloads Third-Party Hardware Wallets
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade"  id="hardware">
+
+		    <h2 class="downtitle align-center"><i class="fas fa-microchip"></i> Hårdvaruplånböcker.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med alla webbläsare genom Wi-Fi. SegWit support. <strong class="dark">Rekomenderad!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitfi</span>
+                            <a href="https://go.bitfi.com" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med Win, macOS, Linux, iOS och Android genom USB och Bluetooth. SegWit support. <strong class="dark">Rekomenderad!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ledger</span>
+                            <a href="https://www.ledger.com" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med Chrome och Firefox genom USB. SegWit support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trezor</span>
+                            <a href="https://trezor.io" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med Chrome och ShapeShift.com genom USB.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KeepKey</span>
+                            <a href="https://shapeshift.io/keepkey" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+					
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med iOS och Android genom QR-kod. SegWit support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SafePal</span>
+                            <a href="https://www.safepal.io" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med Chrome och iOS genom USB och Bluetooth. SegWit support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SecuX</span>
+                            <a href="https://www.secuxtech.com" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
+                        
+                        <p>Fungerar med iOS och Android genom USB och Bluetooth. Biometrisk autentisering och SegWit support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">D'CENT</span>
+                            <a href="https://dcentwallet.com" target="_blank" class="testimonials__link">Besök webbsida</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Debit Cards
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="cards">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-credit-card"></i> Debiteringskort.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
+                        
+                        <p>Förvaltade iOS och Android- appar. Visa debiteringskort tillgängliga i USA och Kanada.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">Skaffa appen</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
+                        
+                        <p>Icke-förvaltade Windows, macOS, iOS och Android- appar. MasterCard och UnionPay debiteringskort.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PolisPay</span>
+                            <a href="https://www.polispay.com/card" target="_blank" class="testimonials__link">Skaffa appen</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Point of Sale Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="posapps">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-shopping-cart"></i> Försäljningsställe-appar.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
+                        
+                        <p>Icke-förvaltade iOS och Android- appar för betalningar i person. Auto-sälj support. <strong class="dark">Rekomenderad!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiCafe</span>
+                            <a href="https://www.digibytecafe.com" target="_blank" class="testimonials__link">Skaffa appen</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
+                        
+                        <p>Förvaltade iOS och Android- appar för betalningar i person och insticksmoduler för betalningar online. Auto-sälj support.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">Skaffa appen</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
+                        
+                        <p>Icke-förvaltade Android-appar för DigiByte-betalningar i person.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PlusBit</span>
+                            <a href="https://plusbit.tech/pos/" target="_blank" class="testimonials__link">Skaffa appen</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
+                        
+                        <p>Icke-förvaltade Android-appar för betalningar i person och försäljnings-api för betalningar online.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PayByte</span>
+                            <a href="https://paybyte.io" target="_blank" class="testimonials__link">Skaffa appen</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Digi-ID Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="digidapps">
+		
+			<h2 class="downtitle align-center"><i class="fas fa-fingerprint"></i> Digi-ID appar.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID autentiserings-app. AntumID tilläggsupport för DigiPassword-funktion.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID/AntumID</span>
+                            <a href="https://apps.apple.com/app/digi-id-antumid/id1457498829" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=rocks.digibyte.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
+                        
+                        <p>Digi-ID autentiserings-app. AntumID tilläggsupport för DigiPassword-funktion.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiID Simple</span>
+                            <a href="https://play.google.com/store/apps/details?id=com.noahseidman.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
+                        
+                        <p>Multi valuta-plånböcker med Digi-ID autentisering.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://apps.apple.com/app/coinomi-wallet/id1333588809" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Multi valuta-plånböcker med Digi-ID autentisering.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://apps.apple.com/app/ownbit/id1321798216" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.bitbill.www" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+		    <div class="lrmargin25" data-aos="zoom-in">
+				
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Ansvarsfriskrivelse För Plånböcker</strong><br>Alla tredje parts-plånböcker introducerade här hostas äv deras egna servrar eller applikationsbutiker. Vi har inget ansvar för möjliga problem du kan uppleva gällande någon tredje parts-plånbok. I sådant fall bör du kontakta relevant tjänst för plånboks-support.
+                </p>
+              </div>
+				
+		      <div class="align-center">
+                 <a class="btn btn--stroke" href="https://digibytewallets.com" target="_blank">Hitta fler DigiByte Plånböcker.</a>
+              </div>
+				
+	       </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer" class="s-footer footer">
+		
+		<div class="align-center">
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
+		</div>
+		
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container ticker">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "DGB/USD",
+      "proName": "BITTREX:DGBUSD"
+    },
+    {
+      "description": "DGB/BTC",
+      "proName": "BITTREX:DGBBTC"
+    },
+    {
+      "description": "DGB/ETH",
+      "proName": "BITTREX:DGBETH"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+		
+		<div class="row footer__top max1000">
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+					<form id="de-form" class="group" method="get" target="_blank" action="https://chainz.cryptoid.info/dgb/search.dws?key=25ac5ef2ff1e">
+                       <input type="text" name="q" placeholder="Sök efter block, tx id eller adress" autocomplete="off" required>
+                       <a><input type="submit" value="Sök" class="btn btn--primary home-content__btn search"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col-full">
+                <p>
+					<a class="telfooter15" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Notiser</a>
+					
+                    <a class="telfooter15" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Diskussion</a>
+					
+					<a class="telfooter15" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Support</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Utvecklare</a>
+					
+					<a class="telfooter15" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Mining</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Marknadsföring</a>
+			
+					<a class="telfooter15" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Spekulation</a>
+			
+					<a class="iblock" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Översättningar</a>
+                </p>
+            </div>
+        </div> 
+
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>Om DigiByte.</h4>
+
+                <p>
+                DigiByte är en snabbt växande blockkedja med öppen källkod skapad sent under 2013 och släpptes tidigt under 2014. Efter 6 år av framåttänkande utveckling så har DigiByte blivit en av de säkraste, snabbaste, längsta och mest decentraliserade UTXO blockkedjan som existerar.<br>
+		        DigiByte är globalt i 100+ länder.
+                </p>
+
+                <ul class="footer__social">
+		            <li><a class="zoom" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-six mob-full">
+                        <h4>DigiByte länkar.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="https://digibytefoundation.io" target="_blank">DigiByte Foundation</a></li>
+                            <li><a href="https://dgbat.org" target="_blank">DGB Awareness Team</a></li>
+                            <li><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a></li>
+			                <li><a href="https://digiexplorer.info" target="_blank">DigiExplorer</a></li>
+                            <li><a href="http://digihash.co" target="_blank">DigiHash Mining</a></li>
+							<li><a href="https://digistats.digibyteservers.io/" target="_blank">DigiStats</a></li>
+			                <li><a href="https://blockchain2035.com" target="_blank">Blockchain 2035</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-six mob-full">
+                        <h4>Resurser.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">DGB Integrationsguide</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">DGB Medieark</a></li>
+                            <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Loggor & Ikoner</a></li>
+			                <li><a href="https://github.com/digibyte/digibyte" target="_blank">DDGB Protokoll GitHub</a></li>
+                            <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Kontakta oss</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Donera</a></li>
+                        </ul>
+                    </div>		
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright"> 
+                <span>&copy; Copyright DigiByte 2013 - 2020</span> 
+				<span>Alla Rättigheter Reserverade</span> 
+                <span>Släppt under <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT licens</a></span> 
+				<span><a href="../docs/LegalDisclaimer.pdf">Juridisk ansvarsfriskrivelse</a> | <a href="../docs/PrivacyPolicy.pdf">Integritetspolicy</a></span>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main8.js"></script>
+	<script>includeHTML();</script>
+	
+	<!-- Cookie info message
+    ================================================== -->
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
+	data-font-size="14px"
+	data-font-family="Nunito Sans,sans-serif"
+	data-text-align="left"
+    data-fg="#545454"
+	data-bg="rgba(255, 255, 255, 0.9)"
+	data-link="#0066cc"
+	data-divlink="#ffffff"
+	data-divlinkbg="#0066cc"
+	data-position="bottom"
+	data-message="Vi använder oss av kakor för att förbättra din surfupplevelse. Genom att fortsätta besöka sidan så accepterar du vårt användande av kakor."
+	data-linkmsg="Mer info"
+	data-moreinfo="docs/PrivacyPolicy.pdf"
+	data-close-text="OK"
+	>
+    </script>
+
+</body>
+	
+</html>
