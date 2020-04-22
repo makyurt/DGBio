@@ -149,7 +149,6 @@
                 {
                     breakpoint: 1101,
                     settings: {
-						autoplay: true,
                         slidesToShow: 2,
                         slidesToScroll: 1,
 						infinite: true,
@@ -158,7 +157,6 @@
                 {
                     breakpoint: 701,
                     settings: {
-						autoplay: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
 						infinite: true,
@@ -182,7 +180,6 @@
                 {
                     breakpoint: 1001,
                     settings: {
-						autoplay: true,
 						arrows: false,
                         slidesToShow: 1,
                         slidesToScroll: 1,
