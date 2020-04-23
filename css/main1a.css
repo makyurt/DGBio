@@ -888,6 +888,11 @@ line-height:4.4rem;
 padding:0 1.1rem;
 font-size:1.1rem
 }
+
+.dropbtn {
+transform: scale(0.85);
+}
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -2784,20 +2789,19 @@ max-width:800px
 }
 
 .dropbtn {
-background-color:#fff;
-color:#002352;
-padding:2px 6px 2px 6px;
-border:1px solid #d5d5d5;
+background-color:#0066cc;
+color:#fff;
+padding:4px 8px 4px 8px;
+border:1px solid #0066cc;
 border-radius:5px;
 vertical-align:middle;
 cursor: pointer;
 display: block;
 text-transform: capitalize;
-margin-left: 2rem;
 }
 
 .dropbtn:hover {
-color:#0066cc;
+background-color:#002352;
 }
 
 .dropdown {
@@ -2820,7 +2824,7 @@ border-radius:5px;
 border:1px solid #d5d5d5;
 right:0;
 padding:5px;
-margin-top:26px;
+margin-top:30px;
 }
 
 .col3 {
@@ -2855,40 +2859,12 @@ background-color:#d5d5d5
 opacity:1!important;
 transition:opacity 500ms ease;
 pointer-events:all!important;
-animation-name:lmanime!important;
-animation-duration:500ms
 }
 
 .hide {
 opacity:0;
 transition:opacity 500ms ease;
 pointer-events:none;
-animation-name:lmanimer;
-animation-duration:500ms
-}
-
-@keyframes lmanime {
-0% {
-right:0;
-top:0px
-}
-
-100% {
-right:0;
-top:32px
-}
-}
-
-@keyframes lmanimer {
-0% {
-right:0;
-top:32px
-}
-
-100% {
-right:0;
-top:0px
-}
 }
 
 .selected {
