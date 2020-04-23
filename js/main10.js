@@ -352,3 +352,106 @@ function includeHTML() {
     }
   }
 };
+
+/* lang menu text */
+var path = location.pathname;
+var string = location.search.substring(1);
+
+    if (string.includes ("en"))
+		document.getElementById("lmenuname").innerHTML = "English"+"&nbsp;&#9662;";
+
+    else if (path.includes ("af"))
+		document.getElementById("lmenuname").innerHTML = "Afrikaans"+"&nbsp;&#9662;";
+
+    else if (path.includes ("cs"))
+		document.getElementById("lmenuname").innerHTML = "Čeština"+"&nbsp;&#9662;";
+
+    else if (path.includes ("da"))
+		document.getElementById("lmenuname").innerHTML = "Dansk"+"&nbsp;&#9662;";
+
+    else if (path.includes ("de"))
+		document.getElementById("lmenuname").innerHTML = "Deutsch"+"&nbsp;&#9662;";
+
+    else if (path.includes ("es"))
+		document.getElementById("lmenuname").innerHTML = "Español"+"&nbsp;&#9662;";
+
+    else if (path.includes ("fr"))
+		document.getElementById("lmenuname").innerHTML = "Français"+"&nbsp;&#9662;";
+
+    else if (path.includes ("hr"))
+		document.getElementById("lmenuname").innerHTML = "Hrvatski"+"&nbsp;&#9662;";
+
+    else if (path.includes ("id"))
+		document.getElementById("lmenuname").innerHTML = "Indonesia"+"&nbsp;&#9662;";
+
+    else if (path.includes ("it"))
+		document.getElementById("lmenuname").innerHTML = "Italiano"+"&nbsp;&#9662;";
+
+    else if (path.includes ("sw"))
+		document.getElementById("lmenuname").innerHTML = "Kiswahili"+"&nbsp;&#9662;";
+
+    else if (path.includes ("hu"))
+		document.getElementById("lmenuname").innerHTML = "Magyar"+"&nbsp;&#9662;";
+
+    else if (path.includes ("ms"))
+		document.getElementById("lmenuname").innerHTML = "Melayu"+"&nbsp;&#9662;";
+
+    else if (path.includes ("nl"))
+		document.getElementById("lmenuname").innerHTML = "Nederlands"+"&nbsp;&#9662;";
+
+    else if (path.includes ("nb"))
+		document.getElementById("lmenuname").innerHTML = "Norsk"+"&nbsp;&#9662;";
+
+    else if (path.includes ("fil"))
+		document.getElementById("lmenuname").innerHTML = "Pilipino"+"&nbsp;&#9662;";
+
+    else if (path.includes ("pl"))
+		document.getElementById("lmenuname").innerHTML = "Polski"+"&nbsp;&#9662;";
+
+    else if (path.includes ("pt"))
+		document.getElementById("lmenuname").innerHTML = "Português"+"&nbsp;&#9662;";
+
+    else if (path.includes ("ro"))
+		document.getElementById("lmenuname").innerHTML = "Română"+"&nbsp;&#9662;";
+
+    else if (path.includes ("sq"))
+		document.getElementById("lmenuname").innerHTML = "Shqip"+"&nbsp;&#9662;";
+
+    else if (path.includes ("fi"))
+		document.getElementById("lmenuname").innerHTML = "Suomi"+"&nbsp;&#9662;";
+
+    else if (path.includes ("sv"))
+		document.getElementById("lmenuname").innerHTML = "Svenska"+"&nbsp;&#9662;";
+
+    else if (path.includes ("vi"))
+		document.getElementById("lmenuname").innerHTML = "Tiếng Việt"+"&nbsp;&#9662;";
+
+    else if (path.includes ("tr"))
+		document.getElementById("lmenuname").innerHTML = "Türkçe"+"&nbsp;&#9662;";
+
+    else if (path.includes ("ru"))
+		document.getElementById("lmenuname").innerHTML = "Русский"+"&nbsp;&#9662;";
+
+    else if (path.includes ("el"))
+		document.getElementById("lmenuname").innerHTML = "Ελληνικά"+"&nbsp;&#9662;";
+
+    else if (path.includes ("th"))
+		document.getElementById("lmenuname").innerHTML = "ไทย"+"&nbsp;&#9662;";
+
+    else if (path.includes ("ja"))
+		document.getElementById("lmenuname").innerHTML = "日本語"+"&nbsp;&#9662;";
+
+    else if (path.includes ("ko"))
+		document.getElementById("lmenuname").innerHTML = "한국어"+"&nbsp;&#9662;";
+
+    else if (path.includes ("zh"))
+		document.getElementById("lmenuname").innerHTML = "简体中文"+"&nbsp;&#9662;";
+
+    else if (path.includes ("ar"))
+		document.getElementById("lmenuname").innerHTML = "العربية"+"&nbsp;&#9662;";
+
+    else if (path.includes ("fa"))
+		document.getElementById("lmenuname").innerHTML = "فارسی"+"&nbsp;&#9662;";
+
+    else
+		document.getElementById("lmenuname").innerHTML = "English"+"&nbsp;&#9662;";
