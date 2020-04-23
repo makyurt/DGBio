@@ -5,7 +5,7 @@
 	<!--- Hash value catcher
     ================================================== -->
     <script>
-    var target = window.location.hash
+    var target = location.hash
     if (target.length > 0)
     history.replaceState(null, null, ' '),
        window.addEventListener("load", function(){
@@ -20,7 +20,7 @@
 	<!--- Language router
     ================================================== -->
 	<script>
-	var langvalue = window.location.search.substring(1);
+	var langvalue = location.search.substring(1);
     var browserlang = navigator.language || navigator.userLanguage;
 	var langcode3 = browserlang.substr(0,3);
 	var langcode2 = browserlang.substr(0,2);
