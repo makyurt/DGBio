@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ms">
+<head>
+	
+	<!--- Hash value catcher
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+	history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target; 
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
+	<!--- Google analytics
+    ================================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
+    </script>
+	
+	<!-- OneSignal platform support
+    ================================================== -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
+        });
+      var notificationPromptDelay = 30000;
+      var navigationStart = window.performance.timing.navigationStart;
+      var timeNow = Date.now();
+        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
+        });
+      function promptAndSubscribeUser() {
+        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+          if (!isEnabled) {
+            window.OneSignal.showSlidedownPrompt();
+           }
+         });
+        }
+     </script>
+
+    <!--- Basic page needs
+    ================================================== -->
+    <title>Rantaianblok DigiByte | DGB Syiling | DigiAset | Digi-ID</title>
+    <meta charset="utf-8">
+    <meta name="description" content="DigiByte adalah blok rantaian sumber terbuka yang menjaga syiling DGB, DigiAset, Digi-ID dan lain - lain lagi.">
+	<meta name="keywords" content="DigiByte, DGB, Blokrantaian, Tidak Berpaksi, Syiling, Aset, Digital, kripto, Matawang, DigiAset, Digi-ID, Keselamatansiber, Pengesahan, Perjanjian Pintar, dApp, Pembayaran, Dompet, Komuniti">
+	<link rel="canonical" href="https://digibyte.io/ms/" />
+
+    <!-- Mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-itunes-app" content="app-id=1378061425">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main1f.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+	
+	<!-- RSS Feed
+    ================================================== -->
+    <link rel="alternate" type="application/rss+xml" title="DigiByte core protocol updates" href="https://github.com/digibyte/digibyte/releases.atom" />
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
+    <meta name="apple-mobile-web-app-title" content="DigiByte">
+    <meta name="application-name" content="DigiByte">
+    <meta name="msapplication-TileColor" content="#002352">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+    <meta name="theme-color" content="#002352">
+	
+	<!-- Twitter preview
+    ================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rantaianblok DigiByte | DGB Syiling | DigiAset | Digi-ID" />
+    <meta name="twitter:description" content="DigiByte adalah blok rantaian sumber terbuka yang menjaga syiling DGB, DigiAset, Digi-ID dan lain - lain lagi." />
+    <meta name="twitter:image" content="https://digibyte.io/favicons/twitter.png" />
+	
+	<!-- Facebook preview
+    ================================================== -->
+	<meta property="og:image" content="https://digibyte.io/favicons/og-image.jpg">
+    <meta property="og:image:width" content="955">
+    <meta property="og:image:height" content="500">
+    <meta property="og:description" content="DigiByte adalah blok rantaian sumber terbuka yang menjaga syiling DGB, DigiAset, Digi-ID dan lain - lain lagi.">
+    <meta property="og:title" content="Rantaianblok DigiByte | DGB Syiling | DigiAset | Digi-ID">
+    <meta property="og:url" content="https://digibyte.io/">
+
+</head>
+
+<body id="top">
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+        </div>
+    </div> 
+	
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo smoothscroll" href="#top"><img src="../images/logo.svg" loading="eager" alt="Home">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li id="dbc"><a class="ssbc" href="#blockchain" title="Rantaian Blok">Rantaian Blok</a></li>
+					<li id="mbc"><a class="ssbcm" href="#blockchain" title="Rantaian Blok">Rantaian Blok</a></li>
+					<li><a class="smoothscroll" href="#currency" title="Matawang">Matawang</a></li>
+                    <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DigiAssets</a></li>
+                    <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
+                    <li><a class="smoothscroll" href="#community" title="Komuniti">Komuniti</a></li>
+					<li><a class="smoothscroll" href="#downloads" title="Muat Turun">Muat Turun</a></li>
+				</ul>
+				
+					<div class="dropdown header-cta" id="langmenu">
+					   <a href="javascript:void(0)" onclick="lmenu()" class="dropbtn" id="lmenuname"></a>
+                       <div includeHTML="../langmenu/desktop.html"></div>
+                    </div>
+					
+					<div includeHTML="../langmenu/mobile.html"></div>
+            </nav>
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header>
+
+
+    <!-- Home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    Lebih selamat, Pantas,<br/>
+                    Berfikiran Jauh.
+                    </h1>
+    
+                    <h3>
+                    DigiByte bukan sekadar matawang digital yang laju. Blok rantaian yang berinovasi boleh digunakan untuk aset digital, perjanjian pintar, aplikasi terbuka dan ketulenan yang terjamin.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#about" class="btn btn--primary home-content__btn smoothscroll">
+                           Lebih lanjut
+                        </a>
+						<a href="#ecosystem" class="btn btn--primary home-content__btn smoothscrollup">
+                           Beli DGB
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-content__right">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
+                </div>
+
+            </div>
+
+            <ul class="home-content__social">
+                <li><a href="https://digibytefoundation.io" target="_blank">Yayasan</a></li>
+				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
+				<li><a href="https://www.dgbwiki.com" target="_blank">Wiki</a></li>
+                <li><a href="https://t.me/DGBSupport" target="_blank">Bantuan</a></li>
+		    	<li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Hubungi</a></li>
+                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Sumbangan</a></li>
+            </ul>
+
+        </div>
+
+        <a href="#footer" class="home-scroll smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section>
+
+
+    <!-- About
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+		<a href="#footer" class="home-scroll2 smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Kenapa DigiByte lebih berkuasa daripada yang lain?
+                </h1>
+                <p class="lead">
+                    DigiByte adalah blokrantaian sumber terbuka yang semakin berkembang dengan pesatnya. Dibangunkan pada akhir 2013 dan diluncurkan pada awal tahun 2014. Setelah 6 tahun pengembangan yang agresif, aktif dan rancangan terkedepan, DigiByte telah menjadi salah satu blokrantaian <a href="https://wikipedia.org/wiki/Unspent_transaction_output" target="_blank">UTXO</a> yang paling selamat, terpantas, terpanjang dan tidak berpaksi yang pernah dihasilkan.
+                </p>
+            </div>
+        </div>
+
+        <div class="row wide about-desc" data-aos="fade">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Terbuka dan tidak dikawal.</h3>
+
+                    <p>
+                    DigiByte tidak pernah dibiayai melalui <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> atau sejumlah besar <a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">syiling terpakai</a>. Tidak ada CEO atau syarikat yang mengawal rantaianblok DigiByte. Ini adalah projek berasaskan komuniti sukarelawan dan bersifat global.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Lebih selamat.</h3>
+
+                    <p>
+					DigiByte menggunakan 5 algoritma kriptografi dan <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">penyesuaian kesukaran masa nyata</a> untuk mengelakkan pemusatan risiko perlombongan dan turun naik nilai kuasa. Salah satunya adalah Odocrypt yang mengubah dirinya setiap 10 hari untuk daya ketahanan ASIC.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Lebih laju.</h3>
+
+                    <p>
+                    Blok DigiByte akan berlaku setiap 15 saat iaitu 40x lebih pantas daripada Bitcoin dan 10x lebih pantas daripada Litecoin. Awal pelaksanaan <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> dan ketegaran blokrantaian memungkinkan sehingga 1066 transaksi dalam rangkaian sesaat dengan yuran perpindahan yang sangat-sangat berpatutan.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Berfikiran Jauh.</h3>
+
+                    <p>
+                    Sejak 6 tahun yang lalu, DigiByte telah berulang kali menempatkan dirinya dengan beberapa blokrantaian terpenting, seperti pengawal <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a>, perlombongan <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>, pelaksanaan <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank">SegWit</a>, algoritma <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a>, protokol privasi <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a>, <a href="#digiassets" class="smoothscroll">DigiAssets</a> dan <a href="#digi-id" class="smoothscroll">Digi-ID</a>.
+                    </p>
+                </div> 
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- What is DigiByte Video
+    ================================================== -->
+    <section class="s-about-how target-section" id="blockchain">
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="zoom-in">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://www.youtube.com/embed/7Dm-FO8u7x8?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                        <span class="item-stats__num">
+                            Apa itu DigiByte?
+                        </span>
+                        <span class="item-stats__title">
+                            Tonton video pengenalan
+                        </span>
+                    </div>
+                </div>
+		   
+           </div>
+        </div>
+	    
+    <!-- Blockchain
+    ================================================== -->
+	    
+        <div class="row process-wrap">
+			
+		<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Beginilah cara blokrantaian DigiByte berfungsi.
+                </h1>
+                <p class="lead">
+                    Ketiga-tiga lapisan tersebut adalah bahagian yang paling inovatif dari blokrantaian DigiByte yang menyediakan infrastruktur, keselamatan dan komunikasi rangkaian supaya dapat berfungsi dengan kadar kelajuan semaksima mungkin.
+                </p>
+            </div>
+        </div>
+
+        <div class="process" data-aos="fade">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Aplikasi / DigiAssets.</h3>
+                        <p>Lapisan teratas seperti kedai aplikasi dengan penggunaanya yang jelas di Dunia nyata. Semua jenis aset digital dapat dicipta dengan protokol <a href="#digiassets" class="smoothscroll">DigiAssets</a> di atas blokrantaian DigiByte. Aplikasi tidak berpaksi (dApps) ini boleh saja dibina di atas blokrantaian DigiByte. Termasuk perjanjian pintar dengan keupayaan ketegasan dan keselamatan blokrantaian DigiByte sehingga ia dapat dikodkan dengan mudah.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Digital aset / Buku lejar am.</h3>
+                        <p>Lapisan tengah adalah lapisan keselamatan dan pentadbiran. <strong>Digi</strong>tal <strong>Byte</strong>, mewakili data yang lebih besar atau unit yang memiliki nilai, dan tidak dapat dipalsukan, diduplikasi atau digodam. Memiliki kejar am yang tidak mudah untuk diubah di mana terdapatnya semua transaksi DigiBytes yang telah direkodkan bersamanya. DigiByte menggunapakai <a href="https://www.dgbwiki.com/index.php?title=DigiByte_Mining_Breakdown" target="_blank">lima tata kerja pengesahan algoritma</a> untuk tujuan keselamatan. DigiBytes yang baru hanya boleh didapati memalui aktiviti perlombongan sahaja.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Protokol teras / Rangkaian global.</h3>
+                        <p>Lapisan bawahnya adalah bahagian  prosedur komunikasi dan operasi. Node level rendah adalah cara rangkaian global DigiByte berkomunikasi. Dokongan kuat daripada ribuan pengguna perisian DigiByte di seluruh Dunia. Mana-mana pelayan, komputer, tablet atau telefon bimbit yang disambungkan ke rangkaian DigiByte akan menjadi node yang akan membantu melancarkan transaksi rangkaian DigiByte.
+			            <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Ayuh! segera membantu blokrantaian DigiByte sedapat yang boleh</a>.
+			            </p>
+		            </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Sumber terbuka / Tanpa kebenaran.</h3>
+                        <p>Sama seperti <a href="https://github.com/DigiByte-Core/DGBio" target="_blank">laman web ini</a>, blokrantaian DigiByte berorentasikan kepada sumber terbuka sepenuhnya dan bebas untuk digunakan dan didaftarkan di bawah <a href="https://opensource.org/licenses/mit-license.php" target="_blank">lesen MIT</a>, yang memberi peluang untuk anda menjalankan dan mengubah-suai perisian. Membolehkan pengesahan ketelusan binari secara bebas dan kod sumbernya yang sepadan.<br />
+						<a href="https://github.com/digibyte/digibyte" target="_blank">Protokol DigiByte di GitHub</a>.
+						<br />
+						<a href="https://github.com/DigiByte-Core" target="_blank">Pengembangan Teras DigiByte di GitHub</a>.
+                        </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="fade">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Sejarah DigiByte.</h2>
+					<p class="lead">
+                    Menyusuluri karya pembangunan utama blokrantaian DigiByte.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
+                        
+                        <p>Permulaan pembangunan sepenuh masa untuk membina masa depan blokrantaian DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Oktober, 2013</span>
+				            <a href="https://twitter.com/jaredctate/status/1190673943876841475" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
+                        
+                        <p>Blockrantaian DigiByte Genesis berjaya direkodkan dan dilancarkan secara rasmi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10 Januari 2014</span>
+							<a href="https://github.com/digibyte/digibyte/blob/master/src/chainparams.cpp#L40" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
+                        
+                        <p>DigiShield diaktifkan dan menggunakan pengesahan ketulinan masa nyata terhadap turun naik hash.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28 Februari 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
+                        
+                        <p>MultiAlgo diaktifkan untuk menggunapakai 5 algoritma yang berbeza untuk mengelakkan pengawalan aktiviti perlombongan.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">1 September 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
+                        
+                        <p>MultiShield diaktifkan untuk memperluas perlindungan DigiShield ke atas semua 5 algoritma perlombongan.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10 Disember 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiShield" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
+                        
+                        <p>DigiSpeed diaktifkan untuk mengurangkan masa blok menjadi 15 saat untuk transaksi yang lebih pantas.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">4 Disember 2015</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
+                        
+                        <p>SegWit diaktifkan sebelum Bitcoin dan Litecoin untuk penggunaan ukuran blok yang lebih sempurna.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28 April 2017</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID dilancarkan untuk memberi peluang kepada pengguna untuk masuk ke laman web dan banyak lagi dengan lebih mudah.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Mei, 2018</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Digi-ID" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets dilancarkan untuk membolehkan pengeluaran aset tidak berpaksi dan lain-lainnya.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">April, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiAssets" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
+                        
+                        <p>Protokol Dandelion ++ dilaksanakan bagi menghalang pengesanan lokasi IP dan fizikal. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">3 Mei 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
+                        
+                        <p>Odocrypt diaktifkan supaya dapat berubah setiap 10 hari untuk ketahanan ASIC yang unggul. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">21 Julai 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/roadmap.png" loading="lazy" alt="Roadmap" class="testimonials__avatar">
+                        
+                        <p>Senarai item yang ingin kami lakukan untuk DigiByte. Semak imbas dan mula menyumbang.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Peta Jalan</span>
+                            <a href="https://github.com/DigiByte-Core/DigiByte-Pipeline" target="_blank" class="testimonials__link">Ketahui lebih lanjut</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+
+    <!-- Currency
+    ================================================== -->
+    <section id="currency" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Matawang digital<br/>anda pasti menyukainya.
+                </h1>
+                <p class="lead">
+                    DigiByte (DGB) adalah matawang digital P2P berskala yang membolehkan kelajuan transaksi terbaik setaraf dengan kadar yuran transaksinya yang sangat-sangat berpatutan. DigiByte merupakan kaedah terbaik untuk transaksi dalam talian masa kini.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/UUhVEDlXvkQ?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Belajar dengan melihat</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-phone-laptop"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Mudah digunakan.</h3>
+                    <p>DigiByte adalah sangat mudah digunalan malah lebih mudah daripada menghantar SMS. Anda boleh menghantar dan menerima DigiBytes menggunakan peranti yang sudah anda kenal dan sukai. Anda hanya perlu memasang <a class="smoothscroll" href="#downloads">Dompet DigiByte yang disokong oleh peranti</a> kemudian klik imbas, imbas kod QR dan hantar DigiByte. Semudah 1..2..3.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Bukan ICO.</h3>
+                    <p>DigiByte tidak dibiayai melalui <a href="https://en.wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> atau sejumlah besar syiling terpakai (<a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">baki 0%</a>). Tidak ada CEO atau syarikat yang mengawal blokrantaian DigiByte. <a class="smoothscrollup" href="#jared">Pengasas</a>, <a class="smoothscrollup" href="#developers">pemaju</a> dan <a class="smoothscroll" href="#community">komuniti</a> adalah dari kalangan sukarelawan yang tidak dibayar. Risiko untuk muflis adalah tipis.
+                    </p>
+                </div>
+            </div>
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-tachometer-alt-fastest"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Lebih laju.</h3>
+                    <p>Transaksi DigiByte disahkan dalam anggaran 15 saat, iaitu 40 kali lebih pantas daripada transaksi Bitcoin dan 10 kali lebih pantas daripada transaksi Litecoin. <a href="https://en.wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> membuka ruang sehingga 1066 transaksi dalam rantai sesaat dan bayaran yuran perpindahannya adalah sangat berpatutan dan menjadikan DigiByte matawang digital yang ideal untuk transaksi seharian malah bersifat pelaburan di dalamnya.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>    
+                <div class="item-feature__text">
+                    <h3 class="item-title">Selamat.</h3>
+                    <p>DigiByte dibangun berdasarkan teknologi blockchain Bitcoin yang tidak dapat ditembusi, digodam dan menerapkan pelbagai peningkatan terkini seiring dengan perkembanganmya seperti pengawal <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a>, perlombongan <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> dan algoritma <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a>. Protokol privasi <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> juga membantu memastikan anda selamat dengan menyembunyikan IP dan lokasi fizikal anda. <a href="https://www.dgbwiki.com/index.php?title=What_makes_DigiByte_More_Secure%3F" target="_blank">Ketahui lebih lanjut</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-digging"></i>
+                </div> 
+                <div class="item-feature__text">
+                    <h3 class="item-title">Boleh di lombong.</h3>
+                    <p>DigiByte adalah blokrantaian 100% <a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank">Proof of Work</a> (PoW) yang dapat dilombong dengan lima algoritma yang ditetapkan iaitu Sha256, Scrypt, Skein, Qubit dan Odocrypt. Perlombongan <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> menyumbang kepada tidak berpaksi, keselamatan rangkaian dan memberi anda kebebasan untuk menggunakan pelbagai jenis perkakasan seperti ASIC a FPGA atau GPU. <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">Ketahui lebih lanjut</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Unit mudah di uruskan.</h3>
+                    <p>Berbanding dengan 21 juta Bitcoin, 21 bilion DigiByte (nisbah 1000: 1 ke BTC) telah dirancang sebegitu rapi untuk diterima pakai secara besar-besaran. Ganjaran blok DigiByte berkurang sebanyak 1% setiap bulan dan bukannya separuh setiap 4 tahun. Semua 21 bilion DigiBytes akan siap dilombong menjelang tahun 2035. Selepas tahun 2035 para pelombong kemudian hanya akan bergantung pada yuran transaksi. <a href="https://www.dgbwiki.com/index.php?title=Why_so_many_coins%3F_21Billion" target="_blank">Ketahui lebih lanjut</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="fade" id="ecosystem">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Pilihan pantas dari DigiByte Eko-sistem.</h2>
+					<p class="lead">
+                    Platfom pertukaran yang terlibat dan menyokong DigiByte boleh didapati di <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">Wiki DigiByte</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
+                        
+                        <p>Bittrex menyediakan platform yang terbukti selamat untuk pelanggannya untuk membajak peluang perdagangan DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bittrex</span>
+                            <a href="https://bittrex.com" target="_blank" class="testimonials__link">bittrex.com</a>
+                        </div>
+                    </div> 
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/vertbase.png" loading="lazy" alt="Vertbase" class="testimonials__avatar">
+                        
+                        <p>Dengan Vertbase, anda boleh membeli dan menjual DigiByte dengan USD, GBP atau Euro.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Vertbase</span>
+                            <a href="https://www.vertbase.com" target="_blank" class="testimonials__link">vertbase.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/okex.png" loading="lazy" alt="Okex" class="testimonials__avatar">
+                        
+                        <p>OKEx adalah salah satu pertukaran cryptocurrency terkemuka dengan kecairan tinggi yang menawarkan perdagangan DigiByte.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Okex</span>
+                            <a href="https://www.okex.com" target="_blank" class="testimonials__link">okex.com</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/litebit.png" loading="lazy" alt="LiteBit" class="testimonials__avatar">
+                        
+                        <p>LiteBit adalah broker matawangkripto yang membolehkan pengguna membeli, menjual dan menyimpan DigiByte dengan mudah di EU.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">LiteBit</span>
+                            <a href="https://www.litebit.eu" target="_blank" class="testimonials__link">litebit.eu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
+                        
+                        <p>Abra membuat pelaburan di DigiByte menjadi lebih mudah, lebih selamat dan mudah dilayari oleh semua orang. Terdapat di 150 negara.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">abra.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
+                        
+                        <p>ShapeShift adalah platfom pertukaran aset digital segera yang terkemuka, juga menyokong DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ShapeShift</span>
+                            <a href="https://shapeshift.io" target="_blank" class="testimonials__link">shapeshift.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel adalah perkhidmatan kripto ke kripto, dompet ke dompet, pertukaran syiling antara platfom yang menyokong projek komuniti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/spend.png" loading="lazy" alt="Spend App" class="testimonials__avatar">
+                        
+                        <p>Spend memberi anda kebenaran transaksi ke rangkaian produk perbankan seperti dompet digital pelbagai matawang dan kad Spend Visa.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">spend.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/coinpayments.png" loading="lazy" alt="CoinPayments" class="testimonials__avatar">
+                        
+                        <p>CoinPayments menyediakan sistem pembayaran dalam talian yang menyokong DigiByte selaku terma pembayaran di laman web anda.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">coinpayments.net</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibytepay.png" loading="lazy" alt="DigiBytePay" class="testimonials__avatar">
+                        
+                        <p>Menerima pembayaran DigiByte secara peribadi dan dalam talian dengan mudah dengan sokongan Aplikasi DigiCafe dan WooCommerce.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiBytePay</span>
+                            <a href="https://www.digibytepay.us" target="_blank" class="testimonials__link">digibytepay.us</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID pulak menawarkan pengalaman unik untuk mendapatkan pengesahan ke laman web dengan menerapkan teknologi DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">OpenAntumID</span>
+                            <a href="https://www.openantumid.com" target="_blank" class="testimonials__link">openantumid.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/nownodes.png" loading="lazy" alt="NowNodes" class="testimonials__avatar">
+                        
+                        <p>NowNodes menyediakan sambungan pantas dan boleh dipercayai ke blokrantaian yang popular termasuk DigiByte dengan pelayan yang mantap.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">NowNodes</span>
+                            <a href="https://nownodes.io" target="_blank" class="testimonials__link">nownodes.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Lawati CryptoBantam dan dapatkan pakaian bergaya sempena kempen memperkuatkan keberadaan DigiByte!</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com/vendor/dgbat/" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
+                        
+                        <p>Dapatkan alamat e-mel @dgb.community anda sendiri untuk menyokong DigiByte Foundation dan DGBAT.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DGB.community</span>
+                            <a href="https://dgb.community" target="_blank" class="testimonials__link">dgb.community</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptoid.png" loading="lazy" alt="CryptoID Block Explorer" class="testimonials__avatar">
+                        
+                        <p>Explorasi blok CryptoID untuk dapatkan statistik terperinci mengenai blokrantaian DigiByte dan transaksi tertentu.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoID</span>
+                            <a href="https://chainz.cryptoid.info/dgb/" target="_blank" class="testimonials__link">chainz.cryptoid.info</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DigiAssets
+    ================================================== -->
+    <section id="digiassets" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Cara mudah<br/>untuk membuat aset digital.
+                </h1>
+                <p class="lead">
+                   DigiAssets adalah terjamin selamat, lapisan berskala di atas rantaianblock DigiByte yang membolehkan pengeluaran aset tidak berpaksi, token, perjanjian pintar, identiti digital dan banyak lagi.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/xDJllY5ehNw?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Belajar dengan melihat</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Kebarangkalian yang tidak terbatas.</h3>
+                    <p>DigiAssets boleh digunakan untuk mewakili apa sahaja yang kita dapati di dunia fizikal dengan selamat. Dari aset ketara seperti harta tanah atau kereta, hingga kekurangan karya seni digital. Dokumen yang ditandatangani seperti surat ikatan dan bil perubatan dapat dilindungi dengannya.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Berkembang dan sangat diyakini.</h3>
+                    <p>DigiAssets sebagai ekosistem dan platformnya sudah ada beberapa pihak yang berminat dan merancang atau membina platform dalam bidang harta tanah, kewangan, pengiriman wang, identiti, tempat penjualan, perlumbaan, perdagangan, penjagaan kesihatan, rantaian bekalan, kerajaan dan banyak lagi denganya.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-badge-check"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Berteknologi tinggi.</h3>
+                    <p>DigiAssets memanfaatkan aspek unik dari blokrantaian yang benar-benar tidak berpaksi yang hanya terdapat dalam blokrantaian tanpa izin seperti DigiByte. Ini membolehkan DigiAssets lebih selamat, berskala dan tidak berpaksi daripada platform lainnya di pasaran.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Mula dengan DigiAssets.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Belajar protocol.</h3>
+                        <p>Menerokai spesifikasi protokol DigiAssets sumber terbuka untuk mengeluarkan dan mengurus aset digital di atas Blokrantaian DigiByte. <a href="https://github.com/DigiByte-Core/DigiAssets-Protocol-Specifications/wiki" target="_blank">Protokol DigiAsets di GitHub</a>.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Mengeluarkan aset.</h3>
+                        <p>Bukan ahli dan tidak punya kepakaran? tidak jadi masalah! Sesiapa sahaja boleh mengeluarkan DigiAssets dengan menggunakan salah satu alat yang telah tersedia tanpa perlu mempunyai pengetahuan teknikal mengenai protokol. <a class="smoothscrollup" href="#digiassetservices">Perkhidmatan DigiAssets yang disokong</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Simpan / Jual Beli.</h3>
+                        <p>Tertanya-tanya bagaimana hendak menggunakan DigiAssets? Gunakan aplikasi <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> dan <a class="smoothscrollup" href="#dgbgo">DigiByte Go</a> untuk menghantar, menerima dan menyimpan aset anda atau menerokai <a class="smoothscrollup" href="#digiassetservices">perkhidmatan yang disokong DigiAssets</a> untuk membeli, menjual dan menukar DigiAssets.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Punyai masalah?</h3>
+                        <p>Perlu lebih banyak bantuan dan maklumat mengenai DigiAssets? Jangan ragu-ragu untuk menyertai kumpulan DigiByte Developers di aplikasi Telegram untuk mengemukakan soalan atau berkongsi idea anda. <a href="https://t.me/DigiByteDevelopers" target="_blank">Pasukan Pembanggunan DigiByte di Telegram</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+	    </div>
+		
+		<div class="testimonials-wrap" data-aos="fade" id="digiassetservices">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Lihat tindakkan dalam DigiAssets.</h2>
+					<p class="lead">
+                    Carian perkhidmatan yang disokong oleh DigiAssets untuk merasai penglaman sebenar DigiAssets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets Tools membolehkan anda membuat DigiAssets dengan cepat dan mudah, walaupun anda seorang pengguna bukan berlatarbelakang teknikal.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiAssets Tools</span>
+                            <a href="https://createdigiassets.com" target="_blank" class="testimonials__link">createdigiassets.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
+                        
+                        <p>Digi-Broker adalah laman web di mana pengguna dari seluruh dunia boleh berkongsi, membeli dan menjual aset digital mereka.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-Broker</span>
+                            <a href="https://digi-broker.com/index.php/tools/" target="_blank" class="testimonials__link">digi-broker.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
+                        
+                        <p>digiassetX adalah platfom pertukaran DigiByte DigiAssets baru dan perkhidmatan penciptaan DigiAssets.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Akan datang</span>
+                            <a href="https://digiassetx.com/" target="_blank" class="testimonials__link">digiassetx.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+    </section>
+	
+	
+	<!-- Digi-ID
+    ================================================== -->
+    <section id="digi-id" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Pengesahan terbaik.
+                </h1>
+                <p class="lead">
+                    Digi-ID adalah protokol keselamatan yang dibina berdasarkan teknologi blokrantaian DigiByte yang memberi kemudahan terbaik kepada pengguna untuk serap masuk ke laman web, aplikasi, dan bahkan ke internet dengan mudah.
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/pLrQycud5GI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Belajar dengan melihat</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Pengesahan yang mudah.</h3>
+                    <p>Digi-ID menghilangkan nama pengguna, kata laluan dan keperluan 2fa untuk pengesahan. Kerana Digi-ID menggunakan kriptografi kunci awam / peribadi, tidak ada kata laluan atau nama pengguna yang mendatangkan risiko. Kaedah ini bukan sahaja melindungi pengguna, tetapi juga melindungi perkhidmatan yang digunakan oleh pengguna.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Keselamatan peringkat tinggi.</h3>
+                    <p>Digi-ID tidak menyimpan data mengenai pengguna di blokrantaian. Ini semakin mengukuhkan keselamatan dan juga meningkatkan keyakinan pengguna akhir bahawa data mereka tidak diintai atau berisiko oleh kecuaian orang lain. Tidak ada titik kegagalan luaran bagi penggodam untuk menyasarkan dan mengeksploitasi platform anda.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-smile-plus"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Ringkas dan percuma.</h3>
+                    <p>Digi-ID adalah percuma! Tidak ada bayaran, perkhidmatan langganan, atau kos penyelenggaraan. Tetapi kosnya adalah ciri kedua terbaik. Ciri utamanya ialah, sesuai dengan keutamaan keselamatan DigiByte, Digi-ID adalah kaedah yang lebih selamat, mudah dan tersedia untuk daftar masuk ke laman web, aplikasi dan banyak lagi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Begini cara kerjanya.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Genarasi.</h3>
+                        <p>Laman web, aplikasi atau produk menghasilkan kod QR Digi-ID unik dan jelas.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Pengimbasan.</h3>
+                        <p>Pengguna mengimbas QR melalui dompet <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> atau <a class="smoothscroll" href="#digidapps">aplikasi yang disokong Digi-ID</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Pembuktian.</h3>
+                        <p>Pengguna mengesahkan permintaan dengan memasukkan PIN mereka atau mengimbas cap jari / wajah mereka.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Pengesahan.</h3>
+                        <p>Digi-ID menghantar permintaan yang ditandatangani secara kriptografi, setelah selesai proses tersebut, ia kembali dan membenarkan pengguna untuk daftar masuk.
+                        </p> 
+                    </div>
+
+                </div>
+              </div>
+			
+          </div>
+		
+		  <div data-aos="fade">
+		
+		  <h1 class="align-center">Soalan lazim.</h1>
+		
+		  <div class="row features block-1-2 block-m-1-2">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Di mana saya boleh mendapatkan lebih banyak maklumat yang selanjutnya?</h3>
+                    <p>Lokasi terbaik untuk memulakannya adalah <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. Sekiranya anda ingin mengetahui lebih lanjut mengenai perincian dan kelebihan Digi-ID, anda boleh merujuk pada <a href="https://www.digi-id.io/faq" target="_blank">panduan pengguna</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">panduan vendor</a> dan <a href="https://www.digi-id.io/integration.html" target="_blank">panduan integrasi</a>. SSekiranya anda mencari media kit, sila rujuk <a href="../docs/digiidintro.pdf" target="_blank">foglio introduttivo</a> dan <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logo</a>.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Di manakah perpustakaan integrasi?</h3>
+                    <p>Oleh kerana Digi-ID adalah sumber terbuka, banyak repositori kod boleh didapati di GitHub seperti <a href="https://github.com/DigiByte-Core?q=digiid" target="_blank">DigiByte Core Development </a>, <a href="https://github.com/mctrivia?tab=repositories&q=digiid" target="_blank">Matthew Cornelisse</a> dan <a href="https://github.com/evilmouse69/Digi-ID-for-WHMCS/" target="_blank">WHMCSSnow</a>. Sekiranya anda memerlukan lebih banyak bantuan dan sokongan, sila sertai <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers group</a> di Telegram.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Bolehkah saya mengintegrasikan Digi-ID tanpa pengekodan?</h3>
+                    <p>Sekiranya anda bukan pembikin aplikasi, anda mungkin mahu menggunakan penyelesaian siap-sedia integrasi untuk laman web atau produk anda. <a href="https://www.openantumid.com/" target="_blank">OpenAntumID</a> menyediakan perkhidmatan integrasi Digi-ID tanpa batas. Anda juga boleh menggunakan <a href="https://wordpress.org/plugins/digi-id-authentication/" target="_blank">WordPress plugin</a> untuk platfom WordPress.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Adakah terdapat aplikasi autentikasi Digi-ID yang lain?</h3>
+                    <p>Sudah tentu! Digi-ID adalah platform yang sangat berkembang pesat. Pelbagai aplikasi pengesah mandiri dan dompet yang disokong Digi-ID boleh didapati di bahagian <a class="smoothscroll" href="#digidapps">Muat turun</a>. Anda juga boleh meletakkan <a href="https://digibytewallets.com/digid/" target="_blank">widget aplikasi</a> Digi-ID percuma di halaman daftar masuk laman web anda.
+                    </p>
+                </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="fade">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Lihat Digi-ID beraksi.</h2>
+					<p class="lead">
+                    Menerokai perkhidmatan Digi-ID yang disokong untuk mendapatkan pengesahan yang lebih baik.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel adalah perkhidmatan kripto ke kripto, dompet ke dompet, pertukaran syiling antara platfom yang menyokong projek komuniti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumID pulak menawarkan pengalaman unik untuk mendapatkan pengesahan ke laman web dengan menerapkan teknologi DigiByte.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AntumID</span>
+                            <a href="https://www.antumid.be/gateway/soaplogin" target="_blank" class="testimonials__link">antumid.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
+                        
+                        <p>AbsoluteJobs adalah salah satu syarikat terkemuka yang menyediakan perkhidmatan pekerjaan di Belgium.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AbsoluteJobs</span>
+                            <a href="https://www.absolutejobs.be" target="_blank" class="testimonials__link">absolutejobs.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>Lawati CryptoBantam dan dapatkan pakaian bergaya sempena kempen memperkuatkan keberadaan DigiByte!</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
+                        
+                        <p>Hash Altcoin adalah syarikat perlombongan yang menghasilkan peranti FPGA untuk penghasilan perlombongan kestabilan tinggi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Hash Altcoin</span>
+                            <a href="https://www.hashaltcoin.com/en/" target="_blank" class="testimonials__link">hashaltcoin.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+	
+	
+	<!-- Community
+    ================================================== -->
+    <section id="community" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Komuniti paling aktif yang pernah ada!
+                </h1>
+                <p class="lead">
+                    Beribu-ribu sukarelawan dari seluruh dunia telah menyumbang kepada DigiByte dengan pelbagai cara selama bertahun-tahun untuk menjadikannya seperti sekarang. Ini adalah gerakan akar umbi yang benar-benar bermotivasi tinggi. Kami sangat mengalu-alukan anda untuk menyertai pasukan kami!
+                </p>
+            </div>
+		    <a class="btn btn--primary" href="https://www.youtube.com/embed/uGearn3BHvU?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Belajar dengan melihat</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature" id="foundation">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Yayasan DigiByte.</h3>
+                    <p>Yayaysan DigiByte  adalah organisasi sukarelawan yang dikendalikan dan  beroperasi dengan cara tidak bermotifkan keuntungan. Mereka melindungi dan mempromosikan prinsip-prinsip sebenar tidak berpaksi dan memberi kuasa kepada DigiByte dan komunitinya untuk mewujudkan dan mengekalkan dunia tidak berpaksi ke arah yang lebih lestari.<br> <a href="https://digibytefoundation.io" target="_blank">Maklumat lanjut berikutnya</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="dgbat">
+                <div class="item-feature__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Pasukan Pemasaran DGB.</h3>
+                    <p>DGBAT adalah inisiatif dayausaha masyarakat. Mereka dipimpin oleh satu pasukan, yang keahlian seterusnya menguruskan pasukan di media sosial, pendidikan, penulis dan pengembang. Hasrat mereka untuk mempromosikan DigiByte melalui kempen pendidikan, sebaran maklumat dan aktiviti pemasaran.<br> <a href="https://dgbat.org" target="_blank">Maklumat lanjut berikutnya</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="developers">
+                <div class="item-feature__icon">
+                    <i class="fas fa-code"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Pembangun DigiByte.</h3>
+                    <p>Setiap peserta, bekerja di DigiByte adalah berstatus sukarelawan tanpa gaji. Sertai pasukan sukarelawan pengembangan DGB hari ini atau bina aplikasi anda sendiri di atas blokrantaian DigiByte.
+					<br />	
+					<a href="https://github.com/digibyte/digibyte" target="_blank">DigiByte Protocol di GitHub</a>.
+					<br />
+					<a href="https://github.com/DigiByte-Core" target="_blank">Pembagunan Teras DigiByte di GitHub</a>.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="socialmedia">
+                <div class="item-feature__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+		    <div class="item-feature__text">
+                    <h3 class="item-title">Media sosial.</h3>
+                    <p>Ikuti DigiByte di semua platform media sosial utama untuk mengikuti berita DigiByte terkini dan kongsi catatan menarik dengan rakan-rakan anda untuk bantu memperluaskan lagi maklumat tersebut ke serata pelusuk Dunia.
+                    </p>
+					<p class="item-feature__icon">
+					   <a class="rightpad25" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+					   <a class="rightpad25" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook zoom"></i></a>
+					   <a class="rightpad25" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
+					   <a class="rightpad25" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+					   <a class="rightpad25" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube zoom"></i></a>
+					   <a href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+                    </p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="telegram">
+                <div class="item-feature__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Komuniti Telegram.</h3>
+                    <p><a href="https://telegram.org" target="_blank">Telegram</a>  adalah cara paling popular dan mudah untuk berinteraksi dengan komuniti DigiByte global. Sila sertai dan lihat senarai <a href="https://t.me/OfficialDigiByteGroups" target="_blank">semua kumpulan DigiByte</a>.
+					</p>
+					<p>
+					<a class="telegramicon" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Makluman</a>
+					<a class="telegramicon" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Perbincangan</a>
+					<a class="telegramicon" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Sokongan</a>
+					<a class="telegramicon" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Pembangunan</a>
+					<a class="telegramicon" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Perlombongan</a>
+					<a class="telegramicon" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Pemasaran</a>
+					<a class="telegramicon" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Spekulasi</a>
+					<a class="telegramiconlast" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Terjemahan</a>
+					</p>
+                </div>
+            </div>
+		
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="wiki">
+                <div class="item-feature__icon">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Wiki DigiByte.</h3>
+                    <p><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a> adalah ensiklopedia dalam talian yang dibina oleh komuniti, untuk komuniti. Ia mengandungi data yang berguna dan terkini seperti <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiByte Eko-sistem</a> dan <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank">cara membimbing</a>. Sesiapa sahaja boleh memberikan sumbangan positif kepada Wiki dengan membuat akaun pengguna secara percuma dan mula menambah atau mengemas kini maklumat di DigiByte Wiki.<br><strong>Amaran</strong> <i class="fas fa-exclamation-circle"></i> Tidak dibenarkan pautan promosi dan rujukan.</p>
+					<p class="jared">
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Technical_Specifications" target="_blank"><i class="fab fa-wikipedia-w"></i> Teknikal</a> 
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> Rangka Kerja</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Accomplishments" target="_blank"><i class="fab fa-wikipedia-w"></i> Pencapaian</a>
+					</p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="jared">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Bersama Pengasas DigiByte.</h3>
+                    <p><a href="https://www.youtube.com/embed/S8eMsq8qp7Y?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>Jared Tate</a> adalah pengasas dan pencipta blokrantaian DigiByte. Jared mendedikasikan pembangunan sepenuh masa ke arah DigiByte sejak Oktober 2013. Dia telah dijemput oleh <a href="https://www.youtube.com/embed/Wl0RUau9roE?autoplay=1&iv_load_policy=3&rel=0" data-lity>MIT</a>, <a href="https://twitter.com/digibytecoin/status/982696268928618496" target="_blank">Harvard</a> dan <a href="https://twitter.com/jaredctate/status/1217178454229225473" target="_blank">US Capitol</a> untuk berbicara mengenai teknologi blokrantaian. Dia juga pengarang buku <a href="https://blockchain2035.com" target="_blank">Blockchain 2035 The Digital DNA of Internet 3.0</a>, yang merupakan buku pertama yang ditulis oleh pengasas blockchain.
+                    </p>
+					<p class="jared">
+					<a class="telegramicon" href="https://twitter.com/jaredctate" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> 
+					<a class="telegramicon" href="https://www.linkedin.com/in/jaredctate" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=Original_author(s)" target="_blank"><i class="fab fa-wikipedia-w"></i> Biografi</a>
+					</p>
+                </div>
+            </div>
+			
+		</div>
+	    
+			 <div class="lrmargin25" data-aos="fade">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Penafian Media Sosial</strong><br>Pendapat peribadi, kepercayaan dan sudut pandangan yang dinyatakan oleh Jared Tate, DigiByte Core Team, DigiByte Foundation & DigiByte Awareness Team tidak semestinya mencerminkan pendapat, kepercayaan dan pandangan peribadi komuniti.
+                </p>
+		     </div>
+		
+	    </div>
+	    
+	</section>
+
+
+   <!-- Downloads
+    ================================================== -->
+    <section id="downloads" class="s-download target-section">
+	    
+	<!--- Downloads DigiByte Wallets
+    ================================================== -->
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Pilih apps anda.
+                </h1>
+                <p class="lead">
+                    Pilih aplikasi untuk menghantar, menerima dan menyimpan DigiByte & DigiAset anda atau meluncur dengan selamat menggunakan Digi-ID.<br /><a href="https://github.com/digibyte/digibyte/releases/" target="_blank">Core DigiByte v7.17.2 Semasa</a>
+                </p>
+            </div>
+        </div>
+		
+		<div data-aos="fade">
+			
+		<h1 class="downtitle align-center">Aplikasi yang dibangunkan oleh komuniti DigiByte.</h1>
+		
+		<div class="row features block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" id="dgbcore">
+                <div class="item-plan__block"> 
+					
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Core</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Pengesahan penuh</li>
+			               <li><i class="fas fa-check blue"></i> Sokong rangkaian</li>
+                           <li><i class="fas fa-check blue"></i> Kestabilan tinggi</li>
+                           <li><i class="fas fa-check blue"></i> Sokongan SegWit</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-win64-setup.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-osx.dmg" target="_blank"><i class="fab fa-apple zoom"></i></a>
+					       <a href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz" target="_blank"><i class="fab fa-linux zoom"></i></a>
+			            </div>
+
+			            <div class="supportline align-center">
+					       <p class="item-plan__per">Tersedia untuk Windows, macOS & Linux (64 Bit only)</p>
+			            </div>
+						
+			    	    <div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Bantuan</a><br><a href="https://www.dgbwiki.com/index.php?title=Running_a_full_node" target="_blank"><i class="fas fa-info-circle"></i>  Jalankan nod penuh</a>
+						</div>
+                    </div>  
+					
+                </div>
+            </div>
+
+           <div class="col-block item-plan" id="dgbmobile">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Mobile</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Dompet SPV</li>
+                           <li><i class="fas fa-check blue"></i> Bantuan Digi-ID</li>
+                           <li><i class="fas fa-check blue"></i> Bantuan DigiAssets (Android)</li>
+			               <li><i class="fas fa-check blue"></i> Bantuan berbilang bahasa</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://apps.apple.com/app/digibyte/id1378061425" target="_blank"><i class="fab fa-app-store-ios zoom"></i></a>
+					       <a href="https://play.google.com/store/apps/details?id=io.digibyte" target="_blank"><i class="fab fa-google-play zoom"></i></a>
+			            </div>		
+
+			    		<div class="supportline align-center">
+					       <p class="item-plan__per">Tersedia untuk iOS & Android.<br>
+					       <a href="https://testflight.apple.com/join/PfRnkwy9" target="_blank"><i class="fab fa-apple"></i> TestFlight</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://support.google.com/googleplay/answer/7003180" target="_blank"><i class="fab fa-android"></i> Android Beta</a></p>
+			            </div>
+						
+			    		<div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Bantuan</a> - <a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> Alat pemulihan</a>		
+			            </div>
+                    </div>  
+                
+                </div>
+            </div>
+			
+			<div class="col-block item-plan" id="dgbgo">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Go</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> Dompet awan</li>
+			               <li><i class="fas fa-check blue"></i> Mudah untuk digunakan</li>
+                           <li><i class="fas fa-check blue"></i> Bantuan MultiSig</li>
+                           <li><i class="fas fa-check blue"></i> Bantuan DigiAssets</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a href="javascript:void(0)" title="Temporary unavailable!"><i class="fab fa-chrome disabled"></i></a>
+			            </div>
+						
+						<div class="supportline align-center">
+					       <p class="item-plan__per">Tersedia untuk Chrome<br>Aplikasi asli akan datang tidak lama lagi!</p>
+			            </div>
+						
+						<div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> Bantuan</a> - <a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> Alat pemulihan</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+        </div>
+		</div>
+	    
+	    	<!--- Downloads Docs & Guides
+    ================================================== -->
+	    		    <div class="lrmargin25" data-aos="fade"  id="docs">
+		
+			<h1 class="downtitle align-center"><i class="fas fa-books"></i> Dokumen & Panduan DigiByte.</h1>
+				
+			  <div class="item-feature__text max800 align-center">
+                  <p>Perlu lebih banyak dokumentasi? Sama ada anda memerlukan maklumat asas berkaitan artikel atau maklumat teknikal untuk proses integrasi. Anda boleh dapatkan semua panduan tersebut di bawah.
+                  </p>
+              </div>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        
+                        <p>Mengabungkan blokrantaian DigiByte ke dalam platfom pertukaran, dompet atau perkhidmatan anda dengan mudah.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Panduan penggabungan</span>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        
+                        <p>Ketahui fakta penting mengenai blokrantaian DigiByte melalui lembaran media dengan lebih cepat.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Lampiran media.</span>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide"> <img src="../images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
+                        
+                        <p>Guna pesembahan dalam talian yang bermaklumat untuk memperkenalkan DigiByte kepada rakan-rakan anda.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Persembahan</span>
+                            <a href="https://docs.google.com/presentation/d/16Hn2GfuS1yLjZpjeTYloW0S_JVkhevYzffkDZFqjbiU" target="_blank" class="testimonials__link">Mula</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        
+                        <p>Carian logo & ikon DigiByte yang betul dan terkini untuk projek anda.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Logo & ikon</span>
+                            <a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank" class="testimonials__link">Layari GitHub</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
+                        
+                        <p>Memasang node penuh DigiByte atau Insight explorer anda sendiri dengan merujuk panduan Wiki.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Garis panduan</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank" class="testimonials__link">Layari DigiByte Wiki</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+	</div>
+	    
+	<!--- Downloads Third-Party
+    ================================================== -->
+		<div class="lrmargin25" data-aos="fade" id="software">
+	<h1 class="downtitle align-center">Aplikasi yang dibangunkan oleh perkhidmatan Pihak Ketiga.</h1>
+			
+	<!--- Downloads Third-Party Software Wallets
+    ================================================== -->
+        <h2 class="downtitle align-center"><i class="fas fa-laptop-code"></i> Dompet perisian.</h2>
+
+		<div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada Windows, macOS, Linux, iOS dan Android. Bantuan Digi-ID dan SegWit. <strong class="dark">Disyorkan!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://www.coinomi.com" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada iOS dan Android. Pelbagai pilihan pelaburan. <strong class="dark">Disyorkan!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada iOS dan Android. Sokongan Digi-ID dan MultiSig. <strong>Keahlian berbayar</strong>.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://ownbit.io" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada iOS dan Android. Sokongan SegWit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Edge</span>
+                            <a href="https://edge.app" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada Windows, macOS, Linux, iOS dan Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Exodus</span>
+                            <a href="https://www.exodus.io" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada Windows, macOS, Linux, iOS dan Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Atomic</span>
+                            <a href="https://atomicwallet.io" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada iOS dan Android. Sokongan SegWit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trust</span>
+                            <a href="https://trustwallet.com" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada Windows, macOS, Linux, Chrome, iOS dan Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guarda</span>
+                            <a href="https://guarda.co" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
+                        
+                        <p>Terdapat pada Windows, macOS, Linux, Chrome, iOS dan Android.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Jaxx Liberty</span>
+                            <a href="https://jaxx.io" target="_blank" class="testimonials__link">Muat turun</a>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+			</div>
+	    
+	  <!--- Downloads Third-Party Hardware Wallets
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade"  id="hardware">
+
+		    <h2 class="downtitle align-center"><i class="fas fa-microchip"></i> Dompet perkakasan.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada mana-mana penyemak imbas web melalui Wi-Fi. Sokongan SegWit. <strong class="dark">Disyorkan!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitfi</span>
+                            <a href="https://go.bitfi.com" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada Win, macOS, Linux, iOS dan Android melalui USB dan Bluetooth. Sokongan SegWit. <strong class="dark">Disyorkan!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ledger</span>
+                            <a href="https://www.ledger.com" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada Chrome dan Firefox melalui USB. Sokongan SegWit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trezor</span>
+                            <a href="https://trezor.io" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada Chrome dan ShapeShift.com melalui USB.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KeepKey</span>
+                            <a href="https://shapeshift.io/keepkey" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+					
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada iOS dan Android melalui kod QR. Sokongan SegWit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SafePal</span>
+                            <a href="https://www.safepal.io" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada Chrome dan iOS melalui USB dan Bluetooth. Sokongan SegWit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SecuX</span>
+                            <a href="https://www.secuxtech.com" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
+                        
+                        <p>Berfungsi pada iOS dan Android melalui USB dan Bluetooth. Pengesahan biometrik dan sokongan SegWit.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">D'CENT</span>
+                            <a href="https://dcentwallet.com" target="_blank" class="testimonials__link">Kunjungi laman sesawang</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Debit Cards
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="cards">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-credit-card"></i> Kad debit.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
+                        
+                        <p>Aplikasi iOS dan Android kustodial. Kad debit Visa terdapat di Amerika Syarikat dan Kanada.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">Dapatkan apps</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
+                        
+                        <p>Aplikasi Windows, macOS, iOS dan Android bukan penjaga. Kad debit MasterCard dan UnionPay.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PolisPay</span>
+                            <a href="https://www.polispay.com/card" target="_blank" class="testimonials__link">Dapatkan apps</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Point of Sale Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="posapps">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-shopping-cart"></i> Aplikasi jualan setempat.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
+                        
+                        <p>Aplikasi iOS dan Android bukan penjaga untuk pembayaran secara peribadi. Sokongan jualan automatik. <strong class="dark">Disyorkan!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiCafe</span>
+                            <a href="https://www.digibytecafe.com" target="_blank" class="testimonials__link">Dapatkan apps</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
+                        
+                        <p>Aplikasi iOS dan Android kustodial untuk pembayaran secara langsung dan pemadanan untuk pembayaran dalam talian. Sokongan jual automatik.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">Dapatkan apps</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
+                        
+                        <p>Aplikasi Android bukan penjaga untuk pembayaran DigiByte secara peribadi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PlusBit</span>
+                            <a href="https://plusbit.tech/pos/" target="_blank" class="testimonials__link">Dapatkan apps</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
+                        
+                        <p>Aplikasi Android bukan penjaga untuk pembayaran secara peribadi dan api pedagang untuk pembayaran dalam talian.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PayByte</span>
+                            <a href="https://paybyte.io" target="_blank" class="testimonials__link">Dapatkan apps</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Digi-ID Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="digidapps">
+		
+			<h2 class="downtitle align-center"><i class="fas fa-fingerprint"></i> Digi-ID apps.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        
+                        <p>Aplikasi pengesah Digi-ID. Sokongan sambungan AntumID untuk fungsi katalaluanDigi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID/AntumID</span>
+                            <a href="https://apps.apple.com/app/digi-id-antumid/id1457498829" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=rocks.digibyte.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
+                        
+                        <p>Aplikasi pengesah Digi-ID. Sokongan sambungan AntumID untuk fungsi katalaluanDigi.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiID Simple</span>
+                            <a href="https://play.google.com/store/apps/details?id=com.noahseidman.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
+                        
+                        <p>Dompet pelbagai matawang dengan fungsi pengesah Digi-ID.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://apps.apple.com/app/coinomi-wallet/id1333588809" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Dompet pelbagai matawang dengan fungsi pengesah Digi-ID.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://apps.apple.com/app/ownbit/id1321798216" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.bitbill.www" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+		    <div class="lrmargin25" data-aos="fade">
+				
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Penafian Dompet</strong><br>Semua dompet Pihak Ketiga yang diperkenalkan di sini dihoskan oleh pelayan atau kedai aplikasi mereka sendiri. Kami tidak bertanggungjawab untuk kemungkinan masalah yang anda hadapi mengenai dompet Pihak Ketiga. Sebarang kemuskilan, anda seharusnya menghubungi perkhidmatan sokongan dompet yang berkaitan.
+                </p>
+              </div>
+				
+		      <div class="align-center">
+                 <a class="btn btn--stroke" href="https://digibytewallets.com" target="_blank">Carian lebih banyak Dompet DigiByte</a>
+              </div>
+				
+	   </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer" class="s-footer footer">
+		
+		<div class="align-center">
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
+		</div>
+		
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container ticker">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "DGB/USD",
+      "proName": "BITTREX:DGBUSD"
+    },
+    {
+      "description": "DGB/BTC",
+      "proName": "BITTREX:DGBBTC"
+    },
+    {
+      "description": "DGB/ETH",
+      "proName": "BITTREX:DGBETH"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+		
+		<div class="row footer__top max1000">
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+					<form id="de-form" class="group" method="get" target="_blank" action="https://chainz.cryptoid.info/dgb/search.dws?key=25ac5ef2ff1e">
+                       <input type="text" name="q" placeholder="Cari blok , transaksi atau alamat dompet" autocomplete="off" required>
+                       <a><input type="submit" value="Cari" class="btn btn--primary home-content__btn search"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col-full">
+                <p>
+					<a class="telfooter15" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Makluman</a>
+					
+                    <a class="telfooter15" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Perbincangan</a>
+					
+					<a class="telfooter15" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> Sokongan</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Pembangunan</a>
+					
+					<a class="telfooter15" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Perlombongan</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Pemasaran</a>
+			
+					<a class="telfooter15" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Spekulasi</a>
+			
+					<a class="iblock" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Terjemahan</a>
+                </p>
+            </div>
+        </div> 
+
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>Mengenai DigiBtye.</h4>
+
+                <p>
+                DigiByte adalah blokrantaian sumber terbuka yang berkembang pesat dan mula dibangunkan pada akhir 2013 dan diluncurkan pada awal tahun 2014. Setelah 6 tahun pengembangan aktif dan agresif, DigiByte telah menjadi salah satu blokrantaian UTXO yang paling selamat, terpantas, paling lama dan paling tidak berpaksi yang pernah terhasil setakat ini. DigiByte di 100+ negara.
+                </p>
+
+                <ul class="footer__social">
+		            <li><a class="zoom" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-six mob-full">
+                        <h4>Pautan DigiByte.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="https://digibytefoundation.io" target="_blank">Yayasan DigiByte</a></li>
+                            <li><a href="https://dgbat.org" target="_blank">Pasukan Pemasaran DGB</a></li>
+                            <li><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a></li>
+			                <li><a href="https://digiexplorer.info" target="_blank">DigiExplorer</a></li>
+							<li><a href="https://digistats.digibyteservers.io/" target="_blank">DigiStats</a></li>
+                            <li><a href="http://digihash.co" target="_blank">Perlombongan DigiHash</a></li>
+			                <li><a href="https://blockchain2035.com" target="_blank">Blockchain 2035</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-six mob-full">
+                        <h4>Sumber.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">Panduan Integrasi DGB</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">Helaian Media DGB</a></li>
+                            <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">Logo & Ikon DGB</a></li>
+			                <li><a href="https://github.com/digibyte/digibyte" target="_blank">Protokol DGB GitHub</a></li>
+                            <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Hubungi Kami</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Sumbangan</a></li>
+                        </ul>
+                    </div>		
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright"> 
+                <span>&copy; Copyright DigiByte 2013 - 2020</span> 
+				<span>Hak Cipta Terpelihara</span> 
+                <span>Dikeluarkan di bawah <a href="https://opensource.org/licenses/mit-license.php" target="_blank">lesen MIT</a></span> 
+				<span><a href="../docs/LegalDisclaimer.pdf">Penafian Undang-undang</a> | <a href="../docs/PrivacyPolicy.pdf">Dasar Privasi</a></span>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main1f.js"></script>
+    <script>includeHTML();</script>
+	
+	<!-- Cookie info message
+    ================================================== -->
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
+	data-font-size="14px"
+	data-font-family="Nunito Sans,sans-serif"
+	data-text-align="left"
+    data-fg="#545454"
+	data-bg="rgba(255, 255, 255, 0.9)"
+	data-link="#0066cc"
+	data-divlink="#ffffff"
+	data-divlinkbg="#0066cc"
+	data-position="bottom"
+	data-message="Kami menggunakan kuki untuk meningkatkan pengalaman anda. Dengan terus mengunjungi laman web ini, anda bersetuju dengan penggunaan kuki kami."
+	data-linkmsg="Maklumat lanjut"
+	data-moreinfo="../docs/PrivacyPolicy.pdf"
+	data-close-text="OK"
+	>
+    </script>
+
+</body>
+	
+</html>

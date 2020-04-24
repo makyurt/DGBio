@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	
+	<!--- Hash value catcher
+    ================================================== -->
+    <script>
+    var target = window.location.hash
+    if (target.length > 0)
+	history.replaceState(null, null, ' '),
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.location.hash = target; 
+		 }, 1000);
+       });
+    else
+    null
+    </script>
+	
+	<!--- Google analytics
+    ================================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
+    </script>
+	
+	<!-- OneSignal platform support
+    ================================================== -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
+        });
+      var notificationPromptDelay = 30000;
+      var navigationStart = window.performance.timing.navigationStart;
+      var timeNow = Date.now();
+        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
+        });
+      function promptAndSubscribeUser() {
+        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+          if (!isEnabled) {
+            window.OneSignal.showSlidedownPrompt();
+           }
+         });
+        }
+     </script>
+
+    <!--- Basic page needs
+    ================================================== -->
+    <title>デジバイトブロックチェーン|DGBコイン|デジアセット|Digi-ID</title>
+    <meta charset="utf-8">
+    <meta name="description" content="デジバイトは、DGBコイン、デジアセットDigiAssets、Digi-IDなどを提供するオープンソースかつ高度に分散化されたブロックチェーンです。">
+	<meta name="keywords" content="デジバイト，DGB，ブロックチェーン，分散化，コイン，資産，デジタル，暗号，通貨，デジアセット，Digi-ID，サイバーセキュリティ，認証，スマートコンタクト，dApp，支払い，ウォレット，コミュニティ">
+	<link rel="canonical" href="https://digibyte.io/ja/" />
+
+    <!-- Mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-itunes-app" content="app-id=1378061425">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main1f.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+	
+	<!-- RSS Feed
+    ================================================== -->
+    <link rel="alternate" type="application/rss+xml" title="DigiByte core protocol updates" href="https://github.com/digibyte/digibyte/releases.atom" />
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
+    <meta name="apple-mobile-web-app-title" content="DigiByte">
+    <meta name="application-name" content="DigiByte">
+    <meta name="msapplication-TileColor" content="#002352">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+    <meta name="theme-color" content="#002352">
+	
+	<!-- Twitter preview
+    ================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="デジバイトブロックチェーン|DGBコイン|デジアセット|Digi-ID" />
+    <meta name="twitter:description" content="デジバイトは、DGBコイン、デジアセット、Digi-IDなどを提供するオープンソースかつ高度に分散化されたブロックチェーンです。" />
+    <meta name="twitter:image" content="https://digibyte.io/favicons/twitter.png" />
+	
+	<!-- Facebook preview
+    ================================================== -->
+	<meta property="og:image" content="https://digibyte.io/favicons/og-image.jpg">
+    <meta property="og:image:width" content="955">
+    <meta property="og:image:height" content="500">
+    <meta property="og:description" content="デジバイトは、DGBコイン、デジアセット、Digi-IDなどを提供するオープンソースかつ高度に分散化されたブロックチェーンです。">
+    <meta property="og:title" content="デジバイトブロックチェーン|DGBコイン|デジアセット|Digi-ID">
+    <meta property="og:url" content="https://digibyte.io/">
+
+</head>
+
+<body id="top">
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+        </div>
+    </div> 
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo smoothscroll" href="#top"><img src="../images/logo.svg" loading="eager" alt="Home">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li id="dbc"><a class="ssbc" href="#blockchain" title="ブロックチェーン">ブロックチェーン</a></li>
+					<li id="mbc"><a class="ssbcm" href="#blockchain" title="ブロックチェーン">ブロックチェーン</a></li>
+					<li><a class="smoothscroll" href="#currency" title="通貨">通貨</a></li>
+                    <li><a class="smoothscroll" href="#digiassets" title="デジアセットDigiAssets">デジアセットDigiAssets</a></li>
+                    <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
+                    <li><a class="smoothscroll" href="#community" title="コミュニティ">コミュニティ</a></li>
+					<li><a class="smoothscroll" href="#downloads" title="ダウンロード">ダウンロード</a></li>
+				</ul>
+				
+					<div class="dropdown header-cta" id="langmenu">
+					   <a href="javascript:void(0)" onclick="lmenu()" class="dropbtn" id="lmenuname"></a>
+                       <div includeHTML="../langmenu/desktop.html"></div>
+                    </div>
+					
+					<div includeHTML="../langmenu/mobile.html"></div>
+            </nav>
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header>
+
+
+    <!-- Home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                    もっと安全に、もっと速く、
+                    さらなる進化を
+                    </h1>
+    
+                    <h3>
+                    デジバイトは、ただ単に高速なデジタル通貨というわけではありません。デジアセット、スマートコントラクト、分散化されたアプリケーションやセキュアな認証に使える革新的なブロックチェーンです。
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#about" class="btn btn--primary home-content__btn smoothscroll">
+                            さらに知る
+                        </a>
+						<a href="#ecosystem" class="btn btn--primary home-content__btn smoothscrollup">
+                            DGBを購入
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home-content__right">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
+                </div>
+
+            </div>
+
+            <ul class="home-content__social">
+                <li><a href="https://digibytefoundation.io" target="_blank">財団</a></li>
+				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
+				<li><a href="https://www.dgbwiki.com" target="_blank">ウィキ</a></li>
+                <li><a href="https://t.me/DGBSupport" target="_blank">サポート</a></li>
+		    	<li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">コンタクト</a></li>
+                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">寄付</a></li>  
+            </ul>
+
+        </div>
+
+        <a href="#footer" class="home-scroll smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section>
+
+
+    <!-- About
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+		<a href="#footer" class="home-scroll2 smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    デジバイトのすごさの秘密は？
+                </h1>
+                <p class="lead">
+                    デジバイトは、2013年後半に開発され、2014年初めにリリースされた急成長中のオープンソースのブロックチェーンです。6年間の先進的な開発成果とも言えるデジバイトは、もっとも安全かつ高速で最長の分散化された<a href="https://wikipedia.org/wiki/Unspent_transaction_output" target="_blank">UTXO</a>ベースのブロックチェーンの一つです。
+                </p>
+            </div>
+        </div>
+
+        <div class="row wide about-desc" data-aos="fade">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">真の分散化</h3>
+
+                    <p>
+                    デジバイトは、これまでに <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">イニシャル・コイン・オファリング</a> や大量の <a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">プレマインド</a>を募ったことがありません。CEOや会社組織によるブロックチェーンの制御も存在しません。デジバイトは、世界中のボランティアによって運営されているプロジェクトです。
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">もっと安全に</h3>
+
+                    <p>
+					デジバイトは、５種類の採掘アルゴリズムと<a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">リアルタイムの難易度調整</a>アルゴリズムを採用し、悪意のあるマイニングの中央集権化やハッシュパワーの変動を抑制します。採掘アルゴリズムの一つであるOdocryptは、自身の構造を10日ごとに変化させることで、ASIC耐性を発揮します。
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">超高速</h3>
+
+                    <p>
+                    デジバイトでは、15秒位に一度の頻度でブロックが生成されます。これはビットコインに比べて40倍、ライトコインに比べて10倍高速です。<a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> の実装とデジバイトブロックチェーンの高い信頼性を背景に、低手数料で毎秒1066のオンチェーンの取引が可能です。
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">先進的アイデア</h3>
+
+                    <p>
+                    過去6年間、デジバイトは<a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">デジシールド</a>、<a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>マイニング、<a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank">SegWit</a>の実装、<a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a>アルゴリズム、<a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a>プライバシープロトコル、<a href="#digiassets" class="smoothscroll">デジアセットDidiAssets</a>や<a href="#digi-id" class="smoothscroll">Digi-ID</a>といった先端のブロックチェーン技術でリードし続けています。
+                    </p>
+                </div> 
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- What is DigiByte Video
+    ================================================== -->
+    <section class="s-about-how target-section" id="blockchain">
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="zoom-in">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://www.youtube.com/embed/7Dm-FO8u7x8?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                        <span class="item-stats__num">
+                            デジバイトとは？
+                        </span>
+                        <span class="item-stats__title">
+                            紹介ビデオを見る
+                        </span>
+                    </div>
+                </div>
+		   
+           </div>
+        </div>
+	    
+    <!-- Blockchain
+    ================================================== -->
+	    
+        <div class="row process-wrap">
+			
+		<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    デジバイトブロックチェーンの仕組み
+                </h1>
+                <p class="lead">
+                    ネットワークインフラ、セキュリティと通信の最新鋭の機能を提供する3つの階層構造は、デジバイトブロックチェーンの最も革新的な要素です。
+                </p>
+            </div>
+        </div>
+
+        <div class="process" data-aos="fade">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">アプリケーション/デジアセット</h3>
+                        <p>最上位レイヤーは、例えばアプリストアに代表される実際にユーザーが使用するためものです。全てのデジアセットは、<a href="#digiassets" class="smoothscroll">デジアセットDigiAssets</a> プロトコルを用いてデジバイトブロックチェーン上に作成されます。分散化されたアプリケーション（dApps）も、デジバイトブロックチェーン上に構築することが可能です。さらに、デジバイトの信頼性と安全性を活用したスマートコントラクトも容易にブロックチェーンへエンコードすることが可能です。
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">デジアセット/公開台帳</h3>
+                        <p>中間レイヤーは、セキュリティや管理の機能を提供します。 A <strong>デジ</strong>タル<strong>バイト</strong>のデータ、これは偽造，複製やハッキングすることのできない価値を保存するデータまたは単位を表しています。デジバイトの全ての取引が記録される不変の公開台帳です。デジバイトは，セキュリティのために<a href="https://www.dgbwiki.com/index.php?title=DigiByte_Mining_Breakdown" target="_blank">5つのプルーフ・オブ・ワークアルゴリズム</a>を用います。新しいデジバイトは、マイニングによってのみ発行されます。
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">コアプロトコル/グローバルネットワーク</h3>
+                        <p>最下層では、通信や動作手続きに関する機能を提供します。世界中全てのデジバイト上のノードは、互いに接続及び通信しています。この地球上の大勢の人がデジバイトのソフトウェアを動作させています。どんなサーバーやコンピューター、タブレット、スマホもデジバイトのネットワークに参加することで、ノードとなって取引の中継に貢献します。
+			            <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">最適な方法でデジバイトブロックチェーンに貢献する</a>。
+			            </p>
+		            </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">オープンソース/非許可型</h3>
+                        <p><a href="https://github.com/DigiByte-Core/DGBio" target="_blank">このウェブサイトと同様に</a>、デジバイトブロックチェーンは、実行改変が許可されている<a href="https://opensource.org/licenses/mit-license.php" target="_blank">MITライセンス</a>, に基づいてリリースされた完全なオープンソースです。この透明性は、ソースコードとそれに対応したバイナリの独立した検証を可能にしています。<br />
+						<a href="https://github.com/digibyte/digibyte" target="_blank">GitHub上のデジバイトプロトコル</a>。
+						<br />
+						<a href="https://github.com/DigiByte-Core" target="_blank">GitHub上のデジバイトコア開発</a>。
+                        </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="fade">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">デジバイトの歩み</h2>
+					<p class="lead">
+                    デジバイトブロックチェーン開発の主なマイルストーン
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
+                        
+                        <p>デジバイトブロックチェーンを構築するために、フルタイムの開発を開始する。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2013年10月</span>
+				<a href="https://twitter.com/jaredctate/status/1190673943876841475" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
+                        
+                        <p>ジェネシスブロックが採掘され、デジバイトブロックチェーンが公式に開始。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2014年1月10日</span>
+							<a href="https://github.com/digibyte/digibyte/blob/master/src/chainparams.cpp#L40" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
+                        
+                        <p>デジシールドがアクチベートされ、ハッシュレート変動に対するリアルタイム難易度調整が可能に。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2014年2月28日</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
+                        
+                        <p>採掘の中央集権化を抑制するために、5つの異なるアルゴリズムが採用されたMultiAlgoがアクチベートされる。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2014年9月1日</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
+                        
+                        <p>DigiShieldをさらに発展させ、5つのマイニングアルゴリズムに対応したMultiShieldがアクチベートされる。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2014年12月10日</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiShield" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
+                        
+                        <p>ブロック時間を15秒に短縮し、高速な取引を可能とするDigiSpeedがアクチベートされる。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2015年12月4日</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
+                        
+                        <p>ビットコインやライトコインに先立って、効率的なブロックサイズ使用を可能とするSegWitがアクチベートされる。
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2017年4月28日</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
+                        
+                        <p>ウェブサイトなどへ簡単にサインインすることが可能なDigi-IDが始動する。
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2018年5月</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Digi-ID" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
+                        
+                        <p>分散化された資産などの発行を可能とするデジアセットDigiAssetsが始動。
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2019年4月</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiAssets" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
+                        
+                        <p>IPや物理的な位置情報のトラッキングを防止するDandelion++プロトコルが実装される。
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2019年5月3日。</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
+                        
+                        <p>10日前ごとに構造を変化させることで、ASICに対する優れた耐性を発揮するOdocryptアルゴリズムがアクチベートされる。
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">2019年7月21日。</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/roadmap.png" loading="lazy" alt="Roadmap" class="testimonials__avatar">
+                        
+                        <p>デジバイトに対して実行したい項目のリスト。 閲覧して投稿を開始します。
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ロードマップ</span>
+                            <a href="https://github.com/DigiByte-Core/DigiByte-Pipeline" target="_blank" class="testimonials__link">さらに知る</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+
+    <!-- Currency
+    ================================================== -->
+    <section id="currency" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    きっと好きになる<br/>デジタル通貨
+                </h1>
+                <p class="lead">
+                    デジバイト（DGB）は、高速かつ低手数料での取引を可能とする高い拡張性を持ったピアツーピア型のデジタル通貨です。
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/UUhVEDlXvkQ?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> 視聴して学ぶ</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-phone-laptop"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">簡単に使える</h3>
+                    <p>デジバイトを使い始めるのは、スマホでメッセージを送るより簡単です。普段使っているPCやスマホなどを使ってデジバイトを送ることができます。<a class="smoothscroll" href="#downloads">まずはデジバイト対応のウォレットをインストール</a>、次にスキャンをクリック、最後にQRコードをスキャンすればデジバイト送金完了です。たったの3ステップ。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">ICOを実施していません</h3>
+                    <p>デジバイトは、これまでに<a href="https://en.wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a>や大規模な<a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">プレマイニング</a>を行ったことがありません。デジバイトブロックチェーンをコントロールするCEOや企業も存在しません。<a class="smoothscrollup" href="#jared">創設者</a>、<a class="smoothscrollup" href="#developers">開発者</a>そして<a class="smoothscroll" href="#community">コミュニティー</a>はシステム破綻のリスクを排除する無給のボランティアです。
+                    </p>
+                </div>
+            </div>
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-tachometer-alt-fastest"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">超高速</h3>
+                    <p>デジバイトの取引は、約15秒で承認されます。これはビットコインの40倍、ライトコインの10倍の速度です。また、<a href="https://en.wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> によって極めて低い手数料で1秒間に1066のオンチェーンの取引が可能です。このように、デジバイトは日常の支払い手段として理想的です。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>    
+                <div class="item-feature__text">
+                    <h3 class="item-title">いつでも安全</h3>
+                    <p>デジバイトは、ビットコインブロックチェーンと <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a>・<a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>や<a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a>などの先端技術を組み合わせた、決して破ることのできない技術の上に成り立っています。さらに、<a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a>プライバシープロトコルは、IPアドレスや位置情報の漏洩を防ぎ、安全性を高めます。さらに知る。<a href="https://www.dgbwiki.com/index.php?title=What_makes_DigiByte_More_Secure%3F" target="_blank">さらに知る</a>。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-digging"></i>
+                </div> 
+                <div class="item-feature__text">
+                    <h3 class="item-title">採掘可能</h3>
+                    <p>デジバイトは、Sha256、Scrypt、Skein、QubitそしてOdocryptの5つのアルゴリズムで採掘可能100%<a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank">プルーフオブワーク</a>(PoW)のブロックチェーンです。そして、<a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a>による採掘は分散化とネットワークの安全性に貢献すると同時に、GPUはもちろんASIC/FPGAなど採掘に使えるハードウェアの選択の自由も広げます。<a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">さらに知る</a>。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">使いやすい通貨単位</h3>
+                    <p>ビットコインの総発行数2100万に対して，総発行量210億（ビットコインの1000倍）のデジバイトは一般個人への普及に向けて設計されています。デジバイトのブロック報酬は，ビットコインのような半減期に代わって、毎月1%ずつ減少する仕組みが採用されています。210億デジバイト全てが採掘されるのは、2035年末の予定となっています。2035年以降、マイナーには取引手数料のみが支払われます。<a href="https://www.dgbwiki.com/index.php?title=Why_so_many_coins%3F_21Billion" target="_blank">さらに知る</a>。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="fade" id="ecosystem">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">デジバイト・エコシステムについて</h2>
+					<p class="lead">
+                   デジバイトをサポートする全ての取引所とサービスは、<a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">デジバイトウィキ</a>にてご覧になれます。
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
+                        
+                        <p>Bittrexは、デジバイト取引が可能な確実で安全なプラットフォームを提供します。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bittrex</span>
+                            <a href="https://bittrex.com" target="_blank" class="testimonials__link">bittrex.com</a>
+                        </div>
+                    </div> 
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/vertbase.png" loading="lazy" alt="Vertbase" class="testimonials__avatar">
+                        
+                        <p>Vertbaseのシンプルで安全な手続きで、デジバイトをUSドル、イギリスポンド、ユーロ建てで売買することができます。</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Vertbase</span>
+                            <a href="https://www.vertbase.com" target="_blank" class="testimonials__link">vertbase.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/okex.png" loading="lazy" alt="Okex" class="testimonials__avatar">
+                        
+                        <p>OKExは、デジバイト取引を提供する、高い流動性を持つ主要な暗号通貨取引所の1つです。</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Okex</span>
+                            <a href="https://www.okex.com" target="_blank" class="testimonials__link">okex.com</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/litebit.png" loading="lazy" alt="LiteBit" class="testimonials__avatar">
+                        
+                        <p>LiteBitは、EU圏でデジバイトを売買・保管することのできる仮想通貨仲介業者です。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">LiteBit</span>
+                            <a href="https://www.litebit.eu" target="_blank" class="testimonials__link">litebit.eu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
+                        
+                        <p>安全に誰でも使えるArbaなら簡単にデジバイトへ投資できます。150ヵ国を超える国で利用できます。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">abra.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
+                        
+                        <p>ShapeShiftは、デジバイトを含む多彩な仮想通貨を取り扱うデジタル通貨交換所です。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ShapeShift</span>
+                            <a href="https://shapeshift.io" target="_blank" class="testimonials__link">shapeshift.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangelは、デジバイトを含む様々な仮想通貨から他の仮想通貨へ、ウォレットからウォレットへの交換を可能とするプラットフォームです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/spend.png" loading="lazy" alt="Spend App" class="testimonials__avatar">
+                        
+                        <p>Spendは、仮想通貨ウォレットやSpend Visaカードなどを含む総合金融サービスを提供しています。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">spend.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/coinpayments.png" loading="lazy" alt="CoinPayments" class="testimonials__avatar">
+                        
+                        <p>CoinPaymentsは、デジバイトに対応する仮想通貨決済サービスです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">coinpayments.net</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibytepay.png" loading="lazy" alt="DigiBytePay" class="testimonials__avatar">
+                        
+                        <p>DigiCafe AppとWooCommerceは、対面・オンラインでのデジバイト支払いを可能にします。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiBytePay</span>
+                            <a href="https://www.digibytepay.us" target="_blank" class="testimonials__link">digibytepay.us</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumIDは、デジバイトの技術を用いて、ウェブサイトでのセキュアな認証を提供します。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">OpenAntumID</span>
+                            <a href="https://www.openantumid.com" target="_blank" class="testimonials__link">openantumid.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/nownodes.png" loading="lazy" alt="NowNodes" class="testimonials__avatar">
+                        
+                        <p>NowNodesは、高性能サーバーを使いデジバイトを含む主要なブロックチェーンへの高速で信頼性の高い接続を提供します。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">NowNodes</span>
+                            <a href="https://nownodes.io" target="_blank" class="testimonials__link">nownodes.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>CryptoBantamでトレンドの服を買って、デジバイトの支払い通貨としての存在感と採択機運を盛り上げましょう！</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com/vendor/dgbat/" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div> 
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
+                        
+                        <p>自分専用の@dgb.communityのメールアカウントを取得して、デジバイト財団とDGBATを応援しよう。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DGB.community</span>
+                            <a href="https://dgb.community" target="_blank" class="testimonials__link">dgb.community</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptoid.png" loading="lazy" alt="CryptoID Block Explorer" class="testimonials__avatar">
+                        
+                        <p>CryptoIDのブロックエクスプローラーは、デジバイトのブロックチェーンや特定の取引の詳細な統計情報を提供します。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoID</span>
+                            <a href="https://chainz.cryptoid.info/dgb/" target="_blank" class="testimonials__link">chainz.cryptoid.info</a>
+                        </div>
+                    </div> 
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DigiAssets
+    ================================================== -->
+    <section id="digiassets" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   シンプルなデジタル資産<br/>の作り方
+                </h1>
+                <p class="lead">
+                  DigiAssetsは、デジバイトブロックチェーン上の安全でスケーラブルな階層にあり、資産やトークン、スマートコントラクト、デジタル証明などの分散化された発行が可能です。
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/xDJllY5ehNw?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> 視聴して学ぶ</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">無限の可能性</h3>
+                    <p>DigiAssetsは、現実世界で見られるあらゆるものを安全に表現することができます。例えば、不動産や車などの有形資産から希少なデジタルアート作品。さらに、権利証書や病院の請求書などのサイン入りの書類も保護することが可能になります。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">着実に成長しています</h3>
+                    <p>既にDigiAssetsを使ったプラットフォームが計画中または準備中です。その分野は、不動産や金融、送金、身元確認、POS、レーシング、取引、ヘルスケア、サプライチェーンや関係官庁などと多岐に渡ります。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-badge-check"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">信頼できるテクノロジー</h3>
+                    <p>DigiAssetは、デジバイトのような自由参加型（非許可型）で真に分散化されたブロックチェーンの特性を活用しています。この事実は、DigiAssetsをこれまでにないレベルで、より安全にスケーラブルにそして分散化することを可能にしています。
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">DigiAssetsを始めよう</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">プロトコルを学ぶ</h3>
+                        <p>デジバイトブロックチェーン上で動作するオープンソースのDigiAssetプロトコルの発行・取引の詳細な仕組みについて知ろう。<a href="https://github.com/DigiByte-Core/DigiAssets-Protocol-Specifications/wiki" target="_blank">GitHubのDigiAssetsプロトコル</a>。
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">資産を発行する</h3>
+                        <p>開発者ではない？全く問題ありません！プロトコルについての技術的な知識がなくても誰でも簡単にDigiAssetsを発行することができます。<a class="smoothscrollup" href="#digiassetservices">DigiAssetsをサポートしているサービス</a>。
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">ストア/トレード</h3>
+                        <p>DigiAssetsをどう使うかわからない？送金や着金、資産の保管ができる<a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> と <a class="smoothscrollup" href="#dgbgo">DigiByte Go</a>アプリを実際に使ってみよう。さらに、DigiAssetsの売買や交換ができる<a class="smoothscrollup" href="#digiassetservices">DigiAssets対応のサービス</a>を探してみよう。
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">もっとヘルプが必要ですか？</h3>
+                        <p>DigiAssetsについてもっと助けが必要ですか？デジバイト開発者グループに自由に参加して、質問したりアイデアをシェアしてみましょう。<a href="https://t.me/DigiByteDevelopers" target="_blank">Telegram DigiByte Developers group</a>。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+	    </div>
+		
+		<div class="testimonials-wrap" data-aos="fade" id="digiassetservices">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">DigiAssetsを体験してみよう！</h2>
+					<p class="lead">
+                    DigiAssetsを体験できるサービスを探してみる。
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssetsツールを使えば、専門的な知識がなくてもDigiAssetsをすぐ簡単に作成できます。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiAssets Tools</span>
+                            <a href="https://createdigiassets.com" target="_blank" class="testimonials__link">createdigiassets.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
+                        
+                        <p>Digi-Brokerは、世界中の人がデジタル資産の売買や共有ができるサイトです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-Broker</span>
+                            <a href="https://digi-broker.com/index.php/tools/" target="_blank" class="testimonials__link">digi-broker.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
+                        
+                        <p>digiassetXは、DigiByte・DigiAssetsの新しい取引所、DigiAssetsの作成サービスです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">まもなく始動</span>
+                            <a href="https://digiassetx.com/" target="_blank" class="testimonials__link">digiassetx.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+    </section>
+	
+	
+	<!-- Digi-ID
+    ================================================== -->
+    <section id="digi-id" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    もっとも優れた認証
+                </h1>
+                <p class="lead">
+                    Digi-IDは、デジバイトブロックチェーン技術の上に構築されたセキュリティプロトコルです。これによって、ウェブサイトやアプリケーション、IoTへの簡単なサインインが可能になります。
+                </p>
+            </div>
+			<a class="btn btn--primary" href="https://www.youtube.com/embed/pLrQycud5GI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> 視聴して学ぶ</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">簡単な認証</h3>
+                    <p>Digi-IDは、ユーザIDやパスワード、2段階認証などの煩雑な仕組みを取り払います。また、リスクの高いパスワード・ユーザーID方式に代わって、Digi-IDでは公開鍵・秘密鍵方式を採用しています。これは、ユーザーだけでなくユーザーが使うサービス自体にとっても安全な仕組みです。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">完ぺきなセキュリティ</h3>
+                    <p>Digi-IDは、ユーザーのいかなる情報もブロックチェーン上に保存しません。この事実は、エンドユーザーの情報が追跡されたり他人の過失によって危険にさらされることがない、強いセキュリティが実現することを意味しています。ハッカーのターゲットになるような単一障害点も存在しません。</p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-smile-plus"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">簡単でフリー</h3>
+                    <p>Digi-IDは完全にフリーです！メンテナンスコストや手数料はありません。しかしながら、フリーというのは最大のセールスポイントではありません。一番の特徴は、Digi-IDがより安全で簡単なウェブサイト・アプリケーション等へのログイン手段であるという事実です。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">動作の流れ</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">生成</h3>
+                        <p>ウェブサイトやアプリケーションまたは製品がDigi-IDのQRコードを生成・表示します。
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">スキャン</h3>
+                        <p>ユーザーは、<a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a>ウォレット等の<a class="smoothscroll" href="#digidapps">Digi-ID対応アプリを</a>使って、QRコードをスキャンします。
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">認証</h3>
+                        <p>ユーザー認証では、PINコードの入力や指紋・顔認証が要求されます。
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">承認</h3>
+                        <p>Digi-IDは暗号化署名付きのリクエストを送り返してユーザーのログインが完了します。
+                        </p> 
+                    </div>
+
+                </div>
+              </div>
+			
+          </div>
+		
+		  <div data-aos="fade">
+		
+		  <h1 class="align-center">よくある質問</h1>
+		
+		  <div class="row features block-1-2 block-m-1-2">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">どこにより詳細なドキュメントがありますか？</h3>
+                    <p>とっかかりに最適なのが<a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>です。もしあなたがもっと詳しくDigi-IDについて知りたいのなら、<a href="https://www.digi-id.io/faq" target="_blank">ユーザーガイド</a>や<a href="https://www.digi-id.io/vendor-info.html" target="_blank">ベンダーガイド</a>，<a href="https://www.digi-id.io/integration.html" target="_blank">インテグレーションガイド</a>を参照してください。さらにもし広報用の資料が必要なら、<a href="../docs/digiidintro.pdf" target="_blank">イントロシート</a>や<a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">ロゴ</a>を参照してください。
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">インテグレーションライブラリはどこですか？</h3>
+                    <p>Digi-IDはオープンソースなので、<a href="https://github.com/DigiByte-Core?q=digiid" target="_blank">DigiByte Core Development </a>や<a href="https://github.com/mctrivia?tab=repositories&q=digiid" target="_blank">Matthew Cornelisse</a>・<a href="https://github.com/evilmouse69/Digi-ID-for-WHMCS/" target="_blank">WHMCSSnow</a>と同様にGitHubで複数のレポジトリを見つけることができます。もし助けが必要なら、テレグラムの<a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers group</a>に参加してください。
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">コーディングすることなくDigi-IDを構築することは可能ですか？</h3>
+                    <p>もしあなたが開発者でないのであれば、ウェブサイトや製品向けの構築済みソリューションを使うことができます。 <a href="https://www.openantumid.com/" target="_blank">OpenAntumID</a>は、簡単にDigi-IDを組み込むことができます。 これに加えて、<a href="https://wordpress.org/plugins/digi-id-authentication/" target="_blank">ワードプレス</a>用のプラグインも利用できます。
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">その他にDigi-ID認証のアプリはありますか？</h3>
+                    <p>もちろん！Digi-IDは、急成長中のプラットフォームです。複数のスタンドアローン型認証アプリとDigi-ID対応のウォレットが<a class="smoothscroll" href="#digidapps">ダウンロード</a>セクションで確認できます。さらに、あなたのウェブサイトにの無料のDigi-ID<a href="https://digibytewallets.com/digid/" target="_blank">アプリケーションウィジェット</a>を配置することも可能です。
+                    </p>
+                </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="fade">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Digi-IDを使ってみる</h2>
+					<p class="lead">
+                    Digi-ID対応のサービスを見つけて、シームレスな認証を体験をしてみる。
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangelは、デジバイトを含む様々な仮想通貨から他の仮想通貨へ、ウォレットからウォレットへの交換を可能とするプラットフォームです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        
+                        <p>AntumIDは、デジバイトの技術を使って安全で簡単な認証サービスを提供します。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AntumID</span>
+                            <a href="https://www.antumid.be/gateway/soaplogin" target="_blank" class="testimonials__link">antumid.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
+                        
+                        <p>AbsoluteJobは、ベルギーの雇用サービスを提供するリーディングカンパニーの一つです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">AbsoluteJobs</span>
+                            <a href="https://www.absolutejobs.be" target="_blank" class="testimonials__link">absolutejobs.be</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        
+                        <p>CryptoBantamでトレンドの服を買って、デジバイトの支払い通貨としての存在感と採択機運を盛り上げましょう！</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CryptoBantam</span>
+                            <a href="https://www.cryptobantam.com" target="_blank" class="testimonials__link">cryptobantam.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
+                        
+                        <p>Hash Altcoinは、高度に安定した採掘体験を提供するFPGAデバイスを製造する採掘企業です。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Hash Altcoin</span>
+                            <a href="https://www.hashaltcoin.com/en/" target="_blank" class="testimonials__link">hashaltcoin.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+	
+	
+	<!-- Community
+    ================================================== -->
+    <section id="community" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    今までになく情熱的な<br/>コミュニティ！
+                </h1>
+                <p class="lead">
+                    世界中のボランティアがデジバイトに様々な形で貢献しています。これは、まさに草の根運動です。もし一緒に参加していただけるのであれば、私たちは心から歓迎します！
+                </p>
+            </div>
+		    <a class="btn btn--primary" href="https://www.youtube.com/embed/uGearn3BHvU?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> 視聴して学ぶ</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature" id="foundation">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sitemap"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">デジバイト財団</h3>
+                    <p>デジバイト財団は、ボランティアによって運営されている非営利団体です。財団は、真の分散化という理念を保護促進します。さらに、デジバイトとそのコミュニティの持続可能な非中央集権的世界の実現と維持に従事します。<a href="https://digibytefoundation.io" target="_blank">さらに知る</a>。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="dgbat">
+                <div class="item-feature__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">デジバイトマーケティングチーム</h3>
+                    <p>DGBATは、コミュニティが主体となったアウトリーチ構想です。ソーシャルメディアやアウトリーチ・教育活動、ライターそして開発者など他分野に渡るメンバーたちが主導しています。この構想では教育、アウトリーチ、マーケティングキャンペーンを通してデジバイトのプロモーションを行うことを目標としています。<a href="https://dgbat.org" target="_blank">さらに知る</a>。
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="developers">
+                <div class="item-feature__icon">
+                    <i class="fas fa-code"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">デジバイト開発者</h3>
+                    <p>デジバイトで活動する全ての人は、無給のボランティアです。デジバイトの開発に貢献してみよう。さらに、デジバイトブロックチェーンを活用したアプリを構築してみよう。
+					<br />	
+					<a href="https://github.com/digibyte/digibyte" target="_blank">GithubのDigiByte Protocol</a>。
+					<br />
+					<a href="https://github.com/DigiByte-Core" target="_blank">GithubのDigiByte Core Development</a>。
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="socialmedia">
+                <div class="item-feature__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+		    <div class="item-feature__text">
+                    <h3 class="item-title">ソーシャルメディア</h3>
+                    <p>デジバイトのソーシャルメディアをフォローして、最新情報を入手しよう。友達と情報を共有して、デジバイトの声を世界中に届けよう。
+                    </p>
+					<p class="item-feature__icon">
+					   <a class="rightpad25" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+					   <a class="rightpad25" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook zoom"></i></a>
+					   <a class="rightpad25" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
+					   <a class="rightpad25" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+					   <a class="rightpad25" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube zoom"></i></a>
+					   <a href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+                    </p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="telegram">
+                <div class="item-feature__icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">テレグラムグループ</h3>
+                    <p><a href="https://telegram.org" target="_blank">テレグラム</a>は、世界中のデジバイトコミュニティと繋がることができる、簡単かつポピュラーな手段です。以下のリストから興味のある<a href="https://t.me/OfficialDigiByteGroups" target="_blank">グループ</a>に参加してください。
+					</p>
+					<p>
+					<a class="telegramicon" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> アラート</a>
+					<a class="telegramicon" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> ディスカッション</a>
+					<a class="telegramicon" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> サポート</a>
+					<a class="telegramicon" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> 開発者</a>
+					<a class="telegramicon" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> マイニング</a>
+					<a class="telegramicon" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> マーケティング</a>
+					<a class="telegramicon" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> 投機</a>
+					<a class="telegramiconlast" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> 翻訳</a>
+					</p>
+                </div>
+            </div>
+		
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="wiki">
+                <div class="item-feature__icon">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">デジバイトウィキ</h3>
+                    <p>The <a href="https://www.dgbwiki.com" target="_blank">デジバイトウィキ</a>は、コミュニティのためのコミュニティによる百科事典です。例えば、<a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">デジバイトエコシステム</a>や<a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank">ハウツーガイド</a>など、便利な最新データが揃っています。無料のアカウントに登録してデジバイトの情報をアップデートすることで、誰でもこのウィキへ貢献することができます。<br><strong>注意</strong> <i class="fas fa-exclamation-circle"></i> 厚顔無恥な自己PRやリンクはやめてください。</p>
+					<p class="jared">
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Technical_Specifications" target="_blank"><i class="fab fa-wikipedia-w"></i> 技術仕様</a> 
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> フレームワーク</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Accomplishments" target="_blank"><i class="fab fa-wikipedia-w"></i> 成果</a>
+					</p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="jared">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">デジバイトのクリエーターに会おう</h3>
+                    <p><a href="https://www.youtube.com/embed/S8eMsq8qp7Y?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>ジャレッド・テイト</a>は、デジバイトブロックチェーンの創設者であり、クリエーターです。ジャレッドは、2013年10月からフルタイムの開発に従事しています。<a href="https://www.youtube.com/embed/Wl0RUau9roE?autoplay=1&iv_load_policy=3&rel=0" data-lity>マサチューセッツ工科大学</a>や<a href="https://twitter.com/digibytecoin/status/982696268928618496" target="_blank">ハーバード大学</a>、<a href="https://twitter.com/jaredctate/status/1217178454229225473" target="_blank">US Capitol</a>などで、ブロックチェーン技術についての招待講演を行っています。彼は<a href="https://blockchain2035.com" target="_blank">Blockchain 2035 The Digital DNA of Internet 3.0</a>の著者でもあり、これは世界で初めてブロックチェーン創設者自身が書いた本です。
+                    </p>
+					<p class="jared">
+					<a class="telegramicon" href="https://twitter.com/jaredctate" target="_blank"><i class="fab fa-twitter"></i> ツイッター</a> 
+					<a class="telegramicon" href="https://www.linkedin.com/in/jaredctate" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=Original_author(s)" target="_blank"><i class="fab fa-wikipedia-w"></i> 経歴</a>
+					</p>
+                </div>
+            </div>
+			
+		</div>
+	    
+			 <div class="lrmargin25" data-aos="fade">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>ソーシャルメディアの免責事項</strong><br>ジャレッド・テイトやDigiByte Coreチーム、DigiByte財団・DigiByte Awarenessチームが発信した個人の意見や信条、見解は、必ずしもコミュニティの総意を反映したものではありません。
+                </p>
+		</div>
+		
+	    </div>
+	    
+	</section>
+
+
+   <!-- Downloads
+    ================================================== -->
+    <section id="downloads" class="s-download target-section">
+	    
+	<!--- Downloads DigiByte Wallets
+    ================================================== -->
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    アプリを選ぼう
+                </h1>
+                <p class="lead">
+                    アプリを選択してデジバイトとDigiAssetを送金、着金、保管する、またはDigi-IDを使って安全に認証する。<br /><a href="https://github.com/digibyte/digibyte/releases/" target="_blank">最新のDigiByte Core v7.17.2</a>
+                </p>
+            </div>
+        </div>
+		
+		<div data-aos="fade">
+			
+		<h1 class="downtitle align-center">デジバイトコミュニティ開発のアプリ</h1>
+		
+		<div class="row features block-1-3 block-m-1-2 block-tab-full stack">
+
+            <div class="col-block item-plan" id="dgbcore">
+                <div class="item-plan__block"> 
+					
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Core</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                           <li><i class="fas fa-check blue"></i> フルバリデーション</li>
+			               <li><i class="fas fa-check blue"></i> ネットワーク対応</li>
+                           <li><i class="fas fa-check blue"></i> 高安定</li>
+                           <li><i class="fas fa-check blue"></i> SegWit対応</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-win64-setup.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+					       <a class="rightpad25" href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-osx.dmg" target="_blank"><i class="fab fa-apple zoom"></i></a>
+					       <a href="https://github.com/digibyte/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz" target="_blank"><i class="fab fa-linux zoom"></i></a>
+			            </div>
+
+			            <div class="supportline align-center">
+					       <p class="item-plan__per">Windows, macOS & Linux (64ビットのみ)対応</p>
+			            </div>
+						
+			    	    <div class="supportline align-center pt2">
+						  <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> サポート</a><br><a href="https://www.dgbwiki.com/index.php?title=Running_a_full_node" target="_blank"><i class="fas fa-info-circle"></i>  フルノード稼働する</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+           <div class="col-block item-plan" id="dgbmobile">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Mobile</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><i class="fas fa-check blue"></i> SPVウォレット</li>
+                            <li><i class="fas fa-check blue"></i> Digi-ID対応</li>
+                            <li><i class="fas fa-check blue"></i> DigiAsset対応（Android）</li>
+			                <li><i class="fas fa-check blue"></i> 多言語対応</li>
+                        </ul>
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://apps.apple.com/app/digibyte/id1378061425" target="_blank"><i class="fab fa-app-store-ios zoom"></i></a>
+					       <a href="https://play.google.com/store/apps/details?id=io.digibyte" target="_blank"><i class="fab fa-google-play zoom"></i></a>
+			            </div>		
+
+			    		 <div class="supportline align-center">
+					       <p class="item-plan__per">iOS・Android両対応<br>
+					       <a href="https://testflight.apple.com/join/PfRnkwy9" target="_blank"><i class="fab fa-apple"></i> TestFlight（テスト配信）</a><br><a href="https://support.google.com/googleplay/answer/7003180" target="_blank"><i class="fab fa-android"></i> Androidベータ版</a></p>
+			             </div>
+						
+			    		 <div class="supportline align-center pt2">
+						   <a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> サポート</a><br><a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> リカバリーツール</a>		
+			             </div>
+                    </div>  
+                
+                </div>
+            </div>
+			
+			<div class="col-block item-plan" id="dgbgo">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Go</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><i class="fas fa-check blue"></i> クラウドウォレット</li>
+			                <li><i class="fas fa-check blue"></i> 簡単使用</li>
+                            <li><i class="fas fa-check blue"></i> MultiSig対応</li>
+                            <li><i class="fas fa-check blue"></i> DigiAsset対応</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a href="javascript:void(0)" title="Temporary unavailable!"><i class="fab fa-chrome disabled"></i></a>
+			            </div>
+						
+						<div class="supportline align-center">
+					       <p class="item-plan__per">Chrome対応<br>ネイティブアプリまもなく対応</p>
+			            </div>
+						
+						<div class="supportline align-center pt2">
+							<a href="https://t.me/DGBSupport" target="_blank"><i class="fas fa-user-headset"></i> サポート</a><br><a href="https://mctrivia.github.io/DigiSweep/index.html" target="_blank"><i class="fas fa-life-ring"></i> リカバリーツール</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+        </div>
+		</div>
+	    
+	    	<!--- Downloads Docs & Guides
+    ================================================== -->
+	    		    <div class="lrmargin25" data-aos="fade"  id="docs">
+		
+			<h1 class="downtitle align-center"><i class="fas fa-books"></i> デジバイトに関するドキュメントとガイド</h1>
+				
+			  <div class="item-feature__text max800 align-center">
+                  <p>その他のドキュメントをお探しですか？ 記事の基本情報が必要か、統合プロセスの技術情報が必要か。 以下の必要なガイドすべてにアクセスできます。
+                  </p>
+              </div>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        
+                        <p>デジバイトは、取引所やウォレット・その他サービスへ簡単にインテグレートできます。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">システム構築ガイド</span>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        
+                        <p>広報資料でデジバイトブロックチェーンについての重要な事実を知る。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">広報資料</span>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide"> <img src="../images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
+                        
+                        <p>教育用のオンラインプレゼンテーションを使ってデジバイトを友達に紹介しよう。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">プレゼンテーション</span>
+                            <a href="https://docs.google.com/presentation/d/16Hn2GfuS1yLjZpjeTYloW0S_JVkhevYzffkDZFqjbiU" target="_blank" class="testimonials__link">スタート</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        
+                        <p>あなたのプロジェクトに使用できる最新のデジバイトのロゴとアイコンを見つける。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ロゴとアイコン</span>
+                            <a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank" class="testimonials__link">GitHubへ行く</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
+                        
+                        <p>ウィキのガイドを参照して、自分自身でのデジバイトフルノードやInsight explorerを動作させる。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">ハウツーガイド</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank" class="testimonials__link">デジバイトウィキ行く</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+	</div>
+	    
+	<!--- Downloads Third-Party
+    ================================================== -->
+		<div class="lrmargin25" data-aos="fade" id="software">
+	<h1 class="downtitle align-center">サードパーティー製アプリ</h1>
+			
+	<!--- Downloads Third-Party Software Wallets
+    ================================================== -->
+        <h2 class="downtitle align-center"><i class="fas fa-laptop-code"></i> ソフトウェアウォレット</h2>
+
+		<div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
+                        
+                        <p>Windows/macOS/Linux/iOS/Android対応。Digi-IDとSegWit対応。<strong class="dark">おすすめ！</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://www.coinomi.com" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
+                        
+                        <p>iOSとAndroid対応。複数の仮想通貨投資オプションあり。<strong class="dark">おすすめ！</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Abra</span>
+                            <a href="https://www.abra.com" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>iOSとAndroid対応。Digi-ID・MultiSig対応。<strong>Paid membership</strong>.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://ownbit.io" target="_blank" class="testimonials__link">メンバーシップを支払う</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
+                        
+                        <p>iOSとAndroid対応。SegWit対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Edge</span>
+                            <a href="https://edge.app" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
+                        
+                        <p>Windows/macOS/Linux/iOS/Android対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Exodus</span>
+                            <a href="https://www.exodus.io" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
+                        
+                        <p>Windows/macOS/Linux/iOS/Android対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Atomic</span>
+                            <a href="https://atomicwallet.io" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
+                        
+                        <p>iOSとAndroid対応。SegWit対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trust</span>
+                            <a href="https://trustwallet.com" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
+                        
+                        <p>Windows/macOS/Linux/Chrome/iOS/Android対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guarda</span>
+                            <a href="https://guarda.co" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
+                        
+                        <p>Windows/macOS/Linux/Chrome/iOS/Android対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Jaxx Liberty</span>
+                            <a href="https://jaxx.io" target="_blank" class="testimonials__link">ダウンロード</a>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+			</div>
+	    
+	  <!--- Downloads Third-Party Hardware Wallets
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade"  id="hardware">
+
+		    <h2 class="downtitle align-center"><i class="fas fa-microchip"></i> ハードウェアウォレット</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
+                        
+                        <p>Wi-Fiを通じてウェブブラウザ上で動作。SegWit対応。<strong class="dark">おすすめ！</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitfi</span>
+                            <a href="https://go.bitfi.com" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
+                        
+                        <p>USBとBluetoothを使ってWin/macOS/Linux/iOS/Androidで動作。SegWit対応。<strong class="dark">おすすめ！</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ledger</span>
+                            <a href="https://www.ledger.com" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
+                        
+                        <p>USBを使ってChromeとFirefox上で動作。SegWit対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trezor</span>
+                            <a href="https://trezor.io" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
+                        
+                        <p>USBを使ってChromeとShapeShift.com上で動作。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KeepKey</span>
+                            <a href="https://shapeshift.io/keepkey" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+					
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
+                        
+                        <p>QRコードを使ってiOSとAndroid上で動作。SegWit対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SafePal</span>
+                            <a href="https://www.safepal.io" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
+                        
+                        <p>USBとBluetoothを使ってChromeとiOS上で動作。SegWit対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SecuX</span>
+                            <a href="https://www.secuxtech.com" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
+                        
+                        <p>USBまたはBluetoothを使ってiOSとAndroid上で動作。生体認証とSegWitに対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">D'CENT</span>
+                            <a href="https://dcentwallet.com" target="_blank" class="testimonials__link">ウェブサイトを訪れる</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Debit Cards
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="cards">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-credit-card"></i> デビットカード</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
+                        
+                        <p>iOSとAndroid用のカストディアル型アプリです。米国カナダでVisaデビットカードが利用可能です。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Spend</span>
+                            <a href="https://www.spend.com" target="_blank" class="testimonials__link">アプリを入手する</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
+                        
+                        <p>非カストディアル型のWindows/macOS/iOS/Androidアプリです。マスターカードとUnionPay デビットカードが利用可能です。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PolisPay</span>
+                            <a href="https://www.polispay.com/card" target="_blank" class="testimonials__link">アプリを入手する</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Point of Sale Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="posapps">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-shopping-cart"></i> POSアプリ</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
+                        
+                        <p>対面支払い向けの非カストディアル型のiOS・Androidアプリです。Auto-sell対応。<strong class="dark">おすすめ！</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiCafe</span>
+                            <a href="https://www.digibytecafe.com" target="_blank" class="testimonials__link">アプリを入手する</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
+                        
+                        <p>カストディアル型のの対面支払い向けのiOS・Androidアプリです。オンライン支払用のプラグインもあります。Auto-sell対応。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">アプリを入手する</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
+                        
+                        <p>デジバイト用対面支払い向けの非カストディアル型のAndroidアプリです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PlusBit</span>
+                            <a href="https://plusbit.tech/pos/" target="_blank" class="testimonials__link">アプリを入手する</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
+                        
+                        <p>対面支払い・小売り向けオンラン支払いAPI対応の非カストディアル型Androidアプリです。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">PayByte</span>
+                            <a href="https://paybyte.io" target="_blank" class="testimonials__link">アプリを入手する</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Digi-ID Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="digidapps">
+		
+			<h2 class="downtitle align-center"><i class="fas fa-fingerprint"></i> Digi-IDアプリ</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID認証アプリです。DigiPassword用にAntumID拡張機能をサポート。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID/AntumID</span>
+                            <a href="https://apps.apple.com/app/digi-id-antumid/id1457498829" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=rocks.digibyte.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
+                        
+                        <p>Digi-ID認証アプリです。DigiPassword用にAntumID拡張機能をサポート。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">DigiID Simple</span>
+                            <a href="https://play.google.com/store/apps/details?id=com.noahseidman.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
+                        
+                        <p>Digi-ID認証機能を使った複数通貨対応のウォレット。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://apps.apple.com/app/coinomi-wallet/id1333588809" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Digi-ID認証機能を使った複数通貨対応のウォレット。</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://apps.apple.com/app/ownbit/id1321798216" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.bitbill.www" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+		    <div class="lrmargin25" data-aos="fade">
+				
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>ウォレット免責事項</strong><br>ここで紹介した全てのサードパーティ製ウォレットは、それぞれのサーバーやアプリケーション上で運用されています。私たちは、サードパーティー製ウォレットで発生した問題についていかなる責任も負いません。このような場合においては、使用しているウォレットのサポートサービスへ連絡してください。
+                </p>
+              </div>
+				
+		      <div class="align-center">
+                 <a class="btn btn--stroke" href="https://digibytewallets.com" target="_blank">もっとデジバイト用ウォレットを探す</a>
+              </div>
+				
+	   </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer" class="s-footer footer">
+		
+		<div class="align-center">
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
+		</div>
+		
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container ticker">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "DGB/USD",
+      "proName": "BITTREX:DGBUSD"
+    },
+    {
+      "description": "DGB/BTC",
+      "proName": "BITTREX:DGBBTC"
+    },
+    {
+      "description": "DGB/ETH",
+      "proName": "BITTREX:DGBETH"
+    }
+  ],
+  "colorTheme": "dark",
+  "isTransparent": true,
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+		
+		<div class="row footer__top max1000">
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+					<form id="de-form" class="group" method="get" target="_blank" action="https://chainz.cryptoid.info/dgb/search.dws?key=25ac5ef2ff1e">
+                       <input type="text" name="q" placeholder="ブロックを探す、TXまたはアドレス" autocomplete="off" required>
+                       <a><input type="submit" value="検索" class="btn btn--primary home-content__btn search"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col-full">
+                <p>
+					<a class="telfooter15" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> アラート</a>
+					
+                    <a class="telfooter15" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> ディスカッション</a>
+					
+					<a class="telfooter15" href="https://t.me/DGBSupport" target="_blank"><i class="fab fa-telegram-plane"></i> サポート</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> 開発者</a>
+					
+					<a class="telfooter15" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> マイニング</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> マーケティング</a>
+			
+					<a class="telfooter15" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> 投機</a>
+			
+					<a class="iblock" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> 翻訳</a>
+                </p>
+            </div>
+        </div> 
+
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>デジバイトについて</h4>
+
+                <p>
+                デジバイトは、2013年後半に誕生、2014年初めにリリースされた急成長中のオープンソース・ブロックチェーンです。6年間の先駆的な技術開発の後、デジバイトは最も安全で高速な最長の分散化されたUTXOブロックチェーンとなりました。<br>
+		        デジバイトは100ヵ国以上で使われています。
+                </p>
+
+                <ul class="footer__social">
+		            <li><a class="zoom" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.youtube.com/user/DigiByteCoin" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-six mob-full">
+                        <h4>デジバイト　リンク</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="https://digibytefoundation.io" target="_blank">デジバイト財団</a></li>
+                            <li><a href="https://dgbat.org" target="_blank">DGBマーケティングチーム</a></li>
+                            <li><a href="https://www.dgbwiki.com" target="_blank">デジバイトウィキ</a></li>
+			                <li><a href="https://digiexplorer.info" target="_blank">DigiExplorer</a></li>
+							<li><a href="https://digistats.digibyteservers.io/" target="_blank">DigiStats</a></li>
+                            <li><a href="http://digihash.co" target="_blank">DigiHash Mining</a></li>
+			                <li><a href="https://blockchain2035.com" target="_blank">ブロックチェーン2035</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-six mob-full">
+                        <h4>リソース</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">DGBインテグレーションガイド</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">DGB広報用資料</a></li>
+                            <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGBロゴ＆アイコン</a></li>
+			                <li><a href="https://github.com/digibyte/digibyte" target="_blank">DGBプロトコル GitHub</a></li>
+                            <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">コンタクト</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">寄付</a></li>
+                        </ul>
+                    </div>		
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright"> 
+                <span>&copy; Copyright DigiByte 2013 - 2020</span> 
+				<span>無断転用禁止</span> 
+                <span><a href="https://opensource.org/licenses/mit-license.php" target="_blank">MITライセンス</a>に基づいて配布</span> 
+				<span><a href="../docs/LegalDisclaimer.pdf">法定通知</a> | <a href="../docs/PrivacyPolicy.pdf">個人情報保護方針</a></span>
+            </div>
+
+        </div>
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main1f.js"></script>
+    <script>includeHTML();</script>
+	
+	<!-- Cookie info message
+    ================================================== -->
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
+	data-font-size="14px"
+	data-font-family="Nunito Sans,sans-serif"
+	data-text-align="left"
+    data-fg="#545454"
+	data-bg="rgba(255, 255, 255, 0.9)"
+	data-link="#0066cc"
+	data-divlink="#ffffff"
+	data-divlinkbg="#0066cc"
+	data-position="bottom"
+	data-message="私たちは、より良いサービス提供のためにクッキーを使用しています。引き続き当サイトを利用・閲覧することでクッキー使用に同意したことになります。"
+	data-linkmsg="さらに詳しく"
+	data-moreinfo="../docs/PrivacyPolicy.pdf"
+	data-close-text="OK"
+	>
+    </script>
+
+</body>
+	
+</html>
