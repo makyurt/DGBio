@@ -386,7 +386,7 @@ border-radius:10px!important
 }
 
 .btn--stroke:hover {
-background:#002352!important;
+background:#0066cc!important;
 border:.2rem solid #fff!important;
 color:#fff!important
 }
@@ -890,7 +890,7 @@ font-size:1.1rem
 }
 
 .dropbtn {
-transform: scale(0.85);
+font-size:1.25rem;
 }
 
 }
@@ -2791,17 +2791,15 @@ max-width:800px
 .dropbtn {
 background-color:#0066cc;
 color:#fff;
-padding:4px 8px 4px 8px;
+padding:6px 8px 6px 11px;
 border:1px solid #0066cc;
 border-radius:5px;
-vertical-align:middle;
-cursor: pointer;
-display: block;
 text-transform: capitalize;
 }
 
 .dropbtn:hover {
-background-color:#002352;
+background-color:#002352!important;
+color: #fff!important;
 }
 
 .dropdown {
