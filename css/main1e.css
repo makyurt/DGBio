@@ -1509,6 +1509,9 @@ padding-bottom:32rem
 width:360px;
 margin-top:-28rem
 }
+.home-content__btn-wrap .home-content__btn {
+width:100%
+}
 }
 
 @media only screen and (max-width:400px) {
@@ -1529,10 +1532,6 @@ padding-right:25px
 .home-content__right {
 width:300px;
 margin-top:-24rem
-}
-
-.home-content__btn-wrap .home-content__btn {
-width:100%
 }
 }
 
