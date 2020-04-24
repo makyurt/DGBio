@@ -891,7 +891,8 @@ font-size:1.1rem
 }
 
 .dropbtn {
-font-size:1.25rem;
+font-size:1.25rem!important;
+padding:6px 6px 6px 10px!important;
 }
 
 }
@@ -1102,10 +1103,10 @@ margin-top:7.2rem
 }
 
 .home-content__btn-wrap .home-content__btn {
-width:30rem;
 height:6.4rem!important;
 line-height:6rem!important;
-margin-right:0
+margin-right: 20px;
+padding: 0px 20px;
 }
 
 .search:hover {
@@ -2792,7 +2793,7 @@ max-width:800px
 .dropbtn {
 background-color:#0066cc;
 color:#fff;
-padding:6px 8px 6px 11px;
+padding:8px 8px 8px 12px;
 border:1px solid #0066cc;
 border-radius:5px;
 text-transform: capitalize;
