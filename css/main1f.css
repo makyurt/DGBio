@@ -249,6 +249,36 @@ transform: scale(1);
 }
 }
 
+@media only screen and (min-width:1279px) {
+@-webkit-keyframes dots-jump {
+0% {
+transform: scale(1.5);
+}
+
+50% {
+transform: scale(2);
+}
+
+100% {
+transform: scale(1.5);
+}
+}
+
+@keyframes dots-jump {
+0% {
+transform: scale(1.5);
+}
+
+50% {
+transform: scale(2);
+}
+
+100% {
+transform: scale(1.5);
+}
+}
+}
+
 fieldset {
 border:none
 }
