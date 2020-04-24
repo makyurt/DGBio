@@ -432,6 +432,9 @@ var string = location.search.substring(1);
     else if (path.includes ("ru"))
 		document.getElementById("lmenuname").innerHTML = "Русский"+"&nbsp;&#9662;";
 
+    else if (path.includes ("bg"))
+		document.getElementById("lmenuname").innerHTML = "български"+"&nbsp;&#9662;";
+
     else if (path.includes ("el"))
 		document.getElementById("lmenuname").innerHTML = "Ελληνικά"+"&nbsp;&#9662;";
 
