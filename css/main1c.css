@@ -742,7 +742,8 @@ bottom:0;
 width:100%;
 height:8px;
 background:#06c;
-border-radius:4px 4px 0 0
+border-radius:4px 4px 0 0;
+margin-left: -1px;
 }
 }
 
@@ -917,7 +918,7 @@ display:none;
 height:auto;
 width:100%;
 background-color:#002352;
-padding:44px 44px 54px;
+padding:24px 44px 34px;
 text-align:left;
 position:absolute;
 top:60px
@@ -982,7 +983,7 @@ left:40px
 }
 
 .header-nav-wrap {
-padding:44px 44px 54px
+padding:24px 44px 34px;
 }
 
 .header-menu-toggle {
