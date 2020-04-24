@@ -6,13 +6,23 @@
     ================================================== -->
     <script>
     var target = location.hash
-    if (target.length > 0)
-    history.replaceState(null, null, ' '),
+	
+    if (['#ecosystem', '#jared', '#developers', '#foundation', '#dgbat', '#wiki', '#telegram', '#socialmedia', '#digiassetservices', '#dgbcore', '#dgbmobile', '#dgbgo', '#docs', '#history', '#digidservices'].indexOf(target) >= 0)
+    
        window.addEventListener("load", function(){
 		 setTimeout(function(){
-           window.location.hash = target;  
+           window.scrollTo(0, $(target).offset().top -100);
 		 }, 1000);
        });
+		
+	else if (target.length > 0)
+    
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.scrollTo(0, $(target).offset().top);
+		 }, 1000);
+       });
+		
     else
     null
     </script>
@@ -92,7 +102,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main1g.css">
+    <link rel="stylesheet" href="css/main1h.css">
 
     <!-- Scripts
     ================================================== -->
@@ -374,7 +384,7 @@
 			
            </div>
 		
-		   <div class="testimonials-wrap" data-aos="fade">
+		   <div class="testimonials-wrap" data-aos="fade" id="history">
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -1074,15 +1084,15 @@
                 <div class="item-feature__text">
                     <h3 class="item-title">Are there other Digi-ID auth apps?</h3>
                     <p>Of course! Digi-ID is a rapidly growing platform. Multiple standalone authenticator apps and Digi-ID supported wallets can be found at the <a class="smoothscroll" href="#digidapps">Downloads</a> section. You can also place the free Digi-ID <a href="https://digibytewallets.com/digid/" target="_blank">applications widget</a> on the login page of your website.
-                    </p>
-                </div>
+                    </p> 
+                    </div>
 
                 </div>
            </div>
 			
            </div>
 		
-		   <div class="testimonials-wrap" data-aos="fade">
+		   <div class="testimonials-wrap" data-aos="fade" id="digidservices">
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -2032,7 +2042,7 @@
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main1g.js"></script>
+    <script src="js/main1h.js"></script>
 	<script>includeHTML();</script>
 	
 	<!-- Cookie info message

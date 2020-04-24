@@ -6,13 +6,23 @@
     ================================================== -->
     <script>
     var target = location.hash
-    if (target.length > 0)
-    history.replaceState(null, null, ' '),
+	
+    if (['#ecosystem', '#jared', '#developers', '#foundation', '#dgbat', '#wiki', '#telegram', '#socialmedia', '#digiassetservices', '#dgbcore', '#dgbmobile', '#dgbgo', '#docs', '#history', '#digidservices'].indexOf(target) >= 0)
+    
        window.addEventListener("load", function(){
 		 setTimeout(function(){
-           window.location.hash = target;  
+           window.scrollTo(0, $(target).offset().top -100);
 		 }, 1000);
        });
+		
+	else if (target.length > 0)
+    
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.scrollTo(0, $(target).offset().top);
+		 }, 1000);
+       });
+		
     else
     null
     </script>
@@ -67,7 +77,7 @@
     ================================================== -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/vendor.css">
-    <link rel="stylesheet" href="../css/main1g.css">
+    <link rel="stylesheet" href="../css/main1h.css">
 
     <!-- Scripts
     ================================================== -->
@@ -350,7 +360,7 @@
 			
            </div>
 		
-		   <div class="testimonials-wrap" data-aos="fade">
+		   <div class="testimonials-wrap" data-aos="fade" id="history">
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -1050,15 +1060,15 @@
                 <div class="item-feature__text">
                     <h3 class="item-title">Има ли други Digi-ID приложения?</h3>
                     <p>Разбира се! Digi-ID е бързо растяща платформа. Различни самостоятелни приложения за верификация и Digi-ID поддържани wallet-и се намират в <a class="smoothscroll" href="#digidapps">Изтегляне</a>. Можете също да поставите безплатен Digi-ID <a href="https://digibytewallets.com/digid/" target="_blank">applications widget</a> на логин страницата в своят сайт.
-                    </p>
-                </div>
+                    </p> 
+                    </div>
 
                 </div>
            </div>
 			
            </div>
 		
-		   <div class="testimonials-wrap" data-aos="fade">
+		   <div class="testimonials-wrap" data-aos="fade" id="digidservices">
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -2008,7 +2018,7 @@
     ================================================== -->
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/plugins.js"></script>
-    <script src="../js/main1g.js"></script>
+    <script src="../js/main1h.js"></script>
 	<script>includeHTML();</script>
 	
 	<!-- Cookie info message

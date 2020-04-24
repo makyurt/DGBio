@@ -256,7 +256,7 @@ transform: scale(1.5);
 }
 
 50% {
-transform: scale(2);
+transform: scale(1.75);
 }
 
 100% {
@@ -270,7 +270,7 @@ transform: scale(1.5);
 }
 
 50% {
-transform: scale(2);
+transform: scale(1.75);
 }
 
 100% {
@@ -1135,8 +1135,8 @@ margin-top:7.2rem
 .home-content__btn-wrap .home-content__btn {
 height:6.4rem!important;
 line-height:6rem!important;
-margin-right: 20px;
-padding: 0px 20px;
+margin-right: 25px;
+padding: 0px 25px;
 }
 
 .search:hover {

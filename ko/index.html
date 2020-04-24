@@ -5,14 +5,24 @@
 	<!--- Hash value catcher
     ================================================== -->
     <script>
-    var target = window.location.hash
-    if (target.length > 0)
-    history.replaceState(null, null, ' '),
+    var target = location.hash
+	
+    if (['#ecosystem', '#jared', '#developers', '#foundation', '#dgbat', '#wiki', '#telegram', '#socialmedia', '#digiassetservices', '#dgbcore', '#dgbmobile', '#dgbgo', '#docs', '#history', '#digidservices'].indexOf(target) >= 0)
+    
        window.addEventListener("load", function(){
 		 setTimeout(function(){
-           window.location.hash = target;
+           window.scrollTo(0, $(target).offset().top -100);
 		 }, 1000);
        });
+		
+	else if (target.length > 0)
+    
+       window.addEventListener("load", function(){
+		 setTimeout(function(){
+           window.scrollTo(0, $(target).offset().top);
+		 }, 1000);
+       });
+		
     else
     null
     </script>
@@ -67,7 +77,7 @@
     ================================================== -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/vendor.css">
-    <link rel="stylesheet" href="../css/main1g.css">
+    <link rel="stylesheet" href="../css/main1h.css">
 
     <!-- Scripts
     ================================================== -->
@@ -341,7 +351,7 @@
 						<a href="https://github.com/digibyte/digibyte" target="_blank">GitHub의 DigiByte 프로토콜</a>.
 						<br />
 						<a href="https://github.com/DigiByte-Core" target="_blank">GitHub의 DigiByte 핵심 개발</a>.
-                        </p>
+                        </p> 
                     </div>
 
                 </div>
@@ -349,7 +359,7 @@
 			
            </div>
 		
-		   <div class="testimonials-wrap" data-aos="fade">
+		   <div class="testimonials-wrap" data-aos="fade" id="history">
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -1051,15 +1061,15 @@
                 <div class="item-feature__text">
                     <h3 class="item-title">다른 Digi-ID 인증 앱이 있나요?</h3>
                     <p>물론입니다! Digi-ID는 빠르게 성장하는 플랫폼 입니다. 다수의 인증 앱과 Digi-ID를 지원하는 지갑을 <a class="smoothscroll" href="#digidapps">다운로드</a> 섹션에서 확인하실 수 있습니다. 무료로 Digi-ID <a href="https://digibytewallets.com/digid/" target="_blank">어플리케이션 위젯</a> 을 웹 사이트의 로그인 페이지에 배치할 수도 있습니다.
-                    </p>
-                </div>
+                    </p> 
+                    </div>
 
                 </div>
            </div>
 			
            </div>
 		
-		   <div class="testimonials-wrap" data-aos="fade">
+		   <div class="testimonials-wrap" data-aos="fade" id="digidservices">
 
             <div class="row">
                 <div class="col-full testimonials-header">
@@ -2008,7 +2018,7 @@
     ================================================== -->
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/plugins.js"></script>
-    <script src="../js/main1g.js"></script>
+    <script src="../js/main1h.js"></script>
     <script>includeHTML();</script>
 
 	<!-- Cookie info message
