@@ -438,6 +438,9 @@ var string = location.search.substring(1);
     else if (path.includes ("el"))
 		document.getElementById("lmenuname").innerHTML = "Ελληνικά"+"&nbsp;&#9662;";
 
+    else if (path.includes ("hi"))
+		document.getElementById("lmenuname").innerHTML = "हिन्दी"+"&nbsp;&#9662;";
+
     else if (path.includes ("th"))
 		document.getElementById("lmenuname").innerHTML = "ไทย"+"&nbsp;&#9662;";
 
