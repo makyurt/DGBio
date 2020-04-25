@@ -195,8 +195,8 @@ display:none
 position:absolute;
 left:50%;
 top:45%;
-width:125px;
-height:125px;
+width:150px;
+height:150px;
 padding:0;
 display:inline-block;
 -webkit-transform:translate3d(-50%,-50%,0);
@@ -207,8 +207,8 @@ transform:translate3d(-50%,-50%,0)
 #loader > div {
 content:"";
 background: transparent;
-width:125px;
-height:125px;
+width:150px;
+height:150px;
 position:absolute;
 top:0;
 left:0;
@@ -246,36 +246,6 @@ transform: scale(1.25);
 
 100% {
 transform: scale(1);
-}
-}
-
-@media only screen and (min-width:1279px) {
-@-webkit-keyframes dots-jump {
-0% {
-transform: scale(1.5);
-}
-
-50% {
-transform: scale(1.75);
-}
-
-100% {
-transform: scale(1.5);
-}
-}
-
-@keyframes dots-jump {
-0% {
-transform: scale(1.5);
-}
-
-50% {
-transform: scale(1.75);
-}
-
-100% {
-transform: scale(1.5);
-}
 }
 }
 
