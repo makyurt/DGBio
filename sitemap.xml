@@ -39,6 +39,7 @@
 		<xhtml:link rel="alternate" hreflang="ar" href="https://digibyte.io/ar/" />
 		<xhtml:link rel="alternate" hreflang="fa" href="https://digibyte.io/fa/" />
 	</url>
+	<url>
 	<loc>https://digibyte.io/en/gb.html</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
 		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
