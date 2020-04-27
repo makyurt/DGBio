@@ -36,7 +36,11 @@
 	var langcode3 = browserlang.substr(0,3);
 	var langcode2 = browserlang.substr(0,2);
 		
-		if (langvalue == "lang=en") null
+		if (langcode5 == "en-UK")
+			
+			window.location.replace('en/uk.html'+target)
+		
+		else if (langvalue == "lang=en") null
 		
 		else if (langcode3 == "fil")
 			
@@ -49,10 +53,6 @@
 		else if (langcode5 == "pt-BR")
 			
 			window.location.replace('pt/br.html'+target)
-		
-		else if (langcode5 == "en-UK")
-			
-			window.location.replace('en/uk.html'+target)
 		
 		else if (['af', 'cs', 'da', 'de', 'es', 'fr', 'hr', 'id', 'it', 'sw', 'hu', 'ms', 'nl', 'pl', 'pt', 'ro', 'sq', 'fi', 'sv', 'vi', 'tr', 'ru', 'bg', 'el', 'hi', 'th', 'ja', 'ko', 'zh', 'ar', 'fa'].indexOf(langcode2) >= 0)
 			
