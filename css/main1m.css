@@ -1345,7 +1345,7 @@ display:none
 
 .home-content h1 {
 font-size:5.2rem;
-padding-top:0
+margin-top:-4.1rem
 }
 
 .home-content h1::before {
