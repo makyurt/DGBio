@@ -417,6 +417,9 @@ var string = location.search.substring(1);
     else if (path.includes ("sq"))
 		document.getElementById("lmenuname").innerHTML = "Shqip"+"&nbsp;&#9662;";
 
+    else if (path.includes ("sl"))
+		document.getElementById("lmenuname").innerHTML = "Slovenščina"+"&nbsp;&#9662;";
+
     else if (path.includes ("fi"))
 		document.getElementById("lmenuname").innerHTML = "Suomi"+"&nbsp;&#9662;";
 
