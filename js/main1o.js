@@ -147,7 +147,7 @@
                     }
                 },
                 {
-                    breakpoint: 1101,
+                    breakpoint: 1151,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
@@ -178,7 +178,16 @@
             autoplaySpeed: 5000,
             responsive: [
                 {
-                    breakpoint: 1001,
+                    breakpoint: 1151,
+                    settings: {
+						arrows: false,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+						infinite: true,
+                    }
+                },
+				{
+                    breakpoint: 701,
                     settings: {
 						arrows: false,
                         slidesToShow: 1,

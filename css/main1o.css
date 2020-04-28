@@ -2050,7 +2050,9 @@ padding-bottom:16rem
 }
 
 .features {
-margin-top:4.4rem
+margin-top:4.4rem;
+max-width:500px;
+text-align:center
 }
 
 .features .item-feature:nth-child(n) {
@@ -2060,17 +2062,10 @@ padding-left:15px
 }
 
 @media only screen and (max-width:700px) {
-.features {
-max-width:500px;
-text-align:center
-}
 
 .features .item-feature {
 width:100%;
 clear:both
-}
-.item-plan__features {
-text-align:left
 }
 }
 
