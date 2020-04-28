@@ -1024,12 +1024,12 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-opacity:.3;
-background:linear-gradient(to bottom,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%)
+opacity:.5;
+background:linear-gradient(to bottom,rgba(0,35,82,0.5) 0%,rgba(0,35,82,0) 100%)
 }
 
 .no-js .s-home {
-background:#000
+background:#002352
 }
 
 .home-content {
@@ -1049,7 +1049,7 @@ line-height:1.222;
 color:#fff;
 margin-top:0;
 margin-bottom:0;
-padding-top:3.2rem;
+padding-top:3rem;
 position:relative
 }
 
@@ -1066,13 +1066,13 @@ top:0
 
 .home-content h3 {
 font-family:"Nunito Sans",sans-serif;
-font-weight:300;
+font-weight:400;
 font-size:2.4rem;
 line-height:1.667;
 font-style:normal;
 color:rgba(255,255,255,0.7);
 margin-top:2rem;
-width:85%
+width:88%
 }
 
 .home-content__main {
@@ -1095,7 +1095,7 @@ top:0
 
 .home-content__right img {
 vertical-align:bottom;
-margin-top:-5.2rem
+margin-top:-5rem
 }
 
 .home-content__btn-wrap {
@@ -1105,8 +1105,8 @@ margin-top:7.2rem
 .home-content__btn-wrap .home-content__btn {
 height:6.4rem!important;
 line-height:6rem!important;
-margin-right: 25px;
-padding: 0px 25px;
+margin-right: 22px;
+padding: 0px 28px;
 }
 
 .search:hover {
@@ -1162,22 +1162,6 @@ z-index:4;
 height:5.6rem;
 position:absolute;
 display:none
-}
-
-.home-scroll__text {
-display:inline-block;
-font-family:"Nunito Sans",sans-serif;
-font-weight:600;
-font-size:11px;
-line-height:5.6rem;
-text-transform:uppercase;
-letter-spacing:.3rem;
-color:#06c;
-border-bottom:1px solid transparent;
--webkit-transition:all .3s ease-in-out;
-transition:all .3s ease-in-out;
-position:absolute;
-right:7.6rem
 }
 
 .home-scroll__icon {
