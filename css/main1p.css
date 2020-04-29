@@ -2866,6 +2866,14 @@ color: #666666!important;
 cursor: not-allowed!important;
 }
 
+.infopaper {
+color:rgba(255,255,255,0.7);
+}
+
+.infopaper:hover {
+color: #fff!important;
+}
+
 #mbc {
 display:none;
 }
