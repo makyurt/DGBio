@@ -55,23 +55,12 @@
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
       var OneSignal = window.OneSignal || [];
-        OneSignal.push(function() {
+      OneSignal.push(function() {
         OneSignal.init({
-          appId: "fe2bb732-9182-4a10-8868-e0e6c611190a",
+          appId: "c760e725-2e08-458c-b5e1-0abb89315c24",
         });
-      var notificationPromptDelay = 30000;
-      var navigationStart = window.performance.timing.navigationStart;
-      var timeNow = Date.now();
-        setTimeout(promptAndSubscribeUser, Math.max(notificationPromptDelay - (timeNow - navigationStart), 0));
-        });
-      function promptAndSubscribeUser() {
-        window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
-          if (!isEnabled) {
-            window.OneSignal.showSlidedownPrompt();
-           }
-         });
-        }
-     </script>
+      });
+    </script>
 
     <!--- Basic page needs
     ================================================== -->
