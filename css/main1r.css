@@ -2871,6 +2871,7 @@ color:rgba(255,255,255,0.7);
 display: block;
 padding: 0.6em 0 0 0.1em;
 margin-bottom: -1em;
+max-width: 250px;
 }
 
 .infopaper:hover {
