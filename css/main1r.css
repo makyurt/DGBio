@@ -2878,6 +2878,12 @@ max-width: 250px;
 color: #fff!important;
 }
 
+@media only screen and (max-width:1200px) {
+.infopaper {
+max-width: 100%;
+}
+}
+
 #mbc {
 display:none;
 }
