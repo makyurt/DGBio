@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en-ca">
 <head>
 	
 	<!--- Hash value catcher
@@ -26,56 +26,6 @@
     else
     null
     </script>
-	
-	<!--- Language router
-    ================================================== -->
-	<script>
-	var langvalue = location.search.substring(1);
-    var browserlang = navigator.language || navigator.userLanguage;
-	var langcode5 = browserlang.substr(0,5);
-	var langcode3 = browserlang.substr(0,3);
-	var langcode2 = browserlang.substr(0,2);
-		
-		if (langcode5 == "en-GB")
-			
-			window.location.replace('en/gb.html'+target)
-		
-		else if (langcode5 == "en-AU")
-			
-			window.location.replace('en/au.html'+target)
-		
-		else if (langcode5 == "en-NZ")
-			
-			window.location.replace('en/nz.html'+target)
-		
-		else if (langcode5 == "en-CA")
-			
-			window.location.replace('en/ca.html'+target)
-		
-		else if (langvalue == "lang=en") null
-		
-		else if (langcode3 == "fil")
-			
-			window.location.replace('fil/'+target)
-		
-		else if (['nb', 'no', 'nn'].indexOf(langcode2) >= 0)
-			
-			window.location.replace('nb/'+target)
-		
-		else if (['hr', 'sr', 'bs'].indexOf(langcode2) >= 0)
-			
-			window.location.replace('hr/'+target)
-		
-		else if (langcode5 == "pt-BR")
-			
-			window.location.replace('pt/br.html'+target)
-		
-		else if (['af', 'cs', 'da', 'de', 'es', 'fr', 'id', 'it', 'sw', 'hu', 'ms', 'nl', 'pl', 'pt', 'ro', 'sq', 'sl', 'fi', 'sv', 'vi', 'tr', 'ru', 'bg', 'el', 'hi', 'th', 'ja', 'ko', 'zh', 'ar', 'fa'].indexOf(langcode2) >= 0)
-			
-			window.location.replace(langcode2+'/'+target)
-		
-		else null
-	</script>
 	
 	<!--- Google analytics
     ================================================== -->
@@ -105,7 +55,7 @@
     <meta charset="utf-8">
     <meta name="description" content="DigiByte is an open-source and highly decentralized global blockchain hosts DGB Coin, DigiAssets, Digi-ID and more.">
 	<meta name="keywords" content="DigiByte, DGB, Blockchain, Decentralized, Coin, Asset, Digital, Crypto, Currency, DigiAssets, Digi-ID, Cybersecurity, Authentication, Smart Contract, dApp, Payments, Wallet, Community, Official">
-    <link rel="canonical" href="https://digibyte.io/" />
+    <link rel="canonical" href="https://digibyte.io/en/ca.html" />
 
     <!-- Mobile specific metas
     ================================================== -->
@@ -114,14 +64,14 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main1r.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <link rel="stylesheet" href="../css/main1r.css">
 
     <!-- Scripts
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
 	
 	<!-- RSS Feed
     ================================================== -->
@@ -129,11 +79,11 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#002352">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
     <meta name="apple-mobile-web-app-title" content="DigiByte">
     <meta name="application-name" content="DigiByte">
     <meta name="msapplication-TileColor" content="#002352">
@@ -164,7 +114,7 @@
     ================================================== -->
     <div id="preloader">
         <div id="loader" class="dots-jump">
-           <div><img src="images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
         </div>
     </div> 
 	
@@ -174,7 +124,7 @@
 
         <div class="row">
             <div class="header-logo">
-                <a class="site-logo smoothscroll" href="#top"><img src="images/logo.svg" loading="eager" alt="Home">
+                <a class="site-logo smoothscroll" href="#top"><img src="../images/logo.svg" loading="eager" alt="Home">
                 </a>
             </div>
     
@@ -191,10 +141,10 @@
 				
 					<div class="dropdown header-cta" id="langmenu">
 					   <a href="javascript:void(0)" onclick="lmenu()" class="dropbtn" id="lmenuname"></a>
-                       <div includeHTML="langmenu/desktop.html"></div>
+                       <div includeHTML="../langmenu/desktop.html"></div>
                     </div>
 					
-					<div includeHTML="langmenu/mobile.html"></div>
+					<div includeHTML="../langmenu/mobile.html"></div>
             </nav>
     
             <a class="header-menu-toggle" href="#"><span>Menu</span></a>
@@ -205,7 +155,7 @@
 
     <!-- Home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg.jpg" data-natural-width="3000" data-natural-height="2000" data-position-y="center">
 
         <div class="shadow-overlay"></div>
 
@@ -232,11 +182,11 @@
                         </a>
                     </div>
 					
-					<a href="docs/infopaper.pdf" target="_blank" class="infopaper"><i class="fab fa-readme"></i> Read the info paper</a>
+					<a href="../docs/infopaper.pdf" target="_blank" class="infopaper"><i class="fab fa-readme"></i> Read the info paper</a>
                 </div>
 
                 <div class="home-content__right">
-                    <img src="images/hero-app-screens-800.png" alt="DigiByte App" srcset="images/hero-app-screens-800.png 1x, images/hero-app-screens-1600.png 2x">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
                 </div>
 
             </div>
@@ -416,7 +366,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
+                        <img src="../images/avatars/development.png" loading="lazy" alt="Development" class="testimonials__avatar">
                         
                         <p>Full-time development has been started to build the future of the DigiByte blockchain.</p>
 
@@ -427,7 +377,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
+                        <img src="../images/avatars/launch.png" loading="lazy" alt="Launch" class="testimonials__avatar">
                         
                         <p>Genesis block was successfully mined and the DigiByte blockchain officially launched. </p>
 
@@ -438,7 +388,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
+                        <img src="../images/avatars/digishield.png" loading="lazy" alt="DigiShield" class="testimonials__avatar">
                         
                         <p>DigiShield activated to use real time difficulty adjustment against hash fluctuations.</p>
 
@@ -449,7 +399,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" alt="MultiAlgo" class="testimonials__avatar">
                         
                         <p>MultiAlgo activated to use 5 different algorithms to prevent mining centralization.</p>
 
@@ -460,7 +410,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
+                        <img src="../images/avatars/multishield.png" loading="lazy" alt="MultiShield" class="testimonials__avatar">
                         
                         <p>MultiShield activated to extend DigiShield protection over all the 5 mining algorithms.</p>
 
@@ -471,7 +421,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" alt="DigiSpeed" class="testimonials__avatar">
                         
                         <p>DigiSpeed activated to reduce block time to 15 seconds for faster transactions.</p>
 
@@ -482,7 +432,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
+                        <img src="../images/avatars/segwit.png" loading="lazy" alt="SegWit" class="testimonials__avatar">
                         
                         <p>SegWit activated before Bitcoin and Litecoin for the effective block size usage.
 						</p>
@@ -494,7 +444,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" alt="Digi-ID" class="testimonials__avatar">
                         
                         <p>Digi-ID launched to empower users to effortlessly sign-in to websites and more.
 						</p>
@@ -506,7 +456,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" alt="DigiAssets" class="testimonials__avatar">
                         
                         <p>DigiAssets launched to allow for the decentralized issuance of assets and more.
 						</p>
@@ -518,7 +468,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" alt="Dandelion++" class="testimonials__avatar">
                         
                         <p>Dandelion++ protocol implemented which prevents IP and physical location tracking. 
 						</p>
@@ -530,7 +480,7 @@
                     </div>
 			
 					<div class="testimonials__slide">		
-                        <img src="images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" alt="Odocrypt" class="testimonials__avatar">
                         
                         <p>Odocrypt activated which changes itself every 10 days for superior ASIC resistance. 
 						</p>
@@ -542,7 +492,7 @@
                     </div>
 					
 					<div class="testimonials__slide">		
-                        <img src="images/avatars/roadmap.png" loading="lazy" alt="Roadmap" class="testimonials__avatar">
+                        <img src="../images/avatars/roadmap.png" loading="lazy" alt="Roadmap" class="testimonials__avatar">
                         
                         <p>A list of items that we want to do for DigiByte. Browse and start to contribute.
 						</p>
@@ -660,9 +610,20 @@
             <div class="row testimonials">
 
                 <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/coinfield.png" loading="lazy" alt="CoinField" class="testimonials__avatar">
+                        
+                        <p>CoinField provides USD, EUR, GBP and CAD pairs for DigiByte trading in 193 countries.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinField</span>
+                            <a href="https://www.coinfield.com" target="_blank" class="testimonials__link">coinfield.com</a>
+                        </div>
+                    </div>
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
+                        <img src="../images/avatars/bittrex.png" loading="lazy" alt="Bittrex" class="testimonials__avatar">
                         
                         <p>Bittrex provides a proven and secure platform for its customers to access the opportunities of DigiByte trading.</p>
 
@@ -670,10 +631,10 @@
                             <span class="testimonials__name">Bittrex</span>
                             <a href="https://bittrex.com" target="_blank" class="testimonials__link">bittrex.com</a>
                         </div>
-                    </div> 
-
-                    <div class="testimonials__slide">
-                        <img src="images/avatars/sequoir.png" loading="lazy" alt="Sequoir" class="testimonials__avatar">
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/sequoir.png" loading="lazy" alt="Sequoir" class="testimonials__avatar">
                         
                         <p>With Sequoir's simple and secure process you can buy and sell DigiByte with USD, GBP, AUD or Euro.</p>
                         
@@ -684,7 +645,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
+                        <img src="../images/avatars/abra.png" loading="lazy" alt="Abra" class="testimonials__avatar">
                         
                         <p>Abra is making investing in DigiByte easier, more secure, and accessible for everyone. Available in 150 countries.</p>
 
@@ -695,18 +656,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/coinfield.png" loading="lazy" alt="CoinField" class="testimonials__avatar">
-                        
-                        <p>CoinField provides USD, EUR, GBP and CAD pairs for DigiByte trading in 193 countries.</p>
-
-                        <div class="testimonials__author">
-                            <span class="testimonials__name">CoinField</span>
-                            <a href="https://www.coinfield.com" target="_blank" class="testimonials__link">coinfield.com</a>
-                        </div>
-                    </div>
-					
-					<div class="testimonials__slide">
-                        <img src="images/avatars/okex.png" loading="lazy" alt="Okex" class="testimonials__avatar">
+                        <img src="../images/avatars/okex.png" loading="lazy" alt="Okex" class="testimonials__avatar">
                         
                         <p>OKEx is one of the leading cryptocurrency exchanges which offer DigiByte trading.</p>
                         
@@ -717,7 +667,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/kucoin.png" loading="lazy" alt="KuCoin" class="testimonials__avatar">
+                        <img src="../images/avatars/kucoin.png" loading="lazy" alt="KuCoin" class="testimonials__avatar">
                         
                         <p>KuCoin is one of the most advanced cryptocurrency exchanges to trade DigiByte.</p>
                         
@@ -728,29 +678,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/bitvavo.png" loading="lazy" alt="Bitvavo" class="testimonials__avatar">
-                        
-                        <p>Bitvavo is a digital asset exchange that allows you to buy, sell and trade DigiByte in the EU.</p>
-
-                        <div class="testimonials__author">
-                            <span class="testimonials__name">Bitvavo</span>
-                            <a href="https://bitvavo.com" target="_blank" class="testimonials__link">bitvavo.com</a>
-                        </div>
-                    </div>
-					
-					<div class="testimonials__slide">
-                        <img src="images/avatars/litebit.png" loading="lazy" alt="LiteBit" class="testimonials__avatar">
-                        
-                        <p>LiteBit is a secure digital asset broker for buying, selling and storing  DigiByte in the EU.</p>
-
-                        <div class="testimonials__author">
-                            <span class="testimonials__name">LiteBit</span>
-                            <a href="https://litebit.eu" target="_blank" class="testimonials__link">litebit.eu</a>
-                        </div>
-                    </div>
-					
-					<div class="testimonials__slide">
-                        <img src="images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
+                        <img src="../images/avatars/shapeshift.png" loading="lazy" alt="Shapeshift" class="testimonials__avatar">
                         
                         <p>ShapeShift is the leading instant digital asset exchange, supporting dozens of currencies including DigiByte.</p>
 
@@ -761,7 +689,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
                         
                         <p>Changeangel is a crypto to crypto, wallet to wallet, swap exchange service that supports community projects.</p>
 
@@ -884,7 +812,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
+                        <img src="../images/avatars/createdigiassets.png" loading="lazy" alt="CreateDigiAssets" class="testimonials__avatar">
                         
                         <p>DigiAssets Tools allows you to create DigiAssets quickly and easily, even for non-technical users.</p>
 
@@ -895,7 +823,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
+                        <img src="../images/avatars/digibroker.png" loading="lazy" alt="Digi-Broker" class="testimonials__avatar">
                         
                         <p>Digi-Broker is a site where users from around the world can share, buy and sell their digital assets.</p>
 
@@ -906,7 +834,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" alt="DigiAssetX" class="testimonials__avatar">
                         
                         <p>digiassetX is a new DigiByte DigiAsset exchange and DigiAsset creator service.</p>
 
@@ -1020,7 +948,7 @@
 			<div class="col-block item-feature">
                 <div class="item-feature__text">
                     <h3 class="item-title">Where can I find more documentation?</h3>
-                    <p>The best place to start is <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. If you want to know more about the details and advantages of Digi-ID, you can refer to the <a href="https://www.digi-id.io/faq" target="_blank">user guide</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">vendor guide</a> or <a href="https://www.digi-id.io/integration.html" target="_blank">integration guide</a>. If you are looking for the media kit, please get the <a href="docs/digiidintro.pdf" target="_blank">intro sheet</a> and <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logos</a>.
+                    <p>The best place to start is <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. If you want to know more about the details and advantages of Digi-ID, you can refer to the <a href="https://www.digi-id.io/faq" target="_blank">user guide</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">vendor guide</a> or <a href="https://www.digi-id.io/integration.html" target="_blank">integration guide</a>. If you are looking for the media kit, please get the <a href="../docs/digiidintro.pdf" target="_blank">intro sheet</a> and <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logos</a>.
                     </p>
                 </div>
             </div>
@@ -1069,7 +997,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
+                        <img src="../images/avatars/antum.png" loading="lazy" alt="AntumID" class="testimonials__avatar">
                         
                         <p>AntumID offers a unique experience to secure authenticate to websites by using DigiByte technology.</p>
 
@@ -1080,7 +1008,7 @@
                     </div>
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
                         
                         <p>Changeangel is a crypto to crypto, wallet to wallet, swap exchange service that supports community projects.</p>
 
@@ -1091,7 +1019,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
+                        <img src="../images/avatars/absolute.png" loading="lazy" alt="Absolute Jobs" class="testimonials__avatar">
                         
                         <p>AbsoluteJobs is one of the leading companies that providing employment services in Belgium.</p>
 
@@ -1102,7 +1030,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
                         
                         <p>Visit CryptoBantam and buy trendy clothes to contribute awareness and adoption of DigiByte!</p>
 
@@ -1113,7 +1041,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" alt="Hash Altcoin" class="testimonials__avatar">
                         
                         <p>Hash Altcoin is a mining company that produces FPGA devices for high stability mining experience.</p>
 
@@ -1293,7 +1221,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 
                     <div class="testimonials__slide">
-                        <img src="images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
+                        <img src="../images/avatars/changeangel.png" loading="lazy" alt="Changeangel" class="testimonials__avatar">
                         
                         <p>Changeangel is a crypto to crypto, wallet to wallet, swap exchange service that supports community projects.</p>
 
@@ -1304,7 +1232,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
+                        <img src="../images/avatars/cryptobantam.png" loading="lazy" alt="CryptoBantam Shop" class="testimonials__avatar">
                         
                         <p>Visit CryptoBantam and buy trendy clothes to contribute awareness and adoption of DigiByte!</p>
 
@@ -1312,10 +1240,10 @@
                             <span class="testimonials__name">CryptoBantam</span>
                             <a href="https://www.cryptobantam.com/vendor/dgbat/" target="_blank" class="testimonials__link">cryptobantam.com</a>
                         </div>
-                    </div>
+                    </div> 
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
+                        <img src="../images/avatars/dgbcommunity.png" loading="lazy" alt="DGB.community email service" class="testimonials__avatar">
                         
                         <p>Get your own @dgb.community email address to support the DigiByte Foundation and the DGBAT.</p>
 
@@ -1326,7 +1254,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/kryptoez.png" loading="lazy" alt="Kryptoez Shop" class="testimonials__avatar">
+                        <img src="../images/avatars/kryptoez.png" loading="lazy" alt="Kryptoez Shop" class="testimonials__avatar">
                         
                         <p>Kryptoez is an online cryptocurrency sock seller where you can buy cool DigiByte socks and cufflinks.</p>
 
@@ -1483,39 +1411,39 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/infopaper.png" loading="lazy" alt="DigiByte Info Paper" class="testimonials__avatar">
+                        <img src="../images/avatars/infopaper.png" loading="lazy" alt="DigiByte Info Paper" class="testimonials__avatar">
                         
                         <p>Learn the details of the DigiByte blockchain by using the community info paper.</p>
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Info paper</span>
-                            <a href="docs/infopaper.pdf" target="_blank" class="testimonials__link">Download</a>
+                            <a href="../docs/infopaper.pdf" target="_blank" class="testimonials__link">Download</a>
                         </div>
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        <img src="../images/avatars/integration.png" loading="lazy" alt="DigiByte Integration Guide" class="testimonials__avatar">
                         
                         <p>Integrate the DigiByte blockchain into your exchange, wallet or service easily.</p>
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Integration guide</span>
-                            <a href="docs/integrationguide.pdf" target="_blank" class="testimonials__link">Download</a>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">Download</a>
                         </div>
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        <img src="../images/avatars/mediag.png" loading="lazy" alt="DigiByte Media Sheet" class="testimonials__avatar">
                         
                         <p>Learn the important facts about the DigiByte blockchain by the media sheet quickly.</p>
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Media sheet</span>
-                            <a href="docs/mediakit.pdf" target="_blank" class="testimonials__link">Download</a>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">Download</a>
                         </div>
                     </div>
 					
-					<div class="testimonials__slide"> <img src="images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
+					<div class="testimonials__slide"> <img src="../images/avatars/presentation.png" loading="lazy" alt="DigiByte Presentation" class="testimonials__avatar">
                         
                         <p>Use the informative online presentation to introduce DigiByte to your friends.</p>
 
@@ -1526,7 +1454,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        <img src="../images/avatars/logos.png" loading="lazy" alt="DigiByte Logos & Icons" class="testimonials__avatar">
                         
                         <p>Find the correct and up to date DigiByte logos & icons for your project.</p>
 
@@ -1537,7 +1465,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
+                        <img src="../images/avatars/howto.png" loading="lazy" alt="How to Guides" class="testimonials__avatar">
                         
                         <p>Run your own DigiByte full node or Insight explorer by referring the Wiki guides.</p>
 
@@ -1566,7 +1494,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi Wallet" class="testimonials__avatar">
                         
                         <p>Available on Windows, macOS, Linux, iOS and Android. Digi-ID and SegWit support. <strong class="dark">Recommended!</strong></p>
 
@@ -1577,7 +1505,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
+                        <img src="../images/wallets/abra.png" loading="lazy" alt="Abra Global" class="testimonials__avatar">
                         
                         <p>Available on iOS and Android. Multiple investment options. <strong class="dark">Recommended!</strong></p>
 
@@ -1588,7 +1516,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
                         
                         <p>Available on iOS and Android. Digi-ID and MultiSig support. <strong>Paid membership</strong>.</p>
 
@@ -1599,7 +1527,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/edge.png" loading="lazy" alt="Edge Wallet" class="testimonials__avatar">
                         
                         <p>Available on iOS and Android. SegWit support.</p>
 
@@ -1610,7 +1538,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/exodus.png" loading="lazy" alt="Exodus Wallet" class="testimonials__avatar">
                         
                         <p>Available on Windows, macOS, Linux, iOS and Android.</p>
 
@@ -1621,7 +1549,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/atomic.png" loading="lazy" alt="Atomic Wallet" class="testimonials__avatar">
                         
                         <p>Available on Windows, macOS, Linux, iOS and Android.</p>
 
@@ -1632,7 +1560,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/trust.png" loading="lazy" alt="Trust Wallet" class="testimonials__avatar">
                         
                         <p>Available on iOS and Android. SegWit support.</p>
 
@@ -1643,7 +1571,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/guarda.png" loading="lazy" alt="Guarda Wallet" class="testimonials__avatar">
                         
                         <p>Available on Windows, macOS, Linux, Chrome, iOS and Android.</p>
 
@@ -1654,7 +1582,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
+                        <img src="../images/wallets/jaxx.png" loading="lazy" alt="Jaxx Liberty" class="testimonials__avatar">
                         
                         <p>Available on Windows, macOS, Linux, Chrome, iOS and Android.</p>
 
@@ -1680,7 +1608,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" alt="Bitfi Wallet" class="testimonials__avatar">
                         
                         <p>Works on any web browser through Wi-Fi. SegWit support. <strong class="dark">Recommended!</strong></p>
 
@@ -1691,7 +1619,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/ledger.png" loading="lazy" alt="Ledger Wallet" class="testimonials__avatar">
                         
                         <p>Works on Win, macOS, Linux, iOS and Android through USB and Bluetooth. SegWit support. <strong class="dark">Recommended!</strong></p>
 
@@ -1702,7 +1630,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/trezor.png" loading="lazy" alt="Trezor Wallet" class="testimonials__avatar">
                         
                         <p>Works on Chrome and Firefox through USB. SegWit support.</p>
 
@@ -1713,7 +1641,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" alt="KeepKey Wallet" class="testimonials__avatar">
                         
                         <p>Works on Chrome and ShapeShift.com through USB.</p>
 
@@ -1725,7 +1653,7 @@
 					
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/safepal.png" loading="lazy" alt="SafePal Wallet" class="testimonials__avatar">
                         
                         <p>Works on iOS and Android through QR code. SegWit support.</p>
 
@@ -1736,7 +1664,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/secux.png" loading="lazy" alt="SecuX Wallet" class="testimonials__avatar">
                         
                         <p>Works on Chrome and iOS through USB and Bluetooth. SegWit support.</p>
 
@@ -1747,7 +1675,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/dcent.png" loading="lazy" alt="D'CENT Wallet" class="testimonials__avatar">
                         
                         <p>Works on iOS and Android through USB and Bluetooth. Biometric authentication and SegWit support.</p>
 
@@ -1773,7 +1701,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
+                        <img src="../images/wallets/spend.png" loading="lazy" alt="Spend Card" class="testimonials__avatar">
                         
                         <p>Custodial iOS and Android apps. Visa debit card available in the USA.</p>
 
@@ -1784,7 +1712,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
+                        <img src="../images/wallets/polispay.png" loading="lazy" alt="PolisPay Card" class="testimonials__avatar">
                         
                         <p>Non-custodial Windows, macOS, iOS and Android apps. MasterCard and UnionPay debit cards.</p>
 
@@ -1810,7 +1738,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
+                        <img src="../images/wallets/digicafe.png" loading="lazy" alt="DigiCafe PoS" class="testimonials__avatar">
                         
                         <p>Non-custodial iOS and Android apps for in-person payments. Auto-sell support. <strong class="dark">Recommended!</strong></p>
 
@@ -1821,7 +1749,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
+                        <img src="../images/wallets/coinpayments.png" loading="lazy" alt="Coinpayments" class="testimonials__avatar">
                         
                         <p>Custodial iOS and Android apps for in-person payments and plugins for online payments. Auto-sell support.</p>
 
@@ -1832,7 +1760,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
+                        <img src="../images/wallets/plusbit.png" loading="lazy" alt="PlusBit DGB PoS" class="testimonials__avatar">
                         
                         <p>Non-custodial Android app for in-person DigiByte payments.</p>
 
@@ -1843,7 +1771,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
+                        <img src="../images/wallets/paybyte.png" loading="lazy" alt="PayByte" class="testimonials__avatar">
                         
                         <p>Non-custodial Android app for in-person payments and merchant api for online payments.</p>
 
@@ -1869,7 +1797,7 @@
                 <div class="col-full slick-slider testimonials__slider">
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" alt="Digi-ID/AntumID" class="testimonials__avatar">
                         
                         <p>Digi-ID authenticator app. AntumID extensions support for DigiPassword function.</p>
 
@@ -1880,7 +1808,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
+                        <img src="../images/wallets/digidsimple.png" loading="lazy" alt="DigiID Simple" class="testimonials__avatar">
                         
                         <p>Digi-ID authenticator app. AntumID extensions support for DigiPassword function.</p>
 
@@ -1891,7 +1819,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" alt="Coinomi" class="testimonials__avatar">
                         
                         <p>Multi currency wallet with Digi-ID authenticator function.</p>
 
@@ -1902,7 +1830,7 @@
                     </div>
 					
 					<div class="testimonials__slide">
-                        <img src="images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" alt="Ownbit Wallet" class="testimonials__avatar">
                         
                         <p>Multi currency wallet with Digi-ID authenticator function.</p>
 
@@ -1938,7 +1866,7 @@
     <footer id="footer" class="s-footer footer">
 		
 		<div class="align-center">
-			<a class="smoothscroll" href="#top"><img src="images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" alt="DigiByte Blockchain" class="footerlogo"></a>
 		</div>
 		
 		<div class="row footer__top max1000">
@@ -2018,8 +1946,8 @@
                         <h4>Resources.</h4>
 
                         <ul class="footer__site-links">
-                            <li><a href="docs/integrationguide.pdf" target="_blank">DGB Integration Guide</a></li>
-                            <li><a href="docs/mediakit.pdf" target="_blank">DGB Media Sheet</a></li>
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">DGB Integration Guide</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">DGB Media Sheet</a></li>
                             <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Logos & Icons</a></li>
 			                <li><a href="https://github.com/digibyte/digibyte" target="_blank">DGB Protocol GitHub</a></li>
                             <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
@@ -2035,7 +1963,7 @@
                 <span>&copy; Copyright DigiByte 2013 - 2020</span> 
 				<span>All Rights Reserved</span> 
                 <span>Released under the <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></span> 
-				<span><a href="docs/LegalDisclaimer.pdf">Legal Disclaimer</a> | <a href="docs/PrivacyPolicy.pdf">Privacy Policy</a></span>
+				<span><a href="../docs/LegalDisclaimer.pdf">Legal Disclaimer</a> | <a href="../docs/PrivacyPolicy.pdf">Privacy Policy</a></span>
             </div>
 
         </div>
@@ -2049,14 +1977,14 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main1r.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main1r.js"></script>
 	<script>includeHTML();</script>
 	
 	<!-- Cookie info message
     ================================================== -->
-	<script type="text/javascript" id="cookieinfo" src="js/cookieinfo.min.js"
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
 	data-font-size="14px"
 	data-font-family="Nunito Sans,sans-serif"
 	data-text-align="left"
