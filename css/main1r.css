@@ -1106,6 +1106,7 @@ margin-top:7.2rem
 height:6.4rem!important;
 line-height:6rem!important;
 margin-right: 20px;
+margin-left: 0px;
 padding: 0px 25px;
 }
 
@@ -2885,6 +2886,13 @@ max-width: 100%;
 .home-content__btn-wrap .home-content__btn {
 margin-right: 10px;
 margin-left: 10px;
+}
+}
+
+@media only screen and (max-width:500px) {
+.home-content__btn-wrap .home-content__btn {
+margin-right: 20px;
+margin-left: 0px;
 }
 }
 
