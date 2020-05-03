@@ -2869,7 +2869,7 @@ cursor: not-allowed!important;
 .infopaper {
 color:rgba(255,255,255,0.7);
 display: block;
-padding: 0.6em 0 0 0em;
+padding: 0.6em 0 0 0.1em;
 margin-bottom: -1em;
 max-width: 250px;
 }
@@ -2881,6 +2881,10 @@ color: #fff!important;
 @media only screen and (max-width:1200px) {
 .infopaper {
 max-width: 100%;
+}
+.home-content__btn-wrap .home-content__btn {
+margin-right: 11px;
+margin-left: 11px;
 }
 }
 
