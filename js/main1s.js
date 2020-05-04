@@ -408,6 +408,17 @@ document.getElementById('blockh').innerHTML = data;
 }, 3000);}
 );
 
+/* Year data */
+function diff_years(dt2, dt1) 
+ {
+  var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+   diff /= (60 * 60 * 24);
+  return Math.abs(Math.round(diff/365.25));
+ }
+dt1 = new Date("January 10, 2014");
+dt2 = new Date();
+document.getElementById('years').innerHTML = (diff_years(dt1, dt2));
+
 
 /* lang menu text */
 var path = location.pathname;
