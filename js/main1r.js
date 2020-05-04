@@ -400,7 +400,7 @@ function includeHTML() {
 
 
 /* Block data */
-fetch('docs/blockinfo.php')
+fetch('../docs/blockinfo.php')
 .then(response => response.json())
 .then(data => {
 setTimeout(function(){
