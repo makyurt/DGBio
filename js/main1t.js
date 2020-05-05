@@ -334,46 +334,8 @@
             }
         });
     };
-
-
-   /* Initialize
-    * ------------------------------------------------------ */
-    (function clInit() {
-
-        ssPreloader();
-        ssMenuOnScrolldown();
-        ssMobileMenu();
-        ssWaypoints();
-        ssSlickSlider();
-        ssSmoothScroll();
-        ssAOS();
-        ssBackToTop();
-		ssStatCount();
-
-    })();
-
-})(jQuery);
-
-
-/* Clickable language menu */
-function lmenu() {
-  document.getElementById("lddown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show'),
-		openDropdown.classList.add('hide')
-      }
-    }
-  }
-}
-
+	
+	
 /* include html */
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -399,25 +361,44 @@ function includeHTML() {
 };
 
 
-/* Block data */
-fetch('../docs/blockinfo.php')
-.then(response => response.json())
-.then(data => {
-setTimeout(function(){
-document.getElementById('blockh').innerHTML = data;
-}, 3000);}
-);
+   /* Initialize
+    * ------------------------------------------------------ */
+    (function clInit() {
 
-/* Year data */
-function diff_years(dt2, dt1) 
- {
-  var diff =(dt2.getTime() - dt1.getTime()) / 1000;
-   diff /= (60 * 60 * 24);
-  return Math.abs(Math.round(diff/365.25));
- }
-dt1 = new Date("January 10, 2014");
-dt2 = new Date();
-document.getElementById('years').innerHTML = (diff_years(dt1, dt2));
+        ssPreloader();
+        ssMenuOnScrolldown();
+        ssMobileMenu();
+        ssWaypoints();
+        ssSlickSlider();
+        ssSmoothScroll();
+        ssAOS();
+        ssBackToTop();
+		ssStatCount();
+		includeHTML();
+
+    })();
+
+})(jQuery);
+
+
+/* Clickable language menu */
+function lmenu() {
+  document.getElementById("lddown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show'),
+		openDropdown.classList.add('hide')
+      }
+    }
+  }
+}
 
 
 /* lang menu text */
