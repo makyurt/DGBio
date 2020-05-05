@@ -50,8 +50,6 @@ setTimeout(function(){
 
 getReleaseData().then((data)=>{
   document.getElementById('nodes').innerHTML = (270673 + data.downloads);
-},(error)=>{
-  document.getElementById('nodes').innerHTML = ("failed",error);
 });
 
 }, 3000);
