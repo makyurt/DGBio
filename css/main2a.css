@@ -2939,6 +2939,13 @@ color: rgba(255,255,255,0.6)!important;
 color: #fff!important;
 }
 
+.stitle {
+color: rgba(255,255,255,0.6);
+font-size: 2.6rem;
+padding-top: 2.3rem;
+margin-bottom: -2.6rem;
+}
+
 @media only screen and (max-width:1000px) {
 .stats__col {
 padding: 2rem;
@@ -2946,15 +2953,14 @@ padding: 2rem;
 .stats__count {
 font-size: 3.3rem;
 }
+.stitle {
+font-size: 2.3rem;
+padding-top: 2rem;
+margin-bottom: -2rem;
+}
 }
 
 @media only screen and (max-width:800px) {
-.stats__count {
-font-size: 2.8rem;
-}
-}
-
-@media only screen and (max-width:600px) {
 .s-stats {
 margin: 4rem 4rem -4rem;
 }
@@ -2964,5 +2970,13 @@ clear: both;
 }
 .stats__col {
 padding: 1rem;
+}
+.stitle {
+padding-top: 1rem;
+margin-bottom: 0rem;
+font-size: 2rem;
+}
+.stats__count {
+font-size: 2.8rem;
 }
 }
