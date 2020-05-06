@@ -1,17 +1,5 @@
 /* Year data --------------------------------------------------- */
 
-genesis = new Date("January 10, 2014");
-current = new Date();
-
-function diff_years(current, genesis) {
-	
-  var diff =(current.getTime() - genesis.getTime()) / 1000;
-   diff /= (60 * 60 * 24);
-  return Math.abs(Math.round(diff/365.25)); }
-
-years = (diff_years(genesis, current));
-
-document.getElementById('years').innerHTML = (years);
 
 
 /* Block data --------------------------------------------------- */
