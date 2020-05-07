@@ -7,9 +7,9 @@
 fetch('../docs/blockinfo.php')
 .then(response => response.json())
 .then(data => {
-
+setTimeout(function(){
 document.getElementById('blockh').innerHTML = (data);
-
+}, 250);} );
 
 
 /* Node data --------------------------------------------------- */
@@ -30,8 +30,8 @@ var getReleaseData=()=> {
             .fail(reject);
     });
 }
-
+setTimeout(function(){
 getReleaseData().then((data)=>{
   document.getElementById('nodes').innerHTML = (270673 + data.downloads);
 });
-
+}, 250);
