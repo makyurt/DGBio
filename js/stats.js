@@ -9,7 +9,7 @@ fetch('../docs/blockinfo.php')
 .then(data => {
 setTimeout(function(){
 document.getElementById('blockh').innerHTML = (data);
-}, 500);} );
+}, 250);} );
 
 
 /* Node data --------------------------------------------------- */
@@ -34,5 +34,4 @@ setTimeout(function(){
 getReleaseData().then((data)=>{
   document.getElementById('nodes').innerHTML = (270673 + data.downloads);
 });
-}, 500);
-
+}, 250);
