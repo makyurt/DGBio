@@ -8,11 +8,11 @@ fetch('../docs/blockinfo.php')
 
 .then(response => response.json())
 .then(data => {
-setTimeout(function(){
+
 	
 document.getElementById('blockh').innerHTML = (data);
 	
-}, 500);} );
+
 
 
 /* Node data --------------------------------------------------- */
@@ -41,5 +41,3 @@ getReleaseData().then((data)=>{
 });
 
 }, 500);
-
-
