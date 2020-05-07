@@ -12,7 +12,7 @@ setTimeout(function(){
 	
 document.getElementById('blockh').innerHTML = (data);
 	
-}, 3000);} );
+}, 500);} );
 
 
 /* Node data --------------------------------------------------- */
@@ -40,6 +40,6 @@ getReleaseData().then((data)=>{
   document.getElementById('nodes').innerHTML = (270673 + data.downloads);
 });
 
-}, 3000);
+}, 500);
 
 
