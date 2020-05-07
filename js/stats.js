@@ -13,7 +13,7 @@ document.getElementById('blockh').innerHTML = (data);
 
 
 /* Node data --------------------------------------------------- */
-
+function nodes(){
 var getReleaseData=()=> {
     return new Promise(function (resolve, reject) {
         $.getJSON('https://api.github.com/repos/digibyte/digibyte/releases')
@@ -35,3 +35,18 @@ getReleaseData().then((data)=>{
   document.getElementById('nodes').innerHTML = (270673 + data.downloads);
 });
 }, 250);
+}
+
+var nodenum = document.getElementById("nodes").innerHTML;
+
+if (nodenum == "0")
+
+function retry() {
+
+        nodes();
+
+
+    }
+
+
+
