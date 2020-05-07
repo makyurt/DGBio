@@ -30,8 +30,8 @@ var getReleaseData=()=> {
             .fail(reject);
     });
 }
-setTimeout(function(){
+
 getReleaseData().then((data)=>{
   document.getElementById('nodes').innerHTML = (270673 + data.downloads);
 });
-}, 250);
+
