@@ -7,9 +7,9 @@
 fetch('../docs/blockinfo.php')
 .then(response => response.json())
 .then(data => {
-setTimeout(function(){
+
 document.getElementById('blockh').innerHTML = (data);
-}, 250);} );
+
 
 
 /* Node data --------------------------------------------------- */
