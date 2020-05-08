@@ -2741,13 +2741,17 @@ color:#002352
 
 .footerlogo {
 max-width:360px;
-position: relative;
-padding-bottom: 2.5em;
 }
 
 @media only screen and (max-width:800px) {
 .footerlogo {
 max-width:240px
+}
+}
+
+@media only screen and (max-width:500px) {
+.mbottom5 {
+margin-bottom: -5rem;
 }
 }
 
