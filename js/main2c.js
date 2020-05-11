@@ -353,7 +353,7 @@ function includeHTML() {
           includeHTML();
         }
       }      
-      xhttp.open("GET", file, false);
+      xhttp.open("GET", file, true);
       xhttp.send();
       return;
     }
