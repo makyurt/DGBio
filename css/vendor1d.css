@@ -265,7 +265,6 @@
   bottom: 0;
   left: 0;
   white-space: nowrap;
-  background: #0b0b0b;
   background: rgba(0, 0, 0, 0.85);
   outline: none !important;
   opacity: 0;
@@ -309,14 +308,8 @@
   margin-top: -0.8em;
   width: 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-.lity-loading .lity-loader {
   opacity: 1;
 }
 .lity-container {
@@ -339,8 +332,6 @@
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
-  -o-transition: -o-transform 0.3s ease;
-  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease;
 }
 .lity-loading .lity-content,
@@ -454,7 +445,7 @@ height: 66vh;
   height: 100%;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  background: #000;
+  background: rgba(0, 0, 0, 0.66);
 }
 .lity-hide {
   display: none;
