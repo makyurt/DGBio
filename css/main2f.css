@@ -899,9 +899,13 @@ padding:6px 6px 6px 10px!important;
 
 @media only screen and (max-width:1000px) {
 .s-header {
-background-color:#002352;
+background-color:transparent;
 position:fixed;
 top:0
+}
+	
+.opaque {
+  background-color: #002352;
 }
 
 .s-header > .row {
@@ -911,7 +915,7 @@ padding:0!important
 
 .header-logo {
 margin:8px 0 0;
-left:44px
+left:33px
 }
 
 .header-nav-wrap {
@@ -978,9 +982,9 @@ margin-top:2rem
 }
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
 .header-logo {
-left:40px
+left:22px
 }
 
 .header-nav-wrap {

@@ -68,13 +68,14 @@
     var ssMobileMenu = function() {
 
         var toggleButton = $('.header-menu-toggle'),
-            nav = $('.header-nav-wrap');
+            nav = $('.header-nav-wrap'),
+		    shead = $('.s-header');
 
         toggleButton.on('click', function(event){
             event.preventDefault();
 
             toggleButton.toggleClass('is-clicked');
-            nav.slideToggle();
+            nav.slideToggle(); shead.toggleClass('opaque');
         });
 
         if (toggleButton.is(':visible')) nav.addClass('mobile');
@@ -88,7 +89,7 @@
 
             if (nav.hasClass('mobile')) {
                 toggleButton.toggleClass('is-clicked');
-                nav.slideToggle(); 
+                nav.slideToggle();
             }
         });
 
