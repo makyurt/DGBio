@@ -1036,7 +1036,7 @@ background:#002352
 z-index:4;
 display:table-cell;
 vertical-align:bottom;
-padding-top:22rem;
+padding-top:17rem;
 width:100%;
 position:relative
 }
@@ -1095,11 +1095,11 @@ top:0
 
 .home-content__right img {
 vertical-align:bottom;
-margin-top:-5rem
+margin-top:0rem
 }
 
 .home-content__btn-wrap {
-margin-top:7.2rem
+margin-top:6rem
 }
 
 .home-content__btn-wrap .home-content__btn {
@@ -1262,7 +1262,7 @@ display:none
 
 @media only screen and (max-width:1500px) {
 .home-content {
-padding-top:23.2rem
+padding-top:18.2rem
 }
 
 .home-content h1 {
@@ -1308,7 +1308,7 @@ right:40px
 
 @media only screen and (max-width:1300px) {
 .home-content {
-padding-top:20rem
+padding-top:18rem
 }
 
 .home-content h1 {
@@ -2987,5 +2987,65 @@ font-size: 2rem;
 }
 .stats__count {
 font-size: 2.8rem;
+}
+}
+
+.mapps {
+display: table;
+margin-bottom: 0rem;
+}
+.mappsrtl {
+position: relative;
+left: 25%;
+}
+.mappscell {
+display: table-cell;
+padding-right: 15px;
+}
+.mappsimg {
+max-width: 150px;
+}
+
+@media only screen and (max-width:1700px) {
+.mappsrtl {
+left: 19%;
+}
+}
+
+@media only screen and (max-width:1500px) {
+.mappsrtl {
+left: 17%;
+}
+}
+
+@media only screen and (max-width:1300px) {
+.mappsrtl {
+left: 16%;
+}
+}
+
+@media only screen and (max-width:1250px) {
+.mappsrtl {
+left: 13%;
+}
+}
+
+@media only screen and (max-width:1200px) {
+.mapps {
+margin: 0 auto;
+margin-bottom: 3rem;
+margin-top: -3rem;
+}
+.mappsrtl {
+left: 0;
+}
+.mappscell {
+padding: 0 5px;
+}
+}
+
+@media only screen and (max-width:500px) {
+.mappsimg {
+max-width: 130px;
 }
 }
