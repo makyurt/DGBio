@@ -401,6 +401,20 @@ window.onclick = function(event) {
   }
 }
 
+/* Home button script */
+function homeButton() {
+var toggleButton = $('.header-menu-toggle'),
+             nav = $('.header-nav-wrap'),
+		   shead = $('.s-header');
+	
+shead.removeClass('opaque');
+     
+if (toggleButton.hasClass('is-clicked')) {
+	toggleButton.removeClass('is-clicked');
+	nav.slideToggle();
+}
+}
+
 
 /* lang menu text */
 var path = location.pathname;
