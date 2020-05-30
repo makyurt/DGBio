@@ -2777,10 +2777,10 @@ display:inline-block
 max-width:1000px
 }
 
-.max950 {
-max-width:950px;
-padding-right: 25px;
-padding-left: 25px;
+.max830 {
+max-width:830px;
+padding-right: 15px;
+padding-left: 15px;
 }
 
 .max800 {
