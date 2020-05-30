@@ -430,7 +430,7 @@ margin-bottom:2rem
 }
 
 .section-header {
-max-width:900px;
+max-width:909px;
 }
 
 .section-header.has-bottom-sep {
@@ -2775,6 +2775,12 @@ display:inline-block
 
 .max1000 {
 max-width:1000px
+}
+
+.max950 {
+max-width:950px;
+padding-right: 25px;
+padding-left: 25px;
 }
 
 .max800 {
