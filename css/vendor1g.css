@@ -412,8 +412,7 @@
 .lity-facebookvideo .lity-container,
 .lity-googlemaps .lity-container {
   width: 100%;
-  max-width: 1280px;
-  padding: 0 2.8rem;
+  max-width: 964px;
 }
 .lity-iframe-container {
   width: 100%;
@@ -424,19 +423,6 @@
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   -webkit-overflow-scrolling: touch;
-}
-
-@media only screen and (max-width:1000px) {
-.lity-iframe .lity-iframe-container {
-height: 66vh;
-}
-}
-
-@media only screen and (max-width:600px) {
-.lity-iframe .lity-container,
-.lity-youtube .lity-container {
-padding: 0;
-}
 }
 
 .lity-iframe-container iframe {
