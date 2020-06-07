@@ -244,13 +244,14 @@
             var target = this.hash,
                 $target = $(target);
             
-               
+                e.preventDefault();
                 e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
             }, cfg.scrollDuration, 'swing').promise().done(function () {
-
+				
+			window.location.hash = target;
 
             });
         });
@@ -259,13 +260,14 @@
             var target = this.hash,
                 $target = $(target);
             
-             
+                e.preventDefault();
                 e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top -100
             }, cfg.scrollDuration, 'swing').promise().done(function () {
-
+				
+			window.location.hash = target;
 
             });
         });
@@ -274,13 +276,14 @@
             var target = this.hash,
                 $target = $(target);
             
-           
+                e.preventDefault();
                 e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top +255
             }, cfg.scrollDuration, 'swing').promise().done(function () {
-
+				
+			window.location.hash = target;
 
             });
         });
@@ -289,13 +292,14 @@
             var target = this.hash,
                 $target = $(target);
             
-              
+                e.preventDefault();
                 e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top +435
             }, cfg.scrollDuration, 'swing').promise().done(function () {
-
+				
+			window.location.hash = target;
 
             });
         });
