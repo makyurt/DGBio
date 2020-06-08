@@ -251,7 +251,7 @@
                 'scrollTop': $target.offset().top
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 				
-			window.location.hash = target;
+			history.pushState(null, null, target);
 
             });
         });
@@ -267,7 +267,7 @@
                 'scrollTop': $target.offset().top -100
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 				
-			window.location.hash = target;
+			history.pushState(null, null, target);
 
             });
         });
@@ -283,7 +283,7 @@
                 'scrollTop': $target.offset().top +255
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 				
-			window.location.hash = target;
+			history.pushState(null, null, target);
 
             });
         });
@@ -299,7 +299,7 @@
                 'scrollTop': $target.offset().top +435
             }, cfg.scrollDuration, 'swing').promise().done(function () {
 				
-			window.location.hash = target;
+			history.pushState(null, null, target);
 
             });
         });
@@ -419,6 +419,12 @@ if (toggleButton.hasClass('is-clicked')) {
 }
 }
 
+/* Remove pace (Run once) */
+window.addEventListener("load", function(){
+	setTimeout(function() {
+        $('body').addClass('nopace');
+    }, 1000);
+});
 
 /* lang menu text */
 var path = location.pathname;

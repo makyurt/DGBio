@@ -174,6 +174,10 @@ width: 100%;
 height: 5px;
 }
 
+body.nopace .pace {
+  display: none;
+}
+
 #preloader {
 position:fixed;
 top:0;
