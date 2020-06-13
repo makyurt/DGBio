@@ -2795,7 +2795,7 @@ max-width:800px
 background-color:#0066cc;
 color:#fff;
 padding:8px 8px 8px 12px;
-border:1px solid #0066cc;
+border:0.2rem solid #0066cc;
 border-radius:5px;
 text-transform: capitalize;
 }
@@ -2819,10 +2819,9 @@ font-size:1.5rem;
 display:block;
 position:absolute;
 background-color:#fff;
-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+box-shadow:0 0 0 0.2rem #0066cc inset, 0 0 0.8rem 0.2rem rgba(0,0,0,0.4);
 z-index:1;
 border-radius:5px;
-border:1px solid #d5d5d5;
 right:0;
 padding:5px;
 margin-top:30px;
