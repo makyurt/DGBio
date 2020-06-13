@@ -663,8 +663,6 @@ position:relative
 
 .s-header.sticky {
 background-color:#002352;
--webkit-transition:all .3s ease-in-out;
-transition:all .3s ease-in-out;
 position:fixed;
 top:0
 }
