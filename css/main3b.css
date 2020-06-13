@@ -1658,13 +1658,14 @@ padding-bottom:16rem
 .video-bg {
 z-index:1;
 overflow:hidden;
-height:62.4rem;
-margin-top:calc((62.4rem/2) * -1);
+height:61rem;
+margin-top:calc((61rem/2) * -1);
 background-image:url(../images/video-bg-1200.jpg);
 background-repeat:no-repeat;
 background-position:center top;
 background-size:cover;
-position:relative
+position:relative;
+border-radius: 10px;
 }
 
 .video-bg .shadow-overlay {
@@ -1690,19 +1691,19 @@ left:10%
 display:inline-block;
 height:112px;
 width:112px;
+border: 0.2rem solid #0066cc;
 border-radius:50%;
-background-color:#fff;
-background-image:url(../images/icons/icon-play-black.svg);
+background-color:#0066cc;
+background-image:url(../images/icons/icon-play.svg);
 background-repeat:no-repeat;
 background-position:55% center;
 background-size:24px 27px;
--webkit-transition:all .5s ease-in-out;
-transition:all .5s ease-in-out
+-webkit-transition:all .3s ease-in-out;
+transition:all .3s ease-in-out
 }
 
 .btn-video:hover .video-icon {
-background-color:#06c;
-background-image:url(../images/icons/icon-play.svg)
+background-color:#002352;
 }
 
 .stats {
