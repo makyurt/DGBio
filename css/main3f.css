@@ -201,11 +201,6 @@ left:50%;
 top:45%;
 width:150px;
 height:150px;
-padding:0;
-display:inline-block;
--webkit-transform:translate3d(-50%,-50%,0);
--ms-transform:translate3d(-50%,-50%,0);
-transform:translate3d(-50%,-50%,0)
 }
 
 #loader > div {
@@ -214,43 +209,8 @@ background: transparent;
 width:150px;
 height:150px;
 position:absolute;
-top:0;
-left:0;
-border-radius:50%
-}
-
-.dots-jump > div {
--webkit-animation:dots-jump 1.25s infinite ease;
-animation:dots-jump 1.25s infinite ease;
-animation-delay:.25s
-}
-
-@-webkit-keyframes dots-jump {
-0% {
-transform: scale(1);
-}
-
-50% {
-transform: scale(1.25);
-}
-
-100% {
-transform: scale(1);
-}
-}
-
-@keyframes dots-jump {
-0% {
-transform: scale(1);
-}
-
-50% {
-transform: scale(1.25);
-}
-
-100% {
-transform: scale(1);
-}
+left:-50%;
+top:-45%;
 }
 
 fieldset {
