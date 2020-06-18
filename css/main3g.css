@@ -1162,7 +1162,7 @@ opacity:0
 }
 
 html.ss-loaded .home-content__main {
-animation-duration:2s;
+animation-duration:1.5s;
 -webkit-animation-name:fadeIn;
 animation-name:fadeIn
 }
