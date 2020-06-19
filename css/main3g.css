@@ -1077,6 +1077,11 @@ margin-left: 0px;
 padding: 0px 25px;
 }
 
+.rtl .home-content__btn-wrap .home-content__btn {
+margin-right: 00px;
+margin-left: 20px;
+}
+
 .search:hover {
 background-color:#002352!important
 }
@@ -2875,6 +2880,10 @@ margin-left: 10px;
 .home-content__btn-wrap .home-content__btn {
 margin-right: 20px;
 margin-left: 0px;
+}
+.rtl .home-content__btn-wrap .home-content__btn {
+margin-right: 00px;
+margin-left: 20px;
 }
 }
 
