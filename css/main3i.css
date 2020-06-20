@@ -1167,7 +1167,7 @@ opacity:0
 }
 
 html.ss-loaded .home-content__main {
-animation-duration:1.5s;
+animation-duration:1.75s;
 -webkit-animation-name:fadeIn;
 animation-name:fadeIn
 }
