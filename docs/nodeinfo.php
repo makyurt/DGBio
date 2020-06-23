@@ -1,4 +1,7 @@
 <?php
+
+include('top-cache.php');
+
 $context = stream_context_create(
     array(
         "http" => array(
@@ -58,3 +61,7 @@ $sum += $value['download_count'];
 }
 
 print_r($sum);
+
+include('bottom-cache.php');
+
+?>
