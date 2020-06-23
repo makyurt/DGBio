@@ -9,8 +9,6 @@ $context = stream_context_create(
 	
 $data=json_decode(file_get_contents('https://api.github.com/repos/digibyte/digibyte/releases', false, $context),true);
 
-$datanew=json_decode(file_get_contents('https://api.github.com/repos/digibyte-core/digibyte/releases', false, $context),true);
-
 $sum = 0;
 
 foreach ($data[0]['assets'] as $value) {
@@ -53,8 +51,12 @@ foreach ($data[9]['assets'] as $value) {
 $sum += $value['download_count'];
 }
 
-foreach ($datanew[0]['assets'] as $value) {
-$sum += $value['download_count'];
+$data2=json_decode(file_get_contents('https://api.github.com/repos/digibyte-core/digibyte/releases', false, $context),true);
+
+$sum2 = 0;
+
+foreach ($data2[0]['assets'] as $value) {
+$sum2 += $value['download_count'];
 }
 
-print_r($sum);
+print_r($sum+$sum2);
