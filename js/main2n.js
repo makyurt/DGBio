@@ -218,7 +218,7 @@
                         var $this = $(this);
 
                         $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                            duration: 2500,
+                            duration: 2800,
                             easing: 'swing',
                             step: function (curValue) {
                                 $this.text(Math.ceil(curValue));
