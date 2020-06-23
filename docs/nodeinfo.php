@@ -51,12 +51,4 @@ foreach ($data[9]['assets'] as $value) {
 $sum += $value['download_count'];
 }
 
-$data2=json_decode(file_get_contents('https://api.github.com/repos/digibyte-core/digibyte/releases', false, $context),true);
-
-$sum2 = 0;
-
-foreach ($data2[0]['assets'] as $value) {
-$sum2 += $value['download_count'];
-}
-
-print_r($sum+$sum2);
+print_r($sum);
