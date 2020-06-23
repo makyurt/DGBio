@@ -53,8 +53,4 @@ foreach ($data[9]['assets'] as $value) {
 $sum += $value['download_count'];
 }
 
-foreach ($data2[0]['assets'] as $value) {
-$sum += $value['download_count'];
-}
-
 print_r($sum);
