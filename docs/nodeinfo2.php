@@ -9,7 +9,7 @@ $context = stream_context_create(
 	
 $data=json_decode(file_get_contents('https://api.github.com/repos/digibyte/digibyte/releases', false, $context),true);
 
-$data2=json_decode(file_get_contents('https://api.github.com/repos/DigiByte-Core/digibyte/releases', false, $context),true);
+$data2=json_decode(file_get_contents('https://api.github.com/repos/digibyte-core/digibyte/releases', false, $context),true);
 
 $sum = 0;
 
