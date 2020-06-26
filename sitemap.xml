@@ -3,10 +3,10 @@
 	<url>
 		<loc>https://digibyte.io/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -24,7 +24,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -44,12 +44,12 @@
 		<xhtml:link rel="alternate" hreflang="fa" href="https://digibyte.io/fa/" />
 	</url>
 	<url>
-	<loc>https://digibyte.io/en/gb.html</loc>
+	<loc>https://digibyte.io/en-gb/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -67,7 +67,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -87,12 +87,12 @@
 		<xhtml:link rel="alternate" hreflang="fa" href="https://digibyte.io/fa/" />
 	</url>
 	<url>
-	<loc>https://digibyte.io/en/au.html</loc>
+	<loc>https://digibyte.io/en-au/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -110,7 +110,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -130,12 +130,12 @@
 		<xhtml:link rel="alternate" hreflang="fa" href="https://digibyte.io/fa/" />
 	</url>
 	<url>
-	<loc>https://digibyte.io/en/nz.html</loc>
+	<loc>https://digibyte.io/en-nz/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -153,7 +153,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -173,12 +173,12 @@
 		<xhtml:link rel="alternate" hreflang="fa" href="https://digibyte.io/fa/" />
 	</url>
 	<url>
-	<loc>https://digibyte.io/en/ca.html</loc>
+	<loc>https://digibyte.io/en-ca/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -196,7 +196,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -218,10 +218,10 @@
 	<url>
 		<loc>https://digibyte.io/af/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -239,7 +239,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -261,10 +261,10 @@
 	<url>
 		<loc>https://digibyte.io/cs/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -282,7 +282,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -304,10 +304,10 @@
 	<url>
 		<loc>https://digibyte.io/da/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -325,7 +325,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -347,10 +347,10 @@
 	<url>
 		<loc>https://digibyte.io/de/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -368,7 +368,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -390,10 +390,10 @@
 	<url>
 		<loc>https://digibyte.io/es/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -411,7 +411,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -433,10 +433,10 @@
 	<url>
 		<loc>https://digibyte.io/fr/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -454,7 +454,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -476,10 +476,10 @@
 	<url>
 		<loc>https://digibyte.io/hr/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -497,7 +497,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -519,10 +519,10 @@
 	<url>
 		<loc>https://digibyte.io/id/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -540,7 +540,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -562,10 +562,10 @@
 	<url>
 		<loc>https://digibyte.io/it/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -583,7 +583,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -605,10 +605,10 @@
 	<url>
 		<loc>https://digibyte.io/sw/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -626,7 +626,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -648,10 +648,10 @@
 	<url>
 		<loc>https://digibyte.io/hu/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -669,7 +669,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -691,10 +691,10 @@
 	<url>
 		<loc>https://digibyte.io/ms/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -712,7 +712,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -734,10 +734,10 @@
 	<url>
 		<loc>https://digibyte.io/nl/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -755,7 +755,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -777,10 +777,10 @@
 	<url>
 		<loc>https://digibyte.io/nb/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -798,7 +798,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -820,10 +820,10 @@
 	<url>
 		<loc>https://digibyte.io/fil/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -841,7 +841,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -863,10 +863,10 @@
 	<url>
 		<loc>https://digibyte.io/pl/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -884,7 +884,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -906,10 +906,10 @@
 	<url>
 		<loc>https://digibyte.io/pt/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -927,7 +927,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -947,12 +947,12 @@
 		<xhtml:link rel="alternate" hreflang="fa" href="https://digibyte.io/fa/" />
 	</url>
 	<url>
-		<loc>https://digibyte.io/pt/br.html</loc>
+		<loc>https://digibyte.io/pt-br/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -970,7 +970,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -992,10 +992,10 @@
 	<url>
 		<loc>https://digibyte.io/ro/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1013,7 +1013,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1035,10 +1035,10 @@
 	<url>
 		<loc>https://digibyte.io/sq/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1056,7 +1056,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1078,10 +1078,10 @@
 	<url>
 		<loc>https://digibyte.io/sl/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1099,7 +1099,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1121,10 +1121,10 @@
 	<url>
 		<loc>https://digibyte.io/fi/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1142,7 +1142,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1164,10 +1164,10 @@
 	<url>
 		<loc>https://digibyte.io/sv/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1185,7 +1185,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1207,10 +1207,10 @@
 	<url>
 		<loc>https://digibyte.io/vi/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1228,7 +1228,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1250,10 +1250,10 @@
 	<url>
 		<loc>https://digibyte.io/tr/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1271,7 +1271,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1293,10 +1293,10 @@
 	<url>
 		<loc>https://digibyte.io/ru/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1314,7 +1314,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1336,10 +1336,10 @@
 	<url>
 		<loc>https://digibyte.io/bg/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1357,7 +1357,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1379,10 +1379,10 @@
 	<url>
 		<loc>https://digibyte.io/el/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1400,7 +1400,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1422,10 +1422,10 @@
 	<url>
 		<loc>https://digibyte.io/hi/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1443,7 +1443,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1465,10 +1465,10 @@
 	<url>
 		<loc>https://digibyte.io/th/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1486,7 +1486,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1508,10 +1508,10 @@
 	<url>
 		<loc>https://digibyte.io/ja/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1529,7 +1529,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1551,10 +1551,10 @@
 	<url>
 		<loc>https://digibyte.io/ko/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1572,7 +1572,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1594,10 +1594,10 @@
 	<url>
 		<loc>https://digibyte.io/zh/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1615,7 +1615,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1637,10 +1637,10 @@
 	<url>
 		<loc>https://digibyte.io/ar/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1658,7 +1658,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
@@ -1680,10 +1680,10 @@
 	<url>
 		<loc>https://digibyte.io/fa/</loc>
 		<xhtml:link rel="alternate" hreflang="en" href="https://digibyte.io/" />
-		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en/gb.html" />
-		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en/au.html" />
-		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en/nz.html" />
-		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en/ca.html" />
+		<xhtml:link rel="alternate" hreflang="en-gb" href="https://digibyte.io/en-gb/" />
+		<xhtml:link rel="alternate" hreflang="en-au" href="https://digibyte.io/en-au/" />
+		<xhtml:link rel="alternate" hreflang="en-nz" href="https://digibyte.io/en-nz/" />
+		<xhtml:link rel="alternate" hreflang="en-ca" href="https://digibyte.io/en-ca/" />
 		<xhtml:link rel="alternate" hreflang="af" href="https://digibyte.io/af/" />
 		<xhtml:link rel="alternate" hreflang="cs" href="https://digibyte.io/cs/" />
 		<xhtml:link rel="alternate" hreflang="da" href="https://digibyte.io/da/" />
@@ -1701,7 +1701,7 @@
 		<xhtml:link rel="alternate" hreflang="tl" href="https://digibyte.io/fil/" />
 		<xhtml:link rel="alternate" hreflang="pl" href="https://digibyte.io/pl/" />
 		<xhtml:link rel="alternate" hreflang="pt" href="https://digibyte.io/pt/" />
-		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt/br.html" />
+		<xhtml:link rel="alternate" hreflang="pt-br" href="https://digibyte.io/pt-br/" />
 		<xhtml:link rel="alternate" hreflang="ro" href="https://digibyte.io/ro/" />
 		<xhtml:link rel="alternate" hreflang="sq" href="https://digibyte.io/sq/" />
 		<xhtml:link rel="alternate" hreflang="sl" href="https://digibyte.io/sl/" />
