@@ -33,29 +33,48 @@
     var browserlang = navigator.language || navigator.userLanguage;
 	var langcode5 = browserlang.substr(0,5);
 		
-		if (langcode5 == "en-GB")
-			
-			window.location.replace('../en-gb/'+target)
+	fetch('https://api.hostip.info/country.php')
+    .then((response) => {
+    return response.text()
+    })
 		
-		else if (langcode5 == "en-AU")
-			
-			window.location.replace('../en-au/'+target)
+	  .then((data) => {
+        if (data == "US")
+	    window.location.replace('../en-us/'+target)
 		
-		else if (langcode5 == "en-NZ")
-			
-			window.location.replace('../en-nz/'+target)
+	    else if (data == "GB")
+	    window.location.replace('../en-gb/'+target)
 		
-		else if (langcode5 == "en-CA")
-			
-			window.location.replace('../en-ca/'+target)
+	    else if (data == "CA")
+	    window.location.replace('../en-ca/'+target)
 		
-		else if (langcode5 == "en-US")
-			
-			window.location.replace('../en-us/'+target)
+	    else if (data == "AU")
+	    window.location.replace('../en-au/'+target)
+		
+	    else if (data == "NZ")
+	    window.location.replace('../en-nz/'+target)
 		
 		else
-			
-			window.location.replace('../?lang=en'+target)
+		window.location.replace('../?lang=en'+target)
+      })
+		
+	if (langcode5 == "en-US")
+	window.location.replace('../en-us/'+target)
+		
+	else if (langcode5 == "en-GB")
+	window.location.replace('../en-gb/'+target)
+		
+    else if (langcode5 == "en-CA")
+	window.location.replace('../en-ca/'+target)
+		
+	else if (langcode5 == "en-AU")
+	window.location.replace('../en-au/'+target)
+		
+	else if (langcode5 == "en-NZ")
+	window.location.replace('../en-nz/'+target)
+		
+	else
+	window.location.replace('../?lang=en'+target)
 	</script>
 	
     <title>Language router</title>
