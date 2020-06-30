@@ -36,34 +36,31 @@
 	var langcode3 = browserlang.substr(0,3);
 	var langcode2 = browserlang.substr(0,2);
 		
-	fetch('http://ip-api.com/json/?fields=countryCode')
+	fetch('https://api.hostip.info/country.php')
     .then((response) => {
-    return response.json()
+    return response.text()
     })
 		
 	  .then((data) => {
-        if (data.countryCode == "US")
+        if (data == "US")
 	    window.location.replace('en-us/'+target)
 		
-	    else if (data.countryCode == "GB")
+	    else if (data == "GB")
 	    window.location.replace('en-gb/'+target)
 		
-	    else if (data.countryCode == "CA")
+	    else if (data == "CA")
 	    window.location.replace('en-ca/'+target)
 		
-	    else if (data.countryCode == "AU")
+	    else if (data == "AU")
 	    window.location.replace('en-au/'+target)
 		
-	    else if (data.countryCode == "NZ")
+	    else if (data == "NZ")
 	    window.location.replace('en-nz/'+target)
 		
 		else if (langvalue == "lang=en") null
 		
-	    else if (data.countryCode == "BR")
+	    else if (data == "BR")
 	    window.location.replace('pt-br/'+target)
-		
-		else if (data.countryCode == "TR")
-	    window.location.replace('trr/'+target)
       })
 		
 	if (langcode5 == "en-US")
