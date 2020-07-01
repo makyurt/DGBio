@@ -33,22 +33,24 @@
     var browserlang = navigator.language || navigator.userLanguage;
 	var langcode5 = browserlang.substr(0,5);
 		
-	fetch('https://api.hostip.info/country.php')
+	fetch('https://freegeoip.app/json/')
     .then((response) => {
-    return response.text()
+    return response.json()
     })
 		
 	  .then((data) => {
-        if (data == "BR")
+        if (data.country_code == "BR")
 	    window.location.replace('../pt-br/'+target)
 		
 	    else null
       })
 		
-	if (langcode5 == "pt-BR")
-	window.location.replace('../pt-br/'+target)
+	  .catch((err) => {
+	    if (langcode5 == "pt-BR")
+	    window.location.replace('../pt-br/'+target)
 		
-	else null
+	    else null
+	  })
 	</script>
 	
 	<!--- Google analytics

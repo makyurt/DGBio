@@ -36,52 +36,56 @@
 	var langcode3 = browserlang.substr(0,3);
 	var langcode2 = browserlang.substr(0,2);
 		
-	fetch('https://api.hostip.info/country.php')
+	fetch('https://freegeoip.app/json/')
     .then((response) => {
-    return response.text()
+    return response.json()
     })
 		
 	  .then((data) => {
-        if (data == "US")
+        if (data.country_code == "US")
 	    window.location.replace('en-us/'+target)
 		
-	    else if (data == "GB")
+	    else if (data.country_code == "GB")
 	    window.location.replace('en-gb/'+target)
 		
-	    else if (data == "CA")
+	    else if (data.country_code == "CA")
 	    window.location.replace('en-ca/'+target)
 		
-	    else if (data == "AU")
+	    else if (data.country_code == "AU")
 	    window.location.replace('en-au/'+target)
 		
-	    else if (data == "NZ")
+	    else if (data.country_code == "NZ")
 	    window.location.replace('en-nz/'+target)
 		
 		else if (langvalue == "lang=en") null
 		
-	    else if (data == "BR")
+	    else if (data.country_code == "BR")
 	    window.location.replace('pt-br/'+target)
       })
 		
-	if (langcode5 == "en-US")
-	window.location.replace('en-us/'+target)
+      .catch((err) => {
+	    if (langcode5 == "en-US")
+	    window.location.replace('en-us/'+target)
 		
-	else if (langcode5 == "en-GB")
-	window.location.replace('en-gb/'+target)
+	    else if (langcode5 == "en-GB")
+	    window.location.replace('en-gb/'+target)
 		
-    else if (langcode5 == "en-CA")
-	window.location.replace('en-ca/'+target)
+        else if (langcode5 == "en-CA")
+	    window.location.replace('en-ca/'+target)
 		
-	else if (langcode5 == "en-AU")
-	window.location.replace('en-au/'+target)
+	    else if (langcode5 == "en-AU")
+	    window.location.replace('en-au/'+target)
 		
-	else if (langcode5 == "en-NZ")
-	window.location.replace('en-nz/'+target)
+	    else if (langcode5 == "en-NZ")
+	    window.location.replace('en-nz/'+target)
 		
-	else if (langvalue == "lang=en") null
+	    else if (langvalue == "lang=en") null
 		
-	else if (langcode5 == "pt-BR")
-	window.location.replace('pt-br/'+target)
+	    else if (langcode5 == "pt-BR")
+	    window.location.replace('pt-br/'+target)
+	  })
+		
+	if (langvalue == "lang=en") null
 
 	else if (langcode3 == "fil")
 	window.location.replace('fil/'+target)
