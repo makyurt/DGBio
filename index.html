@@ -36,6 +36,25 @@
 	var langcode3 = browserlang.substr(0,3);
 	var langcode2 = browserlang.substr(0,2);
 		
+	if (langvalue == "lang=en") null
+
+	else if (langcode3 == "fil")
+	window.location.replace('fil/'+target)
+		
+    else if (['nb', 'no', 'nn'].indexOf(langcode2) >= 0)
+	window.location.replace('nb/'+target)
+		
+	else if (['hr', 'sr', 'bs'].indexOf(langcode2) >= 0)
+	window.location.replace('hr/'+target)
+		
+	else if (['cs', 'sk'].indexOf(langcode2) >= 0)
+	window.location.replace('cs/'+target)
+		
+	else if (['af', 'da', 'de', 'es', 'fr', 'id', 'it', 'sw', 'hu', 'ms', 'nl', 'pl', 'pt', 'ro', 'sq', 'sl', 'fi', 'sv', 'vi', 'tr', 'ru', 'bg', 'el', 'hi', 'th', 'ja', 'ko', 'zh', 'ar', 'fa'].indexOf(langcode2) >= 0)
+			
+	window.location.replace(langcode2+'/'+target)
+		
+	else {
 	fetch('https://freegeoip.app/json/')
     .then((response) => {
     return response.json()
@@ -84,26 +103,7 @@
 	    else if (langcode5 == "pt-BR")
 	    window.location.replace('pt-br/'+target)
 	  })
-		
-	if (langvalue == "lang=en") null
-
-	else if (langcode3 == "fil")
-	window.location.replace('fil/'+target)
-		
-    else if (['nb', 'no', 'nn'].indexOf(langcode2) >= 0)
-	window.location.replace('nb/'+target)
-		
-	else if (['hr', 'sr', 'bs'].indexOf(langcode2) >= 0)
-	window.location.replace('hr/'+target)
-		
-	else if (['cs', 'sk'].indexOf(langcode2) >= 0)
-	window.location.replace('cs/'+target)
-		
-	else if (['af', 'da', 'de', 'es', 'fr', 'id', 'it', 'sw', 'hu', 'ms', 'nl', 'pl', 'pt', 'ro', 'sq', 'sl', 'fi', 'sv', 'vi', 'tr', 'ru', 'bg', 'el', 'hi', 'th', 'ja', 'ko', 'zh', 'ar', 'fa'].indexOf(langcode2) >= 0)
-			
-	window.location.replace(langcode2+'/'+target)
-		
-	else null
+	  }
 	</script>
 	
 	<!--- Google analytics
