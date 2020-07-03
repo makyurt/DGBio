@@ -373,6 +373,18 @@ border:.2rem solid #fff!important;
 color:#fff!important
 }
 
+.wb {
+background:#fff!important;
+border-color: #fff!important;
+color:#002352!important;
+}
+
+.wb:hover {
+background:#0066cc!important;
+border-color: #fff!important;
+color:#fff!important
+}
+
 input::-moz-focus-inner {
 border:0;
 padding:0
