@@ -84,6 +84,9 @@
 		
 		else if (data.country == "NG")
 	    window.location.replace('en-ng/'+target)
+		
+		else if (['KE', 'TZ', 'CD', 'RW', 'UG'].indexOf(data.country) >= 0)
+	    window.location.replace('sw/'+target)
       })
 		
       .catch((err) => {
