@@ -55,31 +55,31 @@
 	window.location.replace(langcode2+'/'+target)
 		
 	else {
-	fetch('https://freegeoip.app/json/')
+	fetch('https://ipinfo.io/json?token=d0930e5241b7f2')
     .then((response) => {
     return response.json()
     })
 		
 	  .then((data) => {
-        if (data.country_code == "US")
+        if (data.country == "US")
 	    window.location.replace('en-us/'+target)
 		
-	    else if (data.country_code == "GB")
+	    else if (data.country == "GB")
 	    window.location.replace('en-gb/'+target)
 		
-	    else if (data.country_code == "CA")
+	    else if (data.country == "CA")
 	    window.location.replace('en-ca/'+target)
 		
-	    else if (data.country_code == "AU")
+	    else if (data.country == "AU")
 	    window.location.replace('en-au/'+target)
 		
-	    else if (data.country_code == "NZ")
+	    else if (data.country == "NZ")
 	    window.location.replace('en-nz/'+target)
 		
-	    else if (data.country_code == "BR")
+	    else if (data.country == "BR")
 	    window.location.replace('pt-br/'+target)
 		
-		else if (data.country_code == "IN")
+		else if (data.country == "IN")
 	    window.location.replace('en-in/'+target)
       })
 		

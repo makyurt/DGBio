@@ -33,13 +33,13 @@
     var browserlang = navigator.language || navigator.userLanguage;
 	var langcode5 = browserlang.substr(0,5);
 		
-	fetch('https://freegeoip.app/json/')
+	fetch('https://ipinfo.io/json?token=d0930e5241b7f2')
     .then((response) => {
     return response.json()
     })
 		
 	  .then((data) => {
-        if (data.country_code == "BR")
+        if (data.country == "BR")
 	    window.location.replace('../pt-br/'+target)
 		
 	    else null
