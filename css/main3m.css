@@ -1681,6 +1681,13 @@ top:14%;
 left:10%
 }
 
+.rtl .btn-video {
+left: auto;
+right: 10%;
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);	
+}
+
 .video-icon {
 display:inline-block;
 height:112px;
@@ -1715,6 +1722,10 @@ width:50%;
 font-family:"Chivo",sans-serif;
 font-weight:400;
 font-size:2.8rem
+}
+
+.rtl .item-stats {
+float: right;
 }
 
 .item-stats span {
