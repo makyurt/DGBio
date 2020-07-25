@@ -355,6 +355,11 @@ background:#002352;
 border-color:#06c
 }
 
+.btn.rtl i {
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+
 .btn--stroke {
 background:#fff!important;
 border:.2rem solid #fff!important;
