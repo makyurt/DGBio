@@ -663,6 +663,14 @@ font-size: 1.37rem;
 color: #fff;
 }
 
+.pricet a {
+color: #fff;
+}
+
+.pricet a:hover {
+color: #fff;
+}
+
 .psocial {
 right:0;
 position:absolute;
