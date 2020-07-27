@@ -657,10 +657,42 @@ position:relative
 
 .pricet {
 left:0;
-padding-top: 0.4rem;
+padding-top: 0.33rem;
 font-family:"Chivo",sans-serif;
-font-size: 1.35rem;
+font-size: 1.37rem;
 color: #fff;
+}
+
+.psocial {
+right:0;
+position:absolute;
+margin-top: -2.65rem;
+font-family:"Chivo",sans-serif;
+font-size: 1.65rem;
+color: #fff;
+}
+
+.psocial a {
+color: #fff;
+}
+
+.psocial a:hover {
+color: #fff;
+}
+
+.tsmall {
+font-family:"Chivo",sans-serif;
+font-size: 1.37rem;
+color: #fff;
+}
+
+@media only screen and (max-width:799px) {
+.psocial {
+display: none;
+}
+.pricet {
+text-align: center;
+}
 }
 
 .s-header {
