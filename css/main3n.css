@@ -2136,6 +2136,10 @@ margin-top:7.2rem
 margin-bottom:.8rem
 }
 
+.rtl .item-feature {
+ float:right;
+}
+
 .item-feature__icon {
 color:#06c;
 font-size:4.8rem
@@ -2827,6 +2831,11 @@ font-size:1.9rem;
 padding-right:20px;
 padding-bottom:10px;
 display:inline-block
+}
+
+.rtl .telegramicon {
+ padding-right:0px;
+ padding-left:20px;
 }
 
 .telegramiconlast {
