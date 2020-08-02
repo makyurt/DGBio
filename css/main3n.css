@@ -3118,6 +3118,10 @@ padding-top: 2.3rem;
 margin-bottom: -2.6rem;
 }
 
+.rtl .stats__col {
+float: right;
+}
+
 @media only screen and (max-width:1000px) {
 .stats__col {
 padding: 2rem;
