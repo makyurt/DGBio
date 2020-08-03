@@ -2365,6 +2365,10 @@ position:relative
 padding:0 30px;
 }
 
+.rtl.item-plan {
+float: right;
+}
+
 .item-plan__block {
 background:#fff;
 border-radius:15px;
