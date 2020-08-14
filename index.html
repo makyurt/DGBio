@@ -87,6 +87,9 @@
 		
 		else if (['KE', 'TZ', 'CD', 'RW', 'UG'].indexOf(data.country) >= 0)
 	    window.location.replace('sw/'+target)
+		
+		else if (data.country == "VN")
+	    window.location.replace('vi/'+target)
       })
 		
       .catch((err) => {
