@@ -2365,6 +2365,10 @@ position:relative
 padding:0 30px;
 }
 
+.max880 {
+max-width: 880px;
+}
+
 .rtl.item-plan {
 float: right;
 }
