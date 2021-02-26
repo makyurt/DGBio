@@ -2,5 +2,7 @@ User-Agent: *
 Disallow: /docs/
 Disallow: /stats/
 Disallow: /langmenu/
+Disallow: /privacy-app.html
+Disallow: /terms-app.html
 
 Sitemap: https://digibyte.io/sitemap.xml
