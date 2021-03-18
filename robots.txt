@@ -5,4 +5,4 @@ Disallow: /langmenu/
 Disallow: /privacy-app.html
 Disallow: /terms-app.html
 
-Sitemap: https://digibyte.io/sitemap.xml
+Sitemap: https://digibyte.org/sitemap.xml
