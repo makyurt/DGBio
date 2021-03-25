@@ -1,4 +1,4 @@
-## DGBio
+## DigiByte.org
 
 https://DigiByte.org website (Formerly DigiByte.io).
 
