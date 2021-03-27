@@ -1,6 +1,6 @@
 ## DigiByte.org
 
-https://DigiByte.org website (Formerly DigiByte.io).
+https://DigiByte.org website. (Formerly DigiByte.io)
 
 Please feel free to contribute existing translations by pull requests and comments.
 
