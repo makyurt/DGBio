@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: digibyte.io
+Token: 2658c97d43ef096e31a3d53d7426adb800ee03758f68fe65273d4419360e9896

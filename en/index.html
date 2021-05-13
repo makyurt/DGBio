@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<script src="../js/hashcatcher.js"></script>
+	
+	<!--- Language router (en only)
+    ================================================== -->
+	<script>
+    var browserlang = navigator.language || navigator.userLanguage;
+	var langcode5 = browserlang.substr(0,5);
+		
+	fetch('https://ipinfo.io/json?token=d0930e5241b7f2')
+    .then((response) => {
+    return response.json()
+    })
+		
+	  .then((data) => {
+        if (data.country == "US")
+	    window.location.replace('../en-us/'+target)
+		
+	    else if (data.country == "GB")
+	    window.location.replace('../en-gb/'+target)
+		
+	    else if (data.country == "CA")
+	    window.location.replace('../en-ca/'+target)
+		
+	    else if (data.country == "AU")
+	    window.location.replace('../en-au/'+target)
+		
+	    else if (data.country == "NZ")
+	    window.location.replace('../en-nz/'+target)
+		
+		else if (data.country == "IN")
+	    window.location.replace('../en-in/'+target)
+		
+		else if (data.country == "NG")
+	    window.location.replace('../en-ng/'+target)
+		
+		else
+		window.location.replace('../?lang=en'+target)
+      })
+		
+	  .catch((err) => {
+	    if (langcode5 == "en-US")
+	    window.location.replace('../en-us/'+target)
+		
+	    else if (langcode5 == "en-GB")
+	    window.location.replace('../en-gb/'+target)
+		
+        else if (langcode5 == "en-CA")
+	    window.location.replace('../en-ca/'+target)
+		
+	    else if (langcode5 == "en-AU")
+	    window.location.replace('../en-au/'+target)
+		
+	    else if (langcode5 == "en-NZ")
+	    window.location.replace('../en-nz/'+target)
+		
+		else if (langcode5 == "en-IN")
+	    window.location.replace('../en-in/'+target)
+		
+		else if (langcode5 == "en-NG")
+	    window.location.replace('../en-NG/'+target)
+		
+	    else
+	    window.location.replace('../?lang=en'+target)
+	  })
+	</script>
+	
+    <title>Language router</title>
+    <meta charset="utf-8">
+	<meta name="robots" content="noindex" />
+
+</head>
+
+<body>
+</body>
+	
+</html>
