@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+	
+ <title>Official DigiByte News</title>
+ <link>https://digibyte.org/news.xml</link>
+ <description>Latest news about DigiByte blockchain</description>
+ <category>Blockchain</category>
+ <category>Cryptocurrency</category>
+ <image>
+   <url>https://digibyte.org/favicons/og-image.jpg</url>
+   <title>Official DigiByte News</title>
+   <link>https://digibyte.org</link>
+ </image>
+ <lastBuildDate>Sun, 27 Jun 2021</lastBuildDate>
+	
+   <item>
+     <title>Test Item 1</title>
+     <link>https://testlink1.com</link>
+     <description>Test item1 description</description>
+	 <pubDate>Sun, 27 Jun 2021</pubDate>
+   </item>
+	
+   <item>
+     <title>Test Item 2</title>
+     <link>https://testlink2.com</link>
+     <description>Test item2 description</description>
+	 <pubDate>Sat, 26 Jun 2021</pubDate>
+   </item>
+	
+</channel>
+
+</rss>
