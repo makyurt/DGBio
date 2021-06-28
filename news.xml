@@ -13,20 +13,13 @@
    <title>Official DigiByte News</title>
    <link>https://digibyte.org</link>
  </image>
- <lastBuildDate>Sun, 27 Jun 2021</lastBuildDate>
+ <lastBuildDate>Mon, 28 Jun 2021</lastBuildDate>
 	
    <item>
-     <title>Test Item 1</title>
-     <link>https://testlink1.com</link>
-     <description>Test item1 description</description>
-	 <pubDate>Sun, 27 Jun 2021</pubDate>
-   </item>
-	
-   <item>
-     <title>Test Item 2</title>
-     <link>https://testlink2.com</link>
-     <description>Test item2 description</description>
-	 <pubDate>Sat, 26 Jun 2021</pubDate>
+     <title>DigiByte’s News Feed Integrated With Crypto.com</title>
+     <link>https://crypto.com/price/digibyte</link>
+     <description>Through Crypto.com’s DigiByte Price Page, you can now directly access DigiByte’s news feed. This feature will enable Crypto.com users to obtain the latest news and updates from DigiByte.</description>
+	 <pubDate>Mon, 28 Jun 2021</pubDate>
    </item>
 	
 </channel>
