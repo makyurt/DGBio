@@ -3,14 +3,14 @@
 
 <channel>
 	
- <title>Official DigiByte News</title>
+ <title>DigiByte News</title>
  <link>https://digibyte.org</link>
  <description>Latest news about DigiByte blockchain</description>
  <category>Blockchain</category>
  <category>Cryptocurrency</category>
  <image>
    <url>https://digibyte.org/favicons/og-image.jpg</url>
-   <title>Official DigiByte News</title>
+   <title>DigiByte News</title>
    <link>https://digibyte.org</link>
  </image>
  <lastBuildDate>Mon, 28 Jun 2021</lastBuildDate>
