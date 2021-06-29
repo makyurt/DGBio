@@ -13,14 +13,19 @@
    <title>DigiByte News</title>
    <link>https://digibyte.org</link>
  </image>
- <lastBuildDate>Tue, 29 Jun 2021 08:50 GMT</lastBuildDate>
+ <lastBuildDate>Tue, 29 Jun 2021 08:55 GMT</lastBuildDate>
 	
    <item>
      <title>DigiByte’s News Feed Integrated With Crypto.com</title>
      <link>https://dgbatofficial.medium.com/c120e596fe7</link>
-     <description>Through Crypto.com’s DigiByte Price Page, you can now directly access DigiByte’s news feed. This feature will enable Crypto.com users to obtain the latest news and updates from DigiByte.</description>
-	 <enclosure url="https://digibyte.org/images/news/1.png" length="12345" type="image/png"/>
-	 <pubDate>Tue, 29 Jun 2021 08:50 GMT</pubDate>
+     <description>
+	 <![CDATA[
+     <img src="{https://digibyte.org/images/news/1.png}" alt="{DigiByte News on Crypto.com}">
+     <hr />
+     {Through Crypto.com’s DigiByte Price Page, you can now directly access DigiByte’s news feed. This feature will enable Crypto.com users to obtain the latest news and updates from DigiByte.}
+     ]]>
+	 </description>
+	 <pubDate>Tue, 29 Jun 2021 08:55 GMT</pubDate>
    </item>
 	
 </channel>
