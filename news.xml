@@ -24,6 +24,15 @@
 	 <pubDate>Tue, 29 Jun 2021 09:00 GMT</pubDate>
    </item>
 	
+   <item>
+     <title>DigiByte v7.17.3 released!</title>
+     <link>https://github.com/DigiByte-Core/digibyte/releases/tag/v7.17.3</link>
+     <description>
+	 The DigiByte Team are thrilled to announce that v7.17.3 has now been released. This upgrade, lays the foundation for the upcoming DigiByte 8 upgrade.
+	 </description>
+	 <pubDate>Thu, 13 May 2021 09:00 GMT</pubDate>
+   </item>
+	
 </channel>
 
 </rss>
