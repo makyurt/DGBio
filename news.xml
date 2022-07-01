@@ -1,38 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 
-<channel>
-	
- <title>DigiByte News</title>
- <link>https://digibyte.org</link>
- <description>Latest news about DigiByte blockchain</description>
- <category>Blockchain</category>
- <category>Cryptocurrency</category>
- <image>
-   <url>https://digibyte.org/favicons/og-image.jpg</url>
-   <title>DigiByte News</title>
-   <link>https://digibyte.org</link>
- </image>
- <lastBuildDate>Tue, 29 Jun 2021 09:00 GMT</lastBuildDate>
-	
-   <item>
-     <title>DigiByte’s News Feed Integrated With Crypto.com</title>
-     <link>https://dgbatofficial.medium.com/c120e596fe7</link>
-     <description>
+  <channel>
+
+    <title>DigiByte News</title>
+    <link>https://digibyte.org</link>
+    <description>Latest news about DigiByte blockchain</description>
+    <category>Blockchain</category>
+    <category>Cryptocurrency</category>
+    <image>
+      <url>https://digibyte.org/favicons/og-image.jpg</url>
+      <title>DigiByte News</title>
+      <link>https://digibyte.org</link>
+    </image>
+    <lastBuildDate>Fri, 1 Jul 2022 13:33 GMT</lastBuildDate>
+
+    <item>
+      <title>DigiByte June Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-june-update-d4ac7f33f35f?source=rss-digibyte_org</link>
+      <description>
+        Even with the summer here, the DigiByte community continues to push forward with AMA’s, exchange listings and other tools to grow the ecosystem. So much is happening and it has been quite a journey over the past eight and a half years. Thank you to each and every one of you. Onwards and upwards!
+      </description>
+      <pubDate>Thu, 30 Jun 2022 21:58:25 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte May Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-may-update-5b672ebe8497?source=rss-digibyte_org</link>
+      <description>
+        May was another excellent month of new projects, listings, development, self custody and wonderful interviews from various community members. The progress continues to be astounding. Thank to you all the developers and folks around the world that support DigiByte and believe in its ethos! Onwards and upwards!
+      </description>
+      <pubDate>Wed, 01 Jun 2022 02:51:06 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte April Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-april-update-19fd34ccfb6f?source=rss-digibyte_org</link>
+      <description>
+        April was the biggest month for DigiByte milestones and news! The amount of interviews, development activity and listings on platforms we tremendous. The effort by all community members has been amazing to see. Let’s take this momentum and continue to keep building. Onwards and upwards!
+      </description>
+      <pubDate>Sat, 30 Apr 2022 18:39:44 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte March Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-march-update-1014aed1e11a?source=rss-digibyte_org</link>
+      <description>
+        March was a fantastic month full of development items, continued use cases and more mainstream media picking up DigiByte and its benefit in the larger ecosystem. There has been a lot of hard work being put in by the DigiByte community and it is a sight to see! Thank you to all of you and let’s keep pressing forward.
+      </description>
+      <pubDate>Thu, 31 Mar 2022 20:05:58 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte February Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-february-update-3efdfe34f296?source=rss-digibyte_org</link>
+      <description>
+      Another steady month of development, articles and exchange listings for DigiByte. It is amazing to see what the community and developers continue to do month in and month out. Let’s keep the positive energy going. Onwards and upwards!
+      </description>
+      <pubDate>Mon, 28 Feb 2022 22:45:32 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte January Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-january-update-fbda664e29a4?source=rss-digibyte_org</link>
+      <description>
+        The New Year is here and DigiByte continues to keep making things happen. DigiByte celebrated its 8th anniversary on January 10, 2014. It is a testament to how we continue to be sustainable and here for the long term. The development process is ongoing and there are other great additions that are showing continued growth in the ecosystem. Thank you to all the efforts by dedicated community members to spread the word. None of this would be possible without you. Let’s keep the positive vibes going!
+      </description>
+      <pubDate>Mon, 31 Jan 2022 20:51:43 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte December Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-december-update-5dd7a9b467c4?source=rss-digibyte_org</link>
+      <description>
+      What an amazing year! December was loaded with so many accomplishments and developments in various organizations. There are many new faces and functional use cases being built. Truly something special and let’s keep the positive momentum going into 2022! Onwards and upwards!
+      </description>
+      <pubDate>Thu, 30 Dec 2021 21:28:38 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte November Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-november-update-2f56ff21249d?source=rss-digibyte_org</link>
+      <description>
+        There are so many reasons to be thankful this month. It is amazing to see how much work and effort goes in month after month by volunteers. Different organizations and community members are doing their part to build on the blockchain or help educate the masses on the utility and power of DGB. Let’s keep pushing forward. The DigiByte community never sleeps!
+      </description>
+      <pubDate>Tue, 30 Nov 2021 18:58:57 GMT</pubDate>
+    </item>
+
+
+    <item>
+      <title>DigiByte October Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-october-update-8be271460317?source=rss-digibyte_org</link>
+      <description>
+        The month of October was packed with lots of updates. Everything from informative videos, development updates, data analytics and additional engagement via social platforms to spread the word about the DigiByte blockchain. We are seeing a lot more new community members, so be sure to welcome them with open arms. We are continuing to grow and are excited about what the future brings.
+      </description>
+      <pubDate>Sun, 31 Oct 2021 17:02:46 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte’s News Feed Integrated With Crypto.com</title>
+      <link>https://dgbatofficial.medium.com/c120e596fe7</link>
+      <description>
 	 Through Crypto.com’s DigiByte Price Page, you can now directly access DigiByte’s news feed. This feature will enable Crypto.com users to obtain the latest news and updates from DigiByte.
-	 </description>
-	 <pubDate>Tue, 29 Jun 2021 09:00 GMT</pubDate>
-   </item>
-	
-   <item>
-     <title>DigiByte v7.17.3 released!</title>
-     <link>https://github.com/DigiByte-Core/digibyte/releases/tag/v7.17.3</link>
-     <description>
+      </description>
+      <pubDate>Tue, 29 Jun 2021 09:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte v7.17.3 released!</title>
+      <link>https://github.com/DigiByte-Core/digibyte/releases/tag/v7.17.3</link>
+      <description>
 	 The DigiByte Team are thrilled to announce that v7.17.3 has now been released. This upgrade, lays the foundation for the upcoming DigiByte 8 upgrade.
-	 </description>
-	 <pubDate>Thu, 13 May 2021 09:00 GMT</pubDate>
-   </item>
-	
-</channel>
+      </description>
+      <pubDate>Thu, 13 May 2021 09:00 GMT</pubDate>
+    </item>
+
+  </channel>
 
 </rss>
