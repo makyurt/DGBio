@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 
-<channel>
-	
- <title>DigiByte News</title>
- <link>https://digibyte.org</link>
- <description>Latest news about DigiByte blockchain</description>
- <category>Blockchain</category>
- <category>Cryptocurrency</category>
- <image>
-   <url>https://digibyte.org/favicons/og-image.jpg</url>
-   <title>DigiByte News</title>
-   <link>https://digibyte.org</link>
- </image>
- <lastBuildDate>Tue, 29 Jun 2021 09:00 GMT</lastBuildDate>
-	
-   <item>
-     <title>DigiByte’s News Feed Integrated With Crypto.com</title>
-     <link>https://dgbatofficial.medium.com/c120e596fe7</link>
-     <description>
+  <channel>
+
+    <title>DigiByte News</title>
+    <link>https://digibyte.org</link>
+    <description>Latest news about DigiByte blockchain</description>
+    <category>Blockchain</category>
+    <category>Cryptocurrency</category>
+    <image>
+      <url>https://digibyte.org/favicons/og-image.jpg</url>
+      <title>DigiByte News</title>
+      <link>https://digibyte.org</link>
+    </image>
+    <lastBuildDate>Tue, 29 Jun 2021 09:00 GMT</lastBuildDate>
+
+    
+    <item>
+      <title>DigiByte October Update</title>
+      <link>https://medium.com/@DigiByte_Official/digibyte-october-update-8be271460317?source=rss-ca558e1dee94------2</link>
+      <description>
+        The month of October was packed with lots of updates. Everything from informative videos, development updates, data analytics and additional engagement via social platforms to spread the word about the DigiByte blockchain. We are seeing a lot more new community members, so be sure to welcome them with open arms. We are continuing to grow and are excited about what the future brings.
+      </description>
+      <pubDate>Sun, 31 Oct 2021 17:02:46 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte’s News Feed Integrated With Crypto.com</title>
+      <link>https://dgbatofficial.medium.com/c120e596fe7</link>
+      <description>
 	 Through Crypto.com’s DigiByte Price Page, you can now directly access DigiByte’s news feed. This feature will enable Crypto.com users to obtain the latest news and updates from DigiByte.
-	 </description>
-	 <pubDate>Tue, 29 Jun 2021 09:00 GMT</pubDate>
-   </item>
-	
-   <item>
-     <title>DigiByte v7.17.3 released!</title>
-     <link>https://github.com/DigiByte-Core/digibyte/releases/tag/v7.17.3</link>
-     <description>
+      </description>
+      <pubDate>Tue, 29 Jun 2021 09:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>DigiByte v7.17.3 released!</title>
+      <link>https://github.com/DigiByte-Core/digibyte/releases/tag/v7.17.3</link>
+      <description>
 	 The DigiByte Team are thrilled to announce that v7.17.3 has now been released. This upgrade, lays the foundation for the upcoming DigiByte 8 upgrade.
-	 </description>
-	 <pubDate>Thu, 13 May 2021 09:00 GMT</pubDate>
-   </item>
-	
-</channel>
+      </description>
+      <pubDate>Thu, 13 May 2021 09:00 GMT</pubDate>
+    </item>
+
+  </channel>
 
 </rss>
