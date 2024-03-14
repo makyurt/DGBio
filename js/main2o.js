@@ -364,8 +364,8 @@ function includeHTML() {
     }
   }
 };
-/* get year difference from  2014 to current year*/
-function getYearDifference() {
+/* display year difference from  2014 to current year*/
+function displayYearDifference() {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   const startYear = 2014;
@@ -393,7 +393,7 @@ function getYearDifference() {
         ssBackToTop();
 		    ssStatCount();
 		    includeHTML();
-        getYearDifference();
+        displayYearDifference();
     })();
 
 })(jQuery);
