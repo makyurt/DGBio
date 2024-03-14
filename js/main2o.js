@@ -364,7 +364,20 @@ function includeHTML() {
     }
   }
 };
+/* get year difference from  2014 to current year*/
+function getYearDifference() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const startYear = 2014;
+  const yearDifference = currentYear - startYear;
+  // Get all span elements with class "year-diff"
+  var spanElements = document.querySelectorAll('.year-diff');
 
+  // Append the year difference to each span element
+  spanElements.forEach(function(span) {
+    span.textContent = yearDifference;
+  });
+}
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -378,9 +391,9 @@ function includeHTML() {
         ssSmoothScroll();
         ssAOS();
         ssBackToTop();
-		ssStatCount();
-		includeHTML();
-
+		    ssStatCount();
+		    includeHTML();
+        getYearDifference();
     })();
 
 })(jQuery);
