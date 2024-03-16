@@ -337,20 +337,20 @@
 		      <div class="stitle">DigiByte blockchain stats</div>
 		   <div class="block-1-3">
 
-              <div class="col-block stats__col">
-                  <div class="stats__count">9</div>
-                  <div class="stats_text"><a href="https://www.dgbwiki.com/index.php?title=DigiByte_History" target="_blank">years surpassed</a></div>
-              </div>
-			   
-			   <div class="col-block stats__col">
-                  <div class="stats__count" includeHTML="stats/blocks/blockinfo.php">11062775</div>
-                  <div class="stats_text"><a href="https://chainz.cryptoid.info/dgb/" target="_blank">blocks produced</a></div>
-              </div>
-			   
-              <div class="col-block stats__col">
-                  <div class="stats__count" includeHTML="stats/nodes/nodeinfo.php">303795</div>
-                  <div class="stats_text"><a href="https://www.dgbwiki.com/index.php?title=DigiByte_Release_Stats" target="_blank">nodes downloaded</a></div> 
-              </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count" id="years-surpassed">0</div>
+                    <div class="stats_text"><a href="https://www.dgbwiki.com/index.php?title=DigiByte_History" target="_blank">years surpassed</a></div>
+                </div>
+                
+                <div class="col-block stats__col">               
+                    <div class="stats__count" id="block-count" >0</div>
+                    <div class="stats_text"><a href="https://chainz.cryptoid.info/dgb/" target="_blank">blocks produced</a></div>
+                </div>
+                
+                <div class="col-block stats__col">
+                    <div class="stats__count" id="node-download-count">0</div>
+                    <div class="stats_text"><a href="https://www.dgbwiki.com/index.php?title=DigiByte_Release_Stats" target="_blank">nodes downloaded</a></div> 
+                </div>
 
            </div>
 		   </div>
@@ -1964,7 +1964,6 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/plugins1b.js"></script>
     <script src="js/main2o.js"></script>
-	
 	<!-- Cookie info message
     ================================================== -->
 	<script type="text/javascript" id="cookieinfo" src="js/cookieinfo.min.js"

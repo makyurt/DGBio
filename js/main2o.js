@@ -203,10 +203,10 @@
 	
 	 /* Stat Counter
     * ------------------------------------------------------ */
-    var ssStatCount = function() {
+    var ssStatCount = function(el) {
 
         var statSection = $(".s-stats"),
-        stats = $(".stats__count");
+        stats = $(el);
 
         statSection.waypoint({
 
@@ -364,6 +364,26 @@ function includeHTML() {
     }
   }
 };
+
+// set Cookie
+function setCookie(name, value) {
+  var d = new Date();
+  d.setTime(d.getTime() + (15 * 24 * 60 * 60 * 1000)); // 15 days
+  document.cookie = name + "=" + value + "; expires=" + d.toGMTString() + "; path=/";
+}
+
+// get Cookie
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+
 /* display year difference from  2014 to current year*/
 function displayYearDifference() {
   const currentDate = new Date();
@@ -377,12 +397,71 @@ function displayYearDifference() {
   spanElements.forEach(function(span) {
     span.textContent = yearDifference;
   });
+  // Get the div element with id "years-surpassed"
+  const yearSurpassedDiv  = document.getElementById('years-surpassed');
+  yearSurpassedDiv.innerText = yearDifference;
+  ssStatCount(yearSurpassedDiv);
+}
+
+// display the current block count
+function displayBlockCount() {
+  fetch('https://chainz.cryptoid.info/dgb/api.dws?q=getblockcount')
+    .then(response => response.text())
+    .then(data => {
+      console.log(data);
+      const blockCount = parseInt(data);
+      var blockCountSpan  = document.getElementById('block-count');
+      blockCountSpan.innerHTML = blockCount;
+      ssStatCount(blockCountSpan);
+    })
+    .catch(error => console.log(error));
+}
+
+let totalDownloadCount = 0;
+// display the total download count for the Digibyte and Digibyte Core nodes
+function displayDigibyteNodeDownloadCount() {
+  const nodeDownloadCountDiv = document.getElementById('node-download-count');
+
+  async function fetchDownloadCount(repoName, cookieName) {
+    let totalDownloadCount = 0;
+
+    try {
+      if (getCookie(cookieName)) {
+        totalDownloadCount = parseInt(getCookie(cookieName));
+      } else {
+        const response = await fetch(`https://api.github.com/repos/${repoName}/releases`);
+        const data = await response.json();
+
+        data.forEach((release) => {
+          release.assets.forEach((asset) => {
+            totalDownloadCount += asset.download_count;
+          });
+        });
+
+        setCookie(cookieName, totalDownloadCount);
+      }
+    } catch (error) {
+      console.error(`Error fetching ${repoName} download count: ${error.message}`);
+    }
+
+    return totalDownloadCount;
+  }
+
+  async function updateNodeDownloadCount() {
+    const digibyteCount = await fetchDownloadCount('digibyte/digibyte', 'digibyte-node-download');
+    const digibyteCoreCount = await fetchDownloadCount('digibyte-core/digibyte', 'digibytecore-node-download');
+
+    totalDownloadCount = digibyteCount + digibyteCoreCount;
+    nodeDownloadCountDiv.innerText = totalDownloadCount;
+    ssStatCount(nodeDownloadCountDiv);
+  }
+
+  updateNodeDownloadCount();
 }
 
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
-
         ssPreloader();
         ssMenuOnScrolldown();
         ssMobileMenu();
@@ -391,13 +470,13 @@ function displayYearDifference() {
         ssSmoothScroll();
         ssAOS();
         ssBackToTop();
-		    ssStatCount();
 		    includeHTML();
         displayYearDifference();
+        displayBlockCount();
+        displayDigibyteNodeDownloadCount();
     })();
 
 })(jQuery);
-
 
 /* Clickable language menu */
 function lmenu() {
