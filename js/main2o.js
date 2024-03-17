@@ -459,6 +459,15 @@ function displayDigibyteNodeDownloadCount() {
   updateNodeDownloadCount();
 }
 
+// Append the copyright year to the footer
+function appendCopyrightDate() {
+  const currentYear = new Date().getFullYear();
+  const copyrightText = `DigiByte 2013 - ${currentYear}`;
+
+  // Get/Set the span element with id "copyright-year"
+  const spanElement = document.getElementById('copyright-year');
+  spanElement.textContent = copyrightText;
+}
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
@@ -474,6 +483,7 @@ function displayDigibyteNodeDownloadCount() {
         displayYearDifference();
         displayBlockCount();
         displayDigibyteNodeDownloadCount();
+        appendCopyrightDate();
     })();
 
 })(jQuery);
