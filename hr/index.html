@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html class="no-js" lang="hr">
+<head>
+	
+	<script src="../js/hashcatcher.js"></script>
+	
+	<!--- Google analytics
+    ================================================== -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129492671-3"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'UA-129492671-3', { 'anonymize_ip': true });
+    </script>
+
+    <!--- Basic page needs
+    ================================================== -->
+    <title>DigiByte Blockchain | DGB novčić | DigiAssets | Digi-ID</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Službena web stranica DigiByte. DigiByte je open-source i visoko decentralizirani globalni blockchain sastavljen od DGB novčića, DigiAssets, Digi-ID i još mnogo toga.">
+	<meta name="keywords" content="DigiByte, DGB, Blockchain, Decentraliziran, Novčić, Imovina, Digitalan, Kripto, Valuta, DigiAssets, Digi-ID, Cyber sigurnost, Autentifikacija, Pametni ugovori, dApp, Plaćanja, Novčanik, Zajednica, Razmjena, Kupnja, Cijena, Službena">
+	<link rel="canonical" href="https://digibyte.org/hr/" />
+
+    <!-- Mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/vendor1g.css">
+    <link rel="stylesheet" href="../css/main3p.css">
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/pace.min.js"></script>
+	
+	<!-- RSS Feed
+    ================================================== -->
+    <link rel="alternate" type="application/rss+xml" title="DigiByte News" href="https://digibyte.org/news.xml" />
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../favicons/safari-pinned-tab.svg" color="#002352">
+    <meta name="apple-mobile-web-app-title" content="DigiByte">
+    <meta name="application-name" content="DigiByte">
+    <meta name="msapplication-TileColor" content="#002352">
+    <meta name="msapplication-config" content="../favicons/browserconfig.xml">
+    <meta name="theme-color" content="#002352">
+	
+	<!-- Twitter preview
+    ================================================== -->
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DigiByte Blockchain | DGB novčić | DigiAssets | Digi-ID" />
+    <meta name="twitter:description" content="DigiByte je open-source i visoko decentralizirani globalni blockchain sastavljen od DGB novčića, DigiAssets, Digi-ID i još mnogo toga." />
+    <meta name="twitter:image" content="https://digibyte.org/favicons/twitter.png" />
+	
+	<!-- Facebook preview
+    ================================================== -->
+	<meta property="og:image" content="https://digibyte.org/favicons/og-image.jpg">
+    <meta property="og:image:width" content="955">
+    <meta property="og:image:height" content="500">
+    <meta property="og:description" content="DigiByte je open-source i visoko decentralizirani globalni blockchain sastavljen od DGB novčića, DigiAssets, Digi-ID i još mnogo toga.">
+    <meta property="og:title" content="DigiByte Blockchain | DGB novčić | DigiAssets | Digi-ID">
+    <meta property="og:url" content="https://digibyte.org/">
+
+</head>
+
+<body id="top">
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+           <div><img src="../images/preloader.svg" loading="eager" alt="Preloader logo"></div>
+        </div>
+    </div> 
+	
+	<!-- Ticker
+    ================================================== -->
+	<header class="pticker">
+		<div class="row">
+			<div includeHTML="../langmenu/ticker.html"></div>
+		</div>
+	</header>
+	
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo smoothscroll" href="#top" onClick="homeButton()"><img src="../images/logo.svg" loading="eager" alt="Home">
+                </a>
+            </div>
+    
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li id="dbc"><a class="ssbc" href="#blockchain" title="Blockchain">Blockchain</a></li>
+					<li id="mbc"><a class="ssbcm" href="#blockchain" title="Blockchain">Blockchain</a></li>
+					<li><a class="smoothscroll" href="#currency" title="Valuta">Valuta</a></li>
+                    <li><a class="smoothscroll" href="#digiassets" title="DigiAssets">DigiAssets</a></li>
+                    <li><a class="smoothscroll" href="#digi-id" title="Digi-ID">Digi-ID</a></li>
+                    <li><a class="smoothscroll" href="#community" title="Zajednica">Zajednica</a></li>
+					<li><a class="smoothscroll" href="#downloads" title="Preuzimanja">Preuzimanja</a></li>
+				</ul>
+				
+					<div class="dropdown header-cta" id="langmenu">
+					   <a href="javascript:void(0)" onclick="lmenu()" class="dropbtn" id="lmenuname"></a>
+                       <div includeHTML="../langmenu/desktop.html"></div>
+                    </div>
+					
+					<div includeHTML="../langmenu/mobile.html"></div>
+            </nav>
+    
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
+
+    </header>
+
+
+    <!-- Home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="../images/hero-bg4.jpg" data-natural-width="3200" data-natural-height="1590" data-position-y="center" data-speed="0.0" data-z-index="1">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+				
+				<div class="mapps">
+				  <div class="mappscell">
+					<a class="smoothscroll" href="#software">
+				      <img class="mappsimg" src="../images/icons/software.svg" loading="eager" alt="Software Wallets">
+					</a>
+				  </div>
+				  <div class="mappscell">
+					<a class="smoothscroll" href="#hardware">
+				      <img class="mappsimg" src="../images/icons/hardware.svg" loading="eager" alt="Hardware Wallets">
+					</a>
+				  </div>
+				</div>
+
+                <div class="home-content__left">
+                    <h1>
+                    Sigurnije, Brže,<br/>
+                    Isplanirano za budućnost.
+                    </h1>
+    
+                    <h3>
+                    DigiByte je više od brze digitalne valute. To je inovativni blockchain koji se može koristiti za digitalnu imovinu, pametne ugovore, decentralizirane aplikacije i sigurnu provjeru autentičnosti.
+                    </h3>
+    
+                    <div class="home-content__btn-wrap">
+                        <a href="#socialmedia" class="btn btn--primary home-content__btn smoothscroll">
+                            Nauči više
+                        </a>
+						<a href="#docs" class="btn btn--primary home-content__btn smoothscrollup">
+                            dokumentacije
+                        </a>
+                    </div>
+					
+					<a href="../docs/infopaper.pdf" target="_blank" class="infopaper"><i class="fab fa-readme"></i> Pročitajte info paper</a>
+                </div>
+
+                <!-- <div class="home-content__right">
+                    <img src="../images/hero-app-screens-800.png" alt="DigiByte App" srcset="../images/hero-app-screens-800.png 1x, ../images/hero-app-screens-1600.png 2x">
+                </div> -->
+
+            </div>
+
+            <ul class="home-content__social">
+				<li><a href="https://dgbat.org" target="_blank">DGBAT</a></li>
+				<li><a href="https://www.dgbwiki.com" target="_blank">Wiki</a></li>
+                <li><a href="https://dgbsupport.digiassetx.com" data-lity>Podrška</a></li>
+		    	<li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Kontakt</a></li>
+            </ul>
+
+        </div>
+
+        <a href="#footer" class="home-scroll smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a> 
+
+    </section>
+
+
+    <!-- About
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+		<a href="#footer" class="home-scroll2 smoothscroll">
+            <span class="home-scroll__icon"></span>
+        </a>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Što čini DigiByte snažnijim od ostalih?
+                </h1>
+                <p class="lead">
+                    DigiByte je brzo rastući blockchain s open-source kodom, kreiran krajem 2013. godine, a objavljen početkom 2014. godine. Nakon <span class="year-diff"></span> godina razvoja, DigiByte je postao jedan od najsigurnijih, najbržih, najdužih i najdecentraliziranijih <a href="https://wikipedia.org/wiki/Unspent_transaction_output" target="_blank">UTXO</a> blockchaina u postojanju.
+                </p>
+            </div>
+        </div>
+
+        <div class="row wide about-desc" data-aos="fade">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Zaista decentralizirano.</h3>
+
+                    <p>
+                    DigiByte nikada nije bio financiran putem <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> ili značajne količine  <a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">predtiskanih novčića</a>. Ne postoji izvršni direktor ili tvrtka koja kontrolira DigiByte. To je volonterski utemeljen i globalno vođen projekt.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Sigurnije.</h3>
+
+                    <p>
+					DigiByte koristi 5 kriptografskih algoritama i <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">prilagođavanje težine u stvarnom vremenu</a> kako bi se spriječila zlonamjerna centralizacija rudarenja i fluktuiranje snage hash-a. Jedan od njih je Odocrypt koji se mijenja svakih 10 dana kao otpornost na ASIC.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Brže.</h3>
+
+                    <p>
+                    Blokovi DigiBytea javljaju se na svakih 15 sekundi, što je 40 puta brže od Bitcoina i 10 puta brže od Litecoin-a. Rana implementacija <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a>-a i rigidnost blockchaina omogućuje do <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank">1066</a> transakcija u lancu u sekundi uz zanemarljive troškove.
+                    </p>
+                </div>
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">Isplanirano za budućnost.</h3>
+
+                    <p>
+                    U proteklih <span class="year-diff"></span> godina DigiByte se više puta iskazao novostima i odvojio od ostalih, kao što su <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a> zaštita, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> rudarenje, <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank">SegWit</a> implementacija, <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a> algoritam, <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> protokol privatnosti, <a href="#digiassets" class="smoothscroll">DigiAssets</a> i <a href="#digi-id" class="smoothscroll">Digi-ID</a>.
+                    </p>
+                </div> 
+
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- What is DigiByte Video
+    ================================================== -->
+    <section class="s-about-how target-section" id="blockchain">
+
+        <div class="row">
+           <div class="col-full video-bg" data-aos="zoom-in">
+
+                <div class="shadow-overlay"></div>
+
+                <a class="btn-video" href="https://www.youtube.com/embed/bsHA7TBbbWE?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>
+                    <span class="video-icon"></span>
+                </a>
+
+                <div class="stats">
+                    <div class="item-stats">
+                        <span class="item-stats__num">
+                            Što je DigiByte?
+                        </span>
+                        <span class="item-stats__title">
+                            Pogledajte uvodni video
+                        </span>
+                    </div>
+                </div>
+		   
+           </div>
+        </div>
+	    
+    <!-- Blockchain
+    ================================================== -->
+	    
+        <div class="row process-wrap">
+			
+		<div class="section-header align-center has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Tako funkcionira DigiByte blockchain.
+                </h1>
+                <p class="lead">
+                    Tri su sloja najinovativniji dijelovi DigiByte blockchaina koji pružaju mrežnu infrastrukturu, sigurnost i komunikaciju kako bi funkcionirali s vrhunskom brzinom.
+                </p>
+            </div>
+        </div>
+
+        <div class="process" data-aos="fade">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Aplikacije / DigiAssets.</h3>
+                        <p>Gornji sloj je poput prodavaonice aplikacija s jasnim namjenama u stvarnom svijetu. Sve vrste digitalnih sredstava mogu se kreirati protokolom <a href="#digiassets" class="smoothscroll">DigiAssets</a> na vrhu DigiByte blockchaina. Decentralizirane aplikacije (dApps) mogu se graditi na vrhu DigiByte blockchaina. Također se pametni ugovori koji utječu na rigidnost i sigurnost DigiByte blockchaina mogu lako kodirati.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Digitalna imovina / Javna knjiga.</h3>
+                        <p>Srednji sloj osigurava sigurnost i administraciju. <strong>Digi</strong>talni <strong>bajt</strong> podataka, prikaz većih podataka ili jedinica koja drži vrijednost i ne može se krivotvoriti, duplicirati ili hakirati. Nepromjenljiva javna knjiga u koju su evidentirane sve transakcije DigiByte. DigiByte koristi <a href="https://www.dgbwiki.com/index.php?title=DigiByte_Mining_Breakdown" target="_blank">pet proof of work</a> algoritama za sigurnost. Novi DigiByte potječe samo iz rudarenja.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Osnovni protokol / Globalna mreža.</h3>
+                        <p>Donji sloj osigurava komunikacijske i radne postupke. Komunikacija na globalnoj mreži DigiBytea se vrši preko "low-level" čvorova. Tisuće ljudi pokreću DigiByte softver širom planete. Bilo koji poslužitelj, računalo, tablet ili mobilni telefon spojen na DigiByte mrežu postaje čvor koji pomaže prenijeti transakcije.
+			            <a href="https://www.dgbwiki.com/index.php?title=Port_forwarding_process_for_your_DigiByte_node" target="_blank">Počnite doprinositi DigiByte blockchainu na optimalan način</a>.
+			            </p>
+		            </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Otvoreni izvor / Dopušteno.</h3>
+                        <p>Baš kao i na <a href="https://github.com/DigiByte-Core/DGBio" target="_blank">ovoj web stranici</a>, DigiByte blockchain je potpuno otvoreni izvor i besplatan za upotrebu izdan pod <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT licencom</a>, što vam daje snagu za pokretanje i mijenjanje softvera. Transparentnost omogućuje neovisnu provjeru binarnih datoteka i odgovarajućeg izvornog koda.<br />
+						<a href="https://github.com/DigiByte-Core/digibyte" target="_blank">DigiByte protokol na GitHub-u</a>.
+						<br />
+						<a href="https://github.com/DigiByte-Core" target="_blank">Razvoj DigiByte Core na GitHub-u</a>.
+                        </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="row s-stats" data-aos="fade">
+		      <div class="stitle">Statistike blokova DigiByte</div>
+		   <div class="block-1-3">
+
+              <div class="col-block stats__col">
+                  <div class="stats__count" id="years-surpassed">0</div>
+                  <div class="stats_text"><a href="https://www.dgbwiki.com/index.php?title=DigiByte_History" target="_blank">godina</a></div>
+              </div>
+			   
+			   <div class="col-block stats__col">
+                  <div class="stats__count" id="block-count" >0</div>
+                  <div class="stats_text"><a href="https://chainz.cryptoid.info/dgb/" target="_blank">blokova</a></div>
+              </div>
+			   
+              <div class="col-block stats__col">
+                  <div class="stats__count" id="node-download-count">0</div>
+                  <div class="stats_text"><a href="https://www.dgbwiki.com/index.php?title=DigiByte_Release_Stats" target="_blank">preuzimanja čvorova</a></div> 
+              </div>
+
+           </div>
+		   </div>
+
+		   <div class="testimonials-wrap" data-aos="fade" id="history">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Povijest DigiByte-a.</h2>
+					<p class="lead">
+                    Otkrijte glavne razvojne prekretnice DigiByte blockchaina.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/development.png" loading="lazy" width="72" height="72" alt="Development" class="testimonials__avatar">
+                        
+                        <p>Počeli smo raditi s punim radnim vremenom kako bismo izgradili budućnost DigiByte blockchaina.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Listopad, 2013</span>
+				            <a href="https://twitter.com/jaredctate/status/1190673943876841475" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/launch.png" loading="lazy" width="72" height="72" alt="Launch" class="testimonials__avatar">
+                        
+                        <p>Prvi blok je uspješno izrudaren i DigiByte blockchain službeno kreće.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10.Siječnja, 2014</span>
+							<a href="https://github.com/digibyte/digibyte/blob/master/src/chainparams.cpp#L40" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digishield.png" loading="lazy" width="72" height="72" alt="DigiShield" class="testimonials__avatar">
+                        
+                        <p>DigiShield aktiviran da koristi pravovremenu težinu balansiranu sukladno fluktuacijama hash-a.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28.Veljače, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multialgo.png" loading="lazy" width="72" height="72" alt="MultiAlgo" class="testimonials__avatar">
+                        
+                        <p>MultiAlgo aktiviran da koristi 5 različitih algoritama radi prevencije centralizacije rudarenja.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">1.Rujna, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/multishield.png" loading="lazy" width="72" height="72" alt="MultiShield" class="testimonials__avatar">
+                        
+                        <p>MultiShield aktiviran da produži DigiShield zaštitu kroz postojećih 5 algoritama za rudarenje.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">10.Prosinca, 2014</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=MultiShield" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digispeed.png" loading="lazy" width="72" height="72" alt="DigiSpeed" class="testimonials__avatar">
+                        
+                        <p>DigiSpeed aktiviran da smanji vrijeme potrebno za rudarenje jednog bloka na 15 sekundi zbog bržih transakcija.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">4.Prosinca, 2015</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/segwit.png" loading="lazy" width="72" height="72" alt="SegWit" class="testimonials__avatar">
+                        
+                        <p>SegWit aktiviran prije Bitcoin-a i Litecoin-a za efektivnu korisnost veličine bloka.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">28.Travanj, 2017</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiSync" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digi-id.png" loading="lazy" width="72" height="72" alt="Digi-ID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID stavljen u pogon kako bi se olakšao pristup korisnika web stranicama i više.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Svibnja, 2018</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Digi-ID" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassets.png" loading="lazy" width="72" height="72" alt="DigiAssets" class="testimonials__avatar">
+                        
+                        <p>DigiAssets lansiran da dozvoli decentralizirano izdavanje imovine i više.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Travnja, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiAssets" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/dandelion.png" loading="lazy" width="72" height="72" alt="Dandelion++" class="testimonials__avatar">
+                        
+                        <p>Dandelion++ protokol implementiran koji sprječava lociranje IP adresa i fizičke lokacije. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">3.Svibnja, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+			
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/odocrypt.png" loading="lazy" width="72" height="72" alt="Odocrypt" class="testimonials__avatar">
+                        
+                        <p>Odocrypt aktiviran koji se mjenja svakih 10 dana za superioran ASIC otpor. 
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">21.Srpnja, 2019</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">		
+                        <img src="../images/avatars/roadmap.png" loading="lazy" width="72" height="72" alt="Roadmap" class="testimonials__avatar">
+                        
+                        <p>Popis predmeta koje želimo učiniti za DigiByte. Pregledajte i počnite doprinositi.
+						</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Plan</span>
+                            <a href="https://github.com/DigiByte-Core/DigiByte-Pipeline" target="_blank" class="testimonials__link">Nauči više</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+
+
+    <!-- Currency
+    ================================================== -->
+    <section id="currency" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Digitalna valuta koju<br/>ćete voljeti svim srcem.
+                </h1>
+                <p class="lead">
+                    DigiByte (DGB) je veoma skalabilna peer-to-peer digitalna valuta koja omogućava najbrže transakcije u industriji uz zanemarivo malu cijenu transakcije. DigiByte je najbolji način plaćanja.
+                </p>
+            </div>
+			<a class="btn btn--primary playb" href="https://www.youtube.com/embed/RSEijQXSfZQ?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Uči gledanjem</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-phone-laptop"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Jednostavan za korištenje.</h3>
+                    <p>Priviknuti se na korištenje DigiByte-a je lakše nego slanje SMS poruke.
+                       Možete slati i primati DigiByte koristeći uređaje koje već poznajete i volite. Sve što trebate je instalirati <a class="smoothscroll" href="#downloads">DigiByte supported wallet</a> onda kliknete skeniraj, skenirate QR kod i pošaljete DigiByte. Lagano kao 1..2..3.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Nije ICO.</h3>
+                    <p>DigiByte nikada nije bio financiran kroz <a href="https://wikipedia.org/wiki/Initial_coin_offering" target="_blank">ICO</a> ili određeni broj već izrudarenih novčića (<a href="https://www.dgbwiki.com/index.php?title=DigiByte_History#The_Launch" target="_blank">0% ostaje</a>). Ne postoji direktor ili kompanija koja kontrolira DigiByte blockchain. <a class="smoothscrollup" href="#jared">Osnivač</a>, <a class="smoothscrollup" href="#developers">developeri</a> i <a class="smoothscroll" href="#community">zajednica</a> su neplaćeni volonteri i to eliminira rizik od bankrota.
+                    </p>
+                </div>
+            </div>
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-tachometer-alt-fastest"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Brže.</h3>
+                    <p>DigiByte transakcije su potvrđene u otprilike 15 sekundi, što je čak 40 puta brže od Bitcoin-a i 10 puta brže od Litecoin-a. <a href="https://wikipedia.org/wiki/SegWit" target="_blank">SegWit</a> omogućuje do <a href="https://www.dgbwiki.com/index.php?title=DigiSpeed" target="_blank">1066</a> lančanih transakcija po sekundi a zanemariva cijena transakcije čini DigiByte idealnim svakodnevnim načinom plaćanja.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>    
+                <div class="item-feature__text">
+                    <h3 class="item-title">Uvijek siguran.</h3>
+                    <p>DigiByte je napravljen na principu tehnologije koja se ne može dešifrirati po uzoru na Bitcoin blockhain a isto tako implementira napredne novitete poput <a href="https://www.dgbwiki.com/index.php?title=DigiShield" target="_blank">DigiShield</a> čuvara, <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> rudaranje i <a href="https://www.dgbwiki.com/index.php?title=Odocrypt" target="_blank">Odocrypt</a> algoritam. Sadrži i <a href="https://www.dgbwiki.com/index.php?title=Dandelion%2B%2B" target="_blank">Dandelion++</a> protokol privatnosti koji vam pomaže da ostanete sigurni tako što vam sakriva IP, a samim time i vašu fizičku lokaciju. <a href="https://www.dgbwiki.com/index.php?title=What_makes_DigiByte_More_Secure%3F" target="_blank">Nauči više</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-digging"></i>
+                </div> 
+                <div class="item-feature__text">
+                    <h3 class="item-title">Nastaje rudarenjem.</h3>
+                    <p>DigiByte je 100% <a href="https://wikipedia.org/wiki/Proof_of_work" target="_blank">Proof of Work</a> blockchain koji može biti rudaren sa 5 algoritama koje zovemo Sha256, Scrypt, Skein, Qubit i Odocrypt. <a href="https://www.dgbwiki.com/index.php?title=MultiAlgo" target="_blank">MultiAlgo</a> rudarenje doprinosi decentralizaciji, sigurnosti mreže i daje vam slobodu da koristite razni hardver kao što su ASIC, FPGA ili GPU. <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">Nauči više</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Upravljačke jedinice.</h3>
+                    <p>Uspoređeno sa 21 milion Bitcoina, 21 milijarda DigiByte (omjer 1000:1 naspram BTC) su dizajnirani da budu spremni za masovnu primjenu. DigiByte blok nagrada se smanjuje za 1% svaki mjesec umjesto da se prepolovi svake 4 godine. Svih 21 milijardu DigiByte-a biti će izrudareno do 2035. godine. Nakon 2035, rudari će se oslanjati isključivo na cijenu transakcije. <a href="https://www.dgbwiki.com/index.php?title=Why_so_many_coins%3F_21Billion" target="_blank">Nauči više</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="testimonials-wrap" data-aos="fade" id="ecosystem">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Brzi odabir od stranje DigiByte Eko sistema.</h2>
+					<p class="lead">
+                    Sve mjenjačnice i servisi koji podržavaju DigiByte mogu se naći na <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiByte Wiki</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/bitvavo3.png" loading="lazy" width="72" height="72" alt="Bitvavo" class="testimonials__avatar">
+                        
+                        <p>Bitvavo je digitalna razmjena imovine koja omogućuje kupnju, prodaju i trgovinu DigiByte-a u EU.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitvavo</span>
+                            <a href="https://bitvavo.com" target="_blank" class="testimonials__link" rel="noopener">bitvavo.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/kriptomat.png" loading="lazy" width="72" height="72" alt="Kriptomat" class="testimonials__avatar">
+                        
+                        <p>Najlakši način za kupnju DigiByte-a i još 300+ kriptovaluta uz različite metode plaćanja.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Kriptomat</span>
+                            <a href="https://kriptomat.io/hr/kriptovalute/digibyte/kako-kupiti-digibyte/" target="_blank" class="testimonials__link" rel="noopener">kriptomat.io</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/binance.png" loading="lazy" width="72" height="72" alt="Binance" class="testimonials__avatar">
+                        
+                        <p>Binance je jedna od najvećih i najmoćnijih platformi za kripto trgovanje koja nudi DigiByte opcije trgovanja.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Binance</span>
+                            <a href="https://www.binance.com" target="_blank" class="testimonials__link" rel="noopener">binance.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/okex2.png" loading="lazy" width="72" height="72" alt="Okex" class="testimonials__avatar">
+                        
+                        <p>OKX je jedna od vodećih burza kriptovaluta koja nudi DigiByte trgovanje.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">OKX</span>
+                            <a href="https://www.okx.com" target="_blank" class="testimonials__link" rel="noopener">okx.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/kucoin2.png" loading="lazy" width="72" height="72" alt="KuCoin" class="testimonials__avatar">
+                        
+                        <p>KuCoin je jedna od najnaprednijih berza kriptovaluta za trgovinu DigiByteom.</p>
+                        
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KuCoin</span>
+                            <a href="https://www.kucoin.com" target="_blank" class="testimonials__link" rel="noopener">kucoin.com</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel2.png" loading="lazy" width="72" height="72" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel je crypto u crpypto, novčanik u novčanik, mjenjačnica trampe koja podržava projekt zajednice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link" rel="noopener">changeangel.io</a> - <a href="https://changeangel.io/buy-dgb" target="_blank" class="testimonials__link" rel="noopener">kupite dgb</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			
+			<div class="lrmargin25" data-aos="fade">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Napomena za mjenjačnice</strong><br>Razmjene uvedene ovdje ili na <a href="https://coinmarketcap.com/currencies/digibyte/markets/" target="_blank">CoinMarketCap</a> samo su informativne svrhe i nisu povezane s DigiByte zajednicom. Bilo koja razmjena <a href="../docs/integrationguide.pdf" target="_blank">može popisati DigiByte</a> bez odobrenja. Prije upotrebe uvijek napravite vlastita istraživanja, a zatim pohranite svoj DGB na <a class="smoothscroll" href="#downloads">osobni novčanik</a>.
+                </p>
+		      </div>
+		
+	        </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DigiAssets
+    ================================================== -->
+    <section id="digiassets" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                   Pojednostavljen način<br/>za stvaranje digitalne imovine.
+                </h1>
+                <p class="lead">
+                    DigiAssets je siguran, skalabilan sloj na vrhu DigiByte blockchaina koji omogućava decentralizirano izdavanje imovine, tokena, pametnih ugovora, digitalnog identiteta i više.
+                </p>
+            </div>
+			<a class="btn btn--primary playb" href="https://www.youtube.com/embed/JoqOn5gTiqE?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Uči gledanjem</a>
+        </div>
+
+        <div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-photo-video"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Beskonačne mogućnosti.</h3>
+                    <p>DigiAssets može biti korišten da bi sigurno predstavljali sve što nađemo u fizičkom svijetu. Od opipljive imovine poput nekretnina ili auta, do rijetkih digitalnih umjetnina. Potpisani ugovori poput djela i medicinskih računa mogu biti zaštićeni.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Raste samopouzdano.</h3>
+                    <p>DigiAssets kao ekosistem i platforma je već zainteresirala stranke koje planiraju ili već grade platforme u sektoru nekretnina, financija, pošiljki, identiteta, prodajnih mjesta, utrka, trgovine, zdravstva, lanca dobavljača, vlada i više.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-badge-check"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">Solidna tehnologija.</h3>
+                    <p>DigiAssets ima moć jedinstvenih aspekata uistinu decentraliziranog blockchain-a koji radi samo na DigiByte blockchainu. Ovo omogućuje DigiAssets da bude sigurniji, skalabilniji i decentraliyiraniji nego bilo koja druga platforma na tržištu.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Započni s DigiAssets.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Naučite protokol.</h3>
+                        <p>Otkrijte open-source DigiAssets protokol specifikacije za izdavanje i transakcije digitalne imovine na DigiByte Blockchainu. <a href="https://github.com/DigiByte-Core/DigiAssets-Protocol-Specifications/wiki" target="_blank">DigiAssets Protokol na GitHubu</a>.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Izdajte Imovinu.</h3>
+                        <p>Niste developer? Definitovno nema problema! Svatko može lako izdati DigiAsset koristeći jedan od dostupnih alata bez tehničkog predznanja o protokolu. <a class="smoothscrollup" href="#digiassetservices">DigiAssets podržani servisi</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Pohrani / Trguj.</h3>
+                        <p>Zanima vas kako koristiti DigiAssets? Koristite aplikacije <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> za slanje, prihvaćanje i pohranu imovine ili istraživanje <a class="smoothscrollup" href="#digiassetservices">DigiAssets podržani servisi</a> za kupoprodaju ili trampu DigiAssets-a.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Trebate još pomoći?</h3>
+                        <p>Trebate još pomoći oko DigiAssets-a? Slobodno se pridružite DigiByte Developers grupi na Telegramu i pitajte vaše pitanje ili podjelite vašu ideju. <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developeri Grupa</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+	    </div>
+		
+		<div class="testimonials-wrap" data-aos="fade" id="digiassetservices">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Vidi DigiAssets u akciji.</h2>
+					<p class="lead">
+                    Pronađite DigiAssets podržane servise da iskusite DigiAssets.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/digiassetx.png" loading="lazy" width="72" height="72" alt="DigiAssetX" class="testimonials__avatar">
+                        
+                        <p>digiassetX je nova DigiByte DigiAsset mjenjačnica i servis za kreaciju DigiAsset-a.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Dolazi Uskoro</span>
+                            <a href="https://digiassetx.com/" target="_blank" class="testimonials__link">digiassetx.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+    </section>
+	
+	
+	<!-- Digi-ID
+    ================================================== -->
+    <section id="digi-id" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Provjera autentičnosti na najvišoj razini.
+                </h1>
+                <p class="lead">
+                    Digi-ID je sigurnosni protokol ugrađen u DigiByte  blockchain tehnologiju koji omogućava korisnicima da se lagano prijave na web stranice, aplikacije i čak na internet stvari.
+                </p>
+            </div>
+			<a class="btn btn--primary playb" href="https://www.youtube.com/embed/pLrQycud5GI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Uči gledanjem</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Lagana provjera autentičnosti.</h3>
+                    <p>DigiID eliminira korisničko ime, šifru i dva faktora potvrde za provjeru autentičnosti. Zbog toga što Digi-ID koristi kriptografiju javni / privatni ključa, ne postoje korisnička imena ili šifre izložene riziku. Ova metoda ne samo da štiti korisnika, nego isto tako štiti i servis koji korisnik koristi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Savršena sigurnost.</h3>
+                    <p>Digi-ID ne pohranjuje nikakve podatke o korisniku na blockchain. Ovo osnažuje osiguranje dok isto tako povećava samopouzdanje korisnika da njihovi podatci nisu praćeni ili pod rizikom radi nemarnosti drugih. Ne postoji vanjska točka pa samim time hakeri nemaju što napadati kako bi iskoristili vašu platformu.</p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature">
+                <div class="item-feature__icon">
+                    <i class="fas fa-smile-plus"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Jednostavno i besplatno.</h3>
+                    <p>Digi-ID je kompletno besplatan! Ne postoje porezi, pretplate ili troškovi održavanja. Ali troškovi su mu druga najbolja opcija. Prva je ta da se u skladu s time da DigiByte stavlja sigurnost na prvo mjesto, Digi-ID je sigurniji, a isto tako i jednostavnija metoda s kojom se prijavljujete na web stranice,aplikacije i više.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+		
+		<div class="lrmargin25" data-aos="fade">
+			
+		   <h1 align="center">Radi ovako.</h1>
+			
+		   <div class="process">
+                <div class="process__steps block-1-2 block-tab-full group">
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Generacija.</h3>
+                        <p>Web stranica, aplikacija ili proiyvod generira unikatni Digi-ID QR kod i pokaže ga.
+                        </p> 
+                    </div>
+
+                    <div class="col-block step">
+                        <h3 class="item-title">Skeniranje.</h3>
+                        <p>Korisnik skenira QR kod kroz <a class="smoothscrollup" href="#dgbmobile">DigiByte Mobile</a> wallet ili bilo koju drugu <a class="smoothscroll" href="#digidapps">aplikacuju koja podržava Digi-ID</a>.
+                        </p> 
+                    </div>
+               
+                    <div class="col-block step">
+                        <h3 class="item-title">Provjera autentičnosti.</h3>
+                        <p>Korisnik potvrđuje autentičnost tako što unese pin ili skenira otisak prsta / lice.
+                        </p> 
+                    </div>
+					
+					<div class="col-block step">
+                        <h3 class="item-title">Potvrda.</h3>
+                        <p>Digi-ID šalje kriptografski potpisan zahtjev nazad i korisnik je uspješno prijavljen.
+                        </p> 
+                    </div>
+
+                </div>
+              </div>
+			
+          </div>
+		
+		  <div data-aos="fade">
+		
+		  <h1 class="align-center">Često postavljana pitanja.</h1>
+		
+		  <div class="row features block-1-2 block-m-1-2">
+			
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Gdje naći više dokumentacije?</h3>
+                    <p>Najbolje mjesto za početi je <a href="https://www.digi-id.io" target="_blank">Digi-ID.io</a>. Ako želite znati više o detaljima i prednostima Digi-ID-a, možete pročitati  <a href="https://www.digi-id.io/faq" target="_blank">korisnički vodič</a>, <a href="https://www.digi-id.io/vendor-info.html" target="_blank">vvodič za prodavače</a> i <a href="https://www.digi-id.io/integration.html" target="_blank">vodič za integraciju</a>. Ako vas zanima medijski kid, molimo pogledajte u <a href="../docs/digiidintro.pdf" target="_blank">intro list</a> i <a href="https://github.com/DigiByte-Core/digibyte-logos/tree/master/Digi-ID%20Logos/Digi-ID_logos" target="_blank">logo-i</a>.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Gdje su arhivi integracije?</h3>
+                    <p>Pošto je Digi-ID open source projekat, više skladišta može se naći na GitHub kao što je <a href="https://github.com/DigiByte-Core?q=digiid" target="_blank">DigiByte razvoj jezgre</a>, <a href="https://github.com/mctrivia?tab=repositories&q=digiid" target="_blank">Matthew Cornelisse</a> i <a href="https://github.com/evilmouse69/Digi-ID-for-WHMCS/" target="_blank">WHMCSSnow</a>. Ako trebate više pomoći molimo pridružite se <a href="https://t.me/DigiByteDevelopers" target="_blank">DigiByte Developers</a> na Telegram-u.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Mogu li integrirati Digi-ID bez programiranja?</h3>
+                    <p>Ako niste deveopler, možda želite koristiti rješenja za integraciju za vašu web stranicu ili proizvod. <a href="https://github.com/digiassetX/express-digiid" target="_blank">digiassetX</a>  pruža nodejs dodatak za jednostavnu integraciju. Isto tako možete koristiti <a href="https://wordpress.org/plugins/digi-id-authentication/" target="_blank">WordPress plugin</a> za WordPress platforme.
+                    </p>
+                </div>
+            </div>
+			  
+			<div class="col-block item-feature">
+                <div class="item-feature__text">
+                    <h3 class="item-title">Are there other Digi-ID apps?</h3>
+                    <p>Naravno! Digi-ID je platforma koja vrtoglavo raste. Mnogo samostalnih aplikacija za potvrdu autentičnosti i Digi-ID podržani novčanici mogu biti pronađeni u <a class="smoothscroll" href="#digidapps">Preuzimanja</a> sekciji.
+                    </p> 
+                    </div>
+
+                </div>
+           </div>
+			
+           </div>
+		
+		   <div class="testimonials-wrap" data-aos="fade" id="digidservices">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Pogledaj Digi-Id u akciji.</h2>
+					<p class="lead">
+                    Pronađite neke Digi-ID podržane servise da iskusite besprijekornu provjeru autentičnosti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel2.png" loading="lazy" width="72" height="72" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel je crypto u crpypto, novčanik u novčanik, mjenjačnica trampe koja podržava projekt zajednice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a> - <a href="https://changeangel.io/buy-dgb" target="_blank" class="testimonials__link">buy dgb</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/hashalt.png" loading="lazy" width="72" height="72" alt="Hash Altcoin" class="testimonials__avatar">
+                        
+                        <p>Hash Altcoin je rudarska kompanija koja proizvodi FPGA uređaje za iskustvo rudarenja uz veliku stabilnost.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Hash Altcoin</span>
+                            <a href="https://www.hashaltcoin.com/en/" target="_blank" class="testimonials__link">hashaltcoin.com</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div> 
+
+        </div>
+
+    </section>
+	
+	
+	<!-- Community
+    ================================================== -->
+    <section id="community" class="s-pricing target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Najstrastvenija<br/>zajednica ikada!
+                </h1>
+                <p class="lead">
+                    Desetci tisuća volontera diljem svijeta pomogli su da DigiByte na bezbroj načina kroz godine postane ono što je danas.Zaista je fenomenalan pokret. Toplo vas pozdravljamo da nam se pridružite!
+                </p>
+            </div>
+		    <a class="btn btn--primary playb" href="https://www.youtube.com/embed/zODI3S9ZdUI?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Uči gledanjem</a>
+        </div>
+		
+		<div class="row features block-1-3 block-m-1-2" data-aos="fade">
+
+            <div class="col-block item-feature" id="dgbat">
+                <div class="item-feature__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Svijest Tim.</h3>
+                    <p>DGBAT je zajednicom pokrenuta inicijativa. Vodi ih tim, čiji članovi naizmjenično rukovode timovima preko socijalnih mreža, edukacije, pisaca i developera. Cilj im je promovirati DigiByte  kroz edukaciju, outreach i marketinških kampanja.<br> <a href="https://dgbat.org" target="_blank">Nauči više</a> - <a href="https://dgbat.org/#donate" target="_blank">Donacije</a> - <a href="mailto:info@dgbat.org">Kontakt</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-feature" id="developers">
+                <div class="item-feature__icon">
+                    <i class="fas fa-code"></i>
+                </div>  
+                <div class="item-feature__text">
+                    <h3 class="item-title">DigiByte Developeri.</h3>
+                    <p>Svatko tko radi na DigiByte-u je neplaćeni volonter. Kreni pridonositi DGB razvoju danas ili izgradi vlastitu aplikaciju na DigiByte blockchain-u.
+					<br />	
+					<a href="https://gitter.im/DigiByte-Core/protocol" target="_blank">Programeri DigiByte na Gitteru</a>.
+					<br />
+					<a href="https://github.com/digibyte-core/digibyte" target="_blank">Osnovni protokol DigiByte na GitHub-u</a>.
+                    </p>
+                </div>
+            </div>
+			
+        </div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="socialmedia">
+                <div class="item-feature__icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+		    <div class="item-feature__text">
+                    <h3 class="item-title">Socijalne mreže.</h3>
+                    <p>FPratite DigiByte kroz sve primarne platforme socijalnih mreža kako bi ostali ažurirani sa svim DigiByte vjestima i djelite postove s vašim prijateljima da nam pomognete da se i naš glas čuje diljem svijeta.
+                    </p>
+					<p class="item-feature__icon">
+					   <a class="rightpad20" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter-square zoom"></i></a>
+					   <a class="rightpad20" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook zoom"></i></a>
+					   <a class="rightpad20" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin zoom"></i></a>
+					   <a class="rightpad20" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram zoom"></i></a>
+					   <a class="rightpad20" href="https://www.youtube.com/c/JosiahSpackmanDigiByte/" target="_blank"><i class="fab fa-youtube zoom"></i></a>
+					   <a class="rightpad20" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit zoom"></i></a>
+					   <a href="https://medium.com/@DigiByte_Official" target="_blank"><i class="fab fa-medium-m zoom"></i></a>
+                    </p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="telegram">
+                <div class="item-feature__icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Telegram grupe.</h3>
+                    <p><a href="https://telegram.org" target="_blank">Telegram</a> je najpopularniji i najjednostavniji način da pristupite globalnoj DigiByte zajednici. Molimo vas da se pridružite grupama koje vas zanimaju sa liste <a href="https://t.me/OfficialDigiByteGroups" target="_blank">all DigiByte groups</a>.
+					</p>
+					<p>
+					<a class="telegramicon" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Upozorenja</a>
+					<a class="telegramicon" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Disukusije</a>
+					<a class="telegramicon" href="https://dgbsupport.digiassetx.com" data-lity><i class="fab fa-telegram-plane"></i> Podrška</a>
+					<a class="telegramicon" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Developeri</a>
+					<a class="telegramicon" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Rudarenje</a>
+					<a class="telegramicon" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Marketing</a>
+					<a class="telegramicon" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Špekulacije</a>
+					<a class="telegramiconlast" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Prevodi</a>
+					</p>
+                </div>
+            </div>
+		
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 topcom" data-aos="fade">
+		
+			<div class="col-block item-feature" id="wiki">
+                <div class="item-feature__icon">
+                    <i class="fab fa-wikipedia-w"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">The DigiByte Wiki.</h3>
+                    <p>The <a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a>  je online enciklopedija napravljena od zajednice za zajednicu. Sadrži koriste i ažurirane podatke kao što su <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Ecosystem" target="_blank">DigiByte Ekosistem</a> i <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank">kako to vodiči</a>. Svatko može pozitivno pridonjeti Wiki tako da kreira besplatni račun i dodaje ili ažurira informacije na DigiByte Wiki. <strong>Upozorenje</strong> <i class="fas fa-exclamation-circle"></i> Izbjegavajte besramnu samopromociju i referral linkove.</p>
+					<p class="jared">
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Technical_Specifications" target="_blank"><i class="fab fa-wikipedia-w"></i> Tehnički</a> 
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Framework" target="_blank"><i class="fab fa-wikipedia-w"></i> Framework</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Accomplishments" target="_blank"><i class="fab fa-wikipedia-w"></i> Dostignuća</a>
+					</p>
+                </div>
+            </div>
+		
+			<div class="col-block item-feature" id="jared">
+                <div class="item-feature__icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="item-feature__text">
+                    <h3 class="item-title">Upoznajte tvorca DigiByte-a.</h3>
+                    <p><a href="https://www.youtube.com/embed/S8eMsq8qp7Y?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity>Jared Tate</a> je osnivač i kreator DigiByte blockchain-a. Jared je posvetio svoje puno radno vrijeme razvoju DigiByte-a od Listopada 2013. Pozvan je na <a href="https://www.youtube.com/embed/Wl0RUau9roE?autoplay=1&iv_load_policy=3&rel=0" data-lity>MIT</a>, <a href="https://twitter.com/digibytecoin/status/982696268928618496" target="_blank">Harvard</a> i <a href="https://twitter.com/jaredctate/status/1217178454229225473" target="_blank">US Capitol</a> da govori o blockchain tehnologiji. Isto tako je autor knjige <a href="https://www.amazon.com/Blockchain-2035-Digital-DNA-Internet-ebook/dp/B07ZVCC36Q" target="_blank">Blockchain 2035 The Digital DNA of Internet 3.0</a>, koja je prva knjiga napisana od nekoga tko je tvorac blockchain-a.
+                    </p>
+					<p class="jared">
+					<a class="telegramicon" href="https://twitter.com/jaredctate" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> 
+					<a class="telegramicon" href="https://www.linkedin.com/in/jaredctate" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="telegramicon" href="https://www.dgbwiki.com/index.php?title=Original_author(s)" target="_blank"><i class="fab fa-wikipedia-w"></i> Biografija</a>
+					</p>
+                </div>
+            </div>
+			
+		</div>
+	    
+			 <div class="lrmargin25" data-aos="fade">
+				 
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Napomena za Socijalne Medije</strong><br>Osobno mišljenje, uvjerenja i perspektive izražene od strane Jared Tate-a, DigiBzte Core Team, DigiByte Fundacija & DigiByte Awareness Team ne odražavaju nužno osobno mišljenje i perspektivu zajednice.
+                </p>
+		      </div>
+		
+	         </div>
+		
+		<div class="testimonials-wrap" data-aos="fade" id="contribute">
+	    
+	      <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2">Doprinosite DigiByte zajednici.</h2>
+					<p class="lead">
+                    <a href="https://www.dgbwiki.com/index.php?title=Donate" target="_blank">Donirajte DigiByte organizacijama</a> ili koristite usluge u nastavku da biste nas podržali.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="../images/avatars/changeangel2.png" loading="lazy" width="72" height="72" alt="Changeangel" class="testimonials__avatar">
+                        
+                        <p>Changeangel je crypto u crpypto, novčanik u novčanik, mjenjačnica trampe koja podržava projekt zajednice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Changeangel</span>
+                            <a href="https://changeangel.io" target="_blank" class="testimonials__link">changeangel.io</a> - <a href="https://changeangel.io/buy-dgb" target="_blank" class="testimonials__link">buy dgb</a>
+                        </div>
+                    </div>
+                    
+                </div>
+	    
+	        </div>
+	  </div>
+	    
+	</section>
+
+
+   <!-- Downloads
+    ================================================== -->
+    <section id="downloads" class="s-download target-section">
+	    
+	<!--- Downloads DigiByte Wallets
+    ================================================== -->
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Izaberite aplikaciju.
+                </h1>
+                <p class="lead">
+                    Odaberite aplikaciju za slanje, primanje i pohranu za vaše DigiByte & DigiAssets ili sigurno potvrdite koristeći Digi-ID.<br /><a href="https://github.com/DigiByte-Core/digibyte/releases/" target="_blank">Trenutna verzija DigiByte Jezgre v7.17.3</a>
+                </p>
+            </div>
+			<a class="btn wb playb" href="https://www.youtube.com/embed/sRxpgJkvRK8?autoplay=1&loop=1&modestbranding=1&iv_load_policy=3&rel=0&showinfo=0" data-lity><i class="fas fa-play"></i> Uči gledanjem</a>
+        </div>
+		
+		<div data-aos="fade">
+			
+		<h1 class="downtitle align-center">Aplikacije razvijene od strane DigiByte zajednice.</h1>
+			
+		<div class="item-feature__text max830 align-center">
+		<p>DigiByte Core sadrži potpunu kopiju blockchaina i gradi okosnicu mreže. No potrebno mu je puno prostora na disku, velika potrošnja memorije i dugo vrijeme sinkronizacije. Ako niste iskusan korisnik, možda biste trebali koristiti pojednostavljeni <a class="smoothscroll" href="#software">softverski novčanik</a>.</p>
+		</div>
+		
+		<div class="row features block-1-2 block-m-1-2 block-tab-full stack max880">
+
+            <div class="col-block item-plan" id="dgbcore">
+                <div class="item-plan__block"> 
+					
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Core</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><i class="fas fa-check blue"></i> Puna validacija</li>
+			                <li><i class="fas fa-check blue"></i> Podrška mreže</li>
+                            <li><i class="fas fa-check blue"></i> Visoka stabilnost</li>
+                            <li><i class="fas fa-check blue"></i> SegWit podrška</li>
+                        </ul>
+						
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.3/digibyte-7.17.3-win64-setup-signed.exe" target="_blank"><i class="fab fa-windows zoom"></i></a>
+					       <a class="rightpad25" href="https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.3/digibyte-7.17.3-osx-unsigned.dmg" target="_blank"><i class="fab fa-apple zoom"></i></a>
+					       <a href="https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.3/digibyte-7.17.3-x86_64-linux-gnu.tar.gz" target="_blank"><i class="fab fa-linux zoom"></i></a>
+			            </div>
+
+			            <div class="supportline align-center">
+					       <p class="item-plan__per">Dostupno na Windows, macOS & Linus (samo 64 Bit verzija)</p>
+			            </div>
+						
+			    	    <div class="supportline align-center pt2">
+						   <a href="https://dgbsupport.digiassetx.com" data-lity><i class="fas fa-user-headset"></i> Podrška</a><br><a href="https://www.dgbwiki.com/index.php?title=Running_a_full_node" target="_blank"><i class="fas fa-info-circle"></i>  Pokreni puni čvor</a>
+						</div>
+                    </div>  
+                
+                </div>
+            </div>
+
+           <div class="col-block item-plan" id="dgbmobile">
+                <div class="item-plan__block"> 
+
+                    <div class="item-plan__top-part">
+                        <p class="item-plan__price">DigiByte Mobile</p>
+                    </div>
+
+                    <div class="item-plan__bottom-part">
+                        <ul class="item-plan__features">
+                            <li><i class="fas fa-check blue"></i> SPV novčanik</li>
+                            <li><i class="fas fa-check blue"></i> Digi-ID podrška</li>
+                            <li><i class="fas fa-check blue"></i> DigiAssets podrška</li>
+			                <li><i class="fas fa-check blue"></i> Podrška za više jezika</li>
+                        </ul>
+						<div class="appsicon align-center">
+					       <a class="rightpad25" href="https://apps.apple.com/app/digibyte/id1378061425" target="_blank"><i class="fab fa-app-store-ios zoom"></i></a>
+					       <a href="https://play.google.com/store/apps/details?id=io.digibyte" target="_blank"><i class="fab fa-google-play zoom"></i></a>
+			            </div>		
+
+			    		 <div class="supportline align-center">
+					       <p class="item-plan__per">Dostupno za iOS & Android<br>
+					       <a href="https://testflight.apple.com/join/PfRnkwy9" target="_blank"><i class="fab fa-apple"></i> TestFlight</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://support.google.com/googleplay/answer/7003180" target="_blank"><i class="fab fa-android"></i> Android Beta</a></p>
+			             </div>
+						
+			    		 <div class="supportline align-center pt2">
+						   <a href="https://dgbsupport.digiassetx.com" data-lity><i class="fas fa-user-headset"></i> Podrška</a><br><a href="https://digisweep.digiassetx.com" target="_blank"><i class="fas fa-life-ring"></i> Alat za oporavak</a>		
+			             </div>
+                    </div>  
+                
+                </div>
+            </div>
+
+        </div>
+		</div>
+	    
+	    	<!--- Downloads Docs & Guides
+    ================================================== -->
+	    		    <div class="lrmargin25" data-aos="fade"  id="docs">
+		
+			<h1 class="downtitle align-center"><i class="fas fa-books"></i> DigiByte Dokumenti & Vodiči.</h1>
+				
+			  <div class="item-feature__text max800 align-center">
+                  <p>Tražite više dokumentacije? Bilo da su vam potrebne osnovne informacije za članak ili tehničke informacije za proces integracije. Sve potrebne vodiče možete pronaći u nastavku.
+                  </p>
+              </div>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/infopaper.png" loading="lazy" width="72" height="72" alt="DigiByte Info Paper" class="testimonials__avatar">
+                        
+                        <p>Saznajte detalje DigiByte blockchaina pomoću "info paper".</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Info paper</span>
+                            <a href="../docs/infopaper.pdf" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/integration.png" loading="lazy" width="72" height="72" alt="DigiByte Integration Guide" class="testimonials__avatar">
+                        
+                        <p>Integrirajte DigiByte blockchain u vašu mjenjačnicu, novčanik ili servis lagano.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Vodič za Integraciju</span>
+                            <a href="../docs/integrationguide.pdf" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/mediag.png" loading="lazy" width="72" height="72" alt="DigiByte Media Sheet" class="testimonials__avatar">
+                        
+                        <p>Naučite bitne činjenice o DigiByte blockchainu iz lista za medije brzo.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">List za medije</span>
+                            <a href="../docs/mediakit.pdf" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+						<img src="../images/avatars/presentation.png" loading="lazy" width="72" height="72" alt="DigiByte Presentation" class="testimonials__avatar">
+                        
+                        <p>Koristite informativnu online prezentaciju da predstaviš DigiByte svojim prijateljima.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Prezentacija</span>
+                            <a href="https://docs.google.com/presentation/d/16Hn2GfuS1yLjZpjeTYloW0S_JVkhevYzffkDZFqjbiU" target="_blank" class="testimonials__link">Start</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/logos.png" loading="lazy" width="72" height="72" alt="DigiByte Logos & Icons" class="testimonials__avatar">
+                        
+                        <p>Nađite točne i ažurirane DigiByte logo-e i ikone za vaš projekt.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Logo i ikone</span>
+                            <a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank" class="testimonials__link">Idi na GitHub</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/avatars/howto.png" loading="lazy" width="72" height="72" alt="How to Guides" class="testimonials__avatar">
+                        
+                        <p>Pokrenite vlastiti DigiByte puni čvor ili Insight explorer pozivajući se na Wiki smjernice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Smjernice za korištenje</span>
+                            <a href="https://www.dgbwiki.com/index.php?title=DigiByte#DigiByte_Guides" target="_blank" class="testimonials__link">Idi na DigiByte Wiki</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+	</div>
+	    
+	<!--- Downloads Third-Party
+    ================================================== -->
+		<div class="lrmargin25" data-aos="fade" id="software">
+	<h1 class="downtitle align-center">Aplikacije razvijene od servisa treće strane.</h1>
+			
+	<!--- Downloads Third-Party Software Wallets
+    ================================================== -->
+        <h2 class="downtitle align-center"><i class="fas fa-laptop-code"></i> Softverski novčanici.</h2>
+
+		<div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" width="72" height="72" alt="Coinomi Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na Windows, macOS, Linux, iOS i Androidu. Digi-ID i SegWit podrška. <strong class="dark">Preporučeno!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://www.coinomi.com/asset/digibyte/" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" width="72" height="72" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na iOS i Androidu. Digi-ID i MultiSig podrška. <strong>Plaćeno članstvo</strong>.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://ownbit.io" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/edge.png" loading="lazy" width="72" height="72" alt="Edge Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na iOS i Androidu. SegWit podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Edge</span>
+                            <a href="https://edge.app" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/exodus.png" loading="lazy" width="72" height="72" alt="Exodus Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na Windows, macOS, Linux, iOS i Androidu.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Exodus</span>
+                            <a href="https://www.exodus.io/digibyte-wallet" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/atomic.png" loading="lazy" width="72" height="72" alt="Atomic Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na Windows, macOS, Linux, iOS i Androidu.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Atomic</span>
+                            <a href="https://atomicwallet.io/digibyte-wallet" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trust.png" loading="lazy" width="72" height="72" alt="Trust Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na iOS i Androidu. SegWit podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trust Wallet</span>
+                            <a href="https://trustwallet.com/digibyte-wallet" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/guarda1.png" loading="lazy" width="72" height="72" alt="Guarda Wallet" class="testimonials__avatar">
+                        
+                        <p>Dostupno na Windows, macOS, Linux, Chrome, iOS i Androidu.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Guarda</span>
+                            <a href="https://guarda.com" target="_blank" class="testimonials__link">Preuzimanja</a>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div>
+			</div>
+	    
+	  <!--- Downloads Third-Party Hardware Wallets
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade"  id="hardware">
+
+		    <h2 class="downtitle align-center"><i class="fas fa-microchip"></i> Hardver novčanici.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitfi.png" loading="lazy" width="72" height="72" alt="Bitfi Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na bilo kojem web pretraživaču putem Wi-Fi-ja. SegWit podrška. <strong class="dark">Preporučeno!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitfi</span>
+                            <a href="https://bitfi.com" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ledger.png" loading="lazy" width="72" height="72" alt="Ledger Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na Windows, macOS, Linux, iOS i Android putem USB i Bluetooth-a. SegWit podrška. <strong class="dark">Preporučeno!</strong></p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ledger</span>
+                            <a href="https://www.ledger.com/digibyte-wallet/" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/trezor.png" loading="lazy" width="72" height="72" alt="Trezor Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na Chrome i Firefox pretraživačima putem USB-a. SegWit podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Trezor</span>
+                            <a href="https://trezor.io/coins/#DGB" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/keepkey.png" loading="lazy" width="72" height="72" alt="KeepKey Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na Chrome i ShapeShift.com putem USB-a.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">KeepKey</span>
+                            <a href="https://shapeshift.com/keepkey" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+					
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/safepal.png" loading="lazy" width="72" height="72" alt="SafePal Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na iOS i Android putem QR koda. SegWit podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SafePal</span>
+                            <a href="https://www.safepal.io" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/secux.png" loading="lazy" width="72" height="72" alt="SecuX Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na Chrome i iOS putem USB i Bluetooth-a. SegWit podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">SecuX</span>
+                            <a href="https://www.secuxtech.com" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/dcent.png" loading="lazy" width="72" height="72" alt="D'CENT Wallet" class="testimonials__avatar">
+                        
+                        <p>Radi na iOS i Android putem USB i Bluetooth-a. Biometrička provjera autentičnosti i SegWit podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">D'CENT</span>
+                            <a href="https://dcentwallet.com" target="_blank" class="testimonials__link">Posjeti web stranicu</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Debit Cards
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="cards">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-credit-card"></i> Debitne kartice.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                         <img src="../images/wallets/cryptocom.png" loading="lazy" width="72" height="72" alt="Crypto.com" class="testimonials__avatar">
+                        
+                        <p>Custodial iOS and Android apps. Visa debitne kartice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Crypto.com</span>
+                            <a href="https://crypto.com/cards" target="_blank" class="testimonials__link">Nabavi aplikaciju</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/bitpanda.png" loading="lazy" width="72" height="72" alt="Bitpanda" class="testimonials__avatar">
+                        
+                        <p>Skrbničke iOS i Android aplikacije. Visa debitne kartice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Bitpanda</span>
+                            <a href="https://www.bitpanda.com/card" target="_blank" class="testimonials__link">Nabavi aplikaciju</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/upholdcard.png" loading="lazy" width="72" height="72" alt="Uphold" class="testimonials__avatar">
+                        
+                        <p>Skrbničke iOS i Android aplikacije. MasterCard debitne kartice.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Uphold</span>
+                            <a href="https://uphold.com/debit-card" target="_blank" class="testimonials__link">Nabavi aplikaciju</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Point of Sale Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="posapps">
+			
+			<h2 class="downtitle align-center"><i class="fas fa-shopping-cart"></i> Aplikacije za prodajna mjesta.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinpayments2.png" loading="lazy" width="72" height="72" alt="Coinpayments" class="testimonials__avatar">
+                        
+                        <p>Skrbničke iOS i Android aplikacije za osobno plaćanje i plugin-i za online plaćanje. Auto-Sell podrška.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">CoinPayments</span>
+                            <a href="https://www.coinpayments.net" target="_blank" class="testimonials__link">Nabavi aplikaciju</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/prodoge.png" loading="lazy" width="72" height="72" alt="Prodoge" class="testimonials__avatar">
+                        
+                        <p>Ne skrbničke iOS aplikacije za osobno plaćanje i api za trgovce za online plaćanje.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Prodoge</span>
+                            <a href="https://prodoge.com" target="_blank" class="testimonials__link">Nabavi aplikaciju</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+			</div>
+		
+	<!--- Downloads Third-Party Digi-ID Apps
+    ================================================== -->
+		    <div class="lrmargin25 top30" data-aos="fade" id="digidapps">
+		
+			<h2 class="downtitle align-center"><i class="fas fa-fingerprint"></i> Digi-ID aplikacije.</h2>
+     
+		    <div class="row testimonials downslide">
+
+                <div class="col-full slick-slider testimonials__slider">
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/digiantumid.png" loading="lazy" width="72" height="72" alt="Digi-ID/AntumID" class="testimonials__avatar">
+                        
+                        <p>Digi-ID aplikacija za provjeru autentičnosti. AntumID proširenja podrška za DigiPassword funkciju.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID/AntumID</span>
+                            <a href="https://apps.apple.com/app/digi-id-antumid/id1457498829" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=rocks.digibyte.digiid" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/coinomi.png" loading="lazy" width="72" height="72" alt="Coinomi" class="testimonials__avatar">
+                        
+                        <p>Multi valutni novčanik sa Digi-ID funkcijom za provjeru autentičnosti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Coinomi</span>
+                            <a href="https://apps.apple.com/app/coinomi-wallet/id1333588809" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.coinomi.wallet" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+					
+					<div class="testimonials__slide">
+                        <img src="../images/wallets/ownbit.png" loading="lazy" width="72" height="72" alt="Ownbit Wallet" class="testimonials__avatar">
+                        
+                        <p>Multi valutni novčanik sa Digi-ID funkcijom za provjeru autentičnosti.</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ownbit</span>
+                            <a href="https://apps.apple.com/app/ownbit/id1321798216" target="_blank" class="testimonials__link">iOS</a> - <a href="https://play.google.com/store/apps/details?id=com.bitbill.www" target="_blank" class="testimonials__link">Android</a>
+                        </div>
+                    </div>
+
+                    <div class="testimonials__slide rtl">
+                        <img src="/images/avatars/digi-id_desktop-screen.svg" loading="lazy" width="72" height="72" alt="Digi-ID Desktop" class="testimonials__avatar">
+                        <p>
+                            Digi-ID za radne površine.
+                            <br>
+                            <a href="https://github.com/RenzoDD/digiid-desktop" class="testimonials__link" title="Pregledaj na Github-u"><i class="fab fa-github"></i></a>
+                        </p>
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Digi-ID Desktop</span>
+                            <a href="https://github.com/RenzoDD/digiid-desktop/releases/" target="_blank" class="testimonials__link">Objave</a>
+                        </div>
+                    </div>                    
+                    
+                </div>
+
+            </div>
+			</div>
+
+            <div class="lrmargin25 top30" data-aos="fade" id="tools-solutions">
+                <h2 class="downtitle align-center"><i class="fas fa-server"></i> Alati i rješenja.</h2>
+                
+                <div class="row testimonials downslide">
+                   
+                    <div class="col-full slick-slider testimonials__slider">
+                      
+                        <div class="testimonials__slide">
+                            <img src="../images/avatars/getblock-inverted-primary-icon.svg" loading="lazy" width="72" height="72" alt="GetBlock" target="_blank" class="testimonials__avatar">
+                         
+                            <p>DigiByte čvorovi za krajnje korisnike.<br>Lanac blokova RPC API.</p>
+                         
+                            <div class="testimonials__author">
+                                <span class="testimonials__name">GetBlock</span>
+                                <a href="https://getblock.io/nodes/dgb/" target="_blank" class="testimonials__link">Idi na DigiByte API</a>
+                            </div>
+                        </div>
+                      
+                        <div class="testimonials__slide">
+                            <img src="../images/avatars/nownodes-square-custom-logo.svg" loading="lazy" width="72" height="72" alt="NOWNodes" target="_blank" class="testimonials__avatar">
+                         
+                            <p>DigiByte čvorovi za krajnje korisnike.<br>Lanac blokova RPC i istraživački API.</p>
+                         
+                            <div class="testimonials__author">
+                                <span class="testimonials__name">NowNodes</span>
+                                <a href="https://nownodes.io/nodes/digibyte-dgb" target="_blank" class="testimonials__link">Idi na DigiByte API</a>
+                            </div>
+                        </div>
+
+                        <div class="testimonials__slide">
+                            <img src="../images/avatars/diginode_round.svg" loading="lazy" width="72" height="72" alt="Digi-ID Desktop" class="testimonials__avatar">
+                            <p>
+                                Instalirajte i nadgledajte DigiByte i / ili DigiAssets čvor na Linux strojevima.
+                                <br> 
+                                <a href="https://github.com/saltedlolly/diginode-tools" class="testimonials__link" title="Prikaži na Githubu"><i class="fab fa-github"></i></a>
+                            </p>
+                            <div class="testimonials__author">
+                                <span class="testimonials__name">DigiNode Alati</span>
+                                <a href="https://github.com/saltedlolly/diginode-tools/releases" target="_blank" class="testimonials__link">Verzije</a>
+                            </div>
+                        </div>
+                        
+                   </div>
+                </div>
+             </div>
+             
+		
+		    <div class="lrmargin25" data-aos="fade">
+				
+		      <div class="item-feature__text max800 align-center">
+                <p class="disc"><i class="fas fa-exclamation-triangle"></i> <strong>Napomena za Novčanik</strong><br>Svi novčanici predstavljeni od treće strane koje možete naći ovdje su pohranjeni na njihovim serverima ili trgovinama aplikacija. Nemamo nikakvu odgovornost za potencijalne probleme na koje možete naići o bilo kojem Third-Party novčaniku. U tom slučaju trebali bi kontaktirati podršku servisa tog novčanika kojeg koristite.
+                </p>
+              </div>
+				
+	       </div>
+
+    </section>
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer id="footer" class="s-footer footer">
+		
+		<div class="align-center">
+			<a class="smoothscroll" href="#top"><img src="../images/footerlogo.png" loading="lazy" width="360" height="139" alt="DigiByte Blockchain" class="footerlogo"></a>
+		</div>
+		
+		<div class="row footer__top max1000">
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+					<form id="de-form" class="group" method="get" target="_blank" action="https://chainz.cryptoid.info/dgb/search.dws?key=25ac5ef2ff1e">
+                       <input type="text" name="q" placeholder="Traži za block, tx id ili adresu" autocomplete="off" required>
+                       <a><input type="submit" value="Traži" class="btn btn--primary home-content__btn search"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-center">
+            <div class="col-full">
+                <p>
+					<a class="telfooter15" href="https://t.me/DGBalerts" target="_blank"><i class="fab fa-telegram-plane"></i> Upozorenja</a>
+					
+                    <a class="telfooter15" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane"></i> Disukusije</a>
+					
+					<a class="telfooter15" href="https://dgbsupport.digiassetx.com" data-lity><i class="fab fa-telegram-plane"></i> Podrška</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteDevelopers" target="_blank"><i class="fab fa-telegram-plane"></i> Developeri</a>
+					
+					<a class="telfooter15" href="https://t.me/dgbmining" target="_blank"><i class="fab fa-telegram-plane"></i> Rudarenje</a>
+					
+					<a class="telfooter15" href="https://t.me/DigiByteMarketing" target="_blank"><i class="fab fa-telegram-plane"></i> Marketing</a>
+			
+					<a class="telfooter15" href="https://t.me/dgbwaves" target="_blank"><i class="fab fa-telegram-plane"></i> Špekulacije</a>
+			
+					<a class="iblock" href="https://t.me/DigiByteTranslations" target="_blank"><i class="fab fa-telegram-plane"></i> Prevodi</a>
+                </p>
+            </div>
+        </div> 
+
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-five tab-full left">
+
+                <h4>O DigiByte-u.</h4>
+
+                <p>
+                DigiByte je naglo rasteći open-source blockchain projekt kreiran kasne 2013 i pušten početkom 2014. Nakon <span class="year-diff"></span> godina razvoja, DigiByte postaje jedan od najsigurnijih, najbržih, najdužih i najdecentraliziranijih UTXO blockchaina u postojanju.<br>
+		        DigiByte je globalan u 100+ zemalja.
+                </p>
+
+                <ul class="footer__social">
+		            <li><a class="zoom" href="https://twitter.com/DigiByteCoin" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.facebook.com/digibytecoin/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.linkedin.com/company/digibyte-payment-network" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://www.instagram.com/officialdigibytecoin/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.youtube.com/c/JosiahSpackmanDigiByte/" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+		            <li><a class="zoom" href="https://www.reddit.com/r/DigiByte/" target="_blank"><i class="fab fa-reddit-alien" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://medium.com/@DigiByte_Official" target="_blank"><i class="fab fa-medium-m" aria-hidden="true"></i></a></li>
+					<li><a class="zoom" href="https://t.me/DigiByteCoin" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                    <li><a class="zoom" href="https://dsc.gg/DigiByteDiscord" target="_blank"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-six md-seven tab-full right end">
+                <div class="row">
+
+                    <div class="footer__site-links col-six mob-full">
+                        <h4>DigiByte linkovi.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="https://dgbat.org" target="_blank">DGB Svijest Tim</a></li>
+                            <li><a href="https://www.dgbwiki.com" target="_blank">DigiByte Wiki</a></li>
+			                <li><a href="https://digiexplorer.info" target="_blank">DigiExplorer</a></li>
+							<li><a href="https://digistats.digibyteservers.io/" target="_blank">DigiStats</a></li>
+                            <li><a href="https://dgbwiki.com/index.php?title=DigiByte#DigiByte_Mining" target="_blank">DigiByte Rudarenje</a></li>
+			                <li><a href="https://www.amazon.com/Blockchain-2035-Digital-DNA-Internet-ebook/dp/B07ZVCC36Q" target="_blank">Blockchain 2035</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact col-six mob-full">
+                        <h4>Resursi.</h4>
+
+                        <ul class="footer__site-links">
+                            <li><a href="../docs/integrationguide.pdf" target="_blank">DGB Vodič za integraciju</a></li>
+                            <li><a href="../docs/mediakit.pdf" target="_blank">DGB Medijski list</a></li>
+                            <li><a href="https://github.com/DigiByte-Core/digibyte-logos" target="_blank">DGB Logo i ikone</a></li>
+			                <li><a href="https://github.com/DigiByte-Core/digibyte" target="_blank">DGB Protocol GitHub</a></li>
+                            <li><a href="https://github.com/digibyte-core" target="_blank">DGB Core GitHub</a></li>
+			                <li><a href="https://www.dgbwiki.com/index.php?title=Contact" target="_blank">Kontaktirajte nas</a></li>
+                        </ul>
+                    </div>		
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright"> 
+                <span>&copy; Copyright <span id="copyright-year"></span></span> 
+				<span>Sva prava pridržana</span> 
+                <span>Izdano pod <a href="https://opensource.org/licenses/mit-license.php" target="_blank">MIT licencom</a></span> 
+				<span><a href="../docs/LegalDisclaimer.pdf">Legalna Napomena</a> | <a href="../docs/PrivacyPolicy.pdf">Politika Privatnosti</a></span>
+            </div>
+
+        </div>
+
+        
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/plugins1b.js"></script>
+    <script src="../js/main2o.js"></script>
+	
+	<!-- Cookie info message
+    ================================================== -->
+	<script type="text/javascript" id="cookieinfo" src="../js/cookieinfo.min.js"
+	data-font-size="14px"
+	data-font-family="Nunito Sans,sans-serif"
+	data-text-align="left"
+    data-fg="#545454"
+	data-bg="rgba(255, 255, 255, 0.9)"
+	data-link="#0066cc"
+	data-divlink="#ffffff"
+	data-divlinkbg="#0066cc"
+	data-position="bottom"
+	data-message="Koristimo kolačiće (cookies) u svrhu poboljšavanja vašeg iskustva. Nastavkom na stranicu slažete se s našom upotrebom kolačića."
+	data-linkmsg="Više informacija"
+	data-moreinfo="../docs/PrivacyPolicy.pdf"
+	data-close-text="U redu"
+	>
+    </script>
+
+</body>
+	
+</html>
